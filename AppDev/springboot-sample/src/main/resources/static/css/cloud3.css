@@ -1,0 +1,223 @@
+/* This css will be used by cloud website */
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #333333;
+  margin: 0 auto;
+}
+
+header,nav,footer,section {
+  display: block;
+}
+
+p,div,span {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #1466B2;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+ol,ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  position: relative;
+  padding: 0 10px 0 10px;
+  margin: 0 auto;
+ /* 960px width with 10px padding on each side = 940px */
+  width: 940px;
+}
+
+.container .columns {
+  float: left;
+  display: inline;
+  /*margin-left: 10px;*/
+  /*margin-right: 10px;*/
+}
+
+.container:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* Header CSS */
+header {
+  /* background: url("../images/header-tile.gif"); */
+  /* height: 34px; */
+  /* height is 35px but 1px is the border-bottom = 34px */
+  height: 34px;
+  width: 100%;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #ffffff;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+  /*padding-left: 10px;*/
+  /*padding-right: 10px;*/
+}
+
+header hgroup {
+  position: relative;
+}
+
+header .cloudLogo {
+  width: 220px;
+  margin-top: 7px;
+}
+
+header .cloudLogo a {
+  display: inline-block;
+}
+
+.navbar-fixed-top {
+  top: 0px;
+  left: 0;
+  margin-bottom: 0;
+  position: fixed;
+  right: 0;
+  z-index: 1030;
+}
+
+/* This section is for footer */
+footer div.opcGlobalFooter {
+  position: relative;
+  bottom: 0;
+  height: 50px;
+   /* Height of the footer */
+  border-top: 1px solid #d9dfe3;
+  z-index: 1030;
+  left: 0;
+  right: 0;
+  background: #f5f5f5;
+}
+
+footer .opcGlobalFooter .footerLeft {
+  width: 760px;
+  padding-top: 6px;
+}
+
+footer .opcGlobalFooter .footerLeft a:hover {
+  text-decoration: underline;
+}
+
+footer .opcGlobalFooter .footerLeft a:active {
+  text-decoration: underline;
+}
+
+footer .opcGlobalFooter .footerLeft a:visited {
+  color: #72007c;
+}
+
+footer .opcGlobalFooter p {
+  font-size: 11px;
+  color: #454545;
+}
+
+footer .opcGlobalFooter ul {
+  padding: 0;
+  margin: 0;
+}
+
+footer .opcGlobalFooter ul li {
+  font-size: 12px;
+  display: inline;
+  border-left: 1px solid #d6dfe6;
+  padding: 0 10px 0 10px;
+}
+
+footer .opcGlobalFooter ul li:first-child {
+  padding-left: 0;
+  border-left: none;
+}
+
+footer .opcGlobalFooter a {
+  color: #145c9e;
+  line-height: 22px;
+}
+
+.blueBanner {
+  /*background: url("../images/banner-tile-100.png");*/
+  background-image: -moz-linear-gradient(top, #67cbf0, #0572ce);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#67cbf0), to(#0572ce));
+  background-image: -webkit-linear-gradient(top, #67cbf0, #0572ce);
+  background-image: -o-linear-gradient(top, #67cbf0, #0572ce);
+  background-image: linear-gradient(to bottom, #67cbf0, #0572ce);
+  filter: progid:DXImageTransform.Microsoft.Gradient(StartColorStr='#67cbf0', EndColorStr='#0572ce', GradientType=0);
+  display: block;
+  position: fixed;
+  height: 115px;
+  top: 34px;
+ /* height of the header */
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.blueBanner>div.container {
+   height: 115px;
+}
+
+.blueBannerHeading {
+   float: left;
+   margin-top: 24px;
+}
+
+.blueBannerTitleWithSubtitle {
+  /*text-shadow: rgba(0,0,0,0.347656) 0px 2px 2px;*/
+  font-size: 26px;
+  font-weight: normal;
+  color: #FFFFFF;
+  display: inline;
+  margin: 0px 0px 0px 90px;
+  padding-bottom: 8px;
+  line-height: 24px;
+}
+
+.blueBannerSubTitle {
+  /*text-shadow: rgba(0,0,0,0.347656) 0px 2px 2px;*/
+  font-size: 16px;
+  font-weight: bold;
+  color: #FFFFFF;
+  margin: 0px 0px 0px 90px;
+  padding-top: 8px;
+  line-height: 16px;
+}
+
+.blueBannerLogo {
+  width: 80px;
+  height: 70px;
+  position: absolute;
+}
+
+.blueBannerButton {
+  float: right;
+  right: 150px;
+  position: relative;
+  top: 29px;
+}
+
+.img-center-align {
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  float: left;
+}
+
+.serviceContainer {
+  margin-top: 30px;
+  /*margin-bottom: 30px;*/
+}
+
