@@ -20,8 +20,8 @@ The workshop is intended to work with the Oracle Cloud account information hande
 + Oracle Cloud **identity domain**
 + **Data center/region**
 
-Alternatively you can request an Oracle PaaS trial account. To get an account look into [here](common/request.for.trial.md).
-NOTE: Before you start to use your new Oracle Public Cloud services make sure that the replication policy has been set for your account. Otherwise you can not create storage container which is necessary for most of the services. See [Selecting a Replication Policy for Oracle Storage Cloud Service](https://docs.oracle.com/cloud/latest/storagecs_common/CSSTO/GUID-5D53C11F-3D9E-43E4-8D1D-DDBB95DEC715.htm). 
+Alternatively you can request an Oracle PaaS trial account. To get an account go to [cloud.oracle.com](http://cloud.oracle.com) and hit the "Free Trial" button.
+NOTE: Before you start to use your new Oracle Public Cloud services make sure that the replication policy has been set for your account. Otherwise you can not create the storage container which is necessary for most of the services. See [Selecting a Replication Policy for Oracle Storage Cloud Service](https://docs.oracle.com/cloud/latest/storagecs_common/CSSTO/GUID-5D53C11F-3D9E-43E4-8D1D-DDBB95DEC715.htm). 
 
 ----
 
