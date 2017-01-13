@@ -9,7 +9,7 @@ This Oracle Cloud project contains the lab materials for the Oracle Cloud Test D
 More specifically, following labs are included in this project:
 + Lab 1 : [Integration Cloud Service](https://github.com/CloudTestDrive/EventLabs/blob/master/Integration/readme.md)
 + Lab 2 : Process Cloud Service
-+ Lab 3 : [Java Cloud Service and Comput Cloud Service](https://github.com/CloudTestDrive/EventLabs/blob/master/AppDev/README.md)
++ Lab 3 : [Java Cloud Service and Compute Cloud Service](https://github.com/CloudTestDrive/EventLabs/blob/master/AppDev/README.md)
 + Lab 4 : [Application Container Cloud Service and Developer Cloud Service](https://github.com/CloudTestDrive/EventLabs/blob/master/AppDev/README.md)
 + Lab 5 : Mobile Cloud Service
 
