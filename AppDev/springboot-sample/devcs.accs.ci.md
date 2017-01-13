@@ -65,7 +65,7 @@ On the Main configuration page of the newly created job make sure **JDK 8** is t
 
 ![alt text](images/06.job.main.png "Configure job")
 
-Change to the **Source Control** tab and select **Git**. In the git's properties section select the only one available Git repository which is provided in the list. Leave the advanced settings default.
+Change to the **Source Control** tab and select **Git**. In the git's properties section select the Git repository you created from the dropdown list. Leave the advanced settings default.
 
 ![alt text](images/07.job.scm.png "Configure source control")
 
