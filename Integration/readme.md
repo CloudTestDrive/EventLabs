@@ -25,12 +25,17 @@ Login with the credentials assigned to you
 Here is what you will see as soon as you login into Integration Cloud Service:
  
 ![](images/image003.png)
- 
+
+![](images/image004.png)
+
+![](images/image005.png)
+
 Let’s go through each component quickly. There is nothing to do here yet.
 
-2.2.1	Connections
+###2.2.1	Connections###
 Connections connect you to the apps with which you want to integrate. In our case, we will need two connections, one for the REST interface, the other for Service Cloud (RightNow).
 Connections are based on Adapters. ICS provides 40+ adapters out of the box. Some of these are for SaaS apps such as Sales Cloud or Salesforce. Others are technical adapters such as SOAP and REST. ICS also provides on-premise adapters for E-Business Suite, Oracle DB, file etc.
+
 2.2.2	Integrations
 Integrations connect applications to each other, in our case, the mobile interface to Service Cloud. 
 Integrations leverage connections and usually involve some mapping of data. In many cases, where we have App A connecting to App B, both may have the same logical business object e.g. Customer. However, the actual object field names may differ greatly.
