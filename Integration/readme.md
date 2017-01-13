@@ -36,7 +36,7 @@ Let’s go through each component quickly. There is nothing to do here yet.
 Connections connect you to the apps with which you want to integrate. In our case, we will need two connections, one for the REST interface, the other for Service Cloud (RightNow).
 Connections are based on Adapters. ICS provides 40+ adapters out of the box. Some of these are for SaaS apps such as Sales Cloud or Salesforce. Others are technical adapters such as SOAP and REST. ICS also provides on-premise adapters for E-Business Suite, Oracle DB, file etc.
 
-2.2.2	Integrations
+###2.2.2	Integrations###
 Integrations connect applications to each other, in our case, the mobile interface to Service Cloud. 
 Integrations leverage connections and usually involve some mapping of data. In many cases, where we have App A connecting to App B, both may have the same logical business object e.g. Customer. However, the actual object field names may differ greatly.
 2.2.3	Dashboards
