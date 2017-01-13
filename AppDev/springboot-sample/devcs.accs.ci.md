@@ -54,7 +54,7 @@ Select the Oracle Developer Cloud Service Project called "CloudTestDrive" and se
 
 ### Configure build job for Spring Boot sample application ###
 
-Once the project provisioning is ready let's create the build job to compile and package the sample Spring Boot application to the desired format for Application Container Cloud Services.
+Once the Repository creation is done let's create the build job to compile and package the sample Spring Boot application to the desired format for Application Container Cloud Services.
 
 Select **Build** item on the left side menu and click the **New Job** button.
 
@@ -73,11 +73,11 @@ Click **Triggers** tab to configure *SCM polling*. Select **Based on SCM polling
 
 ![alt text](images/07.scm.trigger.png "Configure source control")
 
-Change to **Build Steps** tab and add **Maven 3** build step. Enter **clean install** as Goals and **springboot-sample/pom.xml** to POM File field. (In case if Build Steps tab just shows **Loading...** for a long time, save the Build configuration then re-open and continue.)
+Change to **Build Steps** tab and add **Maven 3** build step. Enter **clean install** as Goals and **AppDev/springboot-sample/pom.xml** to POM File field. (In case if Build Steps tab just shows **Loading...** for a long time, save the Build configuration then re-open and continue.)
 
 ![alt text](images/08.job.maven.png "Add build step")
 
-Finally change to Post Build tab and check in the **Archive the artifacts** option. Enter **springboot-sample/target/\*.zip** into **Files To Archive** field.
+Finally change to Post Build tab and check in the **Archive the artifacts** option. Enter **AppDev/springboot-sample/target/\*.zip** into **Files To Archive** field.
 
 ![alt text](images/09.job.post.png "Post build")
 
@@ -85,7 +85,7 @@ Click on **Save** to update the new job configurations. To check the build job c
 
 ![alt text](images/10.build.artifacts.png "Build artifacts")
 
-Please note the build job contains an extra build step which packs the default artifact `springbootdemo-0.0.1.war` and `manifest.json` (ACCS descriptor from the *springboot-sample/src/acc.resources* folder) into a zip archive. This archive is the desired format to deploy a Java application to ACCS.
+Please note the build job contains an extra build step which packs the default artifact `springbootdemo-0.0.1.war` and `manifest.json` (ACCS descriptor from the *AppDev/springboot-sample/src/acc.resources* folder) into a zip archive. This archive is the desired format to deploy a Java application to ACCS.
 
 ### Configure Application Container Cloud service deployment ###
 
