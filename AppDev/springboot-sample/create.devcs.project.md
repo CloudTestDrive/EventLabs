@@ -49,7 +49,7 @@ On the Developer Cloud Service console, you should have access to the project "C
 
 + Enter the name of the repository : springboot-userxx
 + Choose the option *Import existing repository*
-+ Enter or copy the *https://github.com/janleemans/CloudTestDrive.git* repository address.
++ Enter or copy the *https://github.com/CloudTestDrive/EventLabs.git* repository address.
 + Click **Create**
 
 ![](images/dev003.png)
