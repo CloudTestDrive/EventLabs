@@ -6,6 +6,8 @@
 
 Start by downloading the [zip file](bin/node-jet-server.zip) containing the Node.js and Oracle JET artifacts of the application. 
 
+**Attention ! ** To correctly donwload the application, click on the above link, then use the "Download" button on the top right of the screen.  The resulting zip file should be approx. 16Mb 
+
 The application is built using a Node.js application framework called Express.js. Express.js is a popular Node.js framework that helps us to organize our web application into an MVC architecture.
 
 Open the file to understand the content of this package : 
