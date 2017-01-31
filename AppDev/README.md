@@ -23,20 +23,21 @@ These 4 exercises have been specifically taylored to fit in the "Cloud Test Driv
 + Step 1 : [Deploy a Bitnami Ruby image onto the Oracle Compute Cloud](bitnami/create_account.md)
 + Step 2 : [Connect to the newly created Ruby instance](bitnami/connect.md)
 
-## AppDev Lab 4.1 : Deploy a Node.js application on ACCS##
-Download the application artifacts and deploy the ZIP file on ACCS:
-+ Step 1 : [Deploy a Node.js script onto the Application Container Cloud via the GUI](node_jet/node_deploy.md)
-+ Step 2 : [Scale up/down Application Container Service using user interface and PaaS Service Manager (PSM) Command Line Interface (CLI) tool](accs-psm/README.md)
+## AppDev Lab 4 : Set up a SpringBoot application development environment in Developer Cloud Service, and deploy the application into Application Container Cloud##
 
-## AppDev Lab 4.2 : Support SpringBoot application development lifecycle using Oracle Developer Cloud Service, Application Container Cloud Service##
-+ Step 1 : [Create Oracle Developer Cloud Service project for SpringBoot application](springboot-sample/create.devcs.project.md)
++ Step 1 : [Set up your Oracle Developer Cloud Service project with a SpringBoot application](springboot-sample/create.devcs.project.md)
 + Step 2 : [Create continuous build integration using Oracle Developer Cloud Service and Oracle Application Container Cloud Service](springboot-sample/devcs.accs.ci.md)
+
+If you finished these first steps, you can experiment further in thep 3 and 4:
++ Step 3 : [Scale up/down Application Container Service using user interface and PaaS Service Manager (PSM) Command Line Interface (CLI) tool](accs-psm/README.md)
++ Step 4 : [Deploy a Node.js script onto the Application Container Cloud via the GUI](node_jet/node_deploy.md)
+
 
 ---
 
 ## Want to do more exercises ?
 
-The above 4 exercises have been specifically taylored to fit in the "Cloud Test Drive" format, if you are interested to do more extensive work, please feel free to visit the [Cloud Native DevOps Workshop](https://github.com/oracle/cloud-native-devops-workshop) project on GitHub.  You will need to request your personal Trial account for executing those labs.
+The above exercises have been specifically taylored to fit in the "Cloud Test Drive" format, if you are interested to do more extensive work, please feel free to visit the [Cloud Native DevOps Workshop](https://github.com/oracle/cloud-native-devops-workshop) project on GitHub.  You will need to request your personal Trial account for executing those labs.
 
 ---
 
