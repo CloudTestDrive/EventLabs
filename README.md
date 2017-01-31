@@ -4,11 +4,11 @@
 
 ## Introduction ##
 
-This Oracle Cloud project contains the lab materials for the Oracle Cloud Test Drive events organized in various locations.  Participants can AppDev part of the Cloud Test Drive events, using a series of Oracle Cloud Services from the IaaS and PaaS family.  
+This Oracle Cloud project contains the lab materials for the Oracle Cloud Test Drive events organized in various locations.  Participants can experiment through these labs with a series of Oracle Cloud Services from the IaaS and PaaS family.  
 
-More specifically, following labs are included in this project:
+More specifically, following labs are currently included in this project:
 + Lab 3 : [Java Cloud Service and Compute Cloud Service](https://github.com/CloudTestDrive/EventLabs/blob/master/AppDev/README.md)
-+ Lab 4 : [Application Container Cloud Service and Developer Cloud Service](https://github.com/CloudTestDrive/EventLabs/blob/master/AppDev/README.md)
++ Lab 4 : [DevOps for building a SpringBoot application, using Developer Cloud Service and deploying to Application Container Cloud Service](https://github.com/CloudTestDrive/EventLabs/blob/master/AppDev/README.md)
 
 ### Prerequisites ###
 
