@@ -7,10 +7,9 @@
 This Oracle Cloud project contains the materials for the AppDev part of the Cloud Test Drive events, using a series of Oracle Cloud Services from the IaaS and PaaS family.  More specifically, these labs cover the following exercises :
 + Lab 3.1 : Setting up a Weblogic infrastructure in the cloud via the GUI wizard of the Java Cloud Services.
 + Lab 3.2 : Deploying a Bitnami opensource image onto the Oracle Compute Cloud
-+ Lab 4.1 : Deploying a Node.js script onto the Application Container Cloud via the GUI
-+ Lab 4.2 : Setting up a Springboot project using the Developer Cloud Services and deploying this to Application Container Cloud.
++ Lab 4 : Set up a SpringBoot application in Developer Cloud Service, and deploy it to Application Container Cloud
 
-These 4 exercises have been specifically taylored to fit in the "Cloud Test Drive" format, if you are interested to do more extensive exercises, please feel free to visit the [Cloud Native DevOps Workshop](https://github.com/oracle/cloud-native-devops-workshop) project on GitHub.
+These exercises have been specifically taylored to fit in the "Cloud Test Drive" format, if you are interested to do more extensive exercises, please feel free to visit the [Cloud Native DevOps Workshop](https://github.com/oracle/cloud-native-devops-workshop) project on GitHub.
 
 ----
 
