@@ -19,7 +19,7 @@ Once you have the right selection, you select the Tomcat image on Ubuntu
 
 ![](images/comp2.PNG)
 
-After hitting the "Selectg" button, you will get a dialog box asking you to accept the Oracle Terms of Use.
+After hitting the "Select" button, you will get a dialog box asking you to accept the Oracle Terms of Use.
 Check the checkbox and hit "Install".
 
 ![](images/comp3.PNG)
