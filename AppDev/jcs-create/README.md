@@ -8,15 +8,6 @@
 
 By using Oracle Java Cloud Service, you can quickly create and configure an Oracle WebLogic Server domain and set up your Java EE application environment without worrying about setting up any infrastructure or platform details yourself. All Oracle Java Cloud Service instances that you create are also preconfigured to use your database deployment in Oracle Database Cloud Service, and an object storage container that you create in your Oracle Storage Cloud Service.
 
-### About this tutorial ###
-This tutorial demonstrates how to:
-	
-+ create Java Cloud Service using the user interface.
-
-### Prerequisites ###
-
-+ Oracle Public Cloud Service account including Java, Database and Storage Cloud Service
-+ Oracle Java Cloud Service uses Oracle Database Cloud Service to host the Oracle Fusion Middleware component schemas required by Oracle Java Required Files (JRF). For the Cloud Test Drive event, a shared Cloud Database Instance has already been set up for you, please refer to the documents handed out for the required system username/password.
 
 ### Steps ###
 
@@ -70,7 +61,9 @@ The last input page is the Service Details page. The following parameters have t
 + **Cloud Storage User Name and Password**: the credentials for storage. This is the same username/password you used to sign in to Oracle Cloud Services.
 + **Create Cloud Storage Containers**: we will create a new container, so check this.
 
+<kbd>
 ![](images/jcs002.png)
+</kbd>
 
 For more details about parameters see the [documentation](https://docs.oracle.com/cloud/latest/jcs_gs/JSCUG/GUID-31F00F2C-221F-4069-8E8A-EE48BFEC53A2.htm#JSCUG-GUID-88BD737C-8DA9-419A-8DBF-489BDFF9C512). Click **Next**.
 
@@ -78,5 +71,8 @@ The final page is the summary page showing the chosen configuration before you s
 #### ATTENTION !! ####
 We will not actually create a new instance, as this process can take up to 30'
 So now click **Cancel** to abort the creation of this configuration.  You can use the existing JCS instance in this environment for taking a look at a running instance
+
+<kbd>
 ![](images/09.png)
+</kbd>
 
