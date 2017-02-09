@@ -11,7 +11,7 @@ By using Oracle Java Cloud Service, you can quickly create and configure an Orac
 
 ### Steps ###
 
-[Sign in](../common/sign.in.to.oracle.cloud.md) to [https://cloud.oracle.com/sign-in](https://cloud.oracle.com/sign-in). On the dashboard click the hamburger icon on the Java tile. Select **Open Service Console**.
+Go to the Console (see Access inforrmation that was delivered to you in the workshop, or login to your [trial environment](https://cloud.oracle.com/sign-in) ). On the dashboard click the hamburger icon on the Java tile. Select **Open Service Console**.
 
 ![](images/01.png)
 
