@@ -94,6 +94,9 @@ Scroll back up on this page and note the "Public IP Address" value.
 
 You can now use a browser to go to this address, and the Tomcat console should appear:
 
+**ATTENTION !**
+If you are executing this Lab in an Oracle office, and you are using the guest network, this last step might get blocked by the security policies on this network.  Just use your mobile phone and enter the URL (http://ip_address) and you should see the welcome screen.  Note the amount of data downloaded in this step is minimal.
+
 <kbd>
 ![](images/comp13.PNG)
 </kbd>
