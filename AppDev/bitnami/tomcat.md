@@ -11,7 +11,7 @@ Go to your Cloud Console, and click on the "Instance" text in the "Compute" pane
 ![](images/comp0.PNG)
 </kbd>
 
-Now you can see the already defined instances, and use the "Create Instance button to start the creation wizard of a new instance:
+Now you can see the already defined instances, and use the **"Create Instance"*** button to start the creation wizard of a new instance:
 
 <kbd>
 ![](images/comp1.PNG)
@@ -45,8 +45,8 @@ Now hit the "Next " button ">" in the top right.
 ![](images/comp7.PNG)
 </kbd>
 
-Here you have to enter a series of parameters :
-+ Name: choose a name containing the "userxx" account you are using, so you will recognize your image easily
+On the next screen, "Instance", you have to enter a few parameters :
++ Name: choose a simple name containing the "userxx" account you are using, so you will recognize your image easily
 + Label: choose the same as the name
 + SSH Keys: in order to manage the instance and access the console, you will use a public/private key when establishing an ssh connection.  You can use the keys we prepared for this lab ([public](bin/ctd_pub.pub) / [private](bin/ctd_priv.openssh)), or create your own key using for example puttygen
 
@@ -57,8 +57,25 @@ Here you have to enter a series of parameters :
 Leave all other parameters as per default, and hit the "next" button ">"
 
 <kbd>
-![](images/comp9.PNG)
+![](images/comp9c.PNG)
 </kbd>
+
+
+On the "Network" page, you will create a new security list.  
++ Hit the "Create Security List 
++ Enter a name containing your username (e.g. user01_aa)
++ Keep the default parameters for the Inbound and Outbound policies
+
+<kbd>
+![](images/comp9d.PNG)
+</kbd>
+
+After creating the Security List, hit the **">"** button.
+
+<kbd>
+![](images/comp9b.PNG)
+</kbd>
+
 
 On the storage page, take all default parameters and hit the "next" button ">"
 
