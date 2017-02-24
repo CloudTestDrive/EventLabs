@@ -93,7 +93,28 @@ As the image is created (this takes approx. 5 minutes), we will follow the vario
 + Check the "Storage Volume" page, this will contain the storage volume you specified in the wizard
 + Check the "Instances" page, you will see your image appear and go into state "Running".
 
-Now we will open HTTP access to this image to check if Tomcat is available.
+
+Now we will open HTTP access to this image to make the Tomcat instance accessible from your browser.
+
+Navigate to the "Network" tab (on the top menu)
+
+
+We will create a Security Rule and associate it with the Security List you already created earlier.
+
++ Navigate to the "Security Rule" menu (on the left)
++ Hit the "Create Security Rule" button, and enter the following parameters:
+
++ Name: pick a name containing your username (example: user01-http-access)
++ Security Application: select "http" from the drop-down menu
++ source: select radio button "Security IP List"
++ then select "public-internet" from the "Security IP List" drop-down menu
++ Destination: select radio-button "Security List"
++ then select the security list you created previously
+
+<kbd>
+![](images/comp17.PNG)
+</kbd>
+
 
 + On the "Instances" page, use the hamburger symbol besides your image to select "View"
 
@@ -101,13 +122,7 @@ Now we will open HTTP access to this image to check if Tomcat is available.
 ![](images/comp11.PNG)
 </kbd>
 
-Scroll down to the "Security List" paragraph, and hit the "Add to Security List" button.  In the "Security List", select the "JK-For-http-access" list and click "Add"
-
-<kbd>
-![](images/comp12.PNG)
-</kbd>
-
-Scroll back up on this page and note the "Public IP Address" value.
+Note the "Public IP Address" value.
 
 You can now use a browser to go to this address, and the Tomcat console should appear:
 
