@@ -100,7 +100,8 @@ Set the following properties.
 - **Configuration Name**: any name to identify deployment configuration. Again, please prefix this with your user (i.e springboot-deploy-2-accs-user06).
 - **Application Name**: instance name in ACCS. This will determine the application's URL. Again, please prefix this with your user (i.e springboot-sample-user06).
 - **Deployment Target**: click **New** and select Application Container Cloud... and define connection properties such as **Data center**, **Identity Domain** and **credentials**. 
-![alt text](images/13.accs.config.png "ACCS Configuration")
+![alt text](images/dev001.PNG "ACCS Configuration")
+![alt text](images/dev002.PNG "ACCS Configuration")
 - **Type**: select **Automatic** which means auto deploy after a successful execution of the build job. Select your previously created job and its artifact to deploy.
 
 Click **Save**. 
