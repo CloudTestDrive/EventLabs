@@ -8,13 +8,13 @@ In this lab we will be using the Marketplace to deploy a Tomcat Image file onto 
 Go to your Cloud Console, and click on the "Instance" text in the "Compute" pane
 
 <kbd>
-![](images/comp0.PNG)
+![](./images/comp0.PNG)
 </kbd>
 
 Now you can see the already defined instances, and use the **"Create Instance"*** button to start the creation wizard of a new instance:
 
 <kbd>
-![](images/comp1.PNG)
+![](./images/comp1.PNG)
 </kbd>
 
 On the image creation creen, select "Marketplace" on the right side
