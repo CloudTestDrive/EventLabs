@@ -17,9 +17,9 @@ Go to the Console (see Access inforrmation that was delivered to you in the work
 
 + To create new instance click **Create Service** button and select **Java Cloud Service** in the drop down list.
 
-<kbd>
+
 ![](images/welcome.png)
-</kbd>
+
 
 Now choose the basic parameters for your Weblogic instance :
 + Service name : the name of the new instance, please include your username, eg. User10JcsInstance1
@@ -30,15 +30,15 @@ Now choose the basic parameters for your Weblogic instance :
 
 For more details about subscription types see the [documentation](https://docs.oracle.com/cloud/latest/jcs_gs/JSCUG/GUID-31F00F2C-221F-4069-8E8A-EE48BFEC53A2.htm#JSCUG-GUID-98DD6CE1-480F-4AA9-8131-A1D3D274440F)
 
-<kbd>
+
 ![](images/jcs003.png)
-</kbd>
+
 
 + Now edit the SSH Public key you will use to access this instance : it allows to connect to the VM through ssh connection using the private key. Select **Create a New Key** option and download the newly generated keypair for later usage.
 
-<kbd>
+
 ![](images/07.png)
-</kbd>
+
 
 The last input page is the Service Details page. The following parameters have to be provided:
 	
@@ -61,9 +61,9 @@ The last input page is the Service Details page. The following parameters have t
 + **Cloud Storage User Name and Password**: the credentials for storage. This is the same username/password you used to sign in to Oracle Cloud Services.
 + **Create Cloud Storage Containers**: we will create a new container, so check this.
 
-<kbd>
+
 ![](images/jcs002.png)
-</kbd>
+
 
 For more details about parameters see the [documentation](https://docs.oracle.com/cloud/latest/jcs_gs/JSCUG/GUID-31F00F2C-221F-4069-8E8A-EE48BFEC53A2.htm#JSCUG-GUID-88BD737C-8DA9-419A-8DBF-489BDFF9C512). Click **Next**.
 
@@ -72,7 +72,7 @@ The final page is the summary page showing the chosen configuration before you s
 We will not actually create a new instance, as this process can take up to 30'
 So now click **Cancel** to abort the creation of this configuration.  You can use the existing JCS instance in this environment for taking a look at a running instance
 
-<kbd>
+
 ![](images/09.png)
-</kbd>
+
 
