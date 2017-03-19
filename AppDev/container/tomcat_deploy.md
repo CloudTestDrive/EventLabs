@@ -7,30 +7,15 @@
 ### Introduction
 In this lab we will deploy the Tomcat Docker image that is provided by default onto the Oracle Container Cloud Service (OCCS).
 
-Since creation of Docker containers is fast, and they are lightweight, everyone in the team should be able to take part.
+Since creation of Docker containers is fast, and they are lightweight, this will go extremely fast.
 
 ### Pre - requisite Creation of a Container Cloud Service
-The instructors will have created a Container Cloud service for your team to use.
+The instructors will have created a Container Cloud service for your team to use.  The link to the Container Admin console will be provided in the Access Document you will receive.  If you are doing these labs on your own, make sure to first set up a running Container Cloud Instance from the Cloud Services Dashboard of your account.
 
-This service will consist of an admin node and a number of worker nodes.  The containers are deployed on the worker nodes.
-
-### Review your service instance
-Navigate to the OCCS console.
-
-Click on the link for your team's service.
-
-![](images/OCCS-service-console.png)
-
-Notice that there is a "Manager Component" and a "Worker Component".
-
-![](images/manager-worker.png)
 
 ### Open the OCCS console
-Click on the "hamburger" and choose "Container Console".
 
-![](images/burger-console.png)
-
-At this point your browser may complain about a self signed certificate.  Accept the certificate and proceed to the console.
+Follow the link provided to the Container Console.  At this point your browser may complain about a self signed certificate.  Accept the certificate and proceed to the console.
 
 Enter the credentials supplied by the instructors.
 
