@@ -18,6 +18,11 @@ These exercises have been specifically taylored to fit in the "Cloud Test Drive"
 + Step 3 : [Create a new Oracle Database instance via the GUI](dbcs-create/README.md)
 + Step 4 : Experiment with the existing JCS instance in the Cloud Test Drive environment: [Oracle Java Cloud Service Policy Based Auto Scaling](jcs-autoscale/README.md)
 
+Following steps will demonstrate the use of the Oracle Container Cloud Service:
+- Step 5: [Start-up a Tomcat image](tomcat_deploy.md)
+- Step 6: [Create a new image based on the Docker GlassFish image](glassfish_import.md)
+
+
 To demonstrate how open the Oracle Compute Cloud Service is, you can also deploy images from 3rd parties straight into your Oracle Cloud infrastructure: below you can find an optional exercise where we will deploy a Ruby image from the 3rd party Bitnami environment into the Compute Cloud Service
 + Step 1 : [Deploy a Bitnami Ruby image onto the Oracle Compute Cloud](bitnami/create_account.md)
 + Step 2 : [Connect to the newly created Ruby instance](bitnami/connect.md)
