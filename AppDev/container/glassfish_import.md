@@ -2,35 +2,16 @@
 ---
 # ORACLE Cloud Test Drive Event
 ----
-## Import and deploy a Glassfish Docker (not included by default) image onto Oracle Container Cloud Service
+## Import and deploy a Glassfish Docker image onto Oracle Container Cloud Service
 
 ### Introduction
-In this lab we will import and deploy a Glassfish Docker image onto the Oracle Container Cloud Service (OCCS).  The Glassfish image is not included by default.
-
-Since creation of Docker containers is fast, and they are lightweight, everyone in the team should be able to take part.
+In this lab we will import and deploy a Glassfish Docker image onto the Oracle Container Cloud Service (OCCS).  The Glassfish image is not included by default, we will download it from the Docker repository.
 
 ### Pre - requisite Creation of a Container Cloud Service
-The instructors will have created a Container Cloud service for your team to use.
-
-This service will consist of an admin node and a number of worker nodes.  The containers are deployed on the worker nodes.
-
-### Review your service instance
-Navigate to the OCCS console.
-
-Click on the link for your team's service.
-
-![](images/OCCS-service-console.png)
-
-Notice that there is a "Manager Component" and a "Worker Component".
-
-![](images/manager-worker.png)
+The instructors will have created a Container Cloud service for your team to use.  The link to the Container Admin Console will be provided in the Access Document you will receive.  If you are doing these labs on your own, make sure to first set up a running Container Cloud instance from the Cloud Services dashboard.
 
 ### Open the OCCS console
-Click on the "hamburger" and choose "Container Console".
-
-![](images/burger-console.png)
-
-At this point your browser may complain about a self signed certificate.  Accept the certificate and proceed to the console.
+Follow the link provided to the Container Admin console.  At this point your browser may complain about a self signed certificate.  Accept the certificate and proceed to the console.
 
 Enter the credentials supplied by the instructors.
 
@@ -44,23 +25,26 @@ You should now see the Dashboard.
 
 Click on Services.  Each of the "services" in the list represents a container and configuration ready for deployment onto OCCS.
 
-![](images/services-page-1.png)
+![](images/services-page-3.png)
 
 Click "New Service" to go to create a new service for Glassfish.
 
 The service editor dialog box will open.  Fill in the basic details as shown:
+- Service name : "glassfish-user01", please use your own user name
+- Service description : "glassfish-user01" 
+- Image : glassfish:latest
 
 ![](images/service-editor.png)
 
 To be able to access the container from the outside world we need to add port mappings.
-
 Each mapping routes traffic from \<host>:\<port> to \<container>:\<port>. 
 
-To add the required mappings, click on the "Ports" checkbox under "Available Options" then click "+Add" and add each of the following port mappings:
-
-- 8080:8080 (http)
-- 8181:8181 (https)
-- 4848:4848 (admin console)
+- click on the "Ports" checkbox under "Available Options" on the right side of the screen
+- click "+Add" in the "Ports" section that has appeared on the bottom left
+- Add the three port mappings, but 
+- - 8080:8080 (http)
+- - 8181:8181 (https)
+- - 4848:4848 (admin console)
 
 For example the 4848 mapping should look like this:
 
