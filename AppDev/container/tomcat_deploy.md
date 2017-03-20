@@ -38,7 +38,8 @@ Click "Next" to go to the second page.  Now click the "Edit" button of the "Tomc
 
 ![](images/edit-service.png)
 
-- Now change the Host Port from 8080 to the port number assigned to you in the access document
+- Now change the Host Port to the port number assigned to you in the access document
+- Leave the Container Port unchanged at 8080
 - Save the Port configuration by clicking on the "Save" button
 
 ![](images/edit-port.png)
