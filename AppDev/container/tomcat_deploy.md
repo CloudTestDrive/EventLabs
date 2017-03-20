@@ -31,7 +31,23 @@ Click on Services.  Each of the "services" in the list represents a container an
 
 ![](images/services-page-1.png)
 
-Click "Next" to go to the second page.  Click the "Deploy" button for the service with the id "tomcat".
+Click "Next" to go to the second page.  Now click the "Edit" button of the "Tomcat" image.  Because all participants are launching their instance on the same container service, we need to assign a specific port to identify your instance:
+
+- Scroll down to see the paragraph "Ports"
+- Click on the little arrow besides the rule that is already there, and choose "Edit"
+
+![](images/edit-service.png)
+
+- Now change the Host Port from 8080 to the port number assigned to you in the access document
+- Save the Port configuration by clicking on the "Save" button
+
+![](images/edit-port.png)
+
+- Now save the Service via the "Save As" button, and choose a new name comprising your port number:
+
+![](images/save-as-service.png)
+
+You are now redirected back to the list of services, where you will see your newly created service appear.  Click the "Deploy" button for the service you just created, for example "tomcat-8090"
 
 ![](images/services-page-2.png)
 
@@ -53,8 +69,8 @@ You should see the Apache Tomcat title page.
 
 ![](images/tomcat.png)
 
-If other members of your team want to try, go to "Deployments" and click Stop.  Wait for Tomcat to stop and then click "Remove".
+To finish the exercise, stop the instance you just started: 
+- go to "Deployments" and click Stop.  
+- wait for Tomcat to stop and then click "Remove".
 
 ![](images/deployments.png)
-
-Once the deployment has disappeared, you can redeploy Tomcat.
