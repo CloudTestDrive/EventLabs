@@ -37,16 +37,19 @@ The service editor dialog box will open.  Fill in the basic details as shown:
 ![](images/service-editor.png)
 
 To be able to access the container from the outside world we need to add port mappings.
-Each mapping routes traffic from \<host>:\<port> to \<container>:\<port>. 
+Each mapping routes traffic from \<host>:\<port> to \<container>:\<port>. But since we are all working on the same instance, we'll calculate an individual Host Port portnumber for each service :
 
 - click on the "Ports" checkbox under "Available Options" on the right side of the screen
 - click "+Add" in the "Ports" section that has appeared on the bottom left
-- Add the three port mappings, but 
-- - 8080:8080 (http)
-- - 8181:8181 (https)
-- - 4848:4848 (admin console)
+- Add the three port mappings:
+- - Host Port : Enter the sum of 8080 + your user number for the Host Port : e.g. user05 will use port 8080 + 5 = 8085
+- - Container Port : 8080
+- - Protocol : TCP
+- Repeat this step for the 2 other Port Mappings, each time adding your own user number to the Host Port number:
+- - using 8181 for the 2nd
+- - using 4848 for the 3rd
 
-For example the 4848 mapping should look like this:
+For example the 8080 mapping for user 05 should look like this:
 
 ![](images/port-mappings.png)
 
