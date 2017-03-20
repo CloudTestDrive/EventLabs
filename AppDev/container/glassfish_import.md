@@ -59,11 +59,8 @@ The completed form should look like this:
 
 Click on "Save".
 
-The Glassfish service should now be shown in the "Services" list.
-
-![](images/services-with-glassfish.png)
-
-Click on "Deploy".
+The Glassfish service should now be shown in the "Services" list.  
+- Click on "Deploy" for the service you just created
 
 Take the defaults in the deploy glassfish dialog and click "Deploy".
 
@@ -75,9 +72,9 @@ Click on the hostname link.  This is the host on which your image is deployed.
 
 ![](images/host-with-glassfish.png)
 
-Take a note of the IP address and then browse to http://<host-ip-address>:4848 (add security exceptions if required)
-
-You should see the Glassfish Administration Console Login form.
+- Take a note of the IP address
+- now browse to http://<host-ip-address>:8080 (plus your usernumber, e.g. 8085) to see the Glassfish welcome screen.
+- now browse to http://<host-ip-address>:4848 (plus your usernumber, e.g. 4853) to see the Glassfish Administration Console Login form.
 
 ![](images/glassfish-console-login.png)
 
@@ -85,7 +82,9 @@ Login as admin/glassfish.  You should now see the login console.
 
 ![](images/glassfish-console.png)
 
-If other members of your team want to try, go to "Deployments" and click "Stop".
+To end the exercise, you can stop and remove the various artifacts you created: 
+
+Go to "Deployments" and click "Stop".
 
 ![](images/glassfish-stop-deployment.png)
 
