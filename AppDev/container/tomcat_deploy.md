@@ -2,7 +2,7 @@
 ---
 # ORACLE Cloud Test Drive Event
 ----
-## Deploy the Tomcat Docker image (included by default) onto Oracle Container Cloud Service
+## Step 5 : Deploy the Tomcat Docker image (included by default) onto Oracle Container Cloud Service
 
 ### Introduction
 In this lab we will deploy the Tomcat Docker image that is provided by default onto the Oracle Container Cloud Service (OCCS).
