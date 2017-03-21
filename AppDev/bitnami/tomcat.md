@@ -1,5 +1,8 @@
 ![](../common/images/customer.logo.png)
 ---
+# ORACLE Cloud Test Drive Event
+----
+## Step 1 : Create a Tomcat instance on a Compute node using the Oracle Marketplace
 
 In this lab we will be using the Marketplace to deploy a Tomcat Image file onto a Compute node on the Oracle Cloud. 
 
