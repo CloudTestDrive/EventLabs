@@ -25,6 +25,10 @@ This chapter will help you understand the use of MCS, the Mobile Cloud Service. 
 
 The tutorial for this lab is located on [Oracle.com](http://docs.oracle.com/cd/E65774_01/tutorials/tut_mcs_max_short/tut_mcs_max_short_1.html)
 
+## Integration Cloud Service and Process Cloud Service ##
+These labs are not yet available through Github.  If you are participating in a CTD, you will receive the relevant word documents with the tutorials.
+
+
 ### Prerequisites ###
 
 The workshop is intended to work with the Oracle Cloud account information handed out to you during the event.  You will need the following information to start working on these exercises :
