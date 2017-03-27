@@ -17,6 +17,7 @@ This chapter is composed of 2 labs :
 This chapter regroups some of the steps from the various CTD labs to create a specific focus on IaaS services in particular.  In this lab, you will experience the folling services:
 + Compute CS
 + Container CS
+
 [Follow this link for the details](../IaaS/readme.md)
 
 ### Prerequisites ###
