@@ -20,6 +20,11 @@ This chapter regroups some of the steps from the various CTD labs to create a sp
 
 [Follow this link for the details](IaaS/readme.md)
 
+## Mobile Cloud Services ##
+This chapter will help you understand the use of MCS, the Mobile Cloud Service.  As an end-result, you will develop a simple mobile application and install it on your Mobile phone.
+
+The tutorial for this lab is located on [Oracle.com](http://docs.oracle.com/cd/E65774_01/tutorials/tut_mcs_max_short/tut_mcs_max_short_1.html)
+
 ### Prerequisites ###
 
 The workshop is intended to work with the Oracle Cloud account information handed out to you during the event.  You will need the following information to start working on these exercises :
