@@ -6,9 +6,18 @@
 
 This Oracle Cloud project contains the lab materials for the Oracle Cloud Test Drive events organized in various locations.  Participants can experiment through these labs with a series of Oracle Cloud Services from the IaaS and PaaS family.  
 
-More specifically, following labs are currently included in this project:
-+ Lab 3 : [Java Cloud Service and Compute Cloud Service](https://github.com/CloudTestDrive/EventLabs/blob/master/AppDev/README.md)
-+ Lab 4 : [DevOps for building a SpringBoot application, using Developer Cloud Service and deploying to Application Container Cloud Service](https://github.com/CloudTestDrive/EventLabs/blob/master/AppDev/README.md)
+More specifically, following topics are currently currently included in this project:
+
+## Application Development labs ##
+This chapter is composed of 2 labs :
++ Lab 3 : [Application Development Infrastructure : Compute, Java and Database Cloud Services setup](https://github.com/CloudTestDrive/EventLabs/blob/master/AppDev/README.md)
++ Lab 4 : [Building applications with DevOps: using Developer Cloud Service to build a SpringBoot application and deploying to Application Container Cloud Service](https://github.com/CloudTestDrive/EventLabs/blob/master/AppDev/README.md)
+
+## Infrastructure-as-a-Service ##
+This chapter regroups some of the steps from the various CTD labs to create a specific focus on IaaS services in particular.  In this lab, you will experience the folling services:
++ Compute CS
++ Container CS
+[Follow this link for the details](../IaaS/readme.md)
 
 ### Prerequisites ###
 
