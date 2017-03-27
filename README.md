@@ -18,7 +18,7 @@ This chapter regroups some of the steps from the various CTD labs to create a sp
 + Compute CS
 + Container CS
 
-[Follow this link for the details](../IaaS/readme.md)
+[Follow this link for the details](IaaS/readme.md)
 
 ### Prerequisites ###
 
