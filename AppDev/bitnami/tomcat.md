@@ -51,8 +51,15 @@ Now hit the "Next " button ">" in the top right.
 On the next screen, "Instance", you have to enter a few parameters :
 + Name: choose a simple name containing the "userxx" account you are using, so you will recognize your image easily
 + Label: choose the same as the name
-+ SSH Keys: in order to manage the instance and access the console, you will use a public/private key when establishing an ssh connection.  You can use the keys we prepared for this lab ([public](bin/ctd_pub.pub) / [private](bin/ctd_priv.openssh)), or create your own key using for example puttygen
++ SSH Keys: in order to manage the instance and access the console, you will use a public/private key when establishing an ssh connection.  
++ You can find a valid public key [here](bin/ctd_pub.pub)
++ ATTENTION : click on the "Raw"  button to get the correct string before copying !
 
+![](images/comp18.PNG)
+
+The corresponding private key can be found [here](bin/ctd_priv.openssh) ,you don't need it for this exercise.
+
+Now fill in the key as depicted below:
 
 ![](images/comp8.PNG)
 
