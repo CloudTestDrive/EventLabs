@@ -32,7 +32,7 @@ Click "New Service" to go to create a new service for Glassfish.
 The service editor dialog box will open.  Fill in the basic details as shown:
 - Service name : "glassfish-user01", please use your own user name
 - Service description : "glassfish-user01" 
-- Image : glassfish:latest
+- Image : glassfish/server:latest
 
 ![](images/service-editor.png)
 
