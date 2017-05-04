@@ -10,8 +10,8 @@ More specifically, following topics are currently currently included in this pro
 
 ## Application Development labs ##
 This chapter is composed of 2 labs :
-+ Lab 3 : [Application Development Infrastructure : Compute, Java and Database Cloud Services setup](https://github.com/CloudTestDrive/EventLabs/blob/master/AppDev/README.md)
-+ Lab 4 : [Building applications with DevOps: using Developer Cloud Service to build a SpringBoot application and deploying to Application Container Cloud Service](https://github.com/CloudTestDrive/EventLabs/blob/master/AppDev/README.md)
++ [Application Development Infrastructure : Compute, Java and Database Cloud Services setup](https://github.com/CloudTestDrive/EventLabs/blob/master/AppDev/README.md)
++ [Building applications with DevOps: using Developer Cloud Service to build a SpringBoot application and deploying to Application Container Cloud Service](https://github.com/CloudTestDrive/EventLabs/blob/master/AppDev/README.md)
 
 ## Infrastructure-as-a-Service ##
 This chapter regroups some of the steps from the various CTD labs to create a specific focus on IaaS services in particular.  In this lab, you will experience the folling services:
