@@ -1,8 +1,11 @@
 ![](../../common/images/customer.logo.png)
 ---
-# ORACLE Cloud Test Drive Events #
+# ORACLE Cloud Test Drive #
+## Lab: Application Development Infrastructure ##
 
-## Create Java Cloud Service instance using user interface ##
+[to Step 1](../bitnami/tomcat.md) | [to Overview Page](../AppDevInfra.md) | [to Step 3](../dbcs-create/README.md)
+----
+## Step 2 : Create Java Cloud Service instance using the user interface ##
 
 ### Introduction ###
 
@@ -75,4 +78,6 @@ So now click **Cancel** to abort the creation of this configuration.  You can us
 
 ![](images/09.png)
 
+---
+[to Step 1](../bitnami/tomcat.md) | [to Overview Page](../AppDevInfra.md) | [to Step 3](../dbcs-create/README.md)
 
