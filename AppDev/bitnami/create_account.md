@@ -1,5 +1,13 @@
 ![](../common/images/customer.logo.png)
 ---
+# ORACLE Cloud Test Drive #
+## Lab: Application Development Infrastructure ##
+
+
+[to Step 6](../jcs-autoscale/README.md) | [to Overview Page](../AppDevInfra.md) | [to Step 8](../container/glassfish_import.md)
+
+----
+## Step 7 : Deploy a bitnami Ruby image onto Oracle Compute Cloud ##
 
 ### Prerequisite : Compute REST endpoint
 
@@ -80,3 +88,6 @@ Once it is completed you will see the following:
 ![](images/image041.png)
 
 Your Ruby image is now up and running ! Go back to the overview and take the next step to access your Ruby instance.
+
+---
+[to Step 6](../jcs-autoscale/README.md) | [to Overview Page](../AppDevInfra.md) | [to Step 8](../container/glassfish_import.md)
