@@ -1,6 +1,6 @@
 ![](common/images/customer.logo.png)
 ---
-# ORACLE Cloud Test Drive Event #
+# ORACLE Cloud Test Drive #
 
 ## Introduction ##
 
