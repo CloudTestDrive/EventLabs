@@ -30,8 +30,10 @@ The above exercises have been specifically taylored to fit in the "Cloud Test Dr
 
 ---
 
-## [License](LICENSE.md) ##
+## License ##
 Copyright (c) 2014, 2017 Oracle and/or its affiliates
-The Universal Permissive License (UPL), Version 1.0
+The Universal Permissive License (UPL), Version 1.0   
+[Details](../common/license.md)
+
 ---
 [Go to the Cloud Test Drive Overview](../readme.md)
