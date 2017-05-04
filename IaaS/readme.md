@@ -17,8 +17,8 @@ Note: we skip steps 2, 3 and 4 of the complete AppDev Infrastructure lab, and go
 
 ## Working with the Container Cloud Service ##
 Following steps will demonstrate the use of the Oracle Container Cloud Service.  In these labs, we will use an existing Container Cloud Service instance.  The creation of this instance is out of the scope of these labs.
-- Step 5: [Start-up a Container with a Tomcat image](../AppDev/container/tomcat_deploy.md)
-- Step 6: [Create a new image based on the Docker GlassFish image and run it](../AppDev/container/glassfish_import.md)
+- Step 5 : [Start-up a Container with a Tomcat image](../AppDev/container/tomcat_deploy.md)
+- Step 6 : [Create a new image based on the Docker GlassFish image and run it](../AppDev/container/glassfish_import.md)
 
 ## Optional exercise ##
 To demonstrate how open the Oracle Compute Cloud Service is, you can also deploy images from 3rd parties straight into your Oracle Cloud infrastructure: below you can find an optional exercise where we will deploy a Ruby image from the 3rd party Bitnami environment into the Compute Cloud Service
