@@ -1,8 +1,13 @@
 ![](../common/images/customer.logo.png)
 ---
-# ORACLE Cloud Test Drive Events #
------
-## Oracle Java Cloud Service Policy Based Auto Scaling ##
+# ORACLE Cloud Test Drive #
+## Lab: Application Development Infrastructure ##
+
+
+[to Step 3](../dbcs-create/README.md) | [to Overview Page](../AppDevInfra.md) | [to Step 5](../container/tomcat_deploy.md)
+
+----
+## Step 4 : Oracle Java Cloud Service Policy Based Auto Scaling ##
 
 ### Introduction ###
 Scaling lets you add or remove resources for an Oracle Java Cloud Service instance on demand in response to changes in load on the service instance. You can scale an Oracle Java Cloud Service instance by scaling a cluster, a node, or the Coherence data tier in the service instance.
@@ -56,3 +61,5 @@ Wait till the rule will be complete.
 
 The original version of this exercise comprised the creation of a load-generating application on the JCS instance, and thus observing the auto-scaling live.  This is outside of the scope of the Cloud Test Drive event, please feel free to test this on your own in the [original version](https://github.com/oracle/cloud-native-devops-workshop/blob/master/jcs-scale-ui/README.md) of this exercise.
 
+---
+[to Step 3](../dbcs-create/README.md) | [to Overview Page](../AppDevInfra.md) | [to Step 5](../container/tomcat_deploy.md)
