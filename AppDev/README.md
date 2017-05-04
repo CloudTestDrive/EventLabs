@@ -24,8 +24,8 @@ Following steps will demonstrate the use of the Oracle Container Cloud Service:
 
 
 To demonstrate how open the Oracle Compute Cloud Service is, you can also deploy images from 3rd parties straight into your Oracle Cloud infrastructure: below you can find an optional exercise where we will deploy a Ruby image from the 3rd party Bitnami environment into the Compute Cloud Service
-+ Step 1 : [Deploy a Bitnami Ruby image onto the Oracle Compute Cloud](bitnami/create_account.md)
-+ Step 2 : [Connect to the newly created Ruby instance](bitnami/connect.md)
++ Step 7 : [Deploy a Bitnami Ruby image onto the Oracle Compute Cloud](bitnami/create_account.md)
++ Step 8 : [Connect to the newly created Ruby instance](bitnami/connect.md)
 
 ----
 
