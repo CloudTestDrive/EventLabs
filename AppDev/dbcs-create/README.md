@@ -1,8 +1,13 @@
 ![](../common/images/customer.logo.png)
 ---
 # ORACLE Cloud Test Drive #
------
-## Create Database Cloud Service instance using user interface ##
+## Lab: Application Development Infrastructure ##
+
+
+[to Step 2](../jcs-create/README.md) | [to Overview Page](../AppDevInfra.md) | [to Step 4](../jcs-autoscale/README.md)
+
+----
+## Step 3 : Create Database Cloud Service instance using user interface ##
 
 ### Introduction ###
 
@@ -70,4 +75,6 @@ ATTENTION : To save resources on our environment and to speed up this exercise, 
 If you should have gone ahead and created the database, the request would have been accepted and the Database Service Console page would  show the new instance. The instance would first be in Maintenance (Progress) mode. 
 ![](images/09.png)
 
+---
+[to Step 2](../jcs-create/README.md) | [to Overview Page](../AppDevInfra.md) | [to Step 4](../jcs-autoscale/README.md)
 
