@@ -1,8 +1,13 @@
 ![](../common/images/customer.logo.png)
 ---
-# ORACLE Cloud Test Drive Event
+# ORACLE Cloud Test Drive #
+## Lab: Application Development Infrastructure ##
+
+
+[to Step 4](../jcs-autoscale/README.md) | [to Overview Page](../AppDevInfra.md) | [to Step 6](../container/glassfish_import.md)
+
 ----
-## Step 5 : Deploy the Tomcat Docker image (included by default) onto Oracle Container Cloud Service
+## Step 5 : Deploy the Tomcat Docker image (included by default) onto Oracle Container Cloud Service ##
 
 ### Introduction
 In this lab we will deploy the Tomcat Docker image that is provided by default onto the Oracle Container Cloud Service (OCCS).
@@ -75,3 +80,6 @@ To finish the exercise, stop the instance you just started:
 - wait for Tomcat to stop and then click "Remove".
 
 ![](images/deployments.png)
+
+---
+[to Step 4](../jcs-autoscale/README.md) | [to Overview Page](../AppDevInfra.md) | [to Step 6](../container/glassfish_import.md)
