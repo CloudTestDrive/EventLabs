@@ -36,4 +36,4 @@ The Universal Permissive License (UPL), Version 1.0
 [Details](../common/license.md)
 
 ---
-[Go to the Cloud Test Drive Overview](../readme.md)
+[Go to the Cloud Test Drive Overview](../README.md)
