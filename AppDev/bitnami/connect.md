@@ -1,7 +1,13 @@
 ![](../common/images/customer.logo.png)
 ---
-### ORACLE Cloud Test Drive Event ###
-## Connecting to your Ruby instance on the Oracle Compute Cloud ##
+# ORACLE Cloud Test Drive #
+## Lab: Application Development Infrastructure ##
+
+
+[to Step 7](../bitnami/create_account.md) | [to Overview Page](../AppDevInfra.md)
+
+----
+## Step 8 : Connecting to your Ruby instance
 
 First download the SSH keys of your new instance from the Bitnami Console window (ppk and pem files)
 
@@ -86,3 +92,6 @@ Check by browsing to the public ip of your image and port 3000.  You should see 
 ![](images/image049.png)
 
 You're done ! Your Ruby on Rails instance is up and running, and accessible from the internet
+
+---
+[to Step 7](../bitnami/create_account.md) | [to Overview Page](../AppDevInfra.md)
