@@ -1,4 +1,4 @@
-![](../common/images/customer.logo.png)
+![](../common/images/customer.logo2.png)
 # Building applications with DevOps Lab #
 
 ## Using Developer Cloud Service to build a SpringBoot application and deploying to Application Container Cloud Service ##
