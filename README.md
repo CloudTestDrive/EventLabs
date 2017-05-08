@@ -10,7 +10,7 @@ More specifically, following topics are currently currently included in this pro
 
 ## Application Development labs ##
 This chapter is composed of 2 labs :
-+ [AppDev Infrastructure lab](https://github.com/CloudTestDrive/EventLabs/blob/master/AppDev/AppDevIfra.md) - Set up the infrastructure to run your applications : create a Compute instance running Tomcat on Ubuntu, create a JCS Weblogic instance and spin up a Docker Container with Glassfish
++ [AppDev Infrastructure lab](https://github.com/CloudTestDrive/EventLabs/blob/master/AppDev/AppDevInfra.md) - Set up the infrastructure to run your applications : create a Compute instance running Tomcat on Ubuntu, create a JCS Weblogic instance and spin up a Docker Container with Glassfish
 + [AppDev Development lab](https://github.com/CloudTestDrive/EventLabs/blob/master/AppDev/Develop.md) - Building applications with DevOps: using Developer Cloud Service to build a SpringBoot application and deploying to Application Container Cloud Service
 
 
