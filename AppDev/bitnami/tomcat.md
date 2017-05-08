@@ -1,6 +1,6 @@
 [to Overview Page](../AppDevInfra.md) | [to Step 2](../jcs-create/README.md)
 
-![](../common/images/customer.logo2.png)
+![](../../common/images/customer.logo2.png)
 ## Application Development Infrastructure lab ##
 ## Step 1 : Create a Tomcat instance on a Compute node using the Oracle Marketplace
 
