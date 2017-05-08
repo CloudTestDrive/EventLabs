@@ -1,9 +1,6 @@
 ![](../common/images/customer.logo.png)
----
+
 # Application Development Infrastructure Lab #
-
-
-----
 
 ## Setting up a Cloud Infrastructure to run your applications ##
 
