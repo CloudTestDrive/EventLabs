@@ -1,7 +1,7 @@
 
 [to Step 2](../jcs-create/README.md) | [to Overview Page](../AppDevInfra.md) | [to Step 4](../jcs-autoscale/README.md)
 
-![](../common/images/customer.logo.png)
+![](../common/images/customer.logo2.png)
 ## Application Development Infrastructure lab ##
 ## Step 3 : Create Database Cloud Service instance using user interface ##
 
