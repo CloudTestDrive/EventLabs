@@ -56,5 +56,8 @@ On the Developer Cloud Service console, you should have access to the project "C
 ![](images/dev003.png)
 
 The repository will be created, you will see the progress of the import.
-
 You have now created a new repository with seeded content from the github repository.
+
+---
+
+[to Overview Page](../Develop.md) | [to Step 2](../springboot-sample/devcs.accs.ci.md)
