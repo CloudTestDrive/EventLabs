@@ -1,12 +1,8 @@
-![](../common/images/customer.logo.png)
----
-# ORACLE Cloud Test Drive #
-## Lab: Application Development Infrastructure ##
-
 
 [to Step 5](../container/tomcat_deploy.md) | [to Overview Page](../AppDevInfra.md) | [to Step 7](../bitnami/create_account.md)
 
-----
+![](../../common/images/customer.logo2.png)
+## Application Development Infrastructure lab ##
 ## Step 6 : Import and deploy a Glassfish Docker image onto Oracle Container Cloud Service
 
 ### Introduction

@@ -1,56 +1,25 @@
-![](../common/images/customer.logo.png)
----
-# ORACLE Cloud-Native DevOps workshop #
 
-## Deploy SpringBoot demo application to Application Container Cloud Services using Developer Cloud Services ##
+[to Step 1](../springboot-sample/create.devcs.project.md) | [to Overview Page](../Develop.md) | [to Step 3](../accs-psm/README.md)
 
-### About this tutorial ###
-**Oracle Application Container Cloud Service** includes Oracle Java SE Cloud Service, Oracle Node Cloud Service as well as Oracle PHP Cloud Service. It provides a lightweight infrastructure so that you can run Java SE 7, Java SE 8, Node.js and PHP applications in the Oracle Cloud.
+![](../../common/images/customer.logo2.png)
+## AppDev Development - Building applications with DevOps ##
+## Step 2 : Deploy SpringBoot demo application to Application Container Cloud Services using Developer Cloud Services ##
 
-**Oracle Developer Cloud Service** is a cloud-based software development Platform as a Service (PaaS) and a hosted environment for your application development infrastructure. It provides an open-source standards-based solution to manage the application development life cycle effectively through integration with Hudson, Git, Maven, issues, and wikis. Using Oracle Developer Cloud Service, you can commit your application source code to the Git repository on the Oracle Cloud, track assigned issues and defects online, share information using wiki pages, peer review the source code, and monitor project builds. After successful testing, you can deploy the project to Oracle Java Cloud Service - SaaS Extension, publicly available Oracle Java Cloud Service instances, Oracle Application Container Cloud Service instances, or to an on-premise production environment.
-
-![](images/00.dcs.png)
-
-The key features of Oracle Developer Cloud Service include:
-
-Project creation, configuration, and user management
-
-+ Version control and source code management with Git
-+ Storage of application dependencies and libraries with Maven
-+ Continuous build integration with Hudson
-+ Wiki for document collaboration
-+ Issue tracking system to track tasks, defects, and features
-+ Repository branch merge after code review
-+ Deployment to Oracle Java Cloud Service - SaaS Extension, Oracle Java Cloud Service, and Oracle Application Container Cloud Service
-
-Oracle Developer Cloud Service is available as a web interface accessible from a web browser and from Integrated Development Environments (IDEs) such as Oracle Enterprise Pack for Eclipse (OEPE), Oracle JDeveloper, and NetBeans IDE.
-
-This tutorial shows how to deploy Spring Boot sample application to Application Container Cloud Services using Oracle Developer Cloud Services.
-
-The Spring Boot sample application is a web application serving simple JSP pages.
+### Introduction ###
 
 This tutorial demonstrates how to:
 
-- configure build job for sample application
-- configure Application Container Cloud Service deployment in Developer Cloud Service
-- build and deploy sample application using Developer Cloud Service
+- configure a build job for the sample application
+- configure a deployment profile to Application Container Cloud Service
+- check the deployment on the ACCS console
 
-### Prerequisites ###
+### Open Oracle Developer Cloud Service Project ###
 
-- Oracle Public Cloud Service account including Developer Cloud Service
-
-----
-
-#### Open Oracle Developer Cloud Service Project ####
-
-[Sign in](../common/sign.in.to.oracle.cloud.md) to [https://cloud.oracle.com/sign-in](https://cloud.oracle.com/sign-in). First select your datacenter then provide the identity domain and credentials. After a successful login you will see your Dashboard. Find the Developer services tile and click the hamburger icon. In the dropdown menu click **Open Service Console**.
-![](images/01.dashboard.png)
-
-Select the Oracle Developer Cloud Service Project called "CloudTestDrive" and select the repository called "springboot-<userxx> which was created in the previous step
+Select the Oracle Developer Cloud Service Project called "CloudTestDrive" and select the repository called "springboot-user-xx which was created in the previous step
 
 ![](images/dev004.png)
 
-**Attention : in the Cloud Test Drive event, multiple users will be using the same Developer Project, but using a different repository.  Make sure to post-fix all objects you create in this exercise with "<userxx>", where xx is your user number !**
+**Attention : in the Cloud Test Drive event, multiple users will be using the same Developer Project, but using a different repository.  Make sure to post-fix all objects you create in this exercise with "user-xx", where xx is your user number !**
 
 ### Configure build job for Spring Boot sample application ###
 
@@ -136,4 +105,5 @@ Prerequisites: Git client, Text editor
 
 Clone your newly created Git repository hosted on Developer Cloud Service to your local machine using basic or your favourite Git tool. Make small changes for example in the JSP file. Push changes to DevCS remote repository, execute Build again and check the changes on the redeployed application.
 
-
+---
+[to Step 1](../springboot-sample/create.devcs.project.md) | [to Overview Page](../Develop.md) | [to Step 3](../accs-psm/README.md)

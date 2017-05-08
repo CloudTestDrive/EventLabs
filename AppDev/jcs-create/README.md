@@ -1,12 +1,8 @@
-![](../../common/images/customer.logo.png)
----
-# ORACLE Cloud Test Drive #
-## Lab: Application Development Infrastructure ##
-
 
 [to Step 1](../bitnami/tomcat.md) | [to Overview Page](../AppDevInfra.md) | [to Step 3](../dbcs-create/README.md)
 
-----
+![](../../common/images/customer.logo2.png)
+## Application Development Infrastructure lab ##
 ## Step 2 : Create Java Cloud Service instance using the user interface ##
 
 ### Introduction ###

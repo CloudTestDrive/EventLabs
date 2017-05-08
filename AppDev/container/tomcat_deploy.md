@@ -1,12 +1,8 @@
-![](../common/images/customer.logo.png)
----
-# ORACLE Cloud Test Drive #
-## Lab: Application Development Infrastructure ##
-
 
 [to Step 4](../jcs-autoscale/README.md) | [to Overview Page](../AppDevInfra.md) | [to Step 6](../container/glassfish_import.md)
 
-----
+![](../../common/images/customer.logo2.png)
+## Application Development Infrastructure lab ##
 ## Step 5 : Deploy the Tomcat Docker image (included by default) onto Oracle Container Cloud Service ##
 
 ### Introduction

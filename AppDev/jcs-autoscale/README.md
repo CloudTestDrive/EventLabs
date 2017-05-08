@@ -1,12 +1,8 @@
-![](../common/images/customer.logo.png)
----
-# ORACLE Cloud Test Drive #
-## Lab: Application Development Infrastructure ##
-
 
 [to Step 3](../dbcs-create/README.md) | [to Overview Page](../AppDevInfra.md) | [to Step 5](../container/tomcat_deploy.md)
 
-----
+![](../../common/images/customer.logo2.png)
+## Application Development Infrastructure lab ##
 ## Step 4 : Oracle Java Cloud Service Policy Based Auto Scaling ##
 
 ### Introduction ###

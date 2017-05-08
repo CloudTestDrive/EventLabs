@@ -1,12 +1,8 @@
-![](../common/images/customer.logo.png)
----
-# ORACLE Cloud Test Drive #
-## Lab: Application Development Infrastructure ##
-
 
 [to Step 6](../container/glassfish_import.md) | [to Overview Page](../AppDevInfra.md) | [to Step 8](../bitnami/connect.md)
 
-----
+![](../../common/images/customer.logo2.png)
+## Application Development Infrastructure lab ##
 ## Step 7 : Deploy a bitnami Ruby image onto Oracle Compute Cloud ##
 
 ### Prerequisite : Compute REST endpoint

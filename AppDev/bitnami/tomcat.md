@@ -1,12 +1,7 @@
-![](../common/images/customer.logo.png)
----
-# ORACLE Cloud Test Drive
-## Lab: Application Development Infrastructure ##
-
-
 [to Overview Page](../AppDevInfra.md) | [to Step 2](../jcs-create/README.md)
 
-----
+![](../../common/images/customer.logo2.png)
+## Application Development Infrastructure lab ##
 ## Step 1 : Create a Tomcat instance on a Compute node using the Oracle Marketplace
 
 In this lab we will be using the Marketplace to deploy a Tomcat Image file onto a Compute node on the Oracle Cloud. 

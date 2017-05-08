@@ -1,8 +1,9 @@
-![](../common/images/customer.logo.png)
----
-# ORACLE Cloud Test Drive Events #
-----
-## Scale up/down Application Container Service using user interface and psm CLI tool ##
+
+[to Step 2](../springboot-sample/devcs.accs.ci.md) | [to Overview Page](../Develop.md) | [to Step 4](../node_jet/node_deploy.md)
+
+![](../../common/images/customer.logo2.png)
+## AppDev Development - Building applications with DevOps ##
+## Step 3 : Scale up/down Application Container Service using user interface and psm CLI tool ##
 
 ### About this tutorial ###
 Oracle Application Container Cloud Service includes Oracle Java SE Cloud Service, Oracle Node Cloud Service as well as Oracle PHP Cloud Service. It provides a lightweight infrastructure so that you can run Java SE 7, Java SE 8, Node.js and PHP applications in the Oracle Cloud.
@@ -343,3 +344,7 @@ If you could catch the restart process you can see the current ongoing operation
 	[oracle@localhost cloud.demos]$ 
 
 Now the application is ready again to serve requests using 1GB memory.
+
+---
+
+[to Step 2](../springboot-sample/devcs.accs.ci.md) | [to Overview Page](../Develop.md) | [to Step 4](../node_jet/node_deploy.md)
