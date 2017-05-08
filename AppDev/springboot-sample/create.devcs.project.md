@@ -1,8 +1,9 @@
-![](../common/images/customer.logo2.png)
 
-## Building applications with DevOps ##
-## Step 1 : Set up your Oracle Developer Cloud Service project ##
 [to Overview Page](../Develop.md) | [to Step 2](../springboot-sample/devcs.accs.ci.md)
+
+![](../../common/images/customer.logo2.png)
+## AppDev Development - Building applications with DevOps ##
+## Step 1 : Set up your Oracle Developer Cloud Service project ##
 
 ### About this tutorial ###
 **Oracle Developer Cloud Service** is a cloud-based software development Platform as a Service (PaaS) and a hosted environment for your application development infrastructure. It provides an open-source standards-based solution to manage the application development life cycle effectively through integration with Hudson, Git, Maven, issues, and wikis. Using Oracle Developer Cloud Service, you can commit your application source code to the Git repository on the Oracle Cloud, track assigned issues and defects online, share information using wiki pages, peer review the source code, and monitor project builds. After successful testing, you can deploy the project to Oracle Java Cloud Service - SaaS Extension, publicly available Oracle Java Cloud Service instances, Oracle Application Container Cloud Service instances, or to an on-premise production environment.
