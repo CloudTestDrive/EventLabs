@@ -1,12 +1,8 @@
-![](../common/images/customer.logo.png)
----
-# ORACLE Cloud Test Drive #
-## Lab: Application Development Infrastructure ##
-
 
 [to Step 2](../jcs-create/README.md) | [to Overview Page](../AppDevInfra.md) | [to Step 4](../jcs-autoscale/README.md)
 
-----
+![](../common/images/customer.logo.png)
+## Application Development Infrastructure lab ##
 ## Step 3 : Create Database Cloud Service instance using user interface ##
 
 ### Introduction ###
