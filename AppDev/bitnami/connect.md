@@ -1,7 +1,7 @@
 
 [to Step 7](../bitnami/create_account.md) | [to Overview Page](../AppDevInfra.md)
 
-![](../common/images/customer.logo2.png)
+![](../../common/images/customer.logo2.png)
 ## Application Development Infrastructure lab ##
 ## Step 8 : Connecting to your Ruby instance
 
