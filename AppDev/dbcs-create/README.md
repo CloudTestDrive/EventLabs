@@ -213,21 +213,32 @@ Explore the Database Cloud Service Image
 
 + Now that you are connected to the instance let’s look around. 
 + Issue a df command to see mounted disks.
+```	
+    df
+```	
+
 
 ![](images/image022.png)
 
 + Issue the following command to view the Database environment variable : 
-	env | grep ORA
+```	
+    env | grep ORA
+```	
  
 ![](images/image023.png)
 
 + Now let’s change directories to the Oracle Home and list the directories.
-	cd $ORACLE_HOME
-	ls
+```	
+    cd $ORACLE_HOME
+    ls
+```	
  
 ![](images/image024.png)
 
 + Type exit to close the session or explore some more.
+```	
+    exit
+```	
 
 ---
 [to Step 2](../jcs-create/README.md) | [to Overview Page](../AppDevInfra.md) | [to Step 4](../jcs-autoscale/README.md)
