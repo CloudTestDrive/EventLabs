@@ -72,5 +72,161 @@ If you should have gone ahead and created the database, the request would have b
 ![](images/09.png)
 
 ---
+## Optional steps using the pre-seeded database ##
+Below are some extra exercises you can perform using the already created Database instance. 
+
++ If you are going through this lab as a 1-hour DBaaS stand-alone exercise, please continue with the below steps.  
++ If you are doing this lab as part of the AppDev Infrastructure lab covering JCS, DBCS, Compute and Container cloud, you can skip these steps.
+
+#### Enabling the Firewall Rules ####
+
+Make sure you are logged-in and the DBaaS Service Console is visible. You should see a window similar to this.  If you are using the "Cloud Test Drive" environment, this pre-seeded database will most likely be called "MyDBCS".
+
+![](images/image042.gif)
+
++ Click on the ‘Hamburger’ menu for the pre-created service and select ‘Access Rules’
+The following screen or similar should be displayed:
+
+![](images/image046.gif)
+ 
+This screen allows you to change pre-created firewall access rules or allows you to define new ones. In this example, we will enable the firewall rules that allow us to access our tools. 
+
++ Click on the ‘Hamburger menu’ at the right of the rule ‘ora_p2_httpadmin’ and port 4848
+
+The following screen or similar should be visible:
+ 
+![](images/image048.gif)
+
+When choosing the "Enable" option, the following pop-up or similar should be displayed:
+
+![](images/image050.gif)
+
+Press ‘Enable’ and wait for the operation to finish.  The pop-up should disappear and the Access Rules page should be updated.
+
+Now please enable the following services in the same way:
+
++ ora_p2_dbexpress
++ ora_p2_httpssl
+ 
+#### Working with the available Cloud tools ####
+In this part of the hands-on, we will walk-through the various tools available by default. Please make sure you have enabled all required firewall rules as demonstrated in the previous chapter and that you are on the DBaaS Service Console Page:
+
+![](images/image042.gif)
+ 
+Click on the ‘Hamburger Menu’ for the pre-created Database service and select ‘Open EM Console’
+If this is the first time you access the EM Express, your browser might give you a warning that the security certificate of the site is not valid or cannot be checked.
+ 
+Please, accept the connection and the certificate. This varies by browser, the workshop-assistants should be able to help in case you do not know how to do this. 
+ 
+If all went well, the following screen should be displayed:
+
+![](images/image056.gif)
+ 
+Please login with username / password for the database as detailed in account information you received at the beginning of this lab.  The following screen or similar should be displayed:
+
+![](images/image058.gif)
+ 
+In this Enterprise Manager Express screen, you can see the status of the database including the number of ‘Pluggable Databases’ that are plugged into this container database:
+
+![](images/image060.gif)
+ 
+Feel free to click around in the Enterprise Manager Express Console. 
+When you want to continue, return to the DBaaS Service Console
+
+#### Using the DBaaS Monitor Console ####
+This time, we will use another tool available by default, the DBaaS Monitor Console.
+
++ Return to the DBaaS Service Console
++ Click on the ‘Hamburger Menu’ for the pre-created service and choose Open DBaaS Monitor Console’
+
+You might see a similar certificate error in your browser. Please accept this certificate to continue. The following login-screen should be visible:
+
+![](images/image062.gif)
+ 
+Login using username ‘dbaas_monitor’ and password as provided in your account information document.  The following overview screen should be visible:
+ 
+![](images/image064.gif)
+
+You can click around in this tool to see the various options. 
+If you want to continue, click on the ‘Database’ drop down box in the top of the screen
+
+![](images/image066.gif)
+ 
+Choose ‘Manage’ from the dropdown box
+The following screen or similar should be visible:
+
+![](images/image068.gif)
+ 
+As a demonstration, we will clone the existing PDB1 into a new PDB.
+ 
+Click on the ‘Hamburger Menu’ in the PDB1 window
+ 
+![](images/image070.gif)
+
+Select the ‘Clone’ option to continue
+The following screen or similar should be visible:
+
+![](images/image072.gif)
+ 
+Fill in the following values and press Ok:
+
++ New PDB Name: MyPDB
++ Keystore Password: Welcome_1
++ keep all other values default
+
+After about 30 seconds you will get the confirmation that the PDB has been created successfully. After clicking on Ok, the following screen (or similar) is visible:
+ 
+![](images/image074.gif)
+
+You have successfully cloned a PDB using the available cloud tools.
+
+
+#### SSH Connection and Image Exploration ####
+
+In the upcoming steps you will record the IP addresses of the prebuilt Database Cloud Service Instance, and connect to this Compute node via SSH.
+
++ Navigate back to the DBaaS Service Console with the list of available database instances
++ Click on the "MyDBCS" instance from the list of Database Services
++ Note the Public IP address of this instance. You will need this later to connect using SSH.
+
+![](images/image016.png)
+ 
+The Database Cloud Service is secure by default for connections.  Only the management port 22 used by SSH is open.  All other ports are disabled, such as the SQL Net port 1521.  In this exercise we are going to use the management port 22 to explore the virtual image the Database Cloud Service is running on.
+
++ Make sure you have an SSH tool like Putty or the browser extension FireSSH to set up an SSH session.
++ In this tutorial, we will assume you are using Putty.  If you are using another tool, please perform similar steps as described below to connect to the instance.
++ Run Putty.exe from your laptop.
++ Enter the public IP address of your Database Cloud Service, and Port 22 for SSH.
+
+![](images/image017.png)
+
++ From the Connection category, expand SSH and select Auth, and browse for your private key labkey.ppk that is provided by your instructor or downloaded when creating your Database instance in the previous chapter.
+
+![](images/image018.png)
+
++ Click Open and Login as oracle.
++ You may be prompted for a passphrase when logging in.  If not proceed.  
+ 
+Explore the Database Cloud Service Image
+
++ Now that you are connected to the instance let’s look around. 
++ Issue a df command to see mounted disks.
+
+![](images/image022.png)
+
++ Issue the following command to view the Database environment variable : 
+	env | grep ORA
+ 
+![](images/image023.png)
+
++ Now let’s change directories to the Oracle Home and list the directories.
+	cd $ORACLE_HOME
+	ls
+ 
+![](images/image024.png)
+
++ Type exit to close the session or explore some more.
+
+---
 [to Step 2](../jcs-create/README.md) | [to Overview Page](../AppDevInfra.md) | [to Step 4](../jcs-autoscale/README.md)
 
