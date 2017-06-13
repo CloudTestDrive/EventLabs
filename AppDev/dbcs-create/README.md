@@ -93,6 +93,8 @@ This screen allows you to change pre-created firewall access rules or allows you
 
 + Click on the ‘Hamburger menu’ at the right of the rule ‘ora_p2_httpadmin’ and port 4848
 
+Attention: all participants in your group will be using this same pre-seeded database. So this rule might already be "enabled" by someone else.  In that case, just look at the options but DO NOT DISABLE the rule again !
+
 The following screen or similar should be visible:
  
 ![](images/image048.gif)
