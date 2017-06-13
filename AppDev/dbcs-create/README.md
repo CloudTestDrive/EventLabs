@@ -173,7 +173,7 @@ The following screen or similar should be visible:
 Fill in the following values and press Ok:
 
 + New PDB Name: MyPDB_userxx
-+ Keystore Password: Welcome_1
++ Keystore Password: use the same password as detailed in your access document
 + keep all other values default
 
 After about 30 seconds you will get the confirmation that the PDB has been created successfully. After clicking on Ok, the following screen (or similar) is visible:
