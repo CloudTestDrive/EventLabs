@@ -172,7 +172,7 @@ The following screen or similar should be visible:
  
 Fill in the following values and press Ok:
 
-+ New PDB Name: MyPDB
++ New PDB Name: MyPDB_userxx
 + Keystore Password: Welcome_1
 + keep all other values default
 
