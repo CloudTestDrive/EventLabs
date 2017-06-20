@@ -16,6 +16,8 @@ Following steps will demonstrate the use of the Oracle Container Cloud Service:
 - Step 5: [Start-up a Tomcat image](container/tomcat_deploy.md)
 - Step 6: [Create a new image based on the Docker GlassFish image](container/glassfish_import.md)
 
+An optional Container excercise is available as part of the CanDo workshops series :
+- [Build Node.js-MongoDB container packaged application using Wercker](https://github.com/oracle/cloud-native-devops-workshop/blob/master/containers/nodejs-mongodb-stack/README.md)
 
 To demonstrate how open the Oracle Compute Cloud Service is, you can also deploy images from 3rd parties straight into your Oracle Cloud infrastructure: below you can find an optional exercise where we will deploy a Ruby image from the 3rd party Bitnami environment into the Compute Cloud Service
 + Step 7 : [Deploy a Bitnami Ruby image onto the Oracle Compute Cloud](bitnami/create_account.md)
