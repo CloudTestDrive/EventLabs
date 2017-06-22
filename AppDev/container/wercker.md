@@ -190,7 +190,7 @@ First you need to define your new Service. The new service will comprise all of 
 
 Enter the following parameters to define your new service:
 
-+ **Service Name**: *employee-nodejs-userxx*
++ **Service Name**: *userxx-employee-nodejs*
 + **Service Description**: anything to describe your service.
 + **Image**: *YOUR\_DOCKER\_USERNAME/nodejs-mongodb-crud* (the name of your Docker image stored in your registry) see previos step when checked your Docker registry.
 + **Ports**: first opt in the Ports on the right side. Then it will populate Ports attribute list.
@@ -217,7 +217,7 @@ Now Wercker built Node.js sample application container available as service. Mon
 
 ![alt text](images/36.create.stack.png)
 
-Enter the Stack name: *employee-nodejs-mongodb*. Than drag and drop **MongoDB** service to the grid area.
+Enter the Stack name: *user-xx-employee-nodejs-mongodb*. Than drag and drop **MongoDB** service to the grid area.
 
 ![alt text](images/37.drag.and.drop.mongodb.png)
 
@@ -225,7 +225,7 @@ The MongoDB service configuration page opens. Leave the default settings and cli
 
 ![alt text](images/38.mongodb.configuration.png)
 
-Find the *employee-nodejs-userxx* service and drag and drop to the grid area. The service configuration page opens. Check in the **Links** option. Scroll down in the Builder area and click the **+Add** button next to the *Links*.
+Find the *userxx-employee-nodejs* service and drag and drop to the grid area. The service configuration page opens. Check in the **Links** option. Scroll down in the Builder area and click the **+Add** button next to the *Links*.
 
 ![alt text](images/39.nodejs.configuration.png)
 
