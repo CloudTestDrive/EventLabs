@@ -178,13 +178,7 @@ In the next step you will deploy your new container on Oracle Container Cloud Se
 
 #### Create Oracle Container Cloud Service based on Node.js sample application container ####
 
-Find your browser (tab) where you created Container Cloud Service at the beginning of this lab. If you hit the timeout or lost the browser (tab) then sign in again to [https://cloud.oracle.com/sign-in](https://cloud.oracle.com/sign-in). Select your datacenter then provide the identity domain and credentials. After a successful login you will see your Dashboard. Find the Container tile and click the hamburger icon. In the dropdown menu click **Open Service Console**.
-
-![](images/01.dashboard.png)
-
-Now you have to see your *testOCCS* (or different if you specified other name) Container Cloud Service instance ready. Click on the hamburger icon on the left and select **Container Console** from the dropdown menu.
-
-![alt text](images/30.occs.open.admin.console.png)
+Navigate to your Container Cloud Admin Console (URL and access credentials provided in the Access Document)
 
 Due to the reason that the certification hasn't been setup you will get a security warning. Ignore that and allow to open the page. Enter the Administrator's credential for your Container Cloud Service. If you followed the guide the username has to be *admin*. Click **Login**.
 
@@ -196,7 +190,7 @@ First you need to define your new Service. The new service will comprise all of 
 
 Enter the following parameters to define your new service:
 
-+ **Service Name**: *employee-nodejs*
++ **Service Name**: *employee-nodejs-userxx*
 + **Service Description**: anything to describe your service.
 + **Image**: *YOUR\_DOCKER\_USERNAME/nodejs-mongodb-crud* (the name of your Docker image stored in your registry) see previos step when checked your Docker registry.
 + **Ports**: first opt in the Ports on the right side. Then it will populate Ports attribute list.
@@ -205,7 +199,7 @@ Enter the following parameters to define your new service:
 
 When *Ports* **+Add** button appears click to define port mapping. This port mapping enables internal docker container's port redirection to different port on the host. Node.js sample application configured to listen on 3000 what you will map to host's 8091 port.
 
-+ **Host Port**: 8091
++ **Host Port**: 8100 + your user number : for user05 this should be port 8105
 + **Container Port**: 3000
 + **Protocol**: TCP
 
@@ -231,7 +225,7 @@ The MongoDB service configuration page opens. Leave the default settings and cli
 
 ![alt text](images/38.mongodb.configuration.png)
 
-Find the *employee-nodejs* service and drag and drop to the grid area. The service configuration page opens. Check in the **Links** option. Scroll down in the Builder area and click the **+Add** button next to the *Links*.
+Find the *employee-nodejs-userxx* service and drag and drop to the grid area. The service configuration page opens. Check in the **Links** option. Scroll down in the Builder area and click the **+Add** button next to the *Links*.
 
 ![alt text](images/39.nodejs.configuration.png)
 
