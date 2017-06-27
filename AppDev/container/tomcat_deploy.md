@@ -39,7 +39,7 @@ Click "Next" to go to the second page.  Now click the "Edit" button of the "Tomc
 
 ![](images/edit-service.png)
 
-- Now change the Host Port to the port number assigned to you in the access document
+- Now change the Host Port to the port number assigned to you in the access document : 8080 + No. of your user: example : user05 uses port 8085
 - Leave the Container Port unchanged at 8080
 - Save the Port configuration by clicking on the "Save" button
 
