@@ -9,14 +9,18 @@ Then finally you'll define the flow of your bot. Once the ChatBot is trained, yo
 	
 #### Step 1. Create a simple Banking ChatBot ####
 
-Log in to your ChatBot Tenant instance, then click the **New Bot** button.![](images/1_NewBot.png)
-
+Log in to your ChatBot Tenant instance, then click the **New Bot** button.
+<br><br>
+![](images/1_NewBot.png)
+<br><br>
 In the **Create Bot** dialog, name the ChatBot **FirstBot_xx**, where 'xx' are your initials. Then, add a description and click **Create**.
 
 ![](images/2_CreateBot.png)
 
 You are taken to the home page for your bot. Here on the left you can see a list of icons you use to navigate to your **Intents, Entities, Flow, Components and Settings**. At this time, you have no intents.
+
 ![](images/3_Menu.png)
+
 
 Click the second icon down **"Entities"** and notice it is pre-populated system entities. These are standard entities that can be used in your ChatBot without having to explicitly define.
 ![](images/4_Entities.png)
