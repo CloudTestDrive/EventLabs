@@ -9,20 +9,20 @@ Then finally you'll define the flow of your bot. Once the ChatBot is trained, yo
 	
 #### Step 1. Create a simple Banking ChatBot ####
 
-Log in to your ChatBot Tenant instance, then click the **New Bot** button.
-<br><br>
-![](images/1_NewBot.png)
-<br><br>
-In the **Create Bot** dialog, name the ChatBot **FirstBot_xx**, where 'xx' are your initials. Then, add a description and click **Create**.
+Log in to your ChatBot Tenant instance, locate the bot called **CloudTestDriveBot** bot, press the hamburger icon and then click the **Clone** button. This will give you an identical version of the empty CloudTestDriveBot
 
-![](images/2_CreateBot.png)
+![](images/1_Clone.png)
+
+In the **Clone Bot** dialog, name the ChatBot **CloudTestDriveBot_xx**, where 'xx' are your initials. Then, add a description and click **Create**.
+
+![](images/2_ConfirmClone.png)
 
 You are taken to the home page for your bot. Here on the left you can see a list of icons you use to navigate to your **Intents, Entities, Flow, Components and Settings**. At this time, you have no intents.
 
 ![](images/3_Menu.png)
 
-
 Click the second icon down **"Entities"** and notice it is pre-populated system entities. These are standard entities that can be used in your ChatBot without having to explicitly define.
+
 ![](images/4_Entities.png)
 
 #### Step 2. Add an Intent and an Entity for checking Balances ####
@@ -52,306 +52,128 @@ Include the list of example utterances below to your intent, each followed by a 
 -	**What’s my balance?**
 -	**What’s the current balance on my cc?**
 
-### Prerequisites ###
+![](images/9_Examples.png)
 
-- [cURL command-line tool](http://curl.haxx.se/download.html). Usually cURL is already included in most of the Linux distributions and easy to install to Windows. You can use other tool to invoke REST API to download the latest version of the tool. (To install cURL is not scope of this documentation.)
-- Python 3.3 or later. (To install Pyhton is not scope of this documentation.)
+Now that the intent is created, add an entity. Click the **Entities** icon on the left.
 
-### Steps ###
+If you want to request the balance of an account, you would probably need to know the account that will return the balance.
 
-#### Download the latest version of command line tool ####
-First identify your REST API server name, in our case it will be **psm.europe.oraclecloud.com**.
+Click the green **Entity button and then enter **AccountType** as the entity name and a short description.
 
-Use cURL to send a request. The format is:
+![](images/10_AccountType.png)
 
-	curl -X GET -u username:password -H X-ID-TENANT-NAME:<identitydomain> https://<rest-server>/paas/core/api/v1.1/cli/<identitydomain>/client -o /u01/psmcli.zip
+Now that you have an entity, you need to provide some values that could be used. In our case of the account type, you would want to use values that represent accounts you could query on a balance.
 
-This will write the response to a file named `psmcli.zip`.
+In the **Configuration** area, ensure the **Type** property is set to Value List and then click the green **Value** button.
 
-Open a terminal and execute the cURL command above with your credentials, identity domain identifier and REST API server name. REST 
+![](images/11_NewValue.png)
 
-	[oracle@localhost Desktop]$ curl -X GET -u john.i.smith@xxxxx.com:password -H X-ID-TENANT-NAME:hujohni https://psm.europe.oraclecloud.com/paas/core/api/v1.1/cli/hujohni/client -o /u01/psmcli.zip
-	% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                   Dload  Upload   Total   Spent    Left  Speed
-	100 45968  100 45968    0     0  10993      0  0:00:04  0:00:04 --:--:-- 10999
-	[oracle@localhost Desktop]$
+In the popup dialog, enter **Checking** as the value and **check** as a synonym (followed by a return).
 
-Change to directory `/u01` and list directory to check the downloaded psmcli.zip file.
+Then click **Create**.
 
-	[oracle@localhost Desktop]$ cd /u01
-	[oracle@localhost u01]$ ls
-	app  content  dpct  oepe-12.2.1.4.201608161938  psmcli.zip  python  wins
+![](images/12_CreateValue.png)
 
-#### Installing the Command Line Interface
+Then, add a second value named **Savings** and this time add a synonym of **save**.
 
-Install the PaaS CLI as a Python package.
+![](images/13_CreateValue2.png)
 
-Open a terminal, change to directory or make sure you are in directory `/u01` and use the PIP tool to install the CLI Python package.
-	
-	[oracle@localhost Desktop]$ cd /u01
-	[oracle@localhost Desktop]$ sudo -H /u01/python/bin/pip3 install -U psmcli.zip
-	Processing ./psmcli.zip
-	Collecting requests<=2.8.1,>=2.7.0 (from psmcli==1.1.7)
-	  Downloading requests-2.8.1-py2.py3-none-any.whl (497kB)
-    	100% |████████████████████████████████| 501kB 469kB/s 
-	Collecting keyring<=5.6,>=5.4 (from psmcli==1.1.7)
-	  Downloading keyring-5.6.tar.gz (69kB)
-    	100% |████████████████████████████████| 71kB 1.0MB/s 
-	Collecting colorama==0.3.3 (from psmcli==1.1.7)
-	  Downloading colorama-0.3.3.tar.gz
-	Collecting PyYAML==3.11 (from psmcli==1.1.7)
-	  Downloading PyYAML-3.11.zip (371kB)
-    	100% |████████████████████████████████| 378kB 725kB/s 
-	Installing collected packages: requests, keyring, colorama, PyYAML, psmcli
-	  Running setup.py install for keyring ... done
-      Running setup.py install for colorama ... done
-      Running setup.py install for PyYAML ... done
-      Running setup.py install for psmcli ... done
-	Successfully installed PyYAML-3.11 colorama-0.3.3 keyring-5.6 psmcli-1.1.7 requests-2.8.1
-	You are using pip version 8.1.1, however version 8.1.2 is available.
-	You should consider upgrading via the 'pip install --upgrade pip' command.
-	[oracle@localhost u01]$
+Finally, add a third value named **Credit Card** and use **Amex, VISA** and **Card** as the synonyms.
 
-####Configuring the Command Line Interface####
-Prior to running CLI commands, configure your connection to the Oracle cloud.
+When finished your entity definition should look like the image below.
 
-Open a terminal and run the `setup` command. When prompted, enter your cloud user name, password, and identity domain. For example:
+![](images/13_FinishedEntities.png)
 
-	[oracle@localhost u01]$ psm setup
-	Username: john.i.smith@xxxxx.com
-	Password: 
-	Retype Password: 
-	Identity domain: hujohni
-	Region [us]: emea
-	Output format [json]: 
-	----------------------------------------------------
-	'psm setup' was successful. Available services are:
-	  o MySQLCS : Oracle Oracle MySQL Cloud Service
-      o accs : Oracle Application Container Cloud Service
-      o dbcs : Oracle Database Cloud Service
-	  o ggcs : Oracle GoldenGate Cloud Service
-      o jcs : Oracle Java Cloud Service
-      o stack : Cloud Stack Manager
-	----------------------------------------------------
-	[oracle@localhost u01]$
+Now you've got an intent and an entity it works on. You need to associate the balance intent and account type entity, and it's easy to do.
 
-The CLI provides help text for each available command. Use the help (or h) parameter to:
+Click the **Intent** icon, and on the right find the **Intent Entities** area.
 
-View the available services in your configured cloud account. For example:
+Click the green **Entity** button and select **AccountType** from the list.
 
-	[oracle@localhost u01]$ psm help
+![](images/14_IntentEntity.png)
 
-	DESCRIPTION
-  		A command line tool to interact with Oracle Cloud Platform Services (PaaS)
+The entity is added and a required flag is set. You can remove the entity by clicking the **x** to the right of the entity name. Do not do remove the entity from your intent.
 
-	SYNOPSIS
-  		psm <service> <command> [parameters]
+### Step 3. Add an Intent, Entity for checking Transferring Money ###
 
-	AVAILABLE SERVICES
-	  o MySQLCS
-	       Oracle Oracle MySQL Cloud Service
-	  o accs
-	       Oracle Application Container Cloud Service
-	  o dbcs
-	       Oracle Database Cloud Service
-	  o ggcs
-	       Oracle GoldenGate Cloud Service
-	  o jcs
-	       Oracle Java Cloud Service
-	  o stack
-	       Cloud Stack Manager
-	  o setup
-	       Configure psm client options
-	  o update
-	       Update psm client to latest version
-	  o log
-	       View or update psm client log level
-	  o help
-	       Show help
+You’ve created one intent for checking balances, now you are going to create a second intent which will allow you to transfer money to a payee.
 
-	AVAILABLE PARAMETERS
-	  -v, --version  
-	       Show current version of psm client
+From your Bot, click the green **Intent** button as you did before. This intent will be used to transfer money. Enter **TransferMoney** as the intent name, and then provide a description. 
 
-	[oracle@localhost u01]$ 
+![](images/15_TransferMoney.png)
 
-#### Scale down Application Cloud Service instance using psm command line interface tool ####
+Now that you have an intent, you need some sentence examples to express what transferring money is. In the Examples area add the following 
 
-To scale down (back) the instance you will use psm tool. Open a terminal and list your application(s) deployed on Application Container Cloud Service. Execute the `psm accs apps` command to list the applications.
+-	**Pay Chase the minimum balance on the 15th of the month**
+-	**Send $500 to Mom from Savings every month**
+-	**Pay Cleo for rent on the 1st of every month using Paypal**
+-	**I’d like to send Sasha $20 for lunch**
+-	**Pay Lauren $15 for photos**
 
-	[oracle@localhost cloud.demos]$ psm accs apps
-	{
-	    "applications":[
-	        {
-	            "identityDomain":"hujohni",
-	            "appId":"7c0ab2ad-a1c3-482c-8542-add237657212",
-	            "name":"tomcat",
-	            "status":"RUNNING",
-	            "createdBy":"john.i.smith@freemail.hu",
-	            "creationTime":"2016-08-28T08:02:46.503+0000",
-	            "lastModifiedTime":"2016-08-28T08:02:46.458+0000",
-	            "subscriptionType":"MONTHLY",
-	            "instances":[
-	                {
-	                    "name":"web.1",
-	                    "status":"RUNNING",
-	                    "memory":"2G",
-	                    "instanceURL":"https://psm.europe.oraclecloud.com/paas/service/apaas/api/v1.1/apps/hujohni/tomcat/instances/web.1"
-	                }
-	            ],
-	            "runningDeployment":{
-	                "deploymentId":"5075e814-3430-45b2-9b02-61ec88f4b8ea",
-	                "deploymentStatus":"READY",
-	                "deploymentURL":"https://psm.europe.oraclecloud.com/paas/service/apaas/api/v1.1/apps/hujohni/tomcat/deployments/5075e814-3430-45b2-9b02-61ec88f4b8ea"
-	            },
-	            "lastestDeployment":{
-	                "deploymentId":"5075e814-3430-45b2-9b02-61ec88f4b8ea",
-	                "deploymentStatus":"READY",
-	                "deploymentURL":"https://psm.europe.oraclecloud.com/paas/service/apaas/api/v1.1/apps/hujohni/tomcat/deployments/5075e814-3430-45b2-9b02-61ec88f4b8ea"
-	            },
-	            "appURL":"https://psm.europe.oraclecloud.com/paas/service/apaas/api/v1.1/apps/hujohni/tomcat",
-	            "webURL":"https://tomcat-hujohni.apaas.em2.oraclecloud.com"
-	        }
-	    ]
-	}
-	[oracle@localhost cloud.demos]$ 
+Now that the intent is created, add an entity. Click the **Entities** icon on the left.
 
-You should see your application and the previously configured 2 GB memory. Now use the tool the scale down the service. First check what is the usage of the `accs scale` command. 
+If you want to transfer money the minimum information you would need is who to transfer the money to, the amount and when the transaction should take place.  You will now create an entity **ToAccount** to indicate the payee.  The currency and the date we can use built in entities.
 
-	[oracle@localhost cloud.demos]$ psm accs scale help
-	
-	DESCRIPTION
-	  Scale an Oracle Application Container Cloud Service instance for a specified
-	  application to change instance count and memory limit
-	
-	SYNOPSIS
-	  psm accs scale [parameters]
-	       -n, --app-name <value>
-	       [-i, --instances <value>]
-	       [-m, --memory <value>]
-	       [-of, --output-format <value>]
-	
-	AVAILABLE PARAMETERS
-	  -n, --app-name    (string)
-	       Name of the application
-	
-	  -i, --instances    (integer)
-	       Number of instances
-	
-	  -m, --memory    (string)
-	       Memory limit
-	
-	  -of, --output-format    (string)
-	       Desired output format. Valid values are [json, html]
-	
-	EXAMPLES
-	  psm accs scale -n ExampleApp -i 2 -m 2G
-	
-	[oracle@localhost cloud.demos]$ 
+Create a new List Entity called **ToAccount** with values according to below table. In the **Configuration** area, ensure the **Type** property is set to Value List and then click the green **Value** button.
 
+| Values	| Synonyms |
+| ------------- | ------------- |
+| Lauren	| sister        |
+| Shea  | daugther  |
+| Mom  | mother  |
+| Chase Preferred  | Chase  |
+| the baby sitter |   |
 
-Note that you can always get help by executing `<command> help`.
+![](images/16_ToAccount.png)
 
-According to the help to scale down the memory you need to define the name of the application and the memory limit.
+As before, you need to associate the TransferMoney intent and ToAccount type entity, so as before:
 
-	[oracle@localhost cloud.demos]$ psm accs scale -n tomcat -m 1G
-	{
-	    "processes":[
-	        {
-	            "processName":"web",
-	            "instances":[
-	                {
-	                    "name":"web.1",
-	                    "status":"RUNNING",
-	                    "memory":"2G",
-	                    "instanceURI":"https://psm.europe.oraclecloud.com/paas/service/apaas/api/v1.1/apps/hujohni/tomcat/instances/web.1"
-	                }
-	            ]
-	        }
-	    ],
-	    "identityDomain":"hujohni",
-	    "applicationDetails":"tomcat"
-	}
-	Job ID : 1919648
-	[oracle@localhost cloud.demos]$ 
+Click the **Intent** icon, select **TransferMoney** and on the right find the **Intent Entities** area.
 
-The job has been created to resize the memory of the service. To check what is happening with your application get the details using psm. Execute `psm accs app -n tomcat`:
+Click the green **Entity** button and select **ToAccount** from the list.
 
-	[oracle@localhost cloud.demos]$ psm accs app -n tomcat
-	{
-	    "identityDomain":"hujohni",
-	    "appId":"7c0ab2ad-a1c3-482c-8542-add237657212",
-	    "name":"tomcat",
-	    "status":"RUNNING",
-	    "createdBy":"john.i.smith@freemail.hu",
-	    "creationTime":"2016-08-28T08:02:46.503+0000",
-	    "lastModifiedTime":"2016-08-28T08:02:46.458+0000",
-	    "subscriptionType":"MONTHLY",
-	    "instances":[
-	        {
-	            "name":"web.1",
-	            "status":"RUNNING",
-	            "memory":"1G",
-	            "instanceURL":"https://psm.europe.oraclecloud.com/paas/service/apaas/api/v1.1/apps/hujohni/tomcat/instances/web.1"
-	        }
-	    ],
-	    "runningDeployment":{
-	        "deploymentId":"5075e814-3430-45b2-9b02-61ec88f4b8ea",
-	        "deploymentStatus":"READY",
-	        "deploymentURL":"https://psm.europe.oraclecloud.com/paas/service/apaas/api/v1.1/apps/hujohni/tomcat/deployments/5075e814-3430-45b2-9b02-61ec88f4b8ea"
-	    },
-	    "lastestDeployment":{
-	        "deploymentId":"5075e814-3430-45b2-9b02-61ec88f4b8ea",
-	        "deploymentStatus":"READY",
-	        "deploymentURL":"https://psm.europe.oraclecloud.com/paas/service/apaas/api/v1.1/apps/hujohni/tomcat/deployments/5075e814-3430-45b2-9b02-61ec88f4b8ea"
-	    },
-	    "currentOngoingActivity":"Scaling Application",
-	    "appURL":"https://psm.europe.oraclecloud.com/paas/service/apaas/api/v1.1/apps/hujohni/tomcat",
-	    "webURL":"https://tomcat-hujohni.apaas.em2.oraclecloud.com",
-	    "message":[
-	        "Initialized application scaling from 1x2G to 1x1G...",
-	        "Deployed application(v1) for instance(1G) web.1..."
-	    ]
-	}
-	[oracle@localhost cloud.demos]$ 
+Furthermore, select **CURRECY**, and **DATE** from the list.  These are built-in entities.
 
-If you could catch the restart process you can see the current ongoing operation: `"Initialized application scaling from 1x2G to 1x1G..."`. This command also usefult to get detailed information about your service using command line interface. Execute couple of times this command and once the restart is ready you should see similar output:
+![](images/17_TransferMoneyIntent.png)
 
-	[oracle@localhost cloud.demos]$ psm accs app -n tomcat
-	{
-	  "identityDomain":"hujohni",
-	  "appId":"7c0ab2ad-a1c3-482c-8542-add237657212",
-	  "name":"tomcat",
-	  "status":"RUNNING",
-	  "createdBy":"john.i.smith@freemail.hu",
-	  "creationTime":"2016-08-28T08:02:46.503+0000",
-	  "lastModifiedTime":"2016-08-28T08:02:46.458+0000",
-	  "subscriptionType":"MONTHLY",
-	  "instances":[
-	      {
-	          "name":"web.1",
-	          "status":"RUNNING",
-	          "memory":"1G",
-	          "instanceURL":"https://psm.europe.oraclecloud.com/paas/service/apaas/api/v1.1/apps/hujohni/tomcat/instances/web.1"
-	      }
-	  ],
-	  "runningDeployment":{
-	      "deploymentId":"5075e814-3430-45b2-9b02-61ec88f4b8ea",
-	      "deploymentStatus":"READY",
-	      "deploymentURL":"https://psm.europe.oraclecloud.com/paas/service/apaas/api/v1.1/apps/hujohni/tomcat/deployments/5075e814-3430-45b2-9b02-61ec88f4b8ea"
-	  },
-	  "lastestDeployment":{
-	      "deploymentId":"5075e814-3430-45b2-9b02-61ec88f4b8ea",
-	      "deploymentStatus":"READY",
-	      "deploymentURL":"https://psm.europe.oraclecloud.com/paas/service/apaas/api/v1.1/apps/hujohni/tomcat/deployments/5075e814-3430-45b2-9b02-61ec88f4b8ea"
-	  },
-	  "appURL":"https://psm.europe.oraclecloud.com/paas/service/apaas/api/v1.1/apps/hujohni/tomcat",
-	  "webURL":"https://tomcat-hujohni.apaas.em2.oraclecloud.com"
-	}
-	[oracle@localhost cloud.demos]$ 
+### Step 5. Train and Test your ChatBot ###
 
-Now the application is ready again to serve requests using 1GB memory.
+In this part of the tutorial, you run the training tool on the bot. This will train the bot allowing it to understand similar user inputs to the example utterances used when building the bot.
 
----
+In the upper right, click the **Train** button. This will kick off a process that will run an algorithm to take your example utterances and build the model that will be used to ascertain the intents and entities. Anytime the ChatBot platform recognizes your bot needs to be trained, it will display an exclamation point in the train button. Once the training is complete the exclamation point is replaced by a check mark.
 
-[to Step 2](../springboot-sample/devcs.accs.ci.md) | [to Overview Page](../Develop.md) | [to Step 4](../node_jet/node_deploy.md)
+![](images/18_Train.png)
+
+To test the ChatBot, click the **play icon** in the upper right of the page. This takes you into the tester where you can see two tabs: Bot and Intent.
+ 
+Click the **Bot** tab to test the bot. What you type in at the bottom in the **Message** area, is what will be sent to the bot when you click the **Send** button.
+
+Let's start out simple to test the bot.
+
+In the Message area, type **What's my balance?** and then click the **Send** button.
+
+![](images/19_WhatsMyBalance.png)
+
+Upon the bot understanding the intent, a **Dialog Flow** is started - controlling the flow of the converation with the user. However, due to time restrictions of this lab, we will not explore the **Dialog Flow** component of Intelligent Bots.
+
+Since the account type wasn't specified the bot presents you with three options. Click one of the three options and the text showing your account type and a balance is displayed.
+
+![](images/20_Checking.png)
+
+Now, let's try a message that includes the account type.
+
+Please finish each flow if you are testing the Bot, or hit **Reset** to create a new session and avoid confusion with an incomplete flow from a previous session. 
+
+Now click the **Intent** tab.  We are going to now test only the intent and entity resolution rather than a whole conversation flow.
+
+In the message area type **What is the balance on my Amex?** and press **Send**.
+
+![](images/21_Amex.png)
+
+Here you can see a confidence percentage that the message is a particular intent. You also see that the account type entity is recognized as a credit card. 
+
+In the message area type **Send $50 to Mom tomorrow** and press **Send**.
+
+![](images/22_SendMoney.png)
+
+Here you can see a confidence percentage that the message is a particular intent. You also see that the ToAccount entity is recognized as Mom, and Currency and Date are correctly resolved as well. 
