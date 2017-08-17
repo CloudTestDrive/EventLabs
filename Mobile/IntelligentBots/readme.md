@@ -5,7 +5,7 @@
 
 In this lab, you define a simple ChatBot and test it.
 You’ll first create two intents and a few utterances and then add an entity and associate it with your intent. 
-Then finally you'll define the flow of your bot. Once the ChatBot is trained, you can test it and see how it works.
+Then finally you'll train and test your bot to see how it works.
 	
 #### Step 1. Create a simple Banking ChatBot ####
 
