@@ -5,4 +5,4 @@ Following steps using Container Cloud (OCCS) are available as part of the AppDev
 - Step 6: [Create a new image based on the Docker GlassFish image](glassfish_import.md)
 
 An optional step is available as part of the CanDo workshops series :
-- [Build Node.js-MongoDB container packaged application using Wercker](https://github.com/oracle/cloud-native-devops-workshop/blob/master/containers/nodejs-mongodb-stack/README.md)
+- [Build Node.js-MongoDB container packaged application using Wercker](https://github.com/CloudTestDrive/EventLabs/blob/master/AppDev/container/wercker.md)
