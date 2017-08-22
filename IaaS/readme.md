@@ -21,7 +21,7 @@ Following steps will demonstrate the use of the Oracle Container Cloud Service. 
 - Step 6 : [Create a new image based on the Docker GlassFish image and run it](../AppDev/container/glassfish_import.md)
 
 An optional step is available where you will create a CI-CD flow for containers with Wercker :
-- Step 6-bis: [Build Node.js-MongoDB container packaged application using Wercker](https://github.com/oracle/cloud-native-devops-workshop/blob/master/containers/nodejs-mongodb-stack/README.md)
+- Step 6-bis: [Build Node.js-MongoDB container packaged application using Wercker](https://github.com/CloudTestDrive/EventLabs/blob/master/AppDev/container/wercker.md)
 
 ## Optional exercise ##
 To demonstrate how open the Oracle Compute Cloud Service is, you can also deploy images from 3rd parties straight into your Oracle Cloud infrastructure: below you can find an optional exercise where we will deploy a Ruby image from the 3rd party Bitnami environment into the Compute Cloud Service
