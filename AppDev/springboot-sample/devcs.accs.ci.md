@@ -29,7 +29,7 @@ Select **Build** item on the left side menu and click the **New Job** button.
 
 ![alt text](images/05.new.job.png "Create new build job")
 
-Enter a name for the new job, again, please prefix it so that you can identify it (i.e buildApp-User07). Select the *Create a free-style job* option and save.
+Enter a name for the new job, again, please prefix it so that you can identify it (i.e buildAppUser07). Select the *Create a free-style job* option and save.
 On the Main configuration page of the newly created job make sure **JDK 8** is the selected JDK.
 
 ![alt text](images/06.job.main.png "Configure job")
