@@ -19,7 +19,7 @@ Select the Oracle Developer Cloud Service Project called "CloudTestDrive" and se
 
 ![](images/dev004.png)
 
-**Attention : in the Cloud Test Drive event, multiple users will be using the same Developer Project, but using a different repository.  Make sure to post-fix all objects you create in this exercise with "user-xx", where xx is your user number !**
+**Attention : in the Cloud Test Drive event, multiple users will be using the same Developer Project, but using a different repository.  Make sure to post-fix all objects you create in this exercise with "userxx", where xx is your user number !**
 
 ### Configure build job for Spring Boot sample application ###
 
