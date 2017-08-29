@@ -65,7 +65,7 @@ Click on the hostname link.  This is the host on which your image is deployed.
 
 ![](images/host.png)
 
-Take a note of the IP address and then browse to http://<host-ip-address>:8888
+Take a note of the Public IP address of the host and then browse to http://"host-ip-address":8888
 
 You should see the Apache Tomcat title page.
 
