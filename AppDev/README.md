@@ -4,7 +4,7 @@
 
 ## Introduction ##
 
-This is the top page of the AppDev labs for the CTD.  
+This is the top page of the AppDev labs section for the CTD.  
 
 Please navigate to the [Cloud Test Drive Overview Page](../README.md) for the correct navigation throught these labs.
 
