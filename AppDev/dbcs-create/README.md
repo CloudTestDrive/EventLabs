@@ -1,5 +1,5 @@
 
-[to Step 2](../jcs-create/README.md) | [to Overview Page](../AppDevInfra.md) | [to Step 4](../jcs-autoscale/README.md)
+[Go to Overview Page](../AppDevInfra.md)
 
 ![](../../common/images/customer.logo2.png)
 ## Application Development Infrastructure lab ##
@@ -241,5 +241,5 @@ Explore the Database Cloud Service Image
 ```	
 
 ---
-[to Step 2](../jcs-create/README.md) | [to Overview Page](../AppDevInfra.md) | [to Step 4](../jcs-autoscale/README.md)
+[Go to Overview Page](../AppDevInfra.md)
 
