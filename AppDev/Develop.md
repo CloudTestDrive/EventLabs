@@ -2,7 +2,7 @@
 [Go to the Cloud Test Drive Overview](../README.md)
 
 ![](../common/images/customer.logo2.png)
-# AppDev Development - Building applications with DevOps #
+# AppDev Development Lab #
 
 ## Using Developer Cloud Service to build a SpringBoot application and deploying to Application Container Cloud Service ##
 
