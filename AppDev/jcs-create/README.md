@@ -1,9 +1,9 @@
 
-[to Step 1](../bitnami/tomcat.md) | [to Overview Page](../AppDevInfra.md) | [to Step 3](../dbcs-create/README.md)
+[Go back to Overview Page](../AppDevInfra.md)
 
 ![](../../common/images/customer.logo2.png)
 ## Application Development Infrastructure lab ##
-## Step 2 : Create Java Cloud Service instance using the user interface ##
+## Create Java Cloud Service instance using the user interface ##
 
 ### Introduction ###
 
@@ -12,7 +12,7 @@ By using Oracle Java Cloud Service, you can quickly create and configure an Orac
 
 ### Steps ###
 
-Go to the Console (see Access inforrmation that was delivered to you in the workshop, or login to your [trial environment](https://cloud.oracle.com/sign-in) ). On the dashboard click the hamburger icon on the Java tile. Select **Open Service Console**.
+Go to the Console (see Access information that was delivered to you in the workshop, or login to your [trial environment](https://cloud.oracle.com/sign-in) ). On the dashboard click the hamburger icon on the Java tile. Select **Open Service Console**.
 
 ![](images/01.png)
 
@@ -77,5 +77,5 @@ So now click **Cancel** to abort the creation of this configuration.  You can us
 ![](images/09.png)
 
 ---
-[to Step 1](../bitnami/tomcat.md) | [to Overview Page](../AppDevInfra.md) | [to Step 3](../dbcs-create/README.md)
+[Go back to Overview Page](../AppDevInfra.md)
 
