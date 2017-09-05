@@ -2,7 +2,7 @@
 
 ![](../../common/images/customer.logo2.png)
 ## Application Development Infrastructure lab ##
-## Step 6-bis : Build a Node.js-MongoDB container packaged application using Wercker and deploy to Oracle Container Cloud Service ##
+### Build a Node.js-MongoDB container packaged application using Wercker and deploy to Oracle Container Cloud Service ###
 
 ### About this tutorial ###
 **Wercker** is a Docker-Native CI/CD  Automation platform for Kubernetes & Microservice Deployments. Wercker is integrated with Docker containers, which package up application code and can be easily moved from server to server. Each build artifact can be a Docker container. The user can take the container from the Docker Hub or his private registry and build the code before shipping it. Its SaaS platform enables developers to test and deploy code often. They can push software updates incrementally as they are ready, rather than in bundled dumps. It makes it easier for coders to practice continuous integration, a software engineering practice in which each change a developer makes to the codebase is constantly tested in the process so that software doesn’t break when it goes live.
