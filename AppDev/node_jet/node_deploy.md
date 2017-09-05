@@ -1,9 +1,9 @@
 
-[to Step 3](../accs-psm/README.md) | [to Overview Page](../Develop.md)
+[Go to Overview Page](../Develop.md)
 
 ![](../../common/images/customer.logo2.png)
 ## AppDev Development - Building applications with DevOps ##
-## Step 4 : Deploy a Node.js application with Oracle JET UI onto the Application Container Cloud using the GUI ##
+### Deploy a Node.js application with Oracle JET UI onto the Application Container Cloud using the GUI ###
 
 Start by downloading the [zip file](bin/node-jet-server.zip) containing the Node.js and Oracle JET artifacts of the application. 
 
@@ -71,4 +71,4 @@ Now close this tab of your browser to go back to the Application screen, and:
 
 ---
 
-[to Step 3](../accs-psm/README.md) | [to Overview Page](../Develop.md)
+[Go to Overview Page](../Develop.md)
