@@ -6,8 +6,6 @@
 
 This page regroups the Infrastructure parts of the Cloud Test Drive labs, focussing on the Container, Compute and Storage Cloud Services.
 
-These exercises have been specifically taylored to fit in the "Cloud Test Drive" format, if you are interested to do more extensive exercises, please make sure to also check out the [AppDev Labs](https://github.com/CloudTestDrive/EventLabs/blob/master/AppDev/README.md) of the Cloud Test Drive, or visit the more technical exercises of the [Cloud Native DevOps Workshop](https://github.com/oracle/cloud-native-devops-workshop) project on GitHub.
-
 ----
 
 ## Working with the Container Cloud Service ##
