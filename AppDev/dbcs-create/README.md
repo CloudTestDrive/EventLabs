@@ -3,7 +3,7 @@
 
 ![](../../common/images/customer.logo2.png)
 ## Application Development Infrastructure lab ##
-## Step 3 : Create Database Cloud Service instance using user interface ##
+### Create Database Cloud Service instance using user interface ###
 
 ### Introduction ###
 
