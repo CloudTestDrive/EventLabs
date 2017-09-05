@@ -12,7 +12,7 @@ We'll run these components on the various levels of the infrastructure : either 
 
 + Step 1 : [Create a Java Cloud Service Instance using user interface](jcs-create/README.md)
 + Step 2 : [Create a new Oracle Database instance via the GUI](dbcs-create/README.md)
-+ Step 3 : Experiment with the existing JCS instance in the Cloud Test Drive environment: [Oracle Java Cloud Service Policy Based Auto Scaling](jcs-autoscale/README.md)
++ Step 3 : [Oracle Java Cloud Service Policy Based Auto Scaling](jcs-autoscale/README.md) : Experiment with the existing JCS instance in the Cloud Test Drive environment: 
 
 Following steps will demonstrate the use of the Oracle Container Cloud Service:
 - Step 4: [Start-up a Tomcat image](container/tomcat_deploy.md)
