@@ -9,7 +9,7 @@
 This lab will start in Developer Cloud Service, using its DevOps features to build a Springboot application, then automate the deployment towards Application Container Cloud service.
 
 + Step 1 : [Set up your Oracle Developer Cloud Service project with a SpringBoot application](springboot-sample/create.devcs.project.md)
-+ Step 2 : [Create continuous build integration using Oracle Developer Cloud Service and Oracle Application Container Cloud Service](springboot-sample/devcs.accs.ci.md)
++ Step 2 : [Deploy SpringBoot demo application to Application Container Cloud](springboot-sample/devcs.accs.ci.md): Create continuous build integration using Oracle Developer Cloud Service
 
 If you finished these first steps, you can experiment further in thep 3 and 4:
 + Step 3 : [Scale up/down Application Container Service using user interface and PaaS Service Manager (PSM) Command Line Interface (CLI) tool](accs-psm/README.md)
