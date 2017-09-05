@@ -15,7 +15,7 @@ We'll run these components on the various levels of the infrastructure : either 
 + Step 3 : [Oracle Java Cloud Service Policy Based Auto Scaling](jcs-autoscale/README.md) : Experiment with the existing JCS instance in the Cloud Test Drive environment: 
 
 Following steps will demonstrate the use of the Oracle Container Cloud Service:
-- Step 4: [Start-up a Tomcat image](container/tomcat_deploy.md)
+- Step 4: [Deploy a Tomcat Docker image](container/tomcat_deploy.md)
 - Step 5: [Create a new image based on the Docker GlassFish image](container/glassfish_import.md)
 - Step 6: Spin up a Weblogic instance in a container
 
