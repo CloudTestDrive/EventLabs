@@ -1,4 +1,7 @@
-![](../common/images/customer.logo.png)
+
+[Go to the Cloud Test Drive Overview](../README.md)
+
+![](../common/images/customer.logo2.png)
 ---
 # Infrastructure Labs - IaaS Focus #
 
@@ -24,3 +27,5 @@ To demonstrate how open the Oracle Compute Cloud Service is, you can also deploy
 + [Deploy a Bitnami Ruby image onto the Oracle Compute Cloud](../AppDev/bitnami/create_account.md)
 + [Connect to the newly created Ruby instance](../AppDev/bitnami/connect.md)
 
+---
+[Go to the Cloud Test Drive Overview](../README.md)
