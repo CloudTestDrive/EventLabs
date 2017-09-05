@@ -1,3 +1,6 @@
+
+[Go to the Cloud Test Drive Overview](../README.md)
+
 ![](../common/images/customer.logo2.png)
 # AppDev Development - Building applications with DevOps #
 
@@ -11,11 +14,6 @@ This lab will start in Developer Cloud Service, using its DevOps features to bui
 If you finished these first steps, you can experiment further in thep 3 and 4:
 + Step 3 : [Scale up/down Application Container Service using user interface and PaaS Service Manager (PSM) Command Line Interface (CLI) tool](accs-psm/README.md)
 + Step 4 : [Deploy a Node.js script onto the Application Container Cloud via the GUI](node_jet/node_deploy.md)
-
----
-## Want to do more exercises ? ##
-
-The above exercises have been specifically taylored to fit in the "Cloud Test Drive" format, if you are interested to do more extensive work, please feel free to visit the [Cloud Native DevOps Workshop](https://github.com/oracle/cloud-native-devops-workshop) project on GitHub.  You will need to request your personal Trial account for executing those labs.
 
 ---
 
