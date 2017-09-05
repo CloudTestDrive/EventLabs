@@ -3,7 +3,7 @@
 
 ![](../../common/images/customer.logo2.png)
 ## Application Development Infrastructure lab ##
-### Create Database Cloud Service instance using user interface ###
+### Create a new Oracle Database instance via the GUI ###
 
 ### Introduction ###
 
