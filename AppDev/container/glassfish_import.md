@@ -102,4 +102,4 @@ Then go to "Services" and click "Remove" for the Glassfish service.
 You can now repeat the lab.
 
 ---
-[to Step 5](../container/tomcat_deploy.md) | [to Overview Page](../AppDevInfra.md) | [to Step 7](../bitnami/create_account.md)
+[Go to Overview Page](../AppDevInfra.md)
