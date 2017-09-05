@@ -1,9 +1,9 @@
 
-[to Step 6](../container/glassfish_import.md) | [to Overview Page](../AppDevInfra.md) | [to Step 8](../bitnami/connect.md)
+[Go to Overview Page](../AppDevInfra.md)
 
 ![](../../common/images/customer.logo2.png)
 ## Application Development Infrastructure lab ##
-## Step 7 : Deploy a bitnami Ruby image onto Oracle Compute Cloud ##
+### Deploy a bitnami Ruby image onto Oracle Compute Cloud ###
 
 ### Prerequisite : Compute REST endpoint
 
@@ -86,4 +86,4 @@ Once it is completed you will see the following:
 Your Ruby image is now up and running ! Go back to the overview and take the next step to access your Ruby instance.
 
 ---
-[to Step 6](../container/glassfish_import.md) | [to Overview Page](../AppDevInfra.md) | [to Step 8](../bitnami/connect.md)
+[Go to Overview Page](../AppDevInfra.md)
