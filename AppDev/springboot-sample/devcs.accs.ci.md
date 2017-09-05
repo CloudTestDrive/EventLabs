@@ -3,7 +3,7 @@
 
 ![](../../common/images/customer.logo2.png)
 ## AppDev Development - Building applications with DevOps ##
-### Deploy SpringBoot demo application to Application Container Cloud Services using Developer Cloud Services ###
+### Deploy SpringBoot demo application to Application Container Cloud ###
 
 ### Introduction ###
 
