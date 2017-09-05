@@ -3,7 +3,7 @@
 
 ![](../../common/images/customer.logo2.png)
 ## Application Development Infrastructure lab ##
-## Create Java Cloud Service instance using the user interface ##
+### Create Java Cloud Service instance using the user interface ###
 
 ### Introduction ###
 
