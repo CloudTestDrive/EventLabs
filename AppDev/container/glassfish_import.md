@@ -1,17 +1,17 @@
 
-[to Step 5](../container/tomcat_deploy.md) | [to Overview Page](../AppDevInfra.md) | [to Step 7](../bitnami/create_account.md)
+[Go to Overview Page](../AppDevInfra.md)
 
 ![](../../common/images/customer.logo2.png)
 ## Application Development Infrastructure lab ##
-## Step 6 : Import and deploy a Glassfish Docker image onto Oracle Container Cloud Service
+### Import and deploy a Glassfish Docker image onto Oracle Container Cloud Service ###
 
-### Introduction
+### Introduction ###
 In this lab we will import and deploy a Glassfish Docker image onto the Oracle Container Cloud Service (OCCS).  The Glassfish image is not included by default, we will download it from the Docker repository.
 
-### Pre - requisite Creation of a Container Cloud Service
+### Pre - requisite Creation of a Container Cloud Service ###
 The instructors will have created a Container Cloud service for your team to use.  The link to the Container Admin Console will be provided in the Access Document you will receive.  If you are doing these labs on your own, make sure to first set up a running Container Cloud instance from the Cloud Services dashboard.
 
-### Open the OCCS console
+### Open the OCCS console ###
 Follow the link provided to the Container Admin console.  At this point your browser may complain about a self signed certificate.  Accept the certificate and proceed to the console.
 
 Enter the credentials supplied by the instructors.
