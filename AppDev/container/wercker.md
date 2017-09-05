@@ -1,4 +1,4 @@
-[back to Overview Page](../AppDevInfra.md)
+[Go to Overview Page](../AppDevInfra.md)
 
 ![](../../common/images/customer.logo2.png)
 ## Application Development Infrastructure lab ##
@@ -312,3 +312,5 @@ Change the browser (tab) where the Employee sample application was opened and re
 ![alt text](images/56.application.changed.png)
 
 Please note the data still available because MongoDB service runs in a different container.
+---
+[Go to Overview Page](../AppDevInfra.md)
