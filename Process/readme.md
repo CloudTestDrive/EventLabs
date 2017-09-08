@@ -16,9 +16,15 @@
 
 ## Let's start ! ##
 
-+ Download the tutorial by following [this link](Process%20Cloud%20Service%20Lab%20-%20v17.docx), and then click on "Download"
++ Download the tutorial by the link below, and then click on "Download". 
+  - Attention ! To come back to this page, hit the "Back" button of your browser !
+  - [Link to use](Process%20Cloud%20Service%20Lab%20-%20v17.docx)
 
 + Log in to the environment with the URL and the username/password that has been provided
+
++ During the exercise you might need the following files.  Download them as described above using the following links:
+  - [NCOrder.xsd](NCOrder.xsd)
+  - [AAXXOrdersApp.exp](AAXXOrdersApp.exp)
 
 ---
 
