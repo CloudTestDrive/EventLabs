@@ -8,9 +8,24 @@ This Oracle Cloud project contains the lab materials for the Oracle Cloud Test D
 
 ![](common/images/Introslide.PNG)
 
+During this day you will be able to experience the various cloud services from Oracle hands-on.  Below you find the link to all labs already available : 
++ Application Development
+  - Setting up an Infrastrcture using Compute CLoud, Container Cloud or the classic Oracle products : Database Cloud or Java Coloud (Weblogic)
+  - Developing new, cloud-native applciations using Developer Cloud and Application COntainer Cloud
+  - Join a rebel squad, develop Microservices together and defeat the DevStar backend application
+  - Develop a Mobile application using the Mobile Application Accelerator (MAX) utility
+ + Integration
+   - Integrate applications simply through an easy drag-and-drop GUI with Integration Cloud Service
+   - Make API's available through the API Platform Cloud Service
+ + Infrastructure
+   - Configure virtual Compute, Storage and Network resources to fit your need with our Cloud Infrastructure Services
+ + Content & Experience
+   - Easily manage content using our Content Cloud Service, and generate websites with our Experience CLoud Service
+
+
 ## Application Development labs ##
 This chapter is composed of 2 labs :
-+ [AppDev Infrastructure lab](AppDev/AppDevInfra.md) - Set up the infrastructure to run your applications : create a Compute instance running Tomcat on Ubuntu, create a JCS Weblogic instance and spin up a Docker Container with Glassfish
++ [AppDev Infrastructure lab](AppDev/AppDevInfra.md) - Set up the infrastructure to run your applications : create a Database and Application Servers, either using DBaaS or JCS, or use Docker Container to spin up any conainer from the Docker repository
 + [AppDev Development lab](AppDev/Develop.md) - Building applications with DevOps: using Developer Cloud Service to build a SpringBoot application and deploying to Application Container Cloud Service
 
 
