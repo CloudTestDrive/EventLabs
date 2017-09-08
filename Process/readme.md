@@ -16,7 +16,7 @@
 
 ## Let's start ! ##
 
-+ Download the tutorial via [this link]()
++ Download the tutorial by following [this link](Process%20Cloud%20Service%20Lab%20-%20v17.docx), and then click on "Download"
 
 + Log in to the environment with the URL and the username/password that has been provided
 
