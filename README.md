@@ -6,7 +6,7 @@
 
 This Oracle Cloud project contains the lab materials for the Oracle Cloud Test Drive events organized in various locations.  Participants can experiment through these labs with a series of Oracle Cloud Services from the IaaS and PaaS family.  
 
-More specifically, following topics are currently currently included in this project:
+![](common/images/Introslide.PNG)
 
 ## Application Development labs ##
 This chapter is composed of 2 labs :
