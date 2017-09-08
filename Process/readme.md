@@ -22,8 +22,8 @@
 
 + Log in to the environment with the URL and the username/password that has been provided
 
-+ During the exercise you might need the following files.  Download them as described above using the following links:
-  - [NCOrder.xsd](NCOrder.xsd)
++ During the exercise you might need the following files: right-click the link and select "Download"
+  - [NCOrder.xsd](NCOrder.xsd) 
   - [AAXXOrdersApp.exp](AAXXOrdersApp.exp)
 
 ---
