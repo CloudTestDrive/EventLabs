@@ -7,6 +7,8 @@
 
 ## Setting up a Cloud Infrastructure to run your applications ##
 
+### Introduction ###
+
 This lab will showcase the various types of infrastructure you can use to run your applications, using either thr traditional Oracle components such as the Oracle Database and the Weblogic application Server, or using common Opensource components such as Tomcat or Glassfish.
 We'll run these components on the various levels of the infrastructure : either directly on a Compute instance, using Docker Containers, or using the PaaS services to run Oracle Database, MySQL, Weblogic, Java SE, Node, etc.
 
