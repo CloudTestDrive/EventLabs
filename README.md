@@ -26,12 +26,14 @@ This chapter regroups some of the steps from the various CTD labs to create a sp
 [Follow this link for the details](IaaS/readme.md)
 
 
+## Process Cloud Service ##
+In this lab, you will create a business process using PCS. This Order Approvals process will be initiated when a user enters an order.
+[Follow this link for the details](Process/readme.md)
+
+
 ## Integration Cloud Service ##
 This lab is not yet available through Github.  If you are participating in a CTD, you will receive the relevant Word documents with the tutorials.
 
-
-## Process Cloud Service ##
-This lab is not yet available through Github.  If you are participating in a CTD, you will receive the relevant Word documents with the tutorials.
 
 
 ## Prerequisites ##
