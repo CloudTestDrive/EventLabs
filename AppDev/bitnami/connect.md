@@ -1,9 +1,9 @@
 
-[to Step 7](../bitnami/create_account.md) | [to Overview Page](../AppDevInfra.md)
+[Go to Overview Page](../AppDevInfra.md)
 
 ![](../../common/images/customer.logo2.png)
 ## Application Development Infrastructure lab ##
-## Step 8 : Connecting to your Ruby instance
+### Connecting to your Ruby instance ###
 
 First download the SSH keys of your new instance from the Bitnami Console window (ppk and pem files)
 
@@ -90,4 +90,4 @@ Check by browsing to the public ip of your image and port 3000.  You should see 
 You're done ! Your Ruby on Rails instance is up and running, and accessible from the internet
 
 ---
-[to Step 7](../bitnami/create_account.md) | [to Overview Page](../AppDevInfra.md)
+[Go to Overview Page](../AppDevInfra.md)

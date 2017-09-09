@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.example.org"
+            targetNamespace="http://www.example.org" elementFormDefault="qualified">
+   <xsd:element name="Order">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="orderNr" type="xsd:string"/>
+                <xsd:element name="custFirstName" type="xsd:string"/>
+                <xsd:element name="custLastName" type="xsd:string"/>
+                <xsd:element name="custEmail" type="xsd:string"/>
+                <xsd:element name="product" type="xsd:string"/>
+	 <xsd:element name="unitPrice" type="xsd:int"/>
+                <xsd:element name="quantity" type="xsd:int"/>
+                 </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

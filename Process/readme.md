@@ -1,6 +1,37 @@
-#Process Cloud Service : Lab 2.0 #
+[Go to the Cloud Test Drive Overview](../README.md)
 
- 
-This lab has not yet been moved to GitHub.
+![](../common/images/customer.logo2.png)
 
-*Work in progress in the AllLabs branch*
+# Process Cloud Service Lab #
+
+## Introduction - what is PCS ? ##
+
+![](images/PCSBanner.PNG)
+
+![](images/aboutPCS.PNG)
+
+## What will you do with PCS in this Lab ? ##
+
+![](images/PCSExercise.PNG)
+
+## Let's start ! ##
+
++ Download the tutorial by the link below, and then click on "Download". 
+  - Attention ! To come back to this page, hit the "Back" button of your browser !
+  - [Link to use](Process%20Cloud%20Service%20Lab%20-%20v17.docx)
+
++ Log in to the environment with the URL and the username/password that has been provided
+
++ During the exercise you might need the following files: right-click the link and select "Download"
+  - [NCOrder.xsd](NCOrder.xsd) - right-click the link and select "Download"
+  - [AAXXOrdersApp.exp](AAXXOrdersApp.exp) - click the link, then use the "Download button
+
+---
+
+## License ##
+Copyright (c) 2014, 2017 Oracle and/or its affiliates
+The Universal Permissive License (UPL), Version 1.0   
+[Details](../common/license.md)
+
+---
+[Go to the Cloud Test Drive Overview](../README.md)

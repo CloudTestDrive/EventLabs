@@ -1,14 +1,14 @@
 
-[to Step 4](../jcs-autoscale/README.md) | [to Overview Page](../AppDevInfra.md) | [to Step 6](../container/glassfish_import.md)
+[Go to Overview Page](../AppDevInfra.md)
 
 ![](../../common/images/customer.logo2.png)
 ## Application Development Infrastructure lab ##
-## Step 5 : Deploy the Tomcat Docker image (included by default) onto Oracle Container Cloud Service ##
+### Deploy a Tomcat Docker image onto Oracle Container Cloud Service ###
 
 ### Introduction
 In this lab we will deploy the Tomcat Docker image that is provided by default onto the Oracle Container Cloud Service (OCCS).
 
-Since creation of Docker containers is fast, and they are lightweight, this will go extremely fast.
+Since cre#ation of Docker containers is fast, and they are lightweight, this will go extremely fast.
 
 ### Pre - requisite Creation of a Container Cloud Service
 The instructors will have created a Container Cloud service for your team to use.  The link to the Container Admin console will be provided in the Access Document you will receive.  If you are doing these labs on your own, make sure to first set up a running Container Cloud Instance from the Cloud Services Dashboard of your account.
@@ -78,4 +78,4 @@ To finish the exercise, stop the instance you just started:
 ![](images/deployments.png)
 
 ---
-[to Step 4](../jcs-autoscale/README.md) | [to Overview Page](../AppDevInfra.md) | [to Step 6](../container/glassfish_import.md)
+[Go to Overview Page](../AppDevInfra.md) 
