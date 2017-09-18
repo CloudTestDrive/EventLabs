@@ -35,7 +35,7 @@ The service editor dialog box will open.  Fill in the basic details as shown:
 - Service description : "glassfish-user01" 
 - Image : oracle/glassfish:latest
 
-![](images/service-editor.png)
+![](images/NewGlassfish.PNG)
 
 To be able to access the container from the outside world we need to add port mappings.
 Each mapping routes traffic from \<host>:\<port> to \<container>:\<port>. But since we are all working on the same instance, we'll calculate an individual Host Port portnumber for each service :
