@@ -33,7 +33,7 @@ Click "New Service" to go to create a new service for Glassfish.
 The service editor dialog box will open.  Fill in the basic details as shown:
 - Service name : "glassfish-user01", please use your own user name
 - Service description : "glassfish-user01" 
-- Image : glassfish/server:latest
+- Image : oracle/glassfish:latest
 
 ![](images/service-editor.png)
 
@@ -65,7 +65,7 @@ The Glassfish service should now be shown in the "Services" list.
 
 Take the defaults in the deploy glassfish dialog and click "Deploy".
 
-The glassfish/server image should be downloaded and deployed to OCCS.
+The glassfish image should be downloaded and deployed to OCCS.
 
 ![](images/glassfish-deployed.png)
 
@@ -79,7 +79,17 @@ Click on the hostname link.  This is the host on which your image is deployed.
 
 ![](images/glassfish-console-login.png)
 
-Login as admin/glassfish.  You should now see the login console.
+To login you must first copy the password for this instance from the container log file:
+- Navigate to the "Containers" menu
+- Identify your instance and click on the container name
+
+![](images/Containers.PNG)
+
+- Click on the "View Logs" button.  The password is in the first line of the logfilee
+
+![](images/LogFile.PNG)
+
+Now you can login with username = admin and the password you just copied from the logfile.  You should now see the login console.
 
 ![](images/glassfish-console.png)
 
