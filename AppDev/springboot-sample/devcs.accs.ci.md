@@ -27,9 +27,13 @@ Once the Repository creation is done let's create the build job to compile and p
 
 Select **Build** item on the left side menu and click the **New Job** button.
 
-![alt text](images/05.new.job.png "Create new build job")
+![alt text](images/05.new.job.png "Configure new build job")
 
-Enter a name for the new job, again, please prefix it so that you can identify it (i.e buildAppUser07). Select the *Create a free-style job* option and save.
+- Enter a name for the new job, and prefix it with your username (i.e User04BuildJob). 
+- Select the *Create a free-style job* option and save.
+
+![alt text](images/NewJob.PNG "Create new build job")
+
 On the Main configuration page of the newly created job make sure **JDK 8** is the selected JDK.
 
 ![alt text](images/06.job.main.png "Configure job")
