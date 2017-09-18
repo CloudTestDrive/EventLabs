@@ -77,6 +77,20 @@ Set the following properties.
 ![alt text](images/dev002.PNG "ACCS Configuration")
 - **Type**: select **Automatic** which means auto deploy after a successful execution of the build job. Select your previously created job and its artifact to deploy.
 
+
+Finally specify the Deployment Manifest to launch 1 instance with 1 GB of memory : 
+- Click the "Include ACCS Deployment" flag
+- Paste the below manifest:
+
+```
+    {
+    "memory": "1G",
+    "instances": "1" 
+    }
+```
+
+![alt text](images/DeploymentProfile.PNG "ACCS Deployment Profile")
+
 Click **Save**. 
 
 ### Build and deploy the sample application ###
