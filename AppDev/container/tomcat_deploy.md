@@ -49,7 +49,7 @@ Click "Next" to go to the second page.  Now click the "Edit" button of the "Tomc
 
 ![](images/Tomcat8085.PNG)
 
-You are now redirected back to the list of services, where you will see your newly created service appear.  Click the "Deploy" button for the service you just created, for example "tomcat-8090"
+You are now redirected back to the list of services, where you will see your newly created service appear.  Click the "Deploy" button for the service you just created, in this example "tomcat-8085"
 
 ![](images/services-page-2.png)
 
