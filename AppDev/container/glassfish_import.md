@@ -85,7 +85,7 @@ To login you must first copy the password for this instance from the container l
 
 ![](images/Containers.PNG)
 
-- Click on the "View Logs" button.  The password is in the first line of the logfilee
+- Click on the "View Logs" button.  The password is in the first line of the logfile
 
 ![](images/LogFile.PNG)
 
