@@ -47,7 +47,7 @@ Click "Next" to go to the second page.  Now click the "Edit" button of the "Tomc
 
 - Now save the Service via the "Save As" button, and choose a new name comprising your port number:
 
-![](images/save-as-service.png)
+![](images/Tomcat8085.PNG)
 
 You are now redirected back to the list of services, where you will see your newly created service appear.  Click the "Deploy" button for the service you just created, for example "tomcat-8090"
 
