@@ -68,7 +68,7 @@ Change to **Deploy** page in DevCS and create **New Configuration**
 ![alt text](images/11.new.deploy.png "New deploy configuration")
 
 Set the following properties.
-![alt text](images/12.deploy.config.png "Deployment Configuration")
+![alt text](images/NewDeploy.PNG "Deployment Configuration")
 
 - **Configuration Name**: any name to identify deployment configuration. Again, please prefix this with your user (i.e springboot-deploy-2-accs-user06).
 - **Application Name**: instance name in ACCS. This will determine the application's URL. Again, please prefix this with your user (i.e springboot-sample-user06).
