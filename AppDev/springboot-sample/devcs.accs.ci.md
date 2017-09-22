@@ -70,8 +70,8 @@ Change to **Deploy** page in DevCS and create **New Configuration**
 Set the following properties.
 ![alt text](images/NewDeploy.PNG "Deployment Configuration")
 
-- **Configuration Name**: any name to identify deployment configuration. Again, please prefix this with your user (i.e springboot-deploy-2-accs-user06).
-- **Application Name**: instance name in ACCS. This will determine the application's URL. Again, please prefix this with your user (i.e springboot-sample-user06).
+- **Configuration Name**: the name to identify deployment configuration. Attention, this name cannot be longer than 30  characters and can only contain letters and numbers : for example "MyDeployUser01"
+- **Application Name**: instance name in ACCS. You can use the same name as the Configuration name.
 - **Deployment Target**: click **New** and select Application Container Cloud... and define connection properties such as **Data center**, **Identity Domain** and **credentials**. 
 ![alt text](images/dev001.PNG "ACCS Configuration")
 ![alt text](images/dev002.PNG "ACCS Configuration")
