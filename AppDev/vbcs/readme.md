@@ -10,32 +10,36 @@
 
 Oracle Visual Builder Cloud Service is a visual development tool for creating web and mobile applications by simply dragging and dropping user interface (UI) components onto a page. You can create business objects with the click of a button, and you can add data by importing CSV files or XLS spreadsheets to your application. You don't need any programming experience to develop an application.
 
+This lab will first showcase the development of a simple HR application, based on a "Department and an "Employee" data object.  Next we will see how you can connect to an external REST API, and finally how you can use VBCS to extend SaaS applications.
 
-This lab will showcase the various types of infrastructure you can use to run your applications, using either thr traditional Oracle components such as the Oracle Database and the Weblogic application Server, or using common Opensource components such as Tomcat or Glassfish.
-We'll run these components on the various levels of the infrastructure : either directly on a Compute instance, using Docker Containers, or using the PaaS services to run Oracle Database, MySQL, Weblogic, Java SE, Node, etc.
+Developing a simple HR application 
 
-+ Step 1 : [Create a Java Cloud Service Instance using user interface](jcs-create/README.md)
-+ Step 2 : [Create a new Oracle Database instance via the GUI](dbcs-create/README.md)
-+ Step 3 : [Oracle Java Cloud Service Policy Based Auto Scaling](jcs-autoscale/README.md) : Experiment with the existing JCS instance in the Cloud Test Drive environment: 
+You'll create a Human Resources (HR) application to list all employees and departments of your organization. Using the application, you can add, edit, or remove employees and departments from the database.
+In this tutorial, you'll learn how to:
++ Create the HR Application web application
++ Edit the properties of the application and add the application logo, add tab icons, and update the copyright text
++ Create Employee and Department business objects
++ Create application form pages to add, edit, and view the data of Employee and Department business objects
++ Test the application in Test Application mode
++ Add data manually to the business objects
++ Import data from a CSV file
 
-Following steps will demonstrate the use of the Oracle Container Cloud Service:
-- Step 4: [Deploy a Tomcat Docker image](container/tomcat_deploy.md)
-- Step 5: [Create a new image based on the Docker GlassFish image](container/glassfish_import.md)
-- Step 6: Spin up a Weblogic instance in a container
+You'll create the business objects shown in this diagram.
+![HR schema diagram](images/abcsgs_dbdiagram.png)
 
-An optional Container excercise is available where you will create a CI-CD flow for containers with Wercker :
-- Step 7: [Build Node.js-MongoDB container packaged application using Wercker](container/wercker.md)
+Follow the links provided during the workshop to access the Visual Builder Console. You should land on a screen similar to the one below:
+![VBCS Console](images/abcsgs_t1_s2.png)
 
-To demonstrate how open the Oracle Compute Cloud Service is, you can also deploy images from 3rd parties straight into your Oracle Cloud infrastructure: below you can find an optional exercise where we will deploy a Ruby image from the 3rd party Bitnami environment into the Compute Cloud Service
-+ Step 8 : [Deploy a Bitnami Ruby image onto the Oracle Compute Cloud](bitnami/create_account.md)
-+ Step 9 : [Connect to the newly created Ruby instance](bitnami/connect.md)
++ Step 1 : [Creating a Web Application in Oracle Visual Builder Cloud Service](vbcs1.md)
+
+
 
 ---
 
 ## License ##
 Copyright (c) 2014, 2017 Oracle and/or its affiliates
 The Universal Permissive License (UPL), Version 1.0   
-[Details](../common/license.md)
+[Details](../../common/license.md)
 
 ---
-[Go to the Cloud Test Drive Overview](../README.md)
+[Go to the Cloud Test Drive Overview](../../README.md)
