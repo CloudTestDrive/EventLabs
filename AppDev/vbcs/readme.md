@@ -9,6 +9,7 @@
 ### Introduction ###
 
 Oracle Visual Builder Cloud Service is a visual development tool for creating web and mobile applications by simply dragging and dropping user interface (UI) components onto a page. You can create business objects with the click of a button, and you can add data by importing CSV files or XLS spreadsheets to your application. You don't need any programming experience to develop an application.
+![images/abcsgs_t2_pagedesigner.png]
 
 This lab will first showcase the development of a simple HR application, based on a "Department and an "Employee" data object.  Next we will see how you can connect to an external REST API, and finally how you can use VBCS to extend SaaS applications.
 
