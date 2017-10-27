@@ -32,7 +32,9 @@ In this lab, you will create a business process using PCS. This Order Approvals 
 
 
 ## Integration Cloud Service ##
-This lab is not yet available through Github.  If you are participating in a CTD, you will receive the relevant Word documents with the tutorials.
+This lab will show you how to set up integration between 2 systems simply using the drag & drop features of Integration Cloud Service.  In this exercise we will set up an integration between a RightNow instance and a generic REST service of a mobile Application.
+
+[Follow this link for the details](Integration/readme.md)
 
 
 
