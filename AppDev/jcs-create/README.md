@@ -35,20 +35,23 @@ For more details about subscription types see the [documentation](https://docs.o
 ![](images/jcs003.png)
 
 
+
+Hit the "Next" button to go to the Services Details screen
++ Select the "Advanced" mode on the top of the screen
 + Now edit the SSH Public key you will use to access this instance : it allows to connect to the VM through ssh connection using the private key. Select **Create a New Key** option and download the newly generated keypair for later usage.
 
 
 ![](images/07.png)
 
 
-The last input page is the Service Details page. The following parameters have to be provided:
+Now enter the following parameters on the screen:
 	
 + **Cluster size**: to save resources leave the default 1. Which means one managed server.
 + **Domain Partitions**: Create mutitenant instance. Select 1 to enable partitioning.
 + **Shape**: number of OCPU and size of the RAM. Choose the smallest (default) one.
 
 + **Username**: username of WebLogic administrator. For demo purposes you can use: weblogic
-+ **Password**: WebLogic administrator's password. Don't forget to note the provided password.
++ **Password**: WebLogic administrator's password. Don't forget to note the password you selected. 
 + **Enable Administration Console**: because this instance will be available on public internet the default is that the WebLogic Admin console is not enabled. Do not forget to check in to get access to the Admin console.
 + **Deploy Sample Application**: deploy the sample application. It can be useful to test accessibility (correct LB configuration, etc.) of the Java Cloud Service Instance.
 
@@ -57,10 +60,8 @@ The last input page is the Service Details page. The following parameters have t
 + **Database Configuration / Administrator User Name**: DBA admin to create repository schema for Java Cloud Service instance. Enter: sys.
 + **Database Configuration / Password**: DBA admin password is shown in the same printed handout paper as the username and password.
 + **Database Configuration / For Application Schema**: It is an option to add different database service instance accessibility. For example different database used by the application and different for Java Cloud Service instance repository. You can configure later another Database Cloud Service, but here it is easier to define.
-+ **Provision Load Balancer**: the save resources for sample application we will not create Load Balancer instance. Leave default: No
-+ **Cloud Storage Container**: the name of the container for Database Cloud Service instance. The format is the following: Storage-IDENTITYDOMAIN/CONTAINERNAME, for example: Storage-gse00002323/User06. The container don't need to be created in advance, because -see below- there is an option to create automatically. Now give a container name containing your user name.
-+ **Cloud Storage User Name and Password**: the credentials for storage. This is the same username/password you used to sign in to Oracle Cloud Services.
-+ **Create Cloud Storage Containers**: we will create a new container, so check this.
++ Backup Destination : Keep the default "None".  In case you would like to setup a backup service, the format is the following: Storage-IDENTITYDOMAIN/CONTAINERNAME, for example: Storage-gse00002323/User06.  The credentials for the storage are the same username/password you used to sign in to Oracle Cloud Services.
++ **Provision Load Balancer**: to save resources we will not create Load Balancer instance. Leave default: No
 
 
 ![](images/jcs002.png)
