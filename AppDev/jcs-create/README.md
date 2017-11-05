@@ -64,7 +64,7 @@ Now enter the following parameters on the screen:
 + **Provision Load Balancer**: to save resources we will not create Load Balancer instance. Leave default: No
 
 
-![](images/jcs002.png)
+![](images/JCSAdvanced.PNG)
 
 
 For more details about parameters see the [documentation](https://docs.oracle.com/cloud/latest/jcs_gs/JSCUG/GUID-31F00F2C-221F-4069-8E8A-EE48BFEC53A2.htm#JSCUG-GUID-88BD737C-8DA9-419A-8DBF-489BDFF9C512). Click **Next**.
@@ -75,7 +75,7 @@ We will not actually create a new instance, as this process can take up to 30'
 So now click **Cancel** to abort the creation of this configuration.  You can use the existing JCS instance in this environment for taking a look at a running instance
 
 
-![](images/09.png)
+![](images/JCSconf2.PNG)
 
 ---
 [Go back to Overview Page](../AppDevInfra.md)
