@@ -18,6 +18,11 @@ During this day you will be able to experience the various cloud services from O
 + [Develop a MAX Application](http://docs.oracle.com/cd/E65774_01/tutorials/tut_mcs_max_short/tut_mcs_max_short_1a.html) - Develop a Mobile application using the Mobile Application Accelerator (MAX) utility from the Mobile Cloud Service
 
 
+## Container Native labs ##
++ [CI/CD with Wercker : Build a Node.js-MongoDB container packaged application using Wercker pipelines](container/wercker.md)
++ [Run your first serverless Function using FnProject](functions/readme.md)
+
+
 ## Infrastructure-as-a-Service ##
 This chapter regroups some of the steps from the various CTD labs to create a specific focus on IaaS services in particular.  In this lab, you will experience the folling services:
 + Compute CS
