@@ -19,8 +19,8 @@ During this day you will be able to experience the various cloud services from O
 
 
 ## Container Native labs ##
-+ [CI/CD with Wercker : Build a Node.js-MongoDB container packaged application using Wercker pipelines](container/wercker.md)
-+ [Run your first serverless Function using FnProject](functions/readme.md)
++ [CI/CD with Wercker : Build a Node.js-MongoDB container packaged application using Wercker pipelines](AppDev/container/wercker.md)
++ [Run your first serverless Function using FnProject](AppDev/functions/readme.md)
 
 
 ## Infrastructure-as-a-Service ##
