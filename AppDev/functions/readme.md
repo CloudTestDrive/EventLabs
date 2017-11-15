@@ -20,6 +20,13 @@ Open 2 sessions to the Fn Server, by using your favorite ssh tool (command line,
 
 # Getting Started
 
+As multiple participants will be using the same Fn server, you first have to 
+create a "personal" directory, then cd into it.  So if you are for example "user01", type the following:
+
+>`mkdir user01`
+> `cd user01`
+
+
 Let's start by creating a new function.  In a terminal type the
 following and note the runtime value is **java8**, not just java.  "java"
 defaults to Java 9 but this lab uses Java 8.
@@ -460,7 +467,9 @@ First launch the Fn server via the 2nd window you opened at the start of this la
 Type the following but note that the process will run in the foreground so that
 it's easy to stop with Ctrl-C:
 
-![user input](images/userinput.png)
+**Attention !** Only a single instance of the fn start command should be issued.  Please agree with the other participants running on the same instance who will issue this command. 
+
+![](images/userinput.png)
 >`fn start`
 
 You should see output similar to:
