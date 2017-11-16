@@ -8,7 +8,7 @@
 
 ![](images/APIPCSBanner.png)
 
-![](images/AboutAPIPCSCS.png)
+![](images/AboutAPIPCS.png)
 
 ## What will you do with API-P CS in this Lab ? ##
 
