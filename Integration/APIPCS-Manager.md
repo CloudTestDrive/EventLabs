@@ -2,13 +2,13 @@
 
 ![](../common/images/customer.logo2.png)
 
-# API Platform Cloud Service Lab #
+# API Platform Cloud Service API ManagerLab #
 
 ## Introduction - what is API-P CS ? ##
 
-![](images/ICSBanner.PNG)
+![](images/APIPCSBanner.png)
 
-![](images/AboutICS.PNG)
+![](images/AboutAPIPCSCS.png)
 
 ## What will you do with API-P CS in this Lab ? ##
 
