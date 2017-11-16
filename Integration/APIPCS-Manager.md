@@ -2,7 +2,7 @@
 
 ![](../common/images/customer.logo2.png)
 
-# API Platform Cloud Service API ManagerLab #
+# API Platform Cloud Service API Manager Lab #
 
 ## Introduction - what is API-P CS ? ##
 
@@ -12,7 +12,7 @@
 
 ## What will you do with API-P CS in this Lab ? ##
 
-![](images/ICSExercise.PNG)
+![](images/APIPCSExercise.png)
 
 ## Let's start ! ##
 
