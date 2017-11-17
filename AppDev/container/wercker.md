@@ -217,7 +217,7 @@ Now Wercker built Node.js sample application container available as service. Mon
 
 ![alt text](images/36.create.stack.png)
 
-Enter the Stack name: *user-xx-employee-nodejs-mongodb*. Than drag and drop **MongoDB** service to the grid area.
+Enter the Stack name: *user-xx-nodejs-mongodb*. Than drag and drop **MongoDB** service to the grid area.
 
 ![alt text](images/37.drag.and.drop.mongodb.png)
 
