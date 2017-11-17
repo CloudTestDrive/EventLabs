@@ -41,7 +41,7 @@ In this lab, you will create a business process using PCS. This Order Approvals 
 + [Integration Cloud Service](Integration/readme.md) - 
 This lab will show you how to set up integration between 2 systems simply using the drag & drop features of Integration Cloud Service.  In this exercise we will set up an integration between a RightNow instance and a generic REST service of a mobile Application.
 
-+ [API Platform Cloud Service](Integration/APIPCS-Manager.md.md) - 
++ [API Platform Cloud Service](Integration/APIPCS-Manager.md) - 
 The objective of this lab is to give you a comprehensive overview of the Oracle API Platform Cloud Service as an API Manager. 
 
 
