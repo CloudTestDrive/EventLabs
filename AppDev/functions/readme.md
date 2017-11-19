@@ -571,6 +571,7 @@ Now we'll launch the FN Admin GUI and access this application from your local pc
 Perform following steps : 
 
 > cd /home/fn/bin
+
 > ./runAdminUI
 
 Now use a browser on your PC to go to the following address:
