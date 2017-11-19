@@ -566,6 +566,16 @@ format change:
 
 >time `curl --data '{"name":"Tom"}' http://localhost:8080/r/myapp/javafn`
 
+# Running the Fn Admin GUI
+Now we'll launch the FN Admin GUI and access this application from your local pc.
+Perform following steps : 
+
+> cd /home/fn/bin
+> ./runAdminUI
+
+Now use a browser on your PC to go to the following address:
+        'Fn Server IP_Address':4000        
+
 # Wrapping Up
 
 Congratulations! You've just completed an introduction to the Fn Java
