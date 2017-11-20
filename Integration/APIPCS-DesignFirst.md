@@ -6,7 +6,7 @@
 
 ## Introduction - what is Apiary CS ? ##
 
-![](images/APIPCSBanner.png)
+![](images/APIARYCSBanner.png)
 
 ![](images/AboutAPIARYCS.png)
 
