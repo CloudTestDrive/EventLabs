@@ -36,7 +36,7 @@ If you already have Docker account you can skip this step.
 
 Go to [https://cloud.docker.com/](https://cloud.docker.com/) than choose your *Docker ID* enter your email address and a desired password. Click **Sign up**.
 
-**Attention:** your DockerID must be small cabs only !
+**Attention:** your DockerID must be small caps only !
 
 ![](images/06.docker.signup.png)
 
