@@ -93,10 +93,6 @@ Take a look at the contents of the generated func.yaml file.
 version: 0.0.1
 runtime: java8
 cmd: com.example.fn.HelloFunction::handleRequest
-build_image: ""
-run_image: ""
-expects:
-  config: []
 ```
 
 In the case of a Java function, the `cmd` property is set to the fully
