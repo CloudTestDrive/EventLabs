@@ -1,6 +1,6 @@
 [Go to the Cloud Test Drive Overview](../README.md)
 
-![](../common/images/customer.logo2.png)
+![](../../common/images/customer.logo2.png)
 
 # GoldenGate 12.3 Hands On Lab #
 
