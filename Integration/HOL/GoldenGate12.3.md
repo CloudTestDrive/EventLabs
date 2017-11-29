@@ -4,10 +4,11 @@
 
 # GoldenGate 12.3 Hands On Lab #
 
-## Introduction - what is GoldenGate ? ##
+## Introduction - what is Oracle GoldenGate ? ##
 
 ![](images/OGG123Banner.png)
 
+## About Oracle GoldenGate Use Cases ##
 ![](images/AboutOGG123.png)
 
 ## What will you do with GoldenGate 12.3 in this Lab ? ##
