@@ -192,7 +192,7 @@ First you need to define your new Service. The new service will comprise all of 
 
 Enter the following parameters to define your new service:
 
-+ **Service Name**: *userxx-employee-nodejs*
++ **Service Name**: *userxx-emp-nodejs*
 + **Service Description**: anything to describe your service.
 + **Image**: *YOUR\_DOCKER\_USERNAME/nodejs-mongodb-crud* (the name of your Docker image stored in your registry) see previos step when checked your Docker registry.
 + **Ports**: first opt in the Ports on the right side. Then it will populate Ports attribute list.
@@ -215,7 +215,7 @@ Click **Save** on service details page to save the service.
 
 #### Create Oracle Container Cloud Service Stack to manage Node.js sample and MongoDB services (containers) as a single application ####
 
-Now Wercker built Node.js sample application container available as service. MongoDB by default created so you can create your stack. Click the **Stack** menu on the left side and than click **New Stack** button.
+Via Wercker you built a Node.js sample application container available as service. We'll use a standard MongoDB container to create your stack. Click the **Stack** menu on the left side and than click **New Stack** button.
 
 ![alt text](images/36.create.stack.png)
 
@@ -227,7 +227,7 @@ The MongoDB service configuration page opens. Leave the default settings and cli
 
 ![alt text](images/38.mongodb.configuration.png)
 
-Find the *userxx-employee-nodejs* service and drag and drop to the grid area. The service configuration page opens. Check in the **Links** option. Scroll down in the Builder area and click the **+Add** button next to the *Links*.
+Find the *userxx-empl-nodejs* service and drag and drop to the grid area. The service configuration page opens. Check in the **Links** option. Scroll down in the Builder area and click the **+Add** button next to the *Links*.
 
 ![alt text](images/39.nodejs.configuration.png)
 
@@ -235,7 +235,7 @@ Here you need to configure the (network) link between the containers. *Service* 
 
 ![alt text](images/40.links.png)
 
-Click **Save** to update *employee-nodejs* configuration for this stack.
+Click **Save** to update *emp-nodejs* configuration for this stack.
 
 ![alt text](images/41.save.nodejs.config.png)
 
@@ -245,7 +245,7 @@ Check the diagram and click Save to create *employee-nodejs-mongodb* stack.
 
 #### Deploy Oracle Container Cloud Stack and test the Employee Node.js sample application ####
 
-Stack is ready, so it is time to deploy and test the Employee Node.js sample application. Find the newly created *employee-nodejs-mongodb* stack and click the green **Deploy** button.
+Your stack is ready, so it is time to deploy and test the Node.js sample application. Find the newly created *userxx-emp-nodejs-mongodb* stack and click the green **Deploy** button.
 
 ![alt text](images/43.deploy.stack.png)
 
