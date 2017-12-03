@@ -6,10 +6,8 @@
 
 Open [cloud.oracle.com](https://cloud.oracle.com/home)
 
-At top right corner click a button *Free Trial*
+At top right corner click a button *Try for Free*
 
-Look at the left column called "Platform & Infrastructure" for "Oracle Cloud paaS and IaaS" and select "Try it"
+Click the "Sign Up" button and follow the wizard.
 
-Login tou Your OTN account
-
-Follow 4 pages wizard and fill all requested information
+Login tou Your Cloud account
