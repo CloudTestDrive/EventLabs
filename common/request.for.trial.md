@@ -1,4 +1,4 @@
-![](common/images/customer.logo2.png)
+![](images/customer.logo2.png)
 ---
 # ORACLE Cloud Test Drive #
 
