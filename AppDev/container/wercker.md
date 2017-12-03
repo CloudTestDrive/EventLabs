@@ -225,7 +225,7 @@ Enter the Stack name: *userxx-nodejs-mongodb*. Than drag and drop **MongoDB** se
 
 The MongoDB service configuration page opens. Leave the default settings and click **Save**.
 
-![alt text](images/mongodb.configuration.png)
+![alt text](images/mongodb.config.png)
 
 Find the *userxx-empl-nodejs* service and drag and drop to the grid area. The service configuration page opens. Check in the **Links** option. Scroll down in the Builder area and click the **+Add** button next to the *Links*.
 
