@@ -219,7 +219,7 @@ Via Wercker you built a Node.js sample application container available as servic
 
 ![alt text](images/36.create.stack.png)
 
-Enter the Stack name: *user-xx-nodejs-mongodb*. Than drag and drop **MongoDB** service to the grid area.
+Enter the Stack name: *userxx-nodejs-mongodb*. Than drag and drop **MongoDB** service to the grid area.
 
 ![alt text](images/37.drag.and.drop.mongodb.png)
 
@@ -231,21 +231,21 @@ Find the *userxx-empl-nodejs* service and drag and drop to the grid area. The se
 
 ![alt text](images/39.nodejs.configuration.png)
 
-Here you need to configure the (network) link between the containers. *Service* refers to the defined Container Cloud Service which is MongoDB if you haven't changed the MongoDB configuration in the previous step. Finally *Alias* is the host name of the service. This is what needed to configure MongoDB driver to access MongoDB instance from Node.js sample application service. Click **Save**.
+Here you need to configure the (network) link between the containers. *Service* refers to the defined Container Cloud Service which is "mongodb" if you haven't changed the MongoDB configuration in the previous step. Finally *Alias* is the host name of the service. This is what needed to configure MongoDB driver to access MongoDB instance from Node.js sample application service. Click **Save**.
 
 ![alt text](images/40.links.png)
 
-Click **Save** to update *emp-nodejs* configuration for this stack.
+Click **Save** to update *userxx-emp-nodejs* configuration for this stack.  You should see a line between the 2 containers in the stack, representing the link you created.
 
 ![alt text](images/41.save.nodejs.config.png)
 
-Check the diagram and click Save to create *employee-nodejs-mongodb* stack.
+Check the diagram and click Save to create *userxx-nodejs-mongodb* stack.
 
 ![alt text](images/42.stack.complete.png)
 
-#### Deploy Oracle Container Cloud Stack and test the Employee Node.js sample application ####
+#### Deploy Oracle Container Cloud Stack and test the Node.js sample application ####
 
-Your stack is ready, so it is time to deploy and test the Node.js sample application. Find the newly created *userxx-emp-nodejs-mongodb* stack and click the green **Deploy** button.
+Your stack is ready, so it is time to deploy and test the Node.js sample application. Find the newly created *userxx-nodejs-mongodb* stack and click the green **Deploy** button.
 
 ![alt text](images/43.deploy.stack.png)
 
@@ -255,7 +255,7 @@ Leave the default configuration for orchestration and click **Deploy**.
 
 The stack deployment detail page opens. Wait until the stack is up and running. Everything should be green except the red Stop button. If you carefully watch the startup process you can see when the Oracle Container Cloud Service pulls the *johnlsmith/nodejs-mongodb-crud* image from Docker hub.
 
-To test the application you need to get the host environment's public IP address. Click on the Hostname where the *employee-nodejs* service deployed.
+To test the application you need to get the host environment's public IP address. Click on the Hostname where the *userxx-emp-nodejs* service deployed.
 
 ![alt text](images/45.stack.is.up.png)
 
@@ -263,7 +263,7 @@ Find and note the public_ip address attribute.
 
 ![alt text](images/46.host.ip.png)
 
-Open a new browser (tab) and enter or copy the host's public IP address and append the configured 8091 port. For example: `141.144.137.89:8091` You have to get the following webpage below. To test MongoDB click **Add New Employee** button.
+Open a new browser (tab) and enter or copy the host's public IP address and append the port you configured for the userxx-emp-nodejs. For example: `141.144.137.89:8091` You have to get the following webpage below. To test MongoDB click **Add New Employee** button.
 
 ![alt text](images/47.application.add.employee.png)
 
@@ -293,7 +293,7 @@ Find your browser (tab) where Wercker is already opened and check the progress o
 
 ![alt text](images/51.wercker.progress.png)
 
-When the build and push are done go back to the Oracle Container Cloud Services console and select the Containers item on the left side menu. Find the container which **name** contains *employee-nodejs* string. **Stop** that container.
+When the build and push are done go back to the Oracle Container Cloud Services console and select the Containers item on the left side menu. Find the container which **name** contains *emp-nodejs* string. **Stop** that container.
 
 ![alt text](images/52.occs.containers.stop.png)
 
@@ -301,11 +301,11 @@ When the container has stopped DO NOT remove.
 
 ![alt text](images/53.occs.containers.stopped.png)
 
-The default configuration of the stack will remove and than immediately deploy again the missing service. Click on the Deployment which name contains *employee-nodejs-mongodb*. (If in the meantime *employee-nodejs* service appears again you can use it's deployment link too since these services are part of the same stack.)
+The default configuration of the stack will remove and then immediately deploy again the missing service. Click on the Deployment which name contains *emp-nodejs-mongodb*. (If in the meantime *emp-nodejs* service appears again you can use it's deployment link too since these services are part of the same stack.)
 
 ![alt text](images/54.deployment.details.png)
 
-It navigates to the *employee-nodejs-mongodb* stack deployment details page. If you enough quick you can see when Oracle Container Cloud Service pull the new version of the image from Docker hub. Wait until the service is up and running and everything is green on the detail page.
+It navigates to the *emp-nodejs-mongodb* stack deployment details page. If you enough quick you can see when Oracle Container Cloud Service pull the new version of the image from Docker hub. Wait until the service is up and running and everything is green on the detail page.
 
 ![alt text](images/55.deplyment.details.png)
 
