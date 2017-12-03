@@ -111,7 +111,7 @@ Before you move forward please inspect the *wercker.yml*. The source is availabl
 	        password: $DOCKER_PASSWORD
 	        tag:  $DOCKER_TAG
 	        repository: $DOCKER_REPOSITORY
-	        registry: https://index.docker.io/v1/
+	        registry: https://index.docker.io/v2/
 	        cmd: node pipeline/source/app.js
 
 The *wercker.yml* defines the configuration of your automation pipelines with a collection of Steps that you wish to execute.
