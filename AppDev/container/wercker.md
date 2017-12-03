@@ -60,7 +60,7 @@ When the fork is done move to the next step.
 
 When the import is done go to [https://app.wercker.com](https://app.wercker.com) and sign up using your github account. Click the **LOG IN WITH GITHUB** button.
 
-![alt text](images/10.app.wercker.signup.png)
+![alt text](images/wercker.signup.png)
 
 If you use the same browser where you are already signed in to github then it will go directly to *Authorize application* github page. If not then enter your github's credentials to sign in to github. Click the **Authorize application** button to accept Wercker's request. You can revoke Wercker's authorization request anytime using your github's profile settings.
 
@@ -78,7 +78,7 @@ Go back to the Wercker's welcome page and click **Create your first application*
 
 First select the repository you want to use as sources. By default it will show your Github provider and the available repositories. Select *node-mongodb-crud* and click **Use selected repo**.
 
-![alt text](images/13.select.repo.png)
+![alt text](images/select.repo.png)
 
 In case of private repositories you should define the access method. Since the the sample repository created as public you can leave the default checkout method. Click **Next step**.
 
@@ -225,7 +225,7 @@ Enter the Stack name: *userxx-nodejs-mongodb*. Than drag and drop **MongoDB** se
 
 The MongoDB service configuration page opens. Leave the default settings and click **Save**.
 
-![alt text](images/38.mongodb.configuration.png)
+![alt text](images/mongodb.configuration.png)
 
 Find the *userxx-empl-nodejs* service and drag and drop to the grid area. The service configuration page opens. Check in the **Links** option. Scroll down in the Builder area and click the **+Add** button next to the *Links*.
 
@@ -233,7 +233,7 @@ Find the *userxx-empl-nodejs* service and drag and drop to the grid area. The se
 
 Here you need to configure the (network) link between the containers. *Service* refers to the defined Container Cloud Service which is "mongodb" if you haven't changed the MongoDB configuration in the previous step. Finally *Alias* is the host name of the service. This is what needed to configure MongoDB driver to access MongoDB instance from Node.js sample application service. Click **Save**.
 
-![alt text](images/40.links.png)
+![alt text](images/links.png)
 
 Click **Save** to update *userxx-emp-nodejs* configuration for this stack.  You should see a line between the 2 containers in the stack, representing the link you created.
 
