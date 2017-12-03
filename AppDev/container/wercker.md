@@ -60,7 +60,7 @@ When the fork is done move to the next step.
 
 When the import is done go to [https://app.wercker.com](https://app.wercker.com) and sign up using your github account. Click the **LOG IN WITH GITHUB** button.
 
-![alt text](images/wercker.signup.png)
+![alt text](images/new.wercker.signup.png)
 
 If you use the same browser where you are already signed in to github then it will go directly to *Authorize application* github page. If not then enter your github's credentials to sign in to github. Click the **Authorize application** button to accept Wercker's request. You can revoke Wercker's authorization request anytime using your github's profile settings.
 
@@ -74,7 +74,7 @@ Now here is the time to create your Wercker application. Wercker acts as continu
 
 Go back to the Wercker's welcome page and click **Create your first application** button or the **+Create** dropdown list and select *Application*.
 
-![alt text](images/12.create.application.png)
+![alt text](images/welcome.wercker.png)
 
 First select the repository you want to use as sources. By default it will show your Github provider and the available repositories. Select *node-mongodb-crud* and click **Use selected repo**.
 
