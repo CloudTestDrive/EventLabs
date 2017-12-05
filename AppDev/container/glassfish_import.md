@@ -1,5 +1,5 @@
 
-[Go to Overview Page](../AppDevInfra.md)
+[Go to Overview Page](../../README.md)
 
 ![](../../common/images/customer.logo2.png)
 ## Container Native lab ##
