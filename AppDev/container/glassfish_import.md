@@ -3,7 +3,7 @@
 
 ![](../../common/images/customer.logo2.png)
 ## Container Native lab ##
-### Import and deploy a Glassfish Docker image onto Oracle Container Cloud Service ###
+## Import and deploy a Glassfish Docker image onto Oracle Container Cloud Service ##
 
 ### Introduction ###
 In this lab we will import and deploy a Glassfish Docker image onto the Oracle Container Cloud Service (OCCS).  The Glassfish image is not included by default, we will download it from the Docker repository.
