@@ -2,7 +2,7 @@
 [Go to Overview Page](../AppDevInfra.md)
 
 ![](../../common/images/customer.logo2.png)
-## Application Development Infrastructure lab ##
+## Container Native lab ##
 ### Deploy a Tomcat Docker image onto Oracle Container Cloud Service ###
 
 ### Introduction
