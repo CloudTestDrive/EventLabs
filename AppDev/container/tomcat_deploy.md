@@ -3,7 +3,7 @@
 
 ![](../../common/images/customer.logo2.png)
 ## Container Native lab ##
-### Deploy a Tomcat Docker image onto Oracle Container Cloud Service ###
+## Deploy a Tomcat Docker image onto Oracle Container Cloud Service ##
 
 ### Introduction
 In this lab we will deploy the Tomcat Docker image that is provided by default onto the Oracle Container Cloud Service (OCCS).
