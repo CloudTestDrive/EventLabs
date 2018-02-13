@@ -11,9 +11,9 @@
 
 This lab will showcase  Digital Experience creation using our low-code Digial Experience products. The lab showcases the creation and management of content then the creation of a web-experience followed by creation of a conversation experience.
 
-+ Step 1 : [Create Content in the Content Cloud](Content/README.md)
-+ Step 2 : [Create a Web Experience in Experience Cloud](Experience/README.md)
-+ Step 3 : [Create Chatbot in Intelligent Chatbot Service](../Mobile/IntelligentBots/README.md)
++ Step 1 : [Create Content in the Content Cloud Lab](Content/README.md)
++ Step 2 : [Create a Web Experience in Experience Cloud Lab](Experience/README.md)
++ Step 3 : [Create Chatbot in Intelligent Chatbot Service Lab](../Mobile/IntelligentBots/README.md)
 
 
 ---
