@@ -9,7 +9,7 @@
 
 ### Introduction ###
 
-This lab will showcase  Digital Experiences creation using our low-code Digial Experience products. The lab showcases the creation and management of content then the creation of a web-experience followed by creation of a conversation experience.
+This lab will showcase  Digital Experience creation using our low-code Digial Experience products. The lab showcases the creation and management of content then the creation of a web-experience followed by creation of a conversation experience.
 
 + Step 1 : [Create Content in the Content Cloud](jcs-create/README.md)
 + Step 2 : [Create a Web Experience in Experience Cloud](jcs-create/README.md)
