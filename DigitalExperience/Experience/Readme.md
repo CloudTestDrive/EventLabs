@@ -9,309 +9,339 @@
 
 ### Introduction ###
 
-This lab will showcase Content Cloud. Oracle Content & Experience Cloud Service (CEC) lets you easily store your business content in the cloud, securely access it from anywhere, and share it with your colleagues and partners in real time. With a fast, intuitive web interface and easy-to-use desktop and mobile applications, employees can view and collaborate on files even when offline, keeping your organization running efficiently and your employees staying productive from any location.
+This lab will showcase Experience Cloud. Oracle Content & Experience Cloud Service puts the power of creating highly engaging sites into the hands of non-technical line-of-business managers. A beautiful website built on collaborative content including images, PDFs, and presentations can be created in minutes. Applications and processes and can be integrated as well. Assembling a web site is a matter of point-and-click.
 
-### Chapter 1: Upload and Share a file in Oracle CEC 
+This lab will demonstrate how Oracle Content & Experience Cloud Service (CEC) provides a complete web site creation solution. In this demo, we will showcase the key features of the Experience Cloud Service product on how to rapidly develop and publish a microsite in the cloud.
 
-In this chapter of the workshop we are going to show how to use Oracle CEC via a web browser and how to upload a file into a folder and share it afterwards
+#### End-to-End Application Flow 
 
+This demo showcases the end to end flow of creating and testing a web site including the following:
+
+•	Create a theme from an existing website
+•	Create a site
+•	Edit a site
+•	Integrate external components
+•	Test and publish your site
+•	Collaborate and share documents dynamically with all team members
+
+
+### Login
 FOLLOW THE LINK IN YOUR ACCESS DOCUMENT 
 
 At the Login Prompt enter the user name and password that has been supplied to you.
-![](/images/image2.png)
 
-Welcome to the main page of CEC. You’ll notice on the left-hand menu that you can select between Content and Experience. For the moment we will have a look at the Content part of CEC.
-Now we are going to create a new folder and upload a file into that folder
-![](/images/image3.png)
+![](./images/image2.png)
 
-Click on Create on the right upper corner 
+In this chapter of the workshop we are going to show how to use Oracle CEC via a web browser and how to upload a file into a folder and share it afterwards
 
-NOTE: Depending on the CEC instance you might see already existing folders and content.
+## Create a site from a template
+This main CEC homepage is split into two pages
 
-A new window will pop up. In this window you
--	Name the new folder
--	Write a description
--	Click on Create
+The Content page: 
+You have access to all your documents and conversations from this screen
+You can perform all the required action directly from the browser (share, move, create, delete, comment, organize, etc...)
 
-When the new folder is created, you can access it by clicking on it
+![](./images/image3.png)
 
-![](/images/image4.png)
+The Experience Page:
+This is where you will be able to create/edit/update/publish your websites, themes, templates and applications
 
-When you are in the folder you will see it is empty.
+Click on the “Experience” tab
 
-We can now start added documents to it.
+![](./images/image4.png)
 
-Click on Upload – a new window will pop up
+Depending on your instance, you will be able to see existing websites.
 
-![](/images/image5.png)
+![](./images/image5.png)
 
-Select a file in the new window and click on Open or double click the file to start the upload.
+We will first have a look at one of this website.
+We will then copy this website, and customize it in order to suit our Travel Request needs.
 
-You will see the message keeping you updated as the upload progesses.
+This will show you how easy it is to reuse an existing website, share and modify it and following your business requierements.
 
-![](/images/image6.png)
+Open the properties for the SCS_Workshop_Base website and see what it looks like.
+Select the website and click on Properties.
 
-Click on the Details button to open a more detailed view about the upload process. When you are done, close this window
-Note: When the uploading process is complete, a message will notice you if the upload was successful or not.
+![](./images/image6.png)
 
-![](/images/image7.png)
+Come back to the Site Page
 
-One of the great advantage of Oracle Content Cloud is it’s ability to share folders with your colleagues or customers.
+1. Right click on the SCS_Workshop_Base site
+2. Select “Create Template”
 
-Now we are going to share the created folder.
+![](./images/image7.png)
 
-Click on Documents to go back to the main directory.
+Provide a name to your template and a description (optional)
 
-![](/images/image8.png)
+Click Create Template
 
-Right-Click on your folder and click on Members
+You receive a notification once your template has been created
 
-OR
+NOTE: Append the template name with your name to be able to identify it afterwards.
 
-Select the folder by clicking on it’s checkbox.
+![](./images/image8.png)
 
-Then select MEMBERS from the top menu.
+![](./images/image9.png)
 
-If you don’t see the SHARE option along the top – click on the MORE to show all of the actions.
+A template contains a theme. A theme defines the look and feel of the page. The template may have already some content inside. 
+A template is required for the creation of a site.
 
-![](/images/image9.png)
+You adjust the theme that resides within the template to adjust the look and feel of the website.
+Templates are a very convenient way to create and maintain sites.
+They are easy to export, share and modify between team members.
 
-Click on Add Members in the new window.
+A template contains a theme. A theme defines the look and feel of the page. The template may have already some content inside. 
+A template is required for the creation of a site.
 
-Note: There are two other ways of sharing a file or a folder which we will discuss later during this workshop
+You adjust the theme that resides within the template to adjust the look and feel of the website.
+Templates are a very convenient way to create and maintain sites.
+They are easy to export, share and modify between team members.
 
-![](/images/image10.png)
+![](./images/image10.png)
 
-Select a member from an available member list or type in their email address.
+Provide a name for your Site
 
-![](/images/image11.png)
+Click Create.
 
-Click on the drop-down arrow and choose one of the four possible roles that a member can have
+Again, you will get a confirmation message.
 
-Viewer: These members can view files and folders online
+![](./images/image11.png)
 
-Downloader: These members can view and download files and folders
+You can now go back to the “Sites” page
 
-Contributor: These members can view, download, and modify files and folders
+Your site is now in the list of sites 
 
-Manager: These members can modify files and manage people who can access this folder
+![](./images/image13.png)
 
-![](/images/image13.png)
+## Edit your site
+Select your site and click the edit link.
 
-When done, click on Add
+A popup named New Update shows up. 
+•	Give a name to your update 
+•	Click the Create button
+ 
+Note: A new browser tab will open
+If this browser tab does not open, you will receive a notification in your browser that it’s blocking popups
 
-![](/images/image16.png)
+Choose to allow popups in this case.
 
-The summarization window shows all member of this shared folder including their role (access rights).
+![](./images/image14.png)
 
-More member can be added here.
+Your browser window should look like the following now
 
-Click on Done 
+Look for the toggle between
+View and Edit mode of the page 
 
-![](/images/image15.png)
+•	Click on the toggle to go into Edit mode
 
-CEC also supports drag and drop file uploads.
+![](./images/image15.png)
 
-Open your file browser and drag/drop a file into your folder.
+![](./images/image16.png)
 
-![](/images/image16.png)
+A black bar with icons will show up on the left side of the screen.
 
-### Chapter 2: Conversations, Editing and other collaboration features
-In this chapter of the workshop we are going to show some of the collaboration features of CEC
+•	Click the first icon to see the site tree
 
-Go into your created folder and click on the sample document to open it.
+We only want to create a simple microsite with a single page, so we’re going to delete all other pages.
 
-![](/images/image18.png)
+•	Click on an item and then click the garbage bin icon
 
-Click on the Conversation icon in the right upper corner. It looks like a white speach bubble !
+•	In the popup menu click Ok
 
-![](/images/image19.png)
+Do this for all pages except Home
 
-Write some text for the conversation and click on Post.
+![](./images/image17.png)
 
-![](/images/image20.png)
+From the home page
+•	Click the cogwheel icon and you will see a configuration page for this page
 
-![](/images/image21.png)
+Rename the page title from to “Manage Travel Request”.
 
-Add an anotation to your document : 
+![](./images/image19.png)
 
-Click on the Pin Button
+We will now modify the Home page
 
-![](/images/image22.png)
+Click on the Close button
 
-Click where you want to add an anotation in your document
+We will start by modifying the title
 
-![](/images/image23.png)
+•	Click on the text and modify it.
 
-A yellow box will appear in the conversation section.
+Example: 
+“Let's get your product online fast and get attention right away! “
 
-Add a Comment
+![](./images/image21.png)
 
-![](/images/image24.png)
+•	Modify the Paragraph following the same simple method
 
-Your annotation is now effective.
+Example: “Easily manage your Travel Requests thanks to a mobile-friendly HTML5 Website.”
 
-Everytime you click on your Pin, you will be automatically  redirected to the corresponding comment. 
+![](./images/image22.png)
 
-This will allow you to track changes, and point out specific parts of a document when collaborating with other team members.
+Click on the orange button.
 
-![](/images/image25.png)
 
-Click on the Conversation icon again to hide the conversation.
+Modify a button :
+•	Click on the green bar’s extremity, 
+•	Open the setting menu
 
-Go back to your folder and right click on the sample document.
+![](./images/image23.png)
 
-Or Select the documents Check Box.
+![](./images/image24.png)
 
-Click on Reserve to lock your file. Use the Padlock Icon. The file is now locked
+•	Change the label in the “General“ tab
 
-![](/images/image26.png)
+![](./images/image25.png)
 
-Right click on your file and click Download to change the content of your file.
+•	Go to the “Link” tab
 
-![](/images/image28.png)
+•	Select “Web Page”
 
-In Word, write some new text into your document and then save the file.
+•	Enter an URL: https://cloud.oracle.com/en_US/cloud-sites
 
-![](/images/image29.png)
+You can now close the tab.
 
-Note Optional Step  :
+![](./images/image26.png)
 
-If you don’t have the Windows application installed 
+We will link a video to the page
 
-Go back to your folder in the web browser. 
 
-Right click on your file, 
-Select Upload New Version
-Upload your file
+•	Click on “Watch the Video”
 
-![](/images/image30.png)
+A slot will open with an existing video. We will replace this 
 
-You will see that there is a new version saved
+![](./images/image27.png)
 
-Right click on your document and click on Clear Reservation to unlock your file
+Click on settings
 
-![](/images/image31.png)
-![](/images/image32.png)
+Paste this Youtube URL:
+https://www.youtube.com/watch?v=4weOMXMK-dQ
 
-Click the More button and then click on Version History
+![](./images/image28.png)
 
-A new window will appear where you will see when and from whom the document was changed.
+We will now start dragging components onto our page
 
-In this window you can download the latest or a previous version, delete them or make a previous version to the latest.
+We will be using three different components
 
-It is also possible to click on the file name to open any version within the browser.
+•	One Oracle Social Network conversation where different users can share information 
+•	One Content Cloud folder where you can manage your documentation
+•	One for seeing an inbox of Process Cloud tasks 
 
-Click on Done to close this window.
+We will delete the static images from the base website and replace them with dynamic components
 
-![](/images/image33.png)
-![](/images/image34.png)
+On the left side of the screen, click the second icon, the plus sign
 
-Back in your folder, click on the Share button. A new window will appear.
+Click once again on Components
 
-![](/images/image35.png)
+![](./images/image30.png)
 
-In a previous step, we have added a new member for collaboration to this document
+Here in the list look for the “Social” section
 
-There are two other ways of sharing.
+![](./images/image31.png)
 
-1. You can send a link to a member who is part of the CEC instance.
+In the slot next to the title “ Save you time and effort”
 
-2. You can create a public link to send to anyone by selecting Public 
+Delete the image component
 
-![](/images/image36.png)
+Drag and drop a “Conversation” component into the now empty slot
 
-You can modify the properties of the Public Link by selecting Edit Link Options.
-When you enter an email addres in the To field, you’ll notice that the CopyLink button will change into a SendLink button 
+![](./images/image32.png)
+![](./images/image33.png)
 
-![](/images/image37.png)
+Open the “Conversation Settings”
 
-Click on CopyLink.
+![](./images/image34.png)
 
-The Share Link dialog will disappear and the link will be copied to your clipboard. 
+Select “ Custom Settings”
 
-Go back to your folder and click on the conversation icon.
+Choose Conversation by clicking on Select
 
-![](/images/image37a.png)
+Highlight a conversation and click on Back
 
-Write a message to the file conversation and click on Post.
+You can now  close the tab
 
-![](/images/image38.png)
+This is the final result of your integration
 
-Using Document Cloud service, you can manage custom properties so that users can quickly categorize files and folders with additional descriptions.
+![](./images/image36.png)
 
-It is known as Metadata.
+Go down next to “ Works across all devices”
 
+Delete the image on the left in order to get this screen
 
-Click on the 3 dots next to the “Download” Button
+![](./images/image37.png)
 
-Select Custom Properties 
+From the Components bar
 
-![](/images/image39.png)
+Look for the “Documents” section 
+Drag and drop a “Document Manager” component
 
-A new tab will appear.
+![](./images/image38.png)
 
-We need to set up custom properties for this document.
+Open the “ Documents Manager” Settings
 
-Click on Manage 
+Open the “Custom Settings”
 
-![](/images/image40.png)
+Select the folder created in the Content lab
 
-The CEC Administrator has the possibility to create as many custom properties as needed.
+Click on OK and close the tab
 
-Your environment has been already configured with two custom set of properties.
+![](./images/image39.png)
 
-We will use the one of the provided metadata sets.
+![](./images/image40.png)
 
-Flipp the switch next to DOCUMENT APPROVAL and press SAVE.
+You can now use all the Content Cloud Service features here
 
-![](/images/image41.png)
+![](./images/image41.png)
 
-Note :
+The last component we want to insert is the PCS component
 
-You can customise a custom properties in Doc Settings. You need Admin rights for this.
+This one is an external component
 
-You will be able to decide the number of fields, the type and other information.
+Go down to this part of the Site
 
-We are showing an example in our screen shot.
+Delete the image on the left, using the same method as before
 
-![](/images/image42.png)
+![](./images/image42.png)
 
-Now fill your fields on customer metadata.
-Click Save.
+Go back to the “Add Components” tab
 
-![](/images/image43.png)
+Select Components
 
+Scroll down to the PROCESSES section, and Select the “Task List” Component
 
-### Chapter 3: The Desktop Application
-Conversations, Editing and other collaboration features
+Drag and drop it into your empty slot next to “Easy to track”
 
-In this chapter of the workshop we are going to show the desktop application and its integration with the cloud.
+![](./images/image43.png)
 
-The desktop app keeps files and folders on your computer desktop synchronized with your files and folders in the cloud.
+Click on the component header and Choose Settings
 
-It's easy to do. Just install the client software. You set up an account and the software will set up a folder for you on your desktop, with the name you give the folder. You can choose the folders you want to sync, and they’re put into that desktop folder to be synced whenever the app starts. You can also directly add files and folders into your desktop folder and they’ll be added to Oracle Content & Experience Cloud Service. They’re available to use in your browser or a mobile device. All your information stays up-to-date while the sync client is running.
+![](./images/image44.png)
 
-You can also set notifications, letting you know when the conversations you’re active in are changed. You can customize what notifications you’ll receive so you can follow only those conversations that are important to you. You can also share your files and folders, just like you do when you use a web browser.
+A popup with settings shows up In this menu click on Custom Settings
 
-One way of downloading the desktop application is to click on your account name and then click on Download Apps
+Another popup will appear
 
-![](/images/image44.png)
+NOTE: You could enter and change settings here, but for the workshop your PCS instance is alreaday configured.
 
-Select the version you want to download and install it.
+![](./images/image45.png)
 
-Note: The CEC application is integrated with your Windows file browser. You can choose the folders you want to sync, and they’re put into that desktop folder to be synced whenever the app starts. You can also directly add files and folders into your desktop folder and they’ll be added to Oracle Content & Experience Cloud Service.
+The result should be similar to this screenshot.
 
-![](/images/image45.png)
+![](./images/image46.png)
 
-Note: All your information stays up-to-date while the sync client is running
+Save your website
 
-![](/images/image46.png)
+Go to the preview mode in order to see you website as it will look once online
 
-Note: You can also set notifications, letting you know when the conversations you’re active in are changed. You can customize what notifications you’ll receive so you can follow only those conversations that are important to you. You can also share your files and folders, just like you do when you use a web browser.
+![](./images/image47.png)
 
-![](/images/image47.png)
+We are happy with our website
 
+We can now publish our update
+
+The current update will be saved and all the changes we made will be visible on the site as soon as you decide to put it online
+
+![](./images/image48.png)
 
 ## Congratulations
 ## You completed this workshop! 
