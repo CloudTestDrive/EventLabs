@@ -18,7 +18,7 @@ In this chapter of the workshop we are going to show how to use Oracle CEC via a
 FOLLOW THE LINK IN YOUR ACCESS DOCUMENT 
 
 At the Login Prompt enter the user name and password that has been supplied to you.
-![](/images/image2.png)
+![](./images/image2.png)
 
 Welcome to the main page of CEC. You’ll notice on the left-hand menu that you can select between Content and Experience. For the moment we will have a look at the Content part of CEC.
 Now we are going to create a new folder and upload a file into that folder
