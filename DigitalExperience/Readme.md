@@ -5,7 +5,7 @@
 
 # Digital Experience Labs #
 
-## Create compelling digital experiences for your employees, customers and partners ##
+## Create compelling Digital Experiences for your employees, customers and partners ##
 
 ### Introduction ###
 
