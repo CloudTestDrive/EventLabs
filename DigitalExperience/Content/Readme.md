@@ -1,7 +1,7 @@
 
 [Go to the Cloud Test Drive Overview](../README.md)
 
-![](../common./images/customer.logo2.png)
+![](../common/images/customer.logo2.png)
 
 # Digital Experience Labs #
 
@@ -18,15 +18,17 @@ In this chapter of the workshop we are going to show how to use Oracle CEC via a
 FOLLOW THE LINK IN YOUR ACCESS DOCUMENT 
 
 At the Login Prompt enter the user name and password that has been supplied to you.
-![](../images/image2.png)
+
+![](./images/image2.png)
 
 Welcome to the main page of CEC. You’ll notice on the left-hand menu that you can select between Content and Experience. For the moment we will have a look at the Content part of CEC.
 Now we are going to create a new folder and upload a file into that folder
+
 ![](./images/image3.png)
 
 Click on Create on the right upper corner 
 
-NOTE: Depending on the CEC instance you might see already existing folders and content.
+NOTE: Depending on the CEC instance you might already see existing folders and content.
 
 A new window will pop up. In this window you
 -	Name the new folder
@@ -104,7 +106,7 @@ When done, click on Add
 
 The summarization window shows all member of this shared folder including their role (access rights).
 
-More member can be added here.
+More members can be added here.
 
 Click on Done 
 
@@ -165,9 +167,9 @@ Or Select the documents Check Box.
 
 Click on Reserve to lock your file. Use the Padlock Icon. The file is now locked
 
-![](./images/image26.png)
+![](./images/image27.png)
 
-Right click on your file and click Download to change the content of your file.
+Download your file to make changes
 
 ![](./images/image28.png)
 
