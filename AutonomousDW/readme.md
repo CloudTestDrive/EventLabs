@@ -7,7 +7,7 @@ Autonomous Data Warehouse Cloud Service Workshop
 
 February 2018
  
- 
+![](images/image002.png)
 
 TABLE OF CONTENTS
 INTRODUCTION	4
