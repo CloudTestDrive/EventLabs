@@ -512,7 +512,7 @@ New browser window/tab opens and there you can see your application's log. The b
 
 Currently you have one application instance (pod) up and running what you deployed manually. Because of replica definition it created a Replica Set. A Replica Set ensures that a specified number of pod replicas are running at any one time. In other words, a Replica Sets makes sure that a pod or a homogeneous set of pods is always up and available. 
 
-To scale your application first use the dashboard. Find your *rest-jscreditscore* deployment and click on the option menu on the right side and select **Scale**.
+To scale your application first use the dashboard. Find your *rest-jscreditscore<Your Number>* deployment and click on the option menu on the right side and select **Scale**.
 
 ![alt text](images/wercker.application.35.png)
 
@@ -544,19 +544,19 @@ The dashboard is nice, but mostly CLI is the preferred tool. So let's get famili
 
 In the previous step you scaled out your application using the Web UI now shrink it using `kubectl`. Open a terminal and if necessary set KUBECONFIG variable to point your kubeconfig file location. First list your pods.
 
-	$ kubectl get pod -n=<YOUR_WERCKER_ID>
+	$ kubectl get pod -n=<YOUR_WERCKER_USERNAME>
 	NAME                                  READY     STATUS    RESTARTS   AGE
 	rest-jscreditscore-2526588690-4tvrm   1/1       Running   0          1d
 	rest-jscreditscore-2526588690-cc38l   1/1       Running   0          16m
 
-The two running, healthy pods listed. To decrease the number of pods simply set a new size for Replica Set use the scale command and identify the Replica Set using your deployment name. Please note and change(!) properly your namespace's name before execute the scale command.
+All the running pods listed. To decrease the number of pods simply set a new size for Replica Set by using the scale command.  Identify the Replica Set using your deployment name and user number. Please note and change(!) properly your namespace's name before execute the scale command.
 
-	$ kubectl scale --replicas=1 deployment/rest-jscreditscore -n=<YOUR_WERCKER_ID>
-	deployment "rest-jscreditscore" scaled
+	$ kubectl scale --replicas=1 deployment/rest-jscreditscore<YOUR_ID> -n=<YOUR_WERCKER_USERNAME>
+	
 
 The scale down is fast so probably when you refresh your Web UI (dashboard) you already can see only one pod is running. You can also check the number of pods using the previous *get pod* command. Instead of this get more detail about your deployment using the following command. (Don't forget to change the namespace parameter value.)
 
-	$ kubectl describe deployment rest-jscreditscore -n=<YOUR_WERCKER_ID>
+	$ kubectl describe deployment rest-jscreditscore<YOUR_ID> -n=<YOUR_WERCKER_ID>
 	Name:                   rest-jscreditscore
 	Namespace:              johnasmith
 	CreationTimestamp:      Mon, 04 Dec 2017 16:35:44 -0500
