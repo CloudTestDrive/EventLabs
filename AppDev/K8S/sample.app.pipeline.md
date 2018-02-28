@@ -1,10 +1,18 @@
+
+[Go to Container Lab Overview Page](readme.md)
+
+![](../../common/images/customer.logo2.png)
+# Container Native labs - Pipelines to K8S #
+
 ## Create Oracle Container Pipeline to build, test and package sample application ##
 
-Make sure you are signed in to [https://github.com](https://github.com) and [https://app.wercker.com](https://app.wercker.com). It is recommended to open two browser windows/tabs [https://github.com](https://github.com) and [https://app.wercker.com](https://app.wercker.com) because you need to use both of them in parallel.
+### Setting up your screens ###
 
-In this tutorial we automatically create namespaces in the kubernetes cluster based on your username in Oracle Container Pipelines. The namespace in kubernetes can not contain any uppercase character. So if your username contains uppercase characters please change it inside the profile.
+- Open a browser window on [https://github.com](https://github.com) and sign in using the credentials provided
+- Open a second window on [https://app.wercker.com](https://app.wercker.com) and use the "Sign in with GitHub" button.
 
-The use case for the simplified Continuous Integration/Continuous Deployment (CI/CD) is the following using Oracle Container Pipelines:
+
+The steps we will go through for setting up the simplified Continuous Integration/Continuous Deployment (CI/CD) are the following using Oracle Container Pipelines:
 
 1. Get the application sources
 2. Build the application. (In case of Node.js it's about installation of packages.)
@@ -16,13 +24,15 @@ The use case for the simplified Continuous Integration/Continuous Deployment (CI
 
 Before you start to setup the CI/CD workflow first you need to install and configure `kubectl` to access to your Oracle Container Engine instance (Kubernetes cluster). To configure `kubectl` and Oracle Container Pipelines (Wercker) you need an authentication token and *kubeconfig* which contains the connection specific information and settings.
 
-To create your personal token open [https://app.wercker.com](https://app.wercker.com) (sign in if necessary) and click on your profile image at the top right corner of the page, select **Your profile** and click on **Manage settings**.
+To create your personal token open [https://app.wercker.com](https://app.wercker.com) and click on your profile image at the top right corner of the page, select **Your profile** and click on **Manage settings**.
 
 ![alt text](images/wercker.application.16.png)
 
-On the left side select the **Personal tokens** menu item. Define a token name e.g. your username and click **Generate**.
+- On the left side select the **Personal tokens** menu item. 
+- Enter a new Token name comprising your prefix "userxx": for example: **user01token**
+- Click **Generate**.
 
-![alt text](images/wercker.application.17.png)
+![alt text](images/wercker.application.17b.png)
 
 Make sure to copy your token because you won't be able to get it again! Click **Done**.
 
@@ -126,7 +136,7 @@ Save the updated *kubeconfig*.
 
 When execute a `kubectl` command first it tries to read the default configuration file: *config* file from default location. On Linux it is `~/.kube` and on Windows it is `c:\Users\<USERNAME>\.kube`. But you can store *config* file at different path and even with different name e.g.*kubeconfig*. Just set the configuration file location as KUBECONFIG environment variable in your command line terminal where you want to execute `kubectl` commands.
 
-Linux:
+Linux & MacOS:
 
 	export KUBECONFIG=~/Downloads/kubeconfig
 
@@ -160,29 +170,44 @@ Dashboard shows most Kubernetes object kinds and groups them in a few menu categ
 
 When there are Kubernetes objects defined in the cluster, Dashboard shows them in the initial view. By default only objects from the default namespace are shown and this can be changed using the namespace selector located in the navigation menu. Later your sample application will be deployed to a new namespace called your Oracle Container Pipelines (Wercker) username.
 
-Please leave open the dashboard you need later.
+Please leave the window with this dashboard open as you will need it later.
 
-### Fork the sample application sources ###
+### Create the sample application source repository on Github ###
 
-First you need a github.com based source code repository for the sample application what feeds the Oracle Container Pipelines. 
+First you need a github.com based source code repository for the sample application that will feeds the Oracle Container Pipelines. 
 
-Open the browser window/tab where github.com is opened and type the following URL into the address bar (or click on the link): [https://github.com/nagypeter/angular-node-creditscore](https://github.com/nagypeter/angular-node-creditscore). Click on **Fork** to fork the sample application to your repository.
+- Open the browser window/tab where github.com is opened
+- Click on the "+" icon on the top right of the Github menu bar
+- Select "Import Repository"
 
-![alt text](images/wercker.application.01.png)
+![alt text](images/wercker.application.01b.png)
+
+
+Now enter the source repository URL and your new repository name:
+- Enter the following URL into the address bar : https://github.com/nagypeter/angular-node-creditscore
+- Enter the name of your new repository, using your "userxx" prefix: for example "user04-angular-node".  Only use small caps in the name of the repository !!
+
+**ATTENTION : read the above AGAIN : ONLY SMALL CAPS FOR THE NAME OF YOUR REPOSITORY !!!**
+
+- After removing the uppercases from your repository name, click on "Begin Import"
+
+![alt text](images/wercker.application.01c.png)
+
+
 
 ### Create application pipelines ###
 
-When the fork is done change to the browser where [https://app.wercker.com](https://app.wercker.com) is open. Select **Pipelines** and click **Create an application** to create a new pipeline. (You can click on the plus sign at the top right corner and select **Add application** too.)
+When the repository is created, change to the browser where [https://app.wercker.com](https://app.wercker.com) is open. Select **Pipelines** and click **Create an application** to create a new pipeline. (You can click on the plus sign at the top right corner and select **Add application** too.)
 
 ![alt text](images/wercker.application.02.png)
 
-First select the repository you want to use as sources. By default it will show your Github provider and the available repositories. Select *angular-node-creditscore* and click **Use selected repo**.
+Select the application owner. Use the default user and don't select the organization if exists.
 
 ![alt text](images/wercker.application.03.png)
 
-Select the application owner. Use the default user and don't select the organization if exists.
+Now select the repository you just created and that contains your "userxx" prefix.  Next click **Use selected repo**.
 
-![alt text](images/wercker.application.04.png)
+![alt text](images/wercker.application.03b.png)
 
 In case of private repositories you should define the access method. Since the the sample repository created as public you can leave the default checkout method. Click **Next step**.
 
@@ -192,9 +217,11 @@ Finally you can choose whether your application is public or not. We recommend t
 
 ![alt text](images/wercker.application.06.png)
 
-The next page offers to generate specific `wercker.yml` based on the application's language and the to start the build. The sample application already has a `wercker.yml`, but before the first build define the complete workflow which will deploy the application to Oracle Container Engine. 
+You will now land on a page where you are invited to create a neww wercker.yml file
 
-Before you move forward please inspect the *wercker.yml*. The source is available under your github repository. Open a new browser (tab) and go directly to *https://github.com/<YOUR_GITHUB_USERNAME>/angular-node-creditscore/blob/master/wercker.yml*. The configuration should be the same:
+**We will not do this, our wercker.yml file is already on the top level of our Github repository**
+
+Before you move forward please open the Github window and click on the "wercker.yml" file on the top level of your repository.  The configuration should look like the below:
 
 	box: node:6.10
 	build:
@@ -250,6 +277,94 @@ A pipeline can have its own base box (Docker container), like in this example th
 As you can see in this configuration we have the default pipeline *build* which executes the *npm-install* build, a *push-to-releases* pipeline which will upload the container packaged application to Oracle Container Registry, a *deploy-to-oke* pipeline which deploys the application to Oracle Container Engine and the *rest-functional-test* pipeline which is intended to test the application during the CI/CD workflow. You will create these pipelines in the next steps.
 
 Please also note the environment variables ($KUBERNETES_MASTER, $KUBERNETES_TOKEN) usage which enables flexible configuration and safe authentication. When the pipelines and the workflow created you will define these variables and set the values.
+
+### Modifying the kubernetes-deployment.yml.template and ingress.yml.template files ###
+
+As all participants will be deploying to the same Kubernetes environment, we will now change the configuration files to make them specific for you by adding your user number to a few K8S artifacts.
+
+- Open your github page, navigate to the top level of your repositoy
+- open the kubernetes-deployment.yml.template file and click the "Edit" icon
+
+![alt text](images/wercker.application.101.png)
+
+- Change all objects named "rest-jscreditscore" by adding your user number at the end: for example "rest-jscreditscore03"
+- Change the port number of your Service to "81xx", where xx is your user number (01, 02, ... 20)
+
+The resulting file for user03 should now look like this :
+
+	#
+	# Copyright (c) 2017 Oracle and/or its affiliates. All rights reserved.
+	#
+	
+	apiVersion: extensions/v1beta1
+	kind: Deployment
+	metadata:
+	  name: rest-jscreditscore03
+	  labels:
+	    run: rest-jscreditscore03
+	spec:
+	  replicas: 1
+	  strategy:
+	    rollingUpdate:
+	      maxSurge: 1
+	      maxUnavailable: 1
+	    type: RollingUpdate
+	  template:
+	    metadata:
+	      labels:
+	        run: rest-jscreditscore03
+	    spec:
+	      containers:
+	      - image: wcr.io/$WERCKER_APPLICATION_OWNER_NAME/$WERCKER_APPLICATION_NAME:$WERCKER_GIT_BRANCH-$WERCKER_GIT_COMMIT
+	        imagePullPolicy: Always
+	        name: rest-jscreditscore03
+	        ports:
+	        - containerPort: 3000
+	          protocol: TCP
+	      imagePullSecrets:
+	      - name: wrelease
+	      restartPolicy: Always
+	---
+	apiVersion: v1
+	kind: Service
+	metadata:
+	  name: rest-jscreditscore-svc03
+	spec:
+	  selector:
+	    run: rest-jscreditscore03
+	  ports:
+	    - port: 8103
+	      targetPort: 3000
+	type: ClusterIP
+
+Commit the changes to the master branch of your repository (at the bottom of the screen)
+
+Now edit the file called "ingress.yml.template".  This file controls the load balancer that provides external access to your application running on one ore more pods inside the K8S environment.
+
+- Change the name "rest-jscreditscore-ing" to "rest-jscreditscore-ingxx" where xx is your user number
+- Change the port number to use the same port "81xx" you specified in the previous file
+- Change the path to comprise "userxx" at the end
+As an example, the resulting file for user03 would look like below:
+
+	apiVersion: extensions/v1beta1
+	kind: Ingress
+	metadata:
+	  name: rest-jscreditscore-ing03
+	  annotations:
+	    kubernetes.io/ingress.class: 'nginx'
+	    ingress.kubernetes.io/add-base-url: 'true'
+	    ingress.kubernetes.io/rewrite-target: /
+	spec:
+	  rules:
+	  - http:
+	      paths:
+	      - path: /$WERCKER_APPLICATION_OWNER_NAME/user03/
+	        backend:
+	          serviceName: rest-jscreditscore-svc03
+	          servicePort: 8103
+
+Commit the changes before moving to the next step.
+
 
 ### Define CI/CD workflow ###
 
@@ -311,9 +426,9 @@ Now the workflow for simple DevOps use case is ready.
 
 The only thing what is missing to run the workflow is the enviroment configuration. The pipelines basically run within Oracle Container Pipelines but at the and of a successful build the workflow stores the packaged application to Oracle Container Releases (~Docker Registry) and deploy to Oracle Container Engine (Kubernetes Cluster) what require authentication and address. At the beginning of this tutorial you created personal token and gathered the Oracle Container Engine instance (master node) adddress. These two parameters will determine the deployment environment and ensure the access.
 
-Go back your application select **Pipelines** and your application (angular-node-creditscore). 
+Go back your application select **Pipelines** and your application **userxx-angular-node**.
 
-![alt text](images/wercker.application.20.png)
+![alt text](images/wercker.application.20b.png)
 
 The pipelines can have independent variables per pipelines or *global* scope variables. To simplify the configuration define *global* scope variables. Click the **Workflow** tab then select **Environment** tab. Set the name and value pairs for the following configuration variables.
 
