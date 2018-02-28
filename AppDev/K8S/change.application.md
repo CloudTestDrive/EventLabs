@@ -1,8 +1,6 @@
 ## Application Lifecycle Management ##
 
-Make sure you are signed in to [https://github.com](https://github.com) and [https://app.wercker.com](https://app.wercker.com). It is recommended to open two browser windows/tabs for [https://github.com](https://github.com) and [https://app.wercker.com](https://app.wercker.com) because you need to use both of them in parallel.
-
-The first use case for Application Lifecycle Management is the following simplified scenario which includes a github pull and merge request:
+In this part of the lab we will experience the Application Lifecycle Management management of the environment:
 
 1. Change the context path of the backend microservice using a new branch.
 2. Commit the changes and check the CI/CD workflow. The non-master branch executes the test route.
@@ -16,7 +14,7 @@ The first use case for Application Lifecycle Management is the following simplif
 
 ### Change the application source code ###
 
-First switch to the browser where [github.com](https://github.com) is opened (or open and sign in) and find the `app.js` file in your *angular-node-creditscore* repository which defines the REST endpoint's context path. You can reach this file directly too, just type the following URL: `https://github.com/GITHUB_USERNAME/angular-node-creditscore/blob/master/app.js`. Click on the pencil icon to edit.
+First switch to the browser where [github.com](https://github.com) is opened (or open and sign in) and find the `app.js` file in your *userxx-angular-node* repository which defines the REST endpoint's context path. Click on the pencil icon to edit.
 
 ![alt text](images/wercker.change.01.png)
 
@@ -42,7 +40,7 @@ Scroll down to the *Test Microservice* part and you can see the original context
 
 ### Update the test case and other references to the new endpoint ###
 
-Change back to the browser where [github.com](https://github.com) is opened and find the `wercker.yml` file in your *angular-node-creditscore* repository. You can reach this file directly too, just type the following URL: `https://github.com/GITHUB_USERNAME/angular-node-creditscore/blob/master/wercker.yml`. Click on the pencil icon to edit.
+Change back to the browser where [github.com](https://github.com) is opened and find the `wercker.yml` file in your *userxx-angular-node* repository. Click on the pencil icon to edit.
 
 ![alt text](images/wercker.change.05.png)
 
@@ -54,7 +52,7 @@ Set a commit message and make sure the patch branch (previously created) is sele
 
 ![alt text](images/wercker.change.06.png)
 
-Finally modify the UI REST endpoint configuration. Find the `/public/js/service/customer_service.js` file in your *angular-node-creditscore* repository. You can reach this file directly too, just type the following URL: `https://github.com/GITHUB_USERNAME/angular-node-creditscore/blob/PATCH_BRANCH_NAME/public/js/service/customer_service.js`. Make sure the patch branch selected. Click on the pencil icon to edit.
+Finally modify the UI REST endpoint configuration. Find the `/public/js/service/customer_service.js` file in your *userxx-angular-node* repository. Make sure the patch branch selected. Click on the pencil icon to edit.
 
 ![alt text](images/wercker.change.07.png)
 
@@ -80,11 +78,11 @@ Now the application changes has been tested. Now the source changes are ready to
 
 ### Create pull request and merge the changes ###
 
-Switch back to the browser where the [github.com](https://github.com) is already opened. Go to the root of the *angular-node-creditscore* repository and select the patch branch and click **New pull request**.
+Switch back to the browser where the [github.com](https://github.com) is already opened. Go to the root of the *userxx-angular-node* repository and select the patch branch and click **New pull request**.
 
 ![alt text](images/wercker.change.11.png)
 
-Using this page you can create a pull request to master branch. It is important to select the correct base and head. Most likely the default base (fork) is set to the original (*https://github.com/nagypeter/angular-node-creditscore*) repository. Change this base to your fork. Make sure the base fork has the master branch. The head fork defaults usually good, but please check the head fork points to your (forked) repository and the pull request based on the patch you created.
+Using this page you can create a pull request to master branch. It is important to select the correct base and head. Most likely the default base (fork) is set to the original (*https://github.com/<GITHUB_USER>/userxx-angular-node*) repository. Change this base to your fork. Make sure the base fork has the master branch. The head fork defaults usually good, but please check the head fork points to your (forked) repository and the pull request based on the patch you created.
 
 ![alt text](images/wercker.change.12.png)
 
@@ -111,3 +109,10 @@ Finally test the application which now uses the new endpoint of the backend serv
 Before the application test open the browser's console using **Ctrl+Shift+I** and select the **Network** tab. Set the necessary fields and click **Score**. In the network console page you have to see the REST endpoint invocation which is `creditscoreV2`. You can see the complete backend service URL when you hover the mouse pointer on `creditscoreV2` network event. Please note the `V2` postfix in the complete URL.
 
 ![alt text](images/wercker.change.17.png)
+
+## Next Steps ##
+
+This is the end of the second exercise on Container pipelines. Follow the link below to go back to the main Container Native page, where other steps are available.
+
+---
+[Go to Container Lab Overview Page](readme.md)
