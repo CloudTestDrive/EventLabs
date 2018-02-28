@@ -19,7 +19,7 @@ Oracle services being used during the hands-on are the following:
 
 **Architecture**
 
-![](../common/images/oracle.container.native.png)
+![](images/oracle.container.native.png)
 
 
 ## The topics to be covered in this hands-on session are: ##
