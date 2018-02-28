@@ -29,7 +29,7 @@ For this lab you will need to use the Github and Wercker Account information pro
 
 
 
-## The topics to be covered in this hands-on session are: ##
+## Steps to follow in this hands-on session are: ##
 
 1. [Create Oracle Container Pipeline to build, test and package sample application](sample.app.pipeline.md)
 2. [Application Lifecycle Management (Web - Github)](change.application.md)
