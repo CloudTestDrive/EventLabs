@@ -21,6 +21,13 @@ Oracle services being used during the hands-on are the following:
 
 ![](images/oracle.container.native.png)
 
+## Prerequisites ##
+
+For this lab you will need to use the Github and Wercker Account information provided to you by your instructor.  As all participants will work on a common environment, we will use "prefixes" throughout this exercise to distinguish between participants.
+
+**Please be carefull to read the instructions and use your "userxx" label for the appropriate objects.**
+
+
 
 ## The topics to be covered in this hands-on session are: ##
 
