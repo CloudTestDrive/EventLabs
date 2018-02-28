@@ -193,35 +193,10 @@ Now enter the source repository URL and your new repository name:
 
 ![alt text](images/wercker.application.01c.png)
 
+Now your repository is created, navigate to the top level page.
 
-
-### Create application pipelines ###
-
-When the repository is created, change to the browser where [https://app.wercker.com](https://app.wercker.com) is open. Select **Pipelines** and click **Create an application** to create a new pipeline. (You can click on the plus sign at the top right corner and select **Add application** too.)
-
-![alt text](images/wercker.application.02.png)
-
-Select the application owner. Use the default user and don't select the organization if exists.
-
-![alt text](images/wercker.application.03.png)
-
-Now select the repository you just created and that contains your "userxx" prefix.  Next click **Use selected repo**.
-
-![alt text](images/wercker.application.03b.png)
-
-In case of private repositories you should define the access method. Since the the sample repository created as public you can leave the default checkout method. Click **Next step**.
-
-![alt text](images/wercker.application.05.png)
-
-Finally you can choose whether your application is public or not. We recommend to leave default which means the application will be private. Click **Finish** to create your application.
-
-![alt text](images/wercker.application.06.png)
-
-You will now land on a page where you are invited to create a neww wercker.yml file
-
-**We will not do this, our wercker.yml file is already on the top level of our Github repository**
-
-Before you move forward please open the Github window and click on the "wercker.yml" file on the top level of your repository.  The configuration should look like the below:
+### Config files for Wercker pipelines ###
+On the top level of your repository, click on the "wercker.yml" file.  The configuration should look like the below:
 
 	box: node:6.10
 	build:
@@ -339,11 +314,14 @@ The resulting file for user03 should now look like this :
 
 Commit the changes to the master branch of your repository (at the bottom of the screen)
 
+![alt text](images/wercker.application.102.png)
+
 Now edit the file called "ingress.yml.template".  This file controls the load balancer that provides external access to your application running on one ore more pods inside the K8S environment.
 
 - Change the name "rest-jscreditscore-ing" to "rest-jscreditscore-ingxx" where xx is your user number
 - Change the port number to use the same port "81xx" you specified in the previous file
 - Change the path to comprise "userxx" at the end
+
 As an example, the resulting file for user03 would look like below:
 
 	apiVersion: extensions/v1beta1
@@ -364,6 +342,34 @@ As an example, the resulting file for user03 would look like below:
 	          servicePort: 8103
 
 Commit the changes before moving to the next step.
+
+
+### Create application pipelines ###
+
+Change to the browser where [https://app.wercker.com](https://app.wercker.com) is open. Select **Pipelines** and click **Create an application** to create a new pipeline. (You can click on the plus sign at the top right corner and select **Add application** too.)
+
+![alt text](images/wercker.application.02.png)
+
+Select the application owner. Use the default user and don't select the organization if exists.
+
+![alt text](images/wercker.application.03.png)
+
+Now select the repository you just created and that contains your "userxx" prefix.  Next click **Use selected repo**.
+
+![alt text](images/wercker.application.03b.png)
+
+In case of private repositories you should define the access method. Since the the sample repository created as public you can leave the default checkout method. Click **Next step**.
+
+![alt text](images/wercker.application.05.png)
+
+Finally you can choose whether your application is public or not. We recommend to leave default which means the application will be private. Click **Finish** to create your application.
+
+![alt text](images/wercker.application.06.png)
+
+You will now land on a page where you are invited to create a neww wercker.yml file
+
+**We will not do this here, as our wercker.yml file is already on the top level of our Github repository**
+
 
 
 ### Define CI/CD workflow ###
