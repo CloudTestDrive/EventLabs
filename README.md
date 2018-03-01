@@ -49,6 +49,8 @@ The objective of this lab is to give you a comprehensive overview of the Oracle 
 ## Infrastructure-as-a-Service ##
 This chapter regroups a subset of the exercises already detailed in the previous topics to create a specific focus on IaaS services only.  This covers Compute CS and Container CS.  [Follow this link for the details](IaaS/readme.md)
 
+## Artificial Intelligence ##
++ [Develop an application that consumes an AI service](AI/ai-service.md) - Develop a Web Application that uses a cloud service to analyse the emotions of people inside an image and run the application on Oracle [Application Container Cloud Service](https://cloud.oracle.com/acc). 
 
 ## Prerequisites ##
 
