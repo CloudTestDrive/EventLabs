@@ -23,8 +23,8 @@ During this day you will be able to experience the various cloud services from O
 + [Create a new image based on the Docker GlassFish image](AppDev/container/glassfish_import.md)
 
 **Advanced exercises with Wercker and Kubernetes**
-+ [Container Pipelines, Container Registry and Kubernetes Cluster to deploy an Angular Node application](AppDev/K8S/readme.md)
-+ [CI/CD with Wercker : Build a Node.js-MongoDB container packaged application using Wercker pipelines](AppDev/container/wercker.md)
++ [CI/CD with Container Pipelines, Container Registry and Kubernetes Cluster to deploy an Angular Node application](AppDev/K8S/readme.md)
++ [CI/CD with Wercker, Docker Registry and OCCS: Build a Node.js-MongoDB container application](AppDev/container/wercker.md)
 + [Run your first serverless Function using FnProject](AppDev/functions/readme.md)
 
 
