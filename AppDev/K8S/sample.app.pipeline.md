@@ -346,6 +346,9 @@ As an example, the resulting file for user03 would look like below:
 	        backend:
 	          serviceName: rest-jscreditscore-svc03
 	          servicePort: 8103
+		  
+![alt text](images/wercker.application.103.png)
+
 
 Commit the changes before moving to the next step.
 
