@@ -164,6 +164,12 @@ You can access Dashboard using the kubectl command-line tool by running the foll
 
 This command runs `kubectl` in a mode where it acts as a reverse proxy. It handles locating the apiserver and authenticating and make Dashboard available at [http://localhost:8001/ui](http://localhost:8001/ui). (If the short link doesn't work -this is a bug most probably with version 1.8.5- try this: [http://localhost:8001/api/v1/namespaces/kube-system/services/kubernetes-dashboard/proxy](http://localhost:8001/api/v1/namespaces/kube-system/services/kubernetes-dashboard/proxy)) Please note the UI can only be accessed from the machine where the command is executed. Open the dashboard.
 
+You will be using port 8001 on your laptop, in case this port is already in use by another application you can easily specify to use another port using following syntax:
+
+	kubectl proxy --port=8333
+
+REMARK: the screen you will get might look slightly different, as this depends on the state of the cluster you are visualizing.
+
 ![alt text](images/wercker.application.31.png)
 
 Dashboard shows most Kubernetes object kinds and groups them in a few menu categories.
@@ -184,7 +190,7 @@ First you need a github.com based source code repository for the sample applicat
 
 
 Now enter the source repository URL and your new repository name:
-- Enter the following URL into the address bar : https://github.com/nagypeter/angular-node-creditscore
+- Enter the following URL into "Your old repository’s clone URL" : https://github.com/nagypeter/angular-node-creditscore
 - Enter the name of your new repository, using your "userxx" prefix: for example "user04-angular-node".  Only use small caps in the name of the repository !!
 
 **ATTENTION : read the above AGAIN : ONLY SMALL CAPS FOR THE NAME OF YOUR REPOSITORY !!!**
@@ -245,7 +251,7 @@ On the top level of your repository, click on the "wercker.yml" file.  The confi
            
 
 The *wercker.yml* defines the configuration of your automation pipelines with a collection of Steps that you wish to execute.
-In your *wercker.yml* you can specify any pipeline you like. There is one special pipeline called `dev` which will only be executed when running it with the CLI using the wercker dev command. Examples of pipeline names: *build*, *push-to-releases, rest-functional-test*, etc.
+In your *wercker.yml* you can specify any pipeline you like. Examples of pipeline names: *build*, *push-to-releases, rest-functional-test*, etc.
 
 A pipeline can have its own base box (Docker container), like in this example the *node:6.10* official Node.js Docker container. You can use different base boxes per pipeline.
 
