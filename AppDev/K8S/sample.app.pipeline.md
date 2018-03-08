@@ -273,50 +273,8 @@ As all participants will be deploying to the same Kubernetes environment, we wil
 
 The resulting file for user03 should now look like this :
 
-	#
-	# Copyright (c) 2017 Oracle and/or its affiliates. All rights reserved.
-	#
-	
-	apiVersion: extensions/v1beta1
-	kind: Deployment
-	metadata:
-	  name: rest-jscreditscore03
-	  labels:
-	    run: rest-jscreditscore03
-	spec:
-	  replicas: 1
-	  strategy:
-	    rollingUpdate:
-	      maxSurge: 1
-	      maxUnavailable: 1
-	    type: RollingUpdate
-	  template:
-	    metadata:
-	      labels:
-	        run: rest-jscreditscore03
-	    spec:
-	      containers:
-	      - image: wcr.io/$WERCKER_APPLICATION_OWNER_NAME/$WERCKER_APPLICATION_NAME:$WERCKER_GIT_BRANCH-$WERCKER_GIT_COMMIT
-	        imagePullPolicy: Always
-	        name: rest-jscreditscore03
-	        ports:
-	        - containerPort: 3000
-	          protocol: TCP
-	      imagePullSecrets:
-	      - name: wrelease
-	      restartPolicy: Always
-	---
-	apiVersion: v1
-	kind: Service
-	metadata:
-	  name: rest-jscreditscore-svc03
-	spec:
-	  selector:
-	    run: rest-jscreditscore03
-	  ports:
-	    - port: 8103
-	      targetPort: 3000
-	type: ClusterIP
+![alt text](images/wercker.application.104.png)
+
 
 Commit the changes to the master branch of your repository (at the bottom of the screen)
 
@@ -329,23 +287,6 @@ Now edit the file called "ingress.yml.template".  This file controls the load ba
 - Change the path to comprise "userxx" at the end
 
 As an example, the resulting file for user03 would look like below:
-
-	apiVersion: extensions/v1beta1
-	kind: Ingress
-	metadata:
-	  name: rest-jscreditscore-ing03
-	  annotations:
-	    kubernetes.io/ingress.class: 'nginx'
-	    ingress.kubernetes.io/add-base-url: 'true'
-	    ingress.kubernetes.io/rewrite-target: /
-	spec:
-	  rules:
-	  - http:
-	      paths:
-	      - path: /$WERCKER_APPLICATION_OWNER_NAME/user03/
-	        backend:
-	          serviceName: rest-jscreditscore-svc03
-	          servicePort: 8103
 		  
 ![alt text](images/wercker.application.103.png)
 
