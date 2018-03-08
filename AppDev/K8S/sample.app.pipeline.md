@@ -372,7 +372,7 @@ Finally you can choose whether your application is public or not. We recommend t
 
 ![alt text](images/wercker.application.06.png)
 
-You will now land on a page where you are invited to create a neww wercker.yml file
+You will now land on a page where you are invited to create a new wercker.yml file
 
 **We will not do this here, as our wercker.yml file is already on the top level of our Github repository**
 
