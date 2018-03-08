@@ -425,7 +425,7 @@ Scroll down to open the *get LoadBalancer public IP address* step and check the 
 
 ![alt text](images/wercker.application.26.png)
 
-Open a new browser window or tab and open your sample application using the following URL: `https://PUBLIC_IP_ADDRESS/USERNAME/`. Where the USERNAME is your Oracle Container Pipelines (former Wercker) user name. It should be a similar to: `https://129.213.15.72/johnasmith/`
+Open a new browser window or tab and open your sample application using the following URL: `https://PUBLIC_IP_ADDRESS/USERNAME/userxx/`. Where the USERNAME is your Oracle Container Pipelines (former Wercker) user name. It should be a similar to: `https://129.213.15.72/cn-demo-user20/user08/`
 
 Due to the reason that the proper certification hasn't been configured you get a security warning. Ignore and allow to open the page.
 
