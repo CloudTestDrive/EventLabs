@@ -20,7 +20,7 @@ git clone https://github.com/thebeebs/faceclassificationfrontend.git
 
 Navigate to the file. ```Js/viewModels/dashboard.js``` and on line *173* change the URL to point to the service you created in step one. For user 5 this should like like:
 
-![](step2-modifyURL.png)
+![](images/step2-modifyURL.png)
 
 One you have made this change Zip the content of the entire folder. This Zip folder will be what you upload to ACCS.
 ## Open the ACCS console
@@ -41,11 +41,11 @@ You should now see the Dashboard.
 
 Click on "Create Application" it will pop up a model window. Selet Node as the platform,
 
-![](step2-createModel.png)
+![](images/step2-createModel.png)
 
 Give the Application the name faceclassificationUser01 where User01 is replaced by your own username.
 
-![](step2-givname.png)
+![](images/step2-givname.png)
 
 Click the create button at the bottom right to create the application.
 
@@ -53,7 +53,7 @@ It should then take no longer than 5 mintues to deploy the application. You may 
 
 Once the application has been deployed you should see a URL a the bottom of the screen.
 
-![](step2-url.png)
+![](images/step2-url.png)
 
 Click the URL to navigate to the web application. You should now be able to upload an image and have the service recognise the faces and classify the emotions.
 
