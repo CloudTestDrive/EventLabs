@@ -2,7 +2,7 @@
 
 ![](../common/images/customer.logo2.png)
 
-# AI Web Application #
+# AI Development Lab - Step 2 #
 
 ---
 ## License ##

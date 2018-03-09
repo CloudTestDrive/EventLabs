@@ -2,7 +2,7 @@
 
 ![](../common/images/customer.logo2.png)
 
-# AI Service Container Lab #
+# AI Development Lab - Step 1 #
 ## Import and deploy a AI Service Docker image onto Oracle Container Cloud Service ##
 
 ### Introduction ###
