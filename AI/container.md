@@ -16,11 +16,11 @@ Follow the link provided to the Container Admin console.  At this point your bro
 
 Enter the credentials supplied by the instructors.
 
-![](http://via.placeholder.com/350x150)
+![](http://via.placeholder.com/880x200)
 
 You should now see the Dashboard.
 
-![](http://via.placeholder.com/350x150)
+![](http://via.placeholder.com/880x200)
 
 ### Create a new service for AI Service
 
@@ -42,11 +42,11 @@ Each mapping routes traffic from \<host>:\<port> to \<container>:\<port>. But si
 - - Protocol : TCP
 
 For example the 8080 mapping for user 05 should look like this:
-![](http://via.placeholder.com/350x150)
+![](http://via.placeholder.com/880x200)
 
 The completed form should look like this:
 
-![](http://via.placeholder.com/350x150)
+![](http://via.placeholder.com/880x200)
 
 The faceclassification service should now be shown in the "Services" list.  
 - Click on "Deploy" for the service you just created
@@ -55,11 +55,11 @@ Take the defaults in the deploy faceclassification dialog and click "Deploy".
 
 The faceclassification image should be downloaded and deployed to OCCS.
 
-![](http://via.placeholder.com/350x150)
+![](http://via.placeholder.com/880x200)
 
 Click on the hostname link.  This is the host on which your image is deployed.
 
-![](http://via.placeholder.com/350x150)
+![](http://via.placeholder.com/880x200)
 
 - Take a note of the IP address
 - now browse to http://<host-ip-address>:8080 (plus your usernumber, e.g. 8085) to see the welcome screen.
