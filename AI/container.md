@@ -37,9 +37,9 @@ Each mapping routes traffic from \<host>:\<port> to \<container>:\<port>. But si
 - click on the "Ports" checkbox under "Available Options" on the right side of the screen
 - click "+Add" in the "Ports" section that has appeared on the bottom left
 - Add the three port mappings:
-- - Host Port : Enter the sum of 8080 + your user number for the Host Port : e.g. user05 will use port 8080 + 5 = 8085
-- - Container Port : 8084
-- - Protocol : TCP
+    - Host Port : Enter the sum of 8080 + your user number for the Host Port : e.g. user05 will use port 8080 + 5 = 8085
+    - Container Port : 8084
+    - Protocol : TCP
 
 For example the 8080 mapping for user 05 should look like this:
 ![](http://via.placeholder.com/880x200)
