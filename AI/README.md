@@ -1,3 +1,8 @@
+[Go to the Cloud Test Drive Overview](../README.md)
+
+![](../common/images/customer.logo2.png)
+
+# AI Development Lab #
 ### Introduction
 
 In this lab, we will build a web application that will call an AI service that solves an image classification problem.
@@ -10,5 +15,3 @@ Our demo application will allow a user to upload an image and send it to the ser
 
 + Step 1 : [Deploy AI service as a container to the Container Cloud Service ](container.md)
 + Step 2 : [Deploy demo AI application to Application Container Cloud](applicationcontainer.md): Create continuous build integration using Oracle Developer Cloud Service
-
-
