@@ -66,6 +66,8 @@ Click on the hostname link.  This is the host on which your image is deployed.
 
 Your service is now listening on the port you specified. We will now create an application that can consume it.
 
++ Step 2 : [Deploy demo AI application to Application Container Cloud](applicationcontainer.md): Create continuous build integration using Oracle Developer Cloud Service
+
 ---
 ## License ##
 
