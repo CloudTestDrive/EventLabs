@@ -1,4 +1,4 @@
-[Go to the Cloud Test Drive Overview](../README.md)
+[Go back to Overview Page](../README.md)
 
 ![](../common/images/customer.logo2.png)
 
@@ -14,4 +14,4 @@ The Universal Permissive License (UPL), Version 1.0
 [Details](../common/license.md)
 
 ---
-[Go to the Cloud Test Drive Overview](../README.md)
+[Go back to Overview Page](../README.md)
