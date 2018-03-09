@@ -53,7 +53,7 @@ It should then take no longer than 5 mintues to deploy the application. You may 
 
 Once the application has been deployed you should see a URL a the bottom of the screen.
 
-![](images/step2-url.png)
+![](/images/step2-url.png)
 
 Click the URL to navigate to the web application. You should now be able to upload an image and have the service recognise the faces and classify the emotions.
 
