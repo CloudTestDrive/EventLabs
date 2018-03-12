@@ -8,8 +8,8 @@
 
 ### Setting up your screens ###
 
-- Open a browser window on [https://github.com](https://github.com) and sign in using the credentials provided
-- Open a second window on [https://app.wercker.com](https://app.wercker.com) and use the "Sign in with GitHub" button.
+- Open a **new** browser window using the following URL: http://github.com, and sign in using **your group user_id** that was provided in the access document.  This user should look line "cn-demo_xx..."
+- Open a second **new** window on http://wercker.com and use the "Sign in with GitHub" button.
 
 
 The steps we will go through for setting up the simplified Continuous Integration/Continuous Deployment (CI/CD) are the following using Oracle Container Pipelines:
