@@ -17,8 +17,8 @@ We'll run these components on the various levels of the infrastructure : either 
 + Step 3 : [Oracle Java Cloud Service Policy Based Auto Scaling](jcs-autoscale/README.md) : Experiment with the existing JCS instance in the Cloud Test Drive environment: 
 
 To demonstrate how open the Oracle Compute Cloud Service is, you can also deploy images from 3rd parties straight into your Oracle Cloud infrastructure: below you can find an optional exercise where we will deploy a Ruby image from the 3rd party Bitnami environment into the Compute Cloud Service
-+ Step 8 : [Deploy a Bitnami Ruby image onto the Oracle Compute Cloud](bitnami/create_account.md)
-+ Step 9 : [Connect to the newly created Ruby instance](bitnami/connect.md)
++ Step 4 : [Deploy a Bitnami Ruby image onto the Oracle Compute Cloud](bitnami/create_account.md)
++ Step 5 : [Connect to the newly created Ruby instance](bitnami/connect.md)
 
 ---
 
