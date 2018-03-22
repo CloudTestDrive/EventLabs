@@ -21,7 +21,7 @@ This lab is composed of a series of steps.  Your instructor will inform you whic
 + Download the tutorial by clicking on the links below, and then **use the "Download" button** .  
 Attention ! To come back to this page, hit the "Back" button of your browser !
 
-  - Lab 1 - creating a network with 3 orgs
+  - Lab 1 - [creating a network with 3 orgs](Lab1_BCS_Network_HOL.docx)
   - Lab 2 - working with this network (sample application AND REST API)
   - Lab 3a & 3b - working with Sample App & REST API
   - Lab 4 - extending network (COMING)
