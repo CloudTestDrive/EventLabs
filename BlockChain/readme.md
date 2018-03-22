@@ -22,8 +22,8 @@ This lab is composed of a series of steps.  Your instructor will inform you whic
 Attention ! To come back to this page, hit the "Back" button of your browser !
 
   - Lab 1 - [creating a network with 3 orgs](Lab1_BCS_Network_HOL.docx)
-  - Lab 2 - working with this network (sample application AND REST API)
-  - Lab 3a & 3b - working with Sample App & REST API
+  - Lab 2 - [working with this network](Lab2_BCS_Network_HOL.docx)
+  - Lab 3 - working with Sample App & REST API, [part 3a](Lab3a_BCS_Network_1Hour_Transactions.docx) and [part 3b](Lab3b_BCS_Network_1Hour_REST_API.docx)
   - Lab 4 - extending network (COMING)
   - Lab 5 - working with chaincode (COMING)
 
