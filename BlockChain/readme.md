@@ -6,13 +6,13 @@
 
 ## Introduction - what is Blockchain ? ##
 
-![](images/ICSBanner.PNG)
+![](images/what-is-blockchain.png)
 
-![](images/AboutICS.PNG)
+![](images/blockchain-components.png)
 
 ## What will you do with Blockchain in this Lab ? ##
 
-![](images/ICSExercise.PNG)
+![](images/hol-steps.png)
 
 ## Let's start ! ##
 
