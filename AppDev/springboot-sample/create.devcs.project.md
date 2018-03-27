@@ -41,12 +41,12 @@ Go to the Console (see Access inforrmation that was delivered to you in the work
 
 On the Developer Cloud Service console, you should have access to the project "CloudTestDrive".
 
-![](images/dev001.png)
+![](images/dev001j.png)
 
 + Open the project by clicking on the name "CloudTestDrive
 + Now create a new repository using the green button
 
-![](images/dev002.png)
+![](images/dev002j.png)
 
 + Enter the name of the repository : springboot-userxx
 + Choose the option *Import existing repository*
