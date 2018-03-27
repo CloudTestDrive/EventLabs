@@ -65,12 +65,10 @@ Please note the build job contains an extra build step which packs the default a
 Now we will create a deployment configuration which enable direct deployment to Application Container Cloud services after a successful build job. In order to deploy automatically to this service, you first need to collect your identity domain from the ACCS Overview screen.  
 
 - Switch to the window where you have your Cloud Domain Dashboard, and click on the word "Application Container".  This will lead you to the Application Container Service Overview
+- Note the Data region of your instance: this is probably EMEA Commercial 2 (code EM2), or US Commercial 2 (code US2)
+- Depending on the type of instance you are using, you will either use the "Identity Service ID", which has the form "idcs-xxxxxxx", or in case you do not see this parameter on your Overview screen, you will use the "Identity Domain ID", which has a form of "gse00xxxxx".
 
------
-
-- Depending on the type of instance you are using, you will either use the "Identity Service ID", 
-
-Change to **Deploy** page in DevCS and create **New Configuration** 
+Switch back to the browser window where you have Developer Cloud running, change to the **Deploy** page, and create **New Configuration** 
 
 ![alt text](images/11.new.deploy.png "New deploy configuration")
 
