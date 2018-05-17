@@ -359,10 +359,11 @@ The pipelines can have independent variables per pipelines or *global* scope var
 
 + **KUBERNETES\_MASTER** = Use the Kubernetes Server address you copied from the kubeconfig file 
 + **KUBERNETES\_TOKEN** = the user token you copied from the kubeconfig file
-+ **DOCKER_REGISTRY** = https://registry.hub.docker.com/v2
-+ **DOCKER_REPO** = ctdwercker/angular-node-creditscorexx , where xx at the end is your prefix ID (example 03)
-+ **DOCKER_USERNAME** = ctdwercker
-+ **DOCKER_PASSWORD** = password as provided in the access document
++ **DOCKER_REGISTRY** = https://phx.ocir.io/v2
++ **DOCKER_REPO** = phx.ocir.io/gse00014344/userxx , where xx at the end is your prefix ID (example 03)
++ **DOCKER_SERVER** = phx.ocir.io
++ **DOCKER_USERNAME** = gse00014344/api.user
++ **DOCKER_PASSWORD** = token provided by your instructor in separate file called "docker_password_token" 
 
 When you need to add new variable click **Add** button which saves the current row and add a new one. You can use the **Protected** tick box to store safely your value e.g. personal token.
 
