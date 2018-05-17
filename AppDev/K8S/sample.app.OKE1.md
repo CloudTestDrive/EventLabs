@@ -80,7 +80,8 @@ Verify the installation using the version command.
  	a period of time, or established connection failed because connected host has failed to respond.
 
 After the successful installation you need to get the kubeconfig configuration file that belongs to your cluster. This file will be included in the package provided to you by the instructors.
-Copy the file to a location on your local machine (for example the "Downloads" folder)
+
+- Copy the file to a location on your local machine (for example the "Downloads" folder)
 
 The *kubeconfig* file contains the necessary details and parameters to connect to Oracle Container Engine (Kubernetes cluster). The *clusters* parameter defines the available clusters. The minimum set of the properties are the address of the master node, the certification and it's name to refer. For later usage copy your server address. In the example above it is:*https://c9f1b2bbcs1.prod.cluster.us-ashburn-1.oracledx.com:6443*.
 When execute a `kubectl` command first it tries to read the default configuration file: *config* file from default location. On Linux it is `~/.kube` and on Windows it is `c:\Users\<USERNAME>\.kube`. But you can store *config* file at different path and even with different name e.g.*kubeconfig*. Just set the configuration file location as KUBECONFIG environment variable in your command line terminal where you want to execute `kubectl` commands.
@@ -164,6 +165,10 @@ On the top level of your repository, click on the "wercker.yml" file.  The confi
 	  steps:
 	    # Push to public docker repo Container Registry (CR)
 	    - internal/docker-push:
+	        username: $DOCKER_USERNAME
+                password: $DOCKER_PASSWORD
+                repository: $DOCKER_REPO
+                registry: $DOCKER_REGISTRY
 	        tag: $WERCKER_GIT_BRANCH-$WERCKER_GIT_COMMIT
 	        cmd: node /pipeline/source/app.js
 	
@@ -330,6 +335,14 @@ Now the workflow for simple DevOps use case is ready.
 ### Define configuration variables ###
 
 The only thing what is missing to run the workflow is the enviroment configuration. The pipelines basically run within Oracle Container Pipelines but at the and of a successful build the workflow stores the packaged application to Oracle Container Releases (~Docker Registry) and deploy to Oracle Container Engine (Kubernetes Cluster) what require authentication and address. At the beginning of this tutorial you created personal token and gathered the Oracle Container Engine instance (master node) adddress. These two parameters will determine the deployment environment and ensure the access.
+
+First you need to collect some information to populate these variables.  Copy these strings in a text editor window on the side for easy manipulation
+
+- Open the kubeconfig file you downloaded previously, and copy following 2 elements 
+- Copy the Kubernetes Server address 
+- Copy the user token
+
+![alt text](images/kubeconfig.png)
 
 Go back your application select **Pipelines** and your application **userxx-angular-node**.
 
