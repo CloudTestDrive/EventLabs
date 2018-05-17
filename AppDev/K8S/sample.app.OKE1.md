@@ -117,6 +117,13 @@ This command runs `kubectl` in a mode where it acts as a reverse proxy. It handl
 You will be using port 8001 on your laptop, in case this port is already in use by another application you can easily specify to use another port using following syntax:
 
 	kubectl proxy --port=8333
+	
+You will be asked to provide the kubeconfig file before you can access the console.
+- Choose the Kubeconfig option
+- Click on the "Choose kubeconfig file" area and select the kubeconfig file you have downloaded on your machine
+- Click "Sign In"
+
+![alt text](images/kubeproxy.png)
 
 REMARK: the screen you will get might look slightly different, as this depends on the state of the cluster you are visualizing.
 
