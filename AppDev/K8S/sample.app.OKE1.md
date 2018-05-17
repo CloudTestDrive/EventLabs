@@ -342,7 +342,7 @@ First you need to collect some information to populate these variables.  Copy th
 - Copy the Kubernetes Server address 
 - Copy the user token
 
-![alt text](images/kubeconfig.png)
+![alt text](images/kubeconfig2.png)
 
 Go back your application select **Pipelines** and your application **userxx-angular-node**.
 
@@ -350,8 +350,12 @@ Go back your application select **Pipelines** and your application **userxx-angu
 
 The pipelines can have independent variables per pipelines or *global* scope variables. To simplify the configuration define *global* scope variables. Click the **Workflow** tab then select **Environment** tab. Set the name and value pairs for the following configuration variables.
 
-+ **KUBERNETES\_MASTER** = Copy the address from kubeconfig file (line 5) the address of the master. It shoud start with *https://* prefix
-+ **KUBERNETES\_TOKEN** = your personal token
++ **KUBERNETES\_MASTER** = Use the Kubernetes Server address you copied from the kubeconfig file 
++ **KUBERNETES\_TOKEN** = the user token you copied from the kubeconfig file
++ **DOCKER_REGISTRY** = https://registry.hub.docker.com/v2
++ **DOCKER_REPO** = ctdwercker/angular-node-creditscorexx , where xx at the end is your prefix ID (example 03)
++ **DOCKER_USERNAME** = ctdwercker
++ **DOCKER_PASSWORD** = password as provided in the access document
 
 When you need to add new variable click **Add** button which saves the current row and add a new one. You can use the **Protected** tick box to store safely your value e.g. personal token.
 
@@ -383,17 +387,7 @@ When the workflow is completed click on the last *deploy-to-Prod* pipeline.
 
 ![alt text](images/wercker.application.25.png)
 
-Scroll down to open the *get LoadBalancer public IP address* step and check the log. At the end of the log copy the Public IP address of the Ingress controller.
-
-![alt text](images/wercker.application.26.png)
-
-Open a new browser window or tab and open your sample application using the following URL: `https://PUBLIC_IP_ADDRESS/USERNAME/userxx/`. Where the USERNAME is your Oracle Container Pipelines (former Wercker) user name. It should be a similar to: `https://129.213.15.72/cn-demo-user20/user08/`
-
-Due to the reason that the proper certification hasn't been configured you get a security warning. Ignore and allow to open the page.
-
-![alt text](images/wercker.application.27.png)
-
-Test your Credit Score application using sample data.
+You can take a look at the output of the various steps to check everything executed as expectd.
 
 ### Manage deployment using Kubernetes Web UI ###
 
@@ -410,15 +404,6 @@ The sample application's Kubernetes deployment configuration created a new names
 
 There you can see your Pods, Deployments, Services, etc. and their status. Basically your container deployed (rest-jscreditscore deployment) on a pod (rest-jscreditscore-25265xxxxxx pod) and exposed through a service (rest-jscreditscore-svc service). To have external IP address you created an Ingress rule (rest-jscreditscore-ing ingress) what configure your name as context path on the shared (common) Ingress controller. The shared Ingress controller is a NGINX deployment which has an External Public IP address.
 
-#### Check the application's log ####
-
-To open your application's log find your pod and click on the log icon. Now you have only one instance.
-
-![alt text](images/wercker.application.33.png)
-
-New browser window/tab opens and there you can see your application's log. The backend service write the incoming data and result to the log, so you can see your latest credit scoring in and outputs.
-
-![alt text](images/wercker.application.34.png)
 
 #### Scale out horizontally your application ####
 
@@ -436,17 +421,6 @@ Wait till the new pod is up and running.
 
 ![alt text](images/wercker.application.37.png)
 
-Open the Credit Score sample application and fill the necessary data using different values to easily distinct the service log.
-
-![alt text](images/wercker.application.38.png)
-
-Open the log of the newly started pod.
-
-![alt text](images/wercker.application.39.png)
-
-The log should include your new inputs. If the log is still empty -probably routed to the older instance- then push again the **Score** button on the sample application to invoke again the backend. Refres the browser window/tab where the new pod's log opened. Verify the data.
-
-![alt text](images/wercker.application.40.png)
 
 ### Manage deployment using `kubectl` ###
 
