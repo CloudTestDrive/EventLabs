@@ -571,6 +571,9 @@ Perform following steps :
 
 Now use a browser on your PC to go to the following address:
         'Fn Server IP_Address':4000        
+        
+Remark: In case you are running an older version of this image, please make sure to validate you use the correct runAdminUI script.  The script should be using the "FN_API_URL" parameter, not the "API_URL" parameter.  :
+> docker run --rm -it --link functions:api -p 4000:4000 -e "**FN_API_URL=http://api:8080**" fnproject/ui
 
 # Wrapping Up
 
