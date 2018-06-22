@@ -25,7 +25,7 @@ During this day you will be able to experience the various cloud services from O
 **Advanced exercises with Wercker and Kubernetes**
 + [CI/CD with Container Pipelines, Container Registry and Kubernetes Cluster to deploy an Angular Node application](AppDev/K8S/sample.app.OKE1.md)
 + [CI/CD with Wercker, Docker Registry and OCCS: Build a Node.js-MongoDB container application](AppDev/container/wercker.md)
-+ [Run your first serverless Function using FnProject](AppDev/functions/readme.md)
++ [Run your first serverless Function using FnProject](AppDev/functions/functions2_lab.md)
 
 
 ## BlockChain ##
