@@ -1,9 +1,13 @@
-# Fn Functions Lab
+[Go back to Overview Page](../AppDevInfra.md)
+
+![](../../common/images/customer.logo2.png)
+## Application Development - Fn Functions lab ##
+### Run Serverless Functions using FnProject.io ###
 
 In this lab you will explore serverless computing using functions with the
 Docker-based open source Fn project.
 
-This page is an overview, pointing you to various individual steps, often pointing directly to the up-to-date function tutorials on fnpro-ject.io.
+This page is an overview, pointing you to various individual steps, often pointing directly to the up-to-date function tutorials on fnproject.io.
 
 **Attention !!** Always use the "back" button of your browser to go back to *this* overview, or you might end up on the generic Functions tutorial repository.
 
