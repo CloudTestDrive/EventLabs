@@ -1,4 +1,5 @@
-##Functions Lab##
+
+## Functions Lab ##
 
 This folder contains the Functions lab tutorials.
 
