@@ -9,6 +9,6 @@ This folder contains the Functions lab tutorials.
   
 - New version : file **function2_lab.md**
   
-  New version on the lab, based on Shaun's Oracle Code HOL (original location : github/shaunsmith/functionslab)
+  New version of the lab, based on Shaun's Oracle Code HOL (original location : github/shaunsmith/functionslab)
   
   
