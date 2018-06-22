@@ -31,7 +31,7 @@ For this lab you will need to use the Github and Wercker Account information pro
 
 ## Steps to follow in this hands-on session are: ##
 
-1. [Create Oracle Container Pipeline to build, test and package sample application](sample.app.OKE1.md)
+1. [Create Oracle Container Pipeline to build, test and package sample application](sample.app.OKE2.md)
 2. [Application Lifecycle Management (Web - Github)](change.application.md)
 3. [Application Lifecycle Management (Desktop - Oracle Container Pipelines CLI)](change.application.desktop.md)
 
