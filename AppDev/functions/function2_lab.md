@@ -1,22 +1,51 @@
 # Fn Functions Lab
 
-In this lab you will also explore serverless computing using functions with the
+In this lab you will explore serverless computing using functions with the
 Docker-based open source Fn project.
 
-This document is meant to be an overview of the entire lab.  Throughout, you may
-be directed to other labs, to run specific sections.  It is important that when
-you finish each major section, you return to *this* document for the next
-section.
+This page is an overview, pointing you to various individual steps, often pointing directly to the up-to-date function tutorials on fnpro-ject.io.
 
-As you make your way through the tutorials, look out for this icon.
-![](images/userinput.png) Whenever you see it, it's time for you to
-perform an action.
+**Attention !!** Always use the "back" button of your browser to go back to *this* overview, or you might end up on the generic Functions tutorial repository.
 
-## Section 1 - Setting up a Docker Environment
 
-* [Docker Options](vm.md)
+## Section 1 - Setting up your Environment ##
 
-## Section 2 - Verifying your Docker Install
+You have several options to set up your Functions environment.  Some key elements that will determine your choice are the type of OS you are running (Windows, Mac or Linux), your ability to install new software on your machine, and whether you already have Docker or VirtualBox available on your machine.
+
+1. **Use a remote instance on a Ravello Server**
+
+    Pro : you only need a browser or a ssh client on your machine
+    
+    Cons : Temporary access only during the session, console emulator via browser not super responsive
+    
+    ==> Follow the link provided by your instructor to access the environment
+  
+
+2. **Install a VM on your machine using VirtualBox, then run a VM image with Functions provided**
+  
+    Pro : local install, you can continue to use it later.  Linux desktop to run the lab.
+    
+    Cons : Need to install/download VirtualBox and the .ova file (3 GB)
+    
+    ==> Your lab instructor may have a USB stick with installers or you can download from
+http://www.oracle.com/technetwork/server-storage/virtualbox/overview/index.html
+
+    ==> Follow instructions on [this page](vm.md) for spinning up the VM
+ 
+ 
+ 3. **Install locally on your machine (advised for Mac and Linux OS)**
+  
+    Pro: local install, best experience and reactivity
+
+    Cons : Install of Docker required
+    
+    ==> Check out this page for installing Docker on Mac: https://docs.docker.com/docker-for-mac/install/
+
+    ==> [Installing Fn](http://fnproject.io/tutorials/install).
+    
+
+
+## Section 2 - Verifying your Docker and Fn Installs
 
 Before we get started with functions we're going to verify that Docker is
 installed and working. In a terminal, type the following command:
@@ -40,9 +69,23 @@ commands with `sudo` in which case you would have to type:
 > sudo docker --version
 >```
 
+Now do the same fo Functions :
+
+![](images/userinput.png)
+>```
+> fn --version
+>```
+
+You should see something like 
+
+```
+fn version 0.4.113
+```
+
+
 ## Section 3 - Functions
 
-With Docker successfully installed it's time to move on to functions.
+With Docker and Fn successfully installed it's time to move on to functions.
 Functions as a Service (FaaS) platforms provide a way to deploy code to
 the cloud without having to worry about provisioning or managing any compute
 infrastructure. The goal of the open source Fn project is to provide a functions
@@ -50,11 +93,6 @@ platform that you can run anywhere--on your laptop or in the cloud. And Fn will
 also be the basis of a fully serverless FaaS platform.  With Fn you can develop
 locally and deploy to the cloud knowing your functions are running on *exactly*
 the same underlying platform.
-
-### Installing Fn
-
-You've got Docker installed so the principal Fn prerequisite is satisfied. So
-let's start by [Installing Fn](http://fnproject.io/tutorials/install).
 
 ### Your First Function
 
