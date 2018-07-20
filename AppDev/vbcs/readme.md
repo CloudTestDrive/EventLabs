@@ -4,44 +4,57 @@
 
 # Visual Builder Cloud Service Lab #
 
-## Using visual development to easily build an application
+## Use visual development to easily build sophisticated Web or Mobile apps
 
 ### Introduction ###
 
-Oracle Visual Builder Cloud Service is a visual development tool for creating web and mobile applications by simply dragging and dropping user interface (UI) components onto a page. You can create business objects with the click of a button, and you can add data by importing CSV files or XLS spreadsheets to your application. You don't need any programming experience to develop an application.
+Oracle Visual Builder Cloud Service is a visual development tool for creating web and mobile applications by simply dragging and dropping user interface (UI) components onto a page. It is aimed at professional developers who want to enhance their productivity by using a low-code tool to help build javascript apps. 
 
-![](images/abcsgs_t2_pagedesigner.png)
+You can create custom business objects with the click of a button, and you can add data by importing CSV files or XLS spreadsheets to your application. You can access any data available via a REST API. You can define the processing logic needed for web and mobile pages. Since there are QuickStarts (Wizards) for most common actions you don't need any programming experience to develop an application. However, you can extend the functionality and change the appearance of your apps at any point using standard HTML, CSS and javascript. You can switch between visual and code mode as required.
 
-This lab will first showcase the development of a simple HR application, based on a "Department and an "Employee" data object.  Next we will see how you can connect to an external REST API, and finally how you can use VBCS to extend SaaS applications.
+![](VBCS_Page_Designer.JPG)
 
-Developing a simple HR application 
+This basic lab will showcase the development of a simple HR web or mobile application, based on Department, Employee and Location data objects by going through the following steps; 
 
-You'll create a Human Resources (HR) application to list all employees and departments of your organization. Using the application, you can add, edit, or remove employees and departments from the database.
-In this tutorial, you'll learn how to:
-+ Create the HR Application web application
-+ Edit the properties of the application and add the application logo, add tab icons, and update the copyright text
-+ Create Employee and Department business objects
-+ Create application form pages to add, edit, and view the data of Employee and Department business objects
-+ Test the application in Test Application mode
-+ Add data manually to the business objects
-+ Import data from a CSV file
+Developing a Web App
 
-Follow the links provided during the workshop to access the Visual Builder Console. You should land on a screen similar to the one below:
++ Create a visual application
++ Create pages for business objects
++ Add navigation and importing data 
++ Add pages for data manipulation
++ Stage and publish an application
++ Create business rules
++ Add bar and area charts 
++ Add pie charts and queries 
 
-![VBCS Console](images/abcsgs_t1_s2.png)
+Developing a Mobile App
 
-Now execute the first part of this lab following the instructions of the tutorial below, using the "+" buttons to expand the sections. After you have finished the "Getting Started with Oracle Visual Builder Cloud Service" lab, use the "Back" button of your browser to come back to this page
++ Create a mobile application 
++ Create pages in the mobile application
++ Import sample data 
++ Add pages for data manipulation
++ Package the mobile application for the Android or iOS platform
++ Publish the mobile application
 
-+ Step 1 : [Getting Started with Oracle Visual Builder Cloud Service](http://www.oracle.com/webfolder/technetwork/tutorials/obe/cloud/appbuilder/GettingStarted/GettingStarted.html)
+### Instructions ###
 
+1. Follow the links provided during the workshop to access the Visual Builder Console. You should land on a screen similar to the one below:
 
+![VBCS Console](VBCS_Console.JPG)
+
+2. Choose to build a web or mobile app. To start, right-click on the link below and then open a new tab to follow the instructions to build whichever flavour you prefer. You can return to it at any time to do more.
+
++ [Oracle VBCS Tutorial; Build a Web or Mobile App](https://docs.oracle.com/en/cloud/paas/app-builder-cloud/tutorials.html)
 
 ---
-
 ## License ##
-Copyright (c) 2014, 2017 Oracle and/or its affiliates
+Copyright (c) 2014, 2018 Oracle and/or its affiliates
 The Universal Permissive License (UPL), Version 1.0   
 [Details](../../common/license.md)
+
+---
+## Further Info ##
+[Oracle VBCS documentation](https://docs.oracle.com/en/cloud/paas/app-builder-cloud/books.html)
 
 ---
 [Go to the Cloud Test Drive Overview](../../README.md)
