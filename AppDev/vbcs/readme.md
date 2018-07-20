@@ -12,7 +12,7 @@ Oracle Visual Builder Cloud Service is a visual development tool for creating we
 
 You can create custom business objects with the click of a button, and you can add data by importing CSV files or XLS spreadsheets to your application. You can access any data available via a REST API. You can define the processing logic needed for web and mobile pages. Since there are QuickStarts (Wizards) for most common actions you don't need any programming experience to develop an application. However, you can extend the functionality and change the appearance of your apps at any point using standard HTML, CSS and javascript. You can switch between visual and code mode as required.
 
-![](VBCS_Page_Designer.JPG)
+![](images/VBCS_Page_Designer.JPG)
 
 This basic lab will showcase the development of a simple HR web or mobile application, based on Department, Employee and Location data objects by going through the following steps; 
 
@@ -40,7 +40,7 @@ Developing a Mobile App
 
 1. Follow the links provided during the workshop to access the Visual Builder Console. You should land on a screen similar to the one below:
 
-![VBCS Console](VBCS_Console.JPG)
+![VBCS Console](images/VBCS_Console.JPG)
 
 2. Choose to build a web or mobile app. To start, right-click on the link below and then open a new tab to follow the instructions to build whichever flavour you prefer. You can return to it at any time to do more.
 
