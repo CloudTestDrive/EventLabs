@@ -24,7 +24,7 @@ Oracle services being used during the hands-on are the following:
 
 ## Prerequisites ##
 
-For this lab you will need to Github and Wercker Accounts.  You can use your existing account, create a new one or use a pre-created instance provided to you by your instructor.  In the case of an instructor-provided environment, all participants will work on a common environment, so we need to use "prefixes" throughout this exercise to distinguish between participants.
+For this lab you will need a Github and Wercker Account.  You can use your existing account, create a new one or use a pre-created instance provided to you by your instructor.  In the case of an instructor-provided environment, all participants will work on a common environment, so we need to use "prefixes" throughout this exercise to distinguish between participants.
 
 **Please be carefull to read the instructions and use your "userxx" label for the appropriate objects.**
 
