@@ -18,7 +18,7 @@ During this day you will be able to experience the various cloud services from O
 
 
 ## Container Native labs ##
-**First exercises to get acquainted with Containers: Oracle Container CLoud Service**
+**First exercises to get acquainted with Containers: Oracle Container Cloud Service**
 + [Deploy a Tomcat Docker image](AppDev/container/tomcat_deploy.md)
 + [Create a new image based on the Docker GlassFish image](AppDev/container/glassfish_import.md)
 
