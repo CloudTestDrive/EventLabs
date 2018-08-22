@@ -6,6 +6,7 @@
 ## Introduction
 
 This lab is designed for people with no prior experience with Docker, Node.js, AngularJS and want to learn the core concepts and basics of Container Native DevOps. 
+It combines the (optional) creation of a Kubernetes cluster on OCI infrastructure, and the setup of a CI/CD pipeline for setting up your development environment.
 
 The demo application is a simple Credit Scoring application. It has a Node.js backend microservice which calculates the credit score based on name, date of birth and SSN. The application UI which invokes the backend miscroservice using REST interface is built on AngularJS.
 
@@ -23,7 +24,7 @@ Oracle services being used during the hands-on are the following:
 
 ## Prerequisites ##
 
-For this lab you will need to use the Github and Wercker Account information provided to you by your instructor.  As all participants will work on a common environment, we will use "prefixes" throughout this exercise to distinguish between participants.
+For this lab you will need to Github and Wercker Accounts.  You can use your existing account, create a new one or use a pre-created instance provided to you by your instructor.  In the case of an instructor-provided environment, all participants will work on a common environment, so we need to use "prefixes" throughout this exercise to distinguish between participants.
 
 **Please be carefull to read the instructions and use your "userxx" label for the appropriate objects.**
 
@@ -31,7 +32,8 @@ For this lab you will need to use the Github and Wercker Account information pro
 
 ## Steps to follow in this hands-on session are: ##
 
-1. [Create Oracle Container Pipeline to build, test and package sample application](sample.app.OKE2.md)
+1. [Setting up your own Kubernetes cluster on Oracle Cloud OCI infrastructure](http://www.oracle.com/webfolder/technetwork/tutorials/obe/oci/oke-full/index.html)
+2. [Create Oracle Container Pipeline to build, test and package sample application](sample.app.OKE2.md)
 2. [Application Lifecycle Management (Web - Github)](change.application.md)
 3. [Application Lifecycle Management (Desktop - Oracle Container Pipelines CLI)](change.application.desktop.md)
 
