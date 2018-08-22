@@ -21,10 +21,12 @@ During this day you will be able to experience the various cloud services from O
 **First exercises to get acquainted with Containers: Oracle Container Cloud Service**
 + [Deploy a Tomcat Docker image](AppDev/container/tomcat_deploy.md)
 + [Create a new image based on the Docker GlassFish image](AppDev/container/glassfish_import.md)
++ [Deploy a Node.js application to Container Cloud, using Worker CI/CD pipelines](AppDev/container/wercker.md)
 
-**Advanced exercises with Wercker and Kubernetes**
-+ [CI/CD with Container Pipelines, Container Registry and Kubernetes Cluster to deploy an Angular Node application](AppDev/K8S/sample.app.OKE1.md)
-+ [CI/CD with Wercker, Docker Registry and OCCS: Build a Node.js-MongoDB container application](AppDev/container/wercker.md)
+**Using Managed Kubernetes Engine and Serverless Functions**
+
++ [Setting up a Kubernetes cluster on Oracle Cloud and deploy an Anular Node application using Wercker CI/CD pipelines](AppDev/K8S/readme.md)
+
 + [Run your first serverless Function using FnProject](AppDev/functions/function2_lab.md)
 
 
