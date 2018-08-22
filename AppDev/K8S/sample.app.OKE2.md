@@ -273,7 +273,17 @@ When the workflow is completed click on the last *deploy-to-Prod* pipeline.
 
 ![alt text](images/wercker.application.25.png)
 
-You can take a look at the output of the various steps to check everything executed as expectd.
+Scroll down to open the *get LoadBalancer public IP address* step and check the log. At the end of the log copy the Public IP address of the Ingress controller.
+
+![alt text](images/wercker.application.26.png)
+
+Open a new browser window or tab and open your sample application using the following URL: `https://PUBLIC_IP_ADDRESS/USERNAME/userxx/`. Where the USERNAME is your Oracle Container Pipelines (former Wercker) user name. It should be a similar to: `https://129.213.15.72/cn-demo-user20/user08/`
+
+Due to the reason that the proper certification hasn't been configured you get a security warning. Ignore and allow to open the page.
+
+![alt text](images/wercker.application.27.png)
+
+Test your Credit Score application using sample data.
 
 
 ### Install Kubernetes command line interface and connect to Oracle Container Engine instance ###
