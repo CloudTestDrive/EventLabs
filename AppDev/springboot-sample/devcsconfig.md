@@ -32,7 +32,7 @@ This guide is meant for new Developer Cloud Service instances (post June 2018) c
 
 - Open the Service Console.  You should have no existing instances.  If you have, you can skip the few following steps and go straight to the "Create a new Project" page.
 
-![alt text](empty.png)
+![alt text](images/empty.png)
 
 - Use the "Create Instance" button to create a new Developer Cloud instance
 
@@ -72,8 +72,38 @@ Once the instance is available, you need to configure a few things to be able to
 ![alt text](images/toOrg.png)
 
 - Navigate to the "Storage" configuration, and enter the storage parameters.  Test the connection to validate.
+   - Service-ID : ue the syntax "Storage-xxxxx" where xxxxx is your cloud instance name
 
-![alt text](images/creating.png)
+![alt text](images/storageConfig.png)
 
+![alt text](images/editStorage.png)
 
+- Navigate to the VM Template menu and create a new template.  Just use the default template, you don't need to add extra Software components for this lab.
 
+![alt text](images/newTemplate.png)
+
+- Now navigate to the "Virtual Machine configuration, and enter the Compute Account credentials
+
+![alt text](images/vmOverview.png)
+
+![alt text](images/configCompute.png)
+
+And finally create a new VM using the template you just created.
+
+### Creating a Developer Project ###
+
+Finally we will configure a new project in this environment.  Navigate to the home page of the Developer console, and hit the "New Project" button.
+
+![alt text](images/newProject.png)
+
+Enter a name and hit "Next"
+
+![alt text](images/proj1.png)
+
+Select an empty project in the 2nd configuration screen, and hit the "Finish" button.
+
+![alt text](images/proj2.png)
+
+The project components will now be created.
+
+![alt text](images/createProject.png)
