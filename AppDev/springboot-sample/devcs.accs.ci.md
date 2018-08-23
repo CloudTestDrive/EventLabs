@@ -13,13 +13,16 @@ This tutorial demonstrates how to:
 - configure a deployment profile to Application Container Cloud Service
 - check the deployment on the ACCS console
 
+
 ### Open Oracle Developer Cloud Service Project ###
 
-Select the Oracle Developer Cloud Service Project called "CloudTestDrive" and select the repository called "springboot-user-xx which was created in the previous step
+Select your Developer Cloud Service Project, and select the repository called "springboot-user-xx which was created in the previous step
 
 ![](images/dev004.png)
 
-**Attention : in the Cloud Test Drive event, multiple users will be using the same Developer Project, but using a different repository.  Make sure to post-fix all objects you create in this exercise with "userxx", where xx is your user number !**
+**Attention : 2 important remarks !!!***
+- If you are using a shared Developer environment with multiple participants on the same instance, please make sure to post-fix all objects you create in this exercise with "userxx", where xx is your user number !**
+- The GUI of some of the Developer Cloud screens has changed since of the release of the latest version.  On the remainder of this page, you will see the screenshots of the NEW version.  If these look different from the screens you are getting on your environment, please navigate to [this page for the legacy screenshots](oldbuild.md).
 
 ### Configure build job for Spring Boot sample application ###
 
