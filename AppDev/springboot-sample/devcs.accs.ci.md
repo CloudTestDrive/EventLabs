@@ -30,32 +30,35 @@ Once the Repository creation is done let's create the build job to compile and p
 
 Select **Build** item on the left side menu and click the **New Job** button.
 
-![alt text](images/05.new.job.png "Configure new build job")
+![alt text](images/n05.new.job.png "Configure new build job")
 
 - Enter a name for the new job, and prefix it with your username (i.e User04BuildJob). 
-- Select the *Create a free-style job* option and save.
+- Select the template you created earlier and "Create Job".
 
-![alt text](images/NewJob.PNG "Create new build job")
+![alt text](images/nNewJob.png "Create new build job")
 
-On the Main configuration page of the newly created job make sure **JDK 8** is the selected JDK.
+- On the "Source Control" tab, hit the "Add Source Control" button, select **GIT** 
+   - Select the repository you just imported in the "Repository" field.  
+   - Select the "Automatically perform Build on SCM Commit" flag
+   
+![alt text](images/nSourceControl.png "Build job Source Control")
 
-![alt text](images/06.job.main.png "Configure job")
+- Switch to the "Builders" tab and select a "Maven" Builder
 
-Change to the **Source Control** tab and select **Git**. In the git's properties section select the Git repository you created from the dropdown list. Leave the advanced settings default.
+![alt text](images/n08.job.maven1.png "Add build step")
 
-![alt text](images/07.job.scm.png "Configure source control")
+- Enter **clean install** as Goals 
+- Enter **AppDev/springboot-sample/pom.xml** to POM File field
+   
+![alt text](images/n08.job.maven2.png "Add build step")
 
-Click **Triggers** tab to configure *SCM polling*. Select **Based on SCM polling schedule**. This ensures if any files in the source code repository has changed then the build will be fired.
+- change to Post Build tab and create a "Artifact Archiver" step
 
-![alt text](images/07.scm.trigger.png "Configure source control")
+![alt text](images/n09.job.post1.png "Post build")
 
-Change to **Build Steps** tab and add **Maven 3** build step. Enter **clean install** as Goals and **AppDev/springboot-sample/pom.xml** to POM File field. (In case if Build Steps tab just shows **Loading...** for a long time, save the Build configuration then re-open and continue.)
+- Enter **AppDev/springboot-sample/target/\*.zip** into **Files To Archive** field.
 
-![alt text](images/08.job.maven.png "Add build step")
-
-Finally change to Post Build tab and check in the **Archive the artifacts** option. Enter **AppDev/springboot-sample/target/\*.zip** into **Files To Archive** field.
-
-![alt text](images/09.job.post.png "Post build")
+![alt text](images/09.job.post2.png "Post build")
 
 Click on **Save** to update the new job configurations. To check the build job click on **Build Now** on the job's detail page. Once the job is done check the archived artifacts. It should be the following: `springbootdemo-0.0.1.zip`
 
@@ -68,7 +71,7 @@ Please note the build job contains an extra build step which packs the default a
 Now we will create a deployment configuration which enable direct deployment to Application Container Cloud services after a successful build job. In order to deploy automatically to this service, you first need to collect your identity domain from the ACCS Overview screen.  
 
 - Switch to the window where you have your Cloud Domain Dashboard, and click on the word "Application Container".  This will lead you to the Application Container Service Overview
-- Note the Data region of your instance: this is probably EMEA Commercial 2 (code EM2), or US Commercial 2 (code US2)
+- Note the Data region of your instance: this is probably EMEA Commercial 1 or 2 (code EM1 or EM2), or US Commercial 2 (code US2)
 - Depending on the type of instance you are using, you will either use the "Identity Service ID", which has the form "idcs-xxxxxxx", or in case you do not see this parameter on your Overview screen, you will use the "Identity Domain ID", which has a form of "gse00xxxxx".
 
 Switch back to the browser window where you have Developer Cloud running, change to the **Deploy** page, and create **New Configuration** 
@@ -76,11 +79,15 @@ Switch back to the browser window where you have Developer Cloud running, change
 ![alt text](images/11.new.deploy.png "New deploy configuration")
 
 Set the following properties.
-![alt text](images/NewDeploy.PNG "Deployment Configuration")
+![alt text](images/nNewDeploy.PNG "Deployment Configuration")
 
 - **Configuration Name**: the name to identify deployment configuration. Attention, this name cannot be longer than 30  characters and can only contain letters and numbers : for example "MyDeployUser01"
 - **Application Name**: instance name in ACCS. You can use the same name as the Configuration name.
-- **Deployment Target**: click **New** and select Application Container Cloud... and define connection properties such as **Data center**, **Identity Domain** and **credentials**. 
+- **Deployment Target**: click **New** and select Application Container Cloud... and define connection properties:
+   - **Data center** : EM1, EM2, cf the parameters you noted down earlier
+   - **Identity Domain**: either a long code formatted like "idcs-xxxx", or the name of your domain
+   - **credentials**: username & password of your cloud account
+   
 ![alt text](images/dev001.PNG "ACCS Configuration")
 ![alt text](images/dev002.PNG "ACCS Configuration")
 - **Type**: select **Automatic** which means auto deploy after a successful execution of the build job. Select your previously created job and its artifact to deploy.
