@@ -25,7 +25,6 @@ This guide is meant for new Developer Cloud Service instances (post June 2018) c
 ![alt text](images/customize.png)
 
 - Go into the Developer Cloud Service Overview by clicking on the Service title
--- note down the ?? and ??
 
 ![alt text](images/service.png)
 
