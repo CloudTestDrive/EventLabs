@@ -1,10 +1,4 @@
 
-[Go to Overview Page](../Develop.md)
-
-![](../../common/images/customer.logo2.png)
-## AppDev Development - Building applications with DevOps ##
-### Deploy SpringBoot demo application to Application Container Cloud ###
-
 ### Legacy Developer Cloud Build setup screenshots ###
 
 You are on the page with the "old" version screenshots of this tutorial.  See if these screens fit your environment, otherwise hit the "Back" button of your browser!
