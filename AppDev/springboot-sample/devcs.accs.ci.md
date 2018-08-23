@@ -58,7 +58,7 @@ Select **Build** item on the left side menu and click the **New Job** button.
 
 - Enter **AppDev/springboot-sample/target/\*.zip** into **Files To Archive** field.
 
-![alt text](images/09.job.post2.png "Post build")
+![alt text](images/n09.job.post2.png "Post build")
 
 Click on **Save** to update the new job configurations. To check the build job click on **Build Now** on the job's detail page. Once the job is done check the archived artifacts. It should be the following: `springbootdemo-0.0.1.zip`
 
