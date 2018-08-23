@@ -38,7 +38,7 @@ Developing a Mobile App
 
 ### Instructions ###
 
-1. Follow the links provided during the workshop to access the Visual Builder Console. You should land on a screen similar to the one below:
+1. Follow the links provided during the workshop to access the Visual Builder Console. You should land on a screen similar to the one below, but you will not see any existing apps if this is the first time you login.
 
 ![VBCS Console](images/VBCS_Console.JPG)
 
@@ -54,6 +54,7 @@ The Universal Permissive License (UPL), Version 1.0
 
 ---
 ## Further Info ##
+[More VBCS Tutorials](https://blogs.oracle.com/vbcs/oracle-visual-builder-cloud-service-learning-path)
 [Oracle VBCS documentation](https://docs.oracle.com/en/cloud/paas/app-builder-cloud/books.html)
 
 ---
