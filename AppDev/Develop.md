@@ -8,7 +8,7 @@
 
 This lab will start in Developer Cloud Service, using its DevOps features to build a Springboot application, then automate the deployment towards Application Container Cloud service.
 
-+ Step 1 (Only for new Cloud Accounts or Trials) : [Create and configure your Developer Cloud Service Instance](springboot-sample/devcscreate.md)
++ Step 1 (Only for new Cloud Accounts or Trials) : [Create and configure your Developer Cloud Service Instance](springboot-sample/devcsconfig.md)
 
 + Step 2 : [Set up your Oracle Developer Cloud Service project with a SpringBoot application](springboot-sample/create.devcs.project.md)
 + Step 3 : [Deploy SpringBoot demo application to Application Container Cloud](springboot-sample/devcs.accs.ci.md): Create continuous build integration using Oracle Developer Cloud Service
