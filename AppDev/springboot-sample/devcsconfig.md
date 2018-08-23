@@ -24,6 +24,8 @@ This guide is meant for new Developer Cloud Service instances (post June 2018) c
 
 ![alt text](images/customize.png)
 
+### Create an instance ###
+
 - Go into the Developer Cloud Service Overview by clicking on the Service title
 
 ![alt text](images/service.png)
@@ -54,11 +56,24 @@ Once the instance is available, you need to configure a few things to be able to
    - Service Instance ID
    - Rest Endpoint
 
-
+![alt text](images/compute.png)
    
 - Navigate back to the Dashboard, and now select the "Storage Classic" Service Overview.  Note down following element:
    - Auth V1 Endpoint
    
+![alt text](images/storage.png)
+   
 - Return to your initial window with the Developer Cloud Services, and click on the hamburger icon on the right of the newly created service.  Select "Access Service Instance".
 
-In the DevCS 
+![alt text](images/access.png)
+
+- Now go to the "Organization" by clicking on the icon top right with your username initials
+
+![alt text](images/toOrg.png)
+
+- Navigate to the "Storage" configuration, and enter the storage parameters.  Test the connection to validate.
+
+![alt text](images/creating.png)
+
+
+
