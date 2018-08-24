@@ -275,7 +275,9 @@ The pipelines can have independent variables per pipelines or *global* scope var
    + Replace the "phx" if required by the Region Key of your region
 + **DOCKER_USERNAME** = gse00014344/api.user
    + Replace "gse00014344" by the name of your Tenancy Name
-+ **DOCKER_PASSWORD** = this is the Authentication Token of the OCI account you used to create the K8S cluster.  When using an instructor-provided OKE instance, this token will be provided by your instructor in separate file called "docker_password_token".  If not, you need to create yourself a token for your user, via the "Identity", "Users" tab of the menu.
++ **DOCKER_PASSWORD** = this is the Authentication Token of the OCI account you used to create the K8S cluster.  
+   + When using an instructor-provided OKE instance, this token will be provided by your instructor in separate file called "docker_password_token".  
+   + If you created your own OKE instance, you need to create yourself a token for your user, via the "Identity", "Users" tab of the menu.
 
 When you need to add new variable click **Add** button which saves the current row and add a new one. You can use the **Protected** tick box to store safely your value e.g. personal token.
 
