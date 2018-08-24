@@ -243,6 +243,20 @@ First you need to collect some information to populate these variables.  Copy th
 
 ![alt text](images/kubeconfig2.png)
 
+You will also need to use the "Region Key", depending on the datacenter where your cluster has been launched.  You can see your current region on all screens of the OCI console, in the upper right corner.
+
+Depending on your datacenter, use the below codes:
+
+|Region Location|Region Name|Region Key|
+|------|------|------|
+|Phoenix, AZ metropolitan area|us-phoenix-1|PHX|
+|Ashburn, VA|us-ashburn-1|IAD|
+|Frankfurt, Germany|eu-frankfurt-1|FRA|
+|London, United Kingdom|uk-london-1|LHR|
+
+Identify your Tenancy Name by navigating to "Administration", "Tenancy Details"
+
+
 Go back your application select **Pipelines** and your application **userxx-angular-node**.
 
 ![alt text](images/wercker.application.20b.png)
@@ -251,10 +265,16 @@ The pipelines can have independent variables per pipelines or *global* scope var
 
 + **KUBERNETES\_MASTER** = Use the Kubernetes Server address you copied from the kubeconfig file 
 + **KUBERNETES\_TOKEN** = the user token you copied from the kubeconfig file
-+ **DOCKER_REGISTRY** = https://phx.ocir.io/v2
-+ **DOCKER_REPO** = phx.ocir.io/gse00014344/userxx , where xx at the end is your prefix ID (example 03)
-+ **DOCKER_SERVER** = phx.ocir.io
++ **DOCKER_REGISTRY** = https://phx.ocir.io/v2 . 
+   + Replace the "phx" if required by the Region Key of your region
++ **DOCKER_REPO** = phx.ocir.io/gse00014344/userxx
+   + Replace the "phx" if required by the Region Key of your region
+   + Replace "gse00014344" by the name of your Tenancy Name
+   + where xx at the end is your prefix ID (example 03)
++ **DOCKER_SERVER** = phx.ocir.io 
+   + Replace the "phx" if required by the Region Key of your region
 + **DOCKER_USERNAME** = gse00014344/api.user
+   + Replace "gse00014344" by the name of your Tenancy Name
 + **DOCKER_PASSWORD** = token provided by your instructor in separate file called "docker_password_token" 
 
 When you need to add new variable click **Add** button which saves the current row and add a new one. You can use the **Protected** tick box to store safely your value e.g. personal token.
