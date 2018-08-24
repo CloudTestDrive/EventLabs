@@ -6,6 +6,12 @@
 
 ## Create Oracle Container Pipeline to build, test and package sample application ##
 
+### Prerequisite in case you created your own OKE K8S instance ###
+
+In case you created your own K8S instance, you first need to install a loadbalancer to reach your worker nodes.
+[Instructions on this page](loadbalance.md)
+
+
 ### Setting up your screens ###
 
 - Open a **new** browser window, navigate to *github.com*, and sign in using **your group user_id** that was provided in the access document.  This user should look line "cn-demo_xx..."
