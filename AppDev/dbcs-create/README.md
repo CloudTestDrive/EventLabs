@@ -29,34 +29,30 @@ This is the Database Cloud Service Console page. To create new instance click **
 ![](images/02.png)
 
 Now you can fill in the key paramaters for choosing the caracteristics of the database you will create : 
-+ **Service Name**: the name of the service instance e.g. techcoDB.
++ **Instance Name**: the name of the service instance e.g. techcoDB01.  Please use your participant number in the name of the DB in case you are using a shared instance.
 + **Description**: any description for your service.
-+ **Subscription type**: Select "Oracle Database Cloud Serice", this is the fully managed Oracle Database Cloud Service
-+ **SSH Public Key**: public key which will be uploaded to the VM during the creation. It allows to connect to the VM through ssh connection using the private key. To avoid additional task to create keypairs select Create a New Key option and download the newly generated keypair for later usage. Download the zip file to your `GIT_REPO_LOCAL_CLONE/cloud-utils` folder and unzip for later usage.
-![](images/06.png) 
++ **Region**: choose "No Preference" to instantiate the DB on Compute Classic.  For deploying to OCI Compute, you need to set up the required artifacts on OCI (Network and Storage).
++ **License Type**: Select "Subscribe to a new Databae License".  In case you have existing Oracle Database licenses in your organization that are not in use on your own infrastructure, you can choose the other option.
 
 + **Software Release**: Select the "Oracle Database 12c Release 1
-+ **Billing Frequency**: "Hourly"
++ **Software Edition**: Select "Enterprise Edition"
++ **Database Type**: Select "Single Instance".
+You can experiment with these parameters to see the possible options, for example how to set up a RAC environment.
 
-For more details about subscription types see the [documentation](https://docs.oracle.com/cloud/latest/dbcs_dbaas/CSDBI/GUID-F1E6807A-D283-4170-AB2B-9D43CD8DCD92.htm#CSDBI3395).
-![](images/db02.PNG)
+The second input page is the Service Details page. The following parameters have to be provided:
 
-
-The last input page is the Service Details page. The following parameters have to be provided:
-	
-+ **Shape**: number of OCPU and size of the RAM. Choose the smallest (default) one.
-+ **Timezone**: set your timezone.
-
-+ **Administrator Password**: database instance's system password. Don't forget to note the provided password.
 + **DB Name (SID)**: container database service identifier.
 + **PDB Name**: pluggable database service identifier. You can leave the default PDB1
++ **Administrator Password**: database instance's system password. Don't forget to note the provided password.
++ **Compute Shape**: number of OCPU and size of the RAM. Choose the smallest (default) one: OC3
+
++ **SSH Public Key**: public key which will be uploaded to the VM during the creation. It allows to connect to the VM through ssh connection using the private key. To avoid additional task to create keypairs select Create a New Key option and download the newly generated keypair for later usage. Download the zip file to your `GIT_REPO_LOCAL_CLONE/cloud-utils` folder and unzip for later usage.
+![](images/06.png) 
 
 + **Backup Destination**: Leave default; Both Cloud and Local Storage
 + **Cloud Storage Container**: the name of the container for database instance. The format is the following: Storage-IDENTITYDOMAIN/CONTAINERNAME, for example Storage-gse00002323/user01. Replace the identitydomain value according to your environment and specify a container name. Container name is up to you. The container don't need to be created in advance, because -see below- there is an option to create automatically.
 + **Cloud Storage User Name and Password**: the credentials for storage. Usually it is the same what was used to sign in to Oracle Cloud Services.
 + **Create Cloud Storage Containers**: check in because the container does not exist what you specified above.
-+ **Character Set**: The database character set for the database. Leave default.
-+ **National Character Set**: The national character set is used for data stored in SQL NCHAR data types. Leave default.
 
 ![](images/db03.PNG)
 For more details about parameters see the [documentation](https://docs.oracle.com/cloud/latest/dbcs_dbaas/CSDBI/GUID-D4A35763-53ED-4FBB-97BF-0366F21B05E0.htm#CSDBI3401). Click **Next**.
