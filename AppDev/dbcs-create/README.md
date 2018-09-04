@@ -39,6 +39,8 @@ Now you can fill in the key paramaters for choosing the caracteristics of the da
 + **Database Type**: Select "Single Instance".
 You can experiment with these parameters to see the possible options, for example how to set up a RAC environment.
 
+![](images/dbcreate1.png)
+
 The second input page is the Service Details page. The following parameters have to be provided:
 
 + **DB Name (SID)**: container database service identifier.
@@ -54,14 +56,13 @@ The second input page is the Service Details page. The following parameters have
 + **Cloud Storage User Name and Password**: the credentials for storage. Usually it is the same what was used to sign in to Oracle Cloud Services.
 + **Create Cloud Storage Containers**: check in because the container does not exist what you specified above.
 
-![](images/db03.PNG)
+![](images/dbcreate2.png)
 For more details about parameters see the [documentation](https://docs.oracle.com/cloud/latest/dbcs_dbaas/CSDBI/GUID-D4A35763-53ED-4FBB-97BF-0366F21B05E0.htm#CSDBI3401). Click **Next**.
 
 The final page is the summary about the configuration before submit the instance creation request.
 
-ATTENTION : To save resources on our environment and to speed up this exercise, we will NOT create this new dabase.  Instead, we will use the database that is already created.
+ATTENTION : In case you are using a shared environment, a database has already been provisioned for you in this environment, so you can Cancel the creation of the database at this point and use the seeded database instead.  If in doubt, check with your instructor.
 
-==> Click "Cancel"
 ![](images/08.png)
 
 If you should have gone ahead and created the database, the request would have been accepted and the Database Service Console page would  show the new instance. The instance would first be in Maintenance (Progress) mode. 
