@@ -63,7 +63,7 @@ The final page is the summary about the configuration before submit the instance
 
 ATTENTION : In case you are using a shared environment, a database has already been provisioned for you in this environment, so you can Cancel the creation of the database at this point and use the seeded database instead.  If in doubt, check with your instructor.
 
-![](images/08.png)
+![](images/dbcreate3.png)
 
 If you should have gone ahead and created the database, the request would have been accepted and the Database Service Console page would  show the new instance. The instance would first be in Maintenance (Progress) mode. 
 ![](images/09.png)
