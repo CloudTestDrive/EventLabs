@@ -44,7 +44,7 @@ The second input page is the Service Details page. The following parameters have
 + **DB Name (SID)**: container database service identifier.
 + **PDB Name**: pluggable database service identifier. You can leave the default PDB1
 + **Administrator Password**: database instance's system password. Don't forget to note the provided password.
-+ **Compute Shape**: number of OCPU and size of the RAM. Choose the smallest (default) one: OC3
++ **Compute Shape**: number of OCPU and size of the RAM. Choose the appropriate size for your project, for example an OC4.  Attention, when using a Shared Environment provided by your instructor, use the smallest one: OC3
 
 + **SSH Public Key**: public key which will be uploaded to the VM during the creation. It allows to connect to the VM through ssh connection using the private key. To avoid additional task to create keypairs select Create a New Key option and download the newly generated keypair for later usage. Download the zip file to your `GIT_REPO_LOCAL_CLONE/cloud-utils` folder and unzip for later usage.
 ![](images/06.png) 
@@ -71,12 +71,12 @@ If you should have gone ahead and created the database, the request would have b
 ## Optional steps using the pre-seeded database ##
 Below are some extra exercises you can perform using the already created Database instance. 
 
-+ If you are going through this lab as a 1-hour DBaaS stand-alone exercise, please continue with the below steps.  
++ If you are going through this lab as a 1-hour Database Cloud Service  stand-alone exercise, please continue with the below steps.  
 + If you are doing this lab as part of the AppDev Infrastructure lab covering JCS, DBCS, Compute and Container cloud, you can skip these steps.
 
 #### Enabling the Firewall Rules ####
 
-Make sure you are logged-in and the DBaaS Service Console is visible. You should see a window similar to this.  If you are using the "Cloud Test Drive" environment, this pre-seeded database will most likely be called "MyDBCS".
+Make sure you are logged-in and the Database Service Console is visible. You should see a window similar to this.  If you are using the "Cloud Test Drive" environment, this pre-seeded database will most likely be called "MyDBCS".
 
 ![](images/image042.gif)
 
@@ -107,7 +107,7 @@ Now please enable the following services in the same way:
 + ora_p2_httpssl
  
 #### Working with the available Cloud tools ####
-In this part of the hands-on, we will walk-through the various tools available by default. Please make sure you have enabled all required firewall rules as demonstrated in the previous chapter and that you are on the DBaaS Service Console Page:
+In this part of the hands-on, we will walk-through the various tools available by default. Please make sure you have enabled all required firewall rules as demonstrated in the previous chapter and that you are on the Database Service Console Page:
 
 ![](images/image042.gif)
  
@@ -129,13 +129,13 @@ In this Enterprise Manager Express screen, you can see the status of the databas
 ![](images/image060.gif)
  
 Feel free to click around in the Enterprise Manager Express Console. 
-When you want to continue, return to the DBaaS Service Console
+When you want to continue, return to the Database Service Console
 
-#### Using the DBaaS Monitor Console ####
-This time, we will use another tool available by default, the DBaaS Monitor Console.
+#### Using the Database Monitor Console ####
+This time, we will use another tool available by default, the Database Monitor Console.
 
-+ Return to the DBaaS Service Console
-+ Click on the ‘Hamburger Menu’ for the pre-created service and choose Open DBaaS Monitor Console’
++ Return to the Database Service Console
++ Click on the ‘Hamburger Menu’ for the pre-created service and choose Open Database Monitor Console’
 
 You might see a similar certificate error in your browser. Please accept this certificate to continue. The following login-screen should be visible:
 
@@ -183,7 +183,7 @@ You have successfully cloned a PDB using the available cloud tools.
 
 In the upcoming steps you will record the IP addresses of the prebuilt Database Cloud Service Instance, and connect to this Compute node via SSH.
 
-+ Navigate back to the DBaaS Service Console with the list of available database instances
++ Navigate back to the Database Service Console with the list of available database instances
 + Click on the "MyDBCS" instance from the list of Database Services
 + Note the Public IP address of this instance. You will need this later to connect using SSH.
 
