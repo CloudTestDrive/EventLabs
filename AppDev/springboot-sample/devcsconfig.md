@@ -78,15 +78,17 @@ Once the instance is available, you need to configure a few things to be able to
 
 ![alt text](images/editStorage.png)
 
-- Navigate to the VM Template menu and create a new template.  Just use the default template, you don't need to add extra Software components for this lab.
-
-![alt text](images/newTemplate.png)
-
 - Now navigate to the "Virtual Machine configuration, and enter the Compute Account credentials
 
 ![alt text](images/vmOverview.png)
 
 ![alt text](images/configCompute.png)
+
+- Navigate to the VM Template menu and create a new template.  Just use the default template, you don't need to add extra Software components for this lab.
+
+![alt text](images/newTemplate.png)
+
+
 
 And finally create a new VM using the template you just created.
 
