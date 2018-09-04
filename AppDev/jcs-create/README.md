@@ -48,7 +48,7 @@ Now enter the following parameters on the screen:
 	
 + **Cluster size**: to save resources leave the default 1. Which means one managed server.
 + **Domain Partitions**: Create mutitenant instance. Select 1 to enable partitioning.
-+ **Shape**: number of OCPU and size of the RAM. Choose the smallest (default) one.
++ **Shape**: number of OCPU and size of the RAM. Choose the appropriate size for your project, for example OC4.  In case of a shared environment provided by your instructor, please select the smallest (default) one.
 
 + **Username**: username of WebLogic administrator. For demo purposes you can use: weblogic
 + **Password**: WebLogic administrator's password. Don't forget to note the password you selected. 
