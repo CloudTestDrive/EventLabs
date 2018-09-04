@@ -19,7 +19,7 @@ During this day you will be able to experience the various cloud services from O
 
 ## Container Native labs ##
 **Using Oracle Managed Kubernetes Engine and Serverless Functions**
-+ [Setting up a Kubernetes cluster on Oracle Cloud and deploy an Anular Node application using Wercker CI/CD pipelines](AppDev/K8S/readme.md)
++ [Setting up a Kubernetes cluster on Oracle Cloud and deploy an Angular Node application using Wercker CI/CD pipelines](AppDev/K8S/readme.md)
 + [Run your first serverless Function using FnProject](AppDev/functions/function2_lab.md)
 
 **Simple exercises to get acquainted with Containers, using Oracle Container Cloud Service**
