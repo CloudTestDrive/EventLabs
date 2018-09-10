@@ -9,7 +9,7 @@ First download the SSH keys of your new instance from the Bitnami Console window
 
 ![](images/image041.png)
 
-Now make sure you have a ssh tool on your PC.  If you don't have this, you can download [putty](bin/putty.exe) for this.
+Now make sure you have a ssh tool on your PC.  If you don't have this, you can download [putty](https://www.putty.org/) for this.
 
 Use the public IP address of your instance you got from the Bitnami console
 
