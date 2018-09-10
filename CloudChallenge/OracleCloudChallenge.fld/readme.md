@@ -1,0 +1,1 @@
+Subfolder for graphics
