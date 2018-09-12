@@ -15,7 +15,7 @@ The instructors will have created a Application Container Cloud service for your
 Open a command window on your local machine and clone the repositoy using hte following command:
 
 ```
-git clone https://github.com/thebeebs/faceclassificationfrontend.git
+git clone https://github.com/CloudTestDrive/faceclassificationfrontend.git
 ```
 
 Navigate to the file. ```Js/viewModels/dashboard.js``` and on line *173* change the URL to point to the service you created in step one. For user 5 this should like like:
