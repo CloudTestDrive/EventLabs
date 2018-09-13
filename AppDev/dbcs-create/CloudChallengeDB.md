@@ -1,4 +1,4 @@
-![](common/images/customer.logo2.png)
+![](../../common/images/customer.logo2.png)
 ---
 # ORACLE Cloud Challenge #
 
