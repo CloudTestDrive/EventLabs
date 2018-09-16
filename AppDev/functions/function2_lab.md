@@ -62,7 +62,7 @@ installed and working. In a terminal, type the following command:
 If Docker is installed and running, you should see output something like:
 
 ```
-Docker version 17.0x.x-ce, build 276fd32
+Docker version 18.03.1-ce, build 9ee9f40
 ```
 
 NOTE: Depending on how you've installed Docker you may need to prefix `docker`
@@ -73,18 +73,69 @@ commands with `sudo` in which case you would have to type:
 > sudo docker --version
 >```
 
-Now do the same fo Functions :
+Now do the same for Functions :
 
 ![](images/userinput.png)
 >```
-> fn --version
+> fn version
 >```
 
 You should see something like 
 
 ```
-fn version 0.4.113
+Client version: 0.5.0
+Server version:  ?
 ```
+
+In case the Client version displayed is lower, you need to upgrade to the latest version:
+
+![](images/userinput.png)
+>```
+> curl -LSs https://raw.githubusercontent.com/fnproject/cli/master/install | sh
+>```
+
+Now set the correct context for using a local functions server
+
+![](images/userinput.png)
+>```
+> fn ls context
+> fn use context default
+> fn update context registry fndemouser
+>```
+
+Now make sure the Fn Server is also up to date with the latest version by performing following updates :
+
+![](images/userinput.png)
+>```
+> docker pull node:8-alpine
+> docker pull fnproject/go:latest
+> docker pull fnproject/go:dev
+> docker pull fnproject/fnserver:latest
+> docker pull fnproject/ui:latest
+>```
+
+Now open a 2nd console window, and start the fn server with the following command:
+
+![](images/userinput.png)
+>```
+> fn start
+>```
+
+In your first console window, re-validate the fn version:
+
+![](images/userinput.png)
+>```
+> fn version
+>```
+
+You should now see something like 
+
+```
+Client version: 0.5.0
+Server version:  0.3.561
+```
+
+Now that you have taken care of the Server Side, you are ready to start working with actual functions!
 
 
 ## Section 3 - Functions
