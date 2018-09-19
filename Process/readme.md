@@ -4,13 +4,13 @@
 
 # Autonomous Integration Cloud Process Automation Lab #
 
-## Introduction - what is PCS ? ##
+## Introduction - what is Process Automation ##
 
 ![](images/PCSBanner.PNG)
 
 ![](images/aboutPCS.PNG)
 
-## What will you do with PCS in this Lab ? ##
+## What will you do with Process Automation in this Lab ? ##
 
 ![](images/PCSExercise.PNG)
 
