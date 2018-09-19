@@ -2,7 +2,7 @@
 
 ![](../common/images/customer.logo2.png)
 
-# Process Cloud Service Lab #
+# Autonomous Integration Cloud Process Automation Lab #
 
 ## Introduction - what is PCS ? ##
 
@@ -21,10 +21,6 @@
   - [Link to use](Process%20Cloud%20Service%20Lab%20-%20v17.docx)
 
 + Log in to the environment with the URL and the username/password that has been provided
-
-+ During the exercise you might need the following files: 
-  - [NCOrder.xsd](NCOrder.xsd) - right-click the link and select "Download"
-  - [AAXXOrdersApp.exp](AAXXOrdersApp.exp) - click the link, then use the "Download button
 
 ---
 
