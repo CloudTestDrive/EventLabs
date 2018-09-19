@@ -16,9 +16,8 @@
 
 ## Let's start ! ##
 
-+ Download the tutorial by the link below, and then click on "Download". 
++ Download the lab tutorials from the list above. There are 3 labs, please download each one.
   - Attention ! To come back to this page, hit the "Back" button of your browser !
-  - [Link to use](Process%20Cloud%20Service%20Lab%20-%20v17.docx)
 
 + Log in to the environment with the URL and the username/password that has been provided
 
