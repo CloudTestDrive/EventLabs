@@ -32,7 +32,8 @@ For this lab you will need a Github and Wercker Account.  You can use your exist
 
 ## Steps to follow in this hands-on session are: ##
 
-1. [Setting up your own Kubernetes cluster on Oracle Cloud OCI infrastructure](http://www.oracle.com/webfolder/technetwork/tutorials/obe/oci/oke-full/index.html)
+1. (*Optional Step*) [Setting up your own Kubernetes cluster on Oracle Cloud OCI infrastructure](http://www.oracle.com/webfolder/technetwork/tutorials/obe/oci/oke-full/index.html).  
+   If you are using an environment provided by your instructor, the K8S instance will already have been created for you, and you can skip this step.
 2. [Create Oracle Container Pipeline to build, test and package sample application](sample.app.OKE2.md)
 2. [Application Lifecycle Management (Web - Github)](change.application.md)
 3. [Application Lifecycle Management (Desktop - Oracle Container Pipelines CLI)](change.application.desktop.md)
