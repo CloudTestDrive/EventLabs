@@ -6,13 +6,13 @@
 
 ## Introduction - what is Process Automation ##
 
-![](images/PCSBanner.PNG)
+![](images/PCSBanner.png)
 
-![](images/aboutPCS.PNG)
+![](images/aboutPCS.png)
 
 ## What will you do with Process Automation in this Lab ? ##
 
-![](images/PCSExercise.PNG)
+![](images/PCSExercise.png)
 
 ## Let's start ! ##
 
