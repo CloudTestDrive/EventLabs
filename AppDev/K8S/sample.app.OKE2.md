@@ -313,6 +313,22 @@ Due to the reason that the proper certification hasn't been configured you get a
 
 Test your Credit Score application using sample data.
 
+#### Making a change to your application ####
+
+So you spend quite some time setting up this CI/CD pipeline.  But as a result, changing your application and immediately making that change available is extremly easy!
+
++ Return to your github repository **ctdwercker/userxx** and navigate to the file "views/index.ejs
++ Hit the "Edit" icon and scroll to line 12 of the file: this is the title of the application.
++ Edit the text to include something specific to you, for example change the title :
+	+ from "Container Native Customer Credit Score Application" 
+	+ to "John Doe's Container Native Customer Credit Score Application"
+
+![alt text](images/wercker.edit.png)
+
++ Now hit the "Commit Changes" button below to kick-off the workflow
++ Navigate to your wercker window, and click the "Runs" tab on tob if necessary.  You will see a new build has started, building and deploying your changes to the server.
++ Once the build is finished, navigate back to the sample application and hiut the refresh button of your browser ... your changes have been deployed!
+
 
 ### Install Kubernetes command line interface and connect to Oracle Container Engine instance ###
 
