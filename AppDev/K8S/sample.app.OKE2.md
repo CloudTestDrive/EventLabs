@@ -326,8 +326,8 @@ So you spend quite some time setting up this CI/CD pipeline.  But as a result, c
 ![alt text](images/wercker.edit.png)
 
 + Now hit the "Commit Changes" button below to kick-off the workflow
-+ Navigate to your wercker window, and click the "Runs" tab on tob if necessary.  You will see a new build has started, building and deploying your changes to the server.
-+ Once the build is finished, navigate back to the sample application and hiut the refresh button of your browser ... your changes have been deployed!
++ Navigate to your wercker window, and click the "Runs" tab on top if necessary.  You will see a new build has started, building and deploying your changes to the server.
++ Once the build is finished, navigate back to the sample application and hit the refresh button of your browser ... your changes have been deployed!
 
 
 ### Install Kubernetes command line interface and connect to Oracle Container Engine instance ###
