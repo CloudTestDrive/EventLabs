@@ -14,8 +14,8 @@ In case you created your own K8S instance, you first need to install a loadbalan
 
 ### Setting up your screens ###
 
-- Open a **new** browser window, navigate to *github.com*, and sign in using **your group user_id** that was provided in the access document.  This user should look line "cn-demo_xx..."
-- Open **another new** window and navigate to wercker.com and use the "Sign in with GitHub" button.
+- Open a **new** browser window, navigate to *github.com*, and sign in using **your group user_id** that was provided in the access document.
+- Open **another browser tab** and navigate to https://app.wercker.com and use the "Sign in with GitHub" button.
 
 
 The steps we will go through for setting up the simplified Continuous Integration/Continuous Deployment (CI/CD) are the following using Oracle Container Pipelines:
