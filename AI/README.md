@@ -3,6 +3,12 @@
 ![](../common/images/customer.logo2.png)
 
 # AI Development Lab #
+
+**Artificial Intelligence**
+
+Develop an application that consumes an AI service - Develop a Web Application that uses a cloud service to analyse the emotions of people inside an image and run the application on Oracle Application Container Cloud Service.
+
+
 ### Introduction
 
 In this lab, we will build a web application that will call an AI service that solves an image classification problem.
