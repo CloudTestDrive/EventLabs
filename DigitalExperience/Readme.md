@@ -13,7 +13,6 @@ This lab will showcase  Digital Experience creation using our low-code Digial Ex
 
 + Step 1 : [Create Content in the Content Cloud Lab](Content/Readme.md)
 + Step 2 : [Create a Web Experience in Experience Cloud Lab](Experience/Readme.md)
-+ Step 3 : [Create Chatbot in Intelligent Chatbot Service Lab](../Mobile/IntelligentBots/readme.md)
 
 
 ---
