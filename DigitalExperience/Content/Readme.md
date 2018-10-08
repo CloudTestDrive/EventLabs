@@ -3,15 +3,13 @@
 
 ![](../../common/images/customer.logo2.png)
 
-# Digital Experience Labs #
+# CONTENT AND EXPERIENCE LAB #
 
-## CONTENT AND EXPERIENCE LAB ##
-
-### Introduction ###
+## Introduction ##
 
 This lab will showcase Content Cloud. Oracle Content & Experience Cloud Service (CEC) lets you easily store your business content in the cloud, securely access it from anywhere, and share it with your colleagues and partners in real time. With a fast, intuitive web interface and easy-to-use desktop and mobile applications, employees can view and collaborate on files even when offline, keeping your organization running efficiently and your employees staying productive from any location.
 
-### Chapter 1: Upload and Share a file in Oracle CEC 
+## Chapter 1: Upload and Share a file in Oracle CEC 
 
 In this chapter of the workshop we are going to show how to use Oracle CEC via a web browser and how to upload a file into a folder and share it afterwards.
 
@@ -285,7 +283,7 @@ Click Save.
 ![](./images/image43.png)
 
 
-### Chapter 3: The Desktop Application
+## Chapter 3: The Desktop Application
 Conversations, Editing and other collaboration features
 
 In this chapter of the workshop we are going to show the desktop application and its integration with the cloud.
