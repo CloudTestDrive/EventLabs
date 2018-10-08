@@ -6,7 +6,7 @@
 
 ## Introduction - what is ICS ? ##
 
-![](images/OIC.PNG)
+![](images/OIC.png)
 
 ![](images/AboutICS.PNG)
 
