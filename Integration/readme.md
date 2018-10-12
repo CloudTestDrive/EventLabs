@@ -15,7 +15,7 @@ This section contains directories with lab tutorials on the following topics:
 
 + Integration Cloud Service - This lab will show you how to set up integration between 2 systems simply using the drag & drop features of Integration Cloud Service. In this exercise we will set up an integration between a RightNow instance and a generic REST service of a mobile Application.
 
-  You can find the lab documents [here] (https://github.com/CloudTestDrive/EventLabs/tree/master/Integration/Integration%20Cloud%20Service).
+  You can find the lab documents [here](https://github.com/CloudTestDrive/EventLabs/tree/master/Integration/Integration%20Cloud%20Service).
 
 + APIARY - The objective of this lab is to give you an overview of the Oracle APIARY Cloud Platform as an API Developer.
 
