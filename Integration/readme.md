@@ -10,8 +10,8 @@ This section contains directories with lab tutorials on the following topics:
 
 For more details, please refer to following link and contact deniz.sendil@oracle.com to book your event. 
 
-For the documents, click https://github.com/CloudTestDrive/EventLabs/tree/master/Integration/Data%20Integration
-
+You can find the lab documents [here](https://github.com/CloudTestDrive/EventLabs/tree/master/Integration/Data%20Integration
+). 
 
 + Integration Cloud Service - This lab will show you how to set up integration between 2 systems simply using the drag & drop features of Integration Cloud Service. In this exercise we will set up an integration between a RightNow instance and a generic REST service of a mobile Application.
 
