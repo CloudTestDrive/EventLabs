@@ -113,7 +113,7 @@ step.
 
 ![](./media/image72.png)
 
-    Select the connection you have created:
+Select the connection you have created:
 
 ![](./media/image73.png)
 
@@ -123,8 +123,8 @@ step.
 
  ![](./media/image74.png)
 
-    Make sure you change all the columns
-   that contain **ID** to Attributes by clicking the **\#** sign, **Apply Script** and proceed to the next step.
+
+Make sure you change all the columns that contain **ID** to Attributes by clicking the **\#** sign, **Apply Script** and proceed to the next step.
 
    ![](./media/image75.png)
 
@@ -156,9 +156,7 @@ step.
 
  ![](./media/image78.png)
 
-    The result should look like this,
-   although, while the result is readable, due to the high number of
-   values in **CUST\_CITY**, some of the labels are not displayed.
+The result should look like this, although, while the result is readable, due to the high number of values in **CUST\_CITY**, some of the labels are not displayed.
 
    ![](./media/image80.png)
 
@@ -173,7 +171,7 @@ step.
 
  ![](./media/image82.png)
 
-    The colour of the bubble is based on the value of
+The colour of the bubble is based on the value of
  **AMOUNT\_SOLD**, for a better result, click and drag **AMOUNT\_SOLD**
  to **Size**.
 
@@ -200,9 +198,7 @@ step.
 
  ![](./media/image87.png)
 
-    This will generate a line on the
-   visualization that summarizes the performance for the four years of
-   data in our dataset.
+This will generate a line on the visualization that summarizes the performance for the four years of data in our dataset.
 
    ![](./media/image88.png)
 
@@ -213,7 +209,7 @@ step.
 
 ![](./media/image89.png)
 
- Give it a name and proceed to the next step.
+Give it a name and proceed to the next step.
 
 15. Clicking on **Narrate** you can add
     Canvases to present them in your meetings.

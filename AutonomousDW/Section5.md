@@ -10,10 +10,10 @@ Analytics Cloud.
 
 1.  In My Services, open the dashboard.
 
-2.  ![](./media/image51.jpeg)
-
-    Navigate to **Autonomous Analytics**,
+2.  Navigate to **Autonomous Analytics**,
     click the **Action Menu**, and then select **Open Service Console**.
+
+    ![](./media/image51.jpeg)
 
 3.  Click **Create Instance**.
 
