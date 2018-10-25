@@ -2,7 +2,7 @@
 
 ![](../common/images/customer.logo2.png)
 ## Autonomous Cloud Lab ##
-###Introduction###
+### Introduction ###
 
 Based on machine learning, Oracle Autonomous Cloud represents a new
 category of software automation. Oracle recently introduced Oracle
@@ -55,19 +55,19 @@ This checklist will check access to below cloud service that is use for the hand
 
  **Autonomous Transaction Processing -- Access Check**
 
-> To be able to provisioning the Cloud Service you need to member of
-> 'OCI\_Administrator (Provide administrative access in Oracle Cloud
-> Infrastructure.)'
->
-> Required Role: **OCI\_Administrator (Provide administrative access in
-> Oracle Cloud Infrastructure.)**
->
-> **Analytics Cloud -- Access Check**
->
-> To be able to provisioning the Cloud Service you need to member of
-> 'AUTONOMOUS\_ANALYTICS\_ServiceAdministrator'
->
-> **Required Role: AUTONOMOUS\_ANALYTICS\_ServiceAdministrator**
+ To be able to provisioning the Cloud Service you need to member of
+ 'OCI\_Administrator (Provide administrative access in Oracle Cloud
+ Infrastructure.)'
+
+ Required Role: **OCI\_Administrator (Provide administrative access in
+ Oracle Cloud Infrastructure.)**
+
+ **Analytics Cloud -- Access Check**
+
+ To be able to provisioning the Cloud Service you need to member of
+ 'AUTONOMOUS\_ANALYTICS\_ServiceAdministrator'
+
+ **Required Role: AUTONOMOUS\_ANALYTICS\_ServiceAdministrator**
 
 **How to check**
 
@@ -92,10 +92,10 @@ Sign into you Oracle Cloud
 
 ![](./media/image9.png)
 
-Scroll down the list and checkwhat role you have.If you do not have the need role. You need to talk to your Cloud Service Administator.
+Scroll down the list and check what role you have.If you do not have the need role. You need to talk to your Cloud Service Administator.
 
 
-**SQL Developer**
+## SQL Developer ##
 
 You will need SQL Developer installed on your computer to do the
 exercises in this lab guide. The minimum SQL Developer version that is
@@ -105,25 +105,7 @@ instance is SQL Developer 17.4.
 To exercise all labs, you will need the latest SQL Developer version
 18.1.
 
-> Follow these steps to install SQL Developer depending on your
-> platform.
->
-> **Windows 64-bit**
->
-> Install SQL Developer 18.1 using "Windows 64-bit with JDK 8
-> included" from:
->
-> <http://www.oracle.com/technetwork/developer-tools/sql-developer/downloads/index.html>
->
-> **Other platforms**
->
-> 1\. Install JDK 8u161 from:
->
-> <http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html>
->
-> 2\. Install SQL Developer 18.1 for your platform:
->
-> <http://www.oracle.com/technetwork/developer-tools/sql-developer/downloads/index.html>
+ Follow these steps to install SQL Developer depending on your machine
 
 **Good Practise**
 
