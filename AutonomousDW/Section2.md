@@ -98,7 +98,7 @@ to load date into the ADWC using SQL Developer.
 
 ---
 
-[Continue to Section 2](Section3.md)
+[Continue to Section 3](Section3.md)
 
 ---
 [Go back to the Autonomous Overview Page](readme.md)
