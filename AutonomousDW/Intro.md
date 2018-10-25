@@ -72,21 +72,21 @@ This checklist will check access to below cloud service that is use for the hand
 Sign into you Oracle Cloud
 ![](./media/image5.png)
 <https://cloud.oracle.com/en_US/sign-in>
-1\.Type you Cloud Account Name and press My Services
+1\. Type you Cloud Account Name and press My Services
 
-2\.Type your use name and password then press Sign In
+2\. Type your use name and password then press Sign In
 
 ![](./media/image6.png)
 
-3\.Go to Users, top right corner
+3\. Go to Users, top right corner
 
 ![](./media/image7.png)
 
-4\.In User Management, find you self
+4\. In User Management, find you self
 
 ![](./media/image8.png)
 
-5\.Go to Role
+5\. Go to Role
 
 ![](./media/image9.png)
 
