@@ -1,4 +1,4 @@
-[Go back to the Autonomous Overview Page](../readme.md)
+[Go back to the Autonomous Overview Page](readme.md)
 
 ![](../common/images/customer.logo2.png)
 ## Autonomous Cloud Lab ##
@@ -15,8 +15,6 @@ to free resources to focus on innovation. With Oracle Autonomous Cloud,
 companies can lower costs, reduce risks, accelerate innovation, and get
 predictive insights.
 
- 
-
 **Self-Driving**
 
 - Auto provision, secure, monitor, back up, recover, and troubleshoot
@@ -32,6 +30,7 @@ predictive insights.
 - Automated protection from downtime
 - Up to 99.995 percent availability\*. \< 2.5 minutes downtime per month, including planned maintenance
 
+
 ## Lab prerequisites ##
 
 ### Access Check List ###
@@ -42,7 +41,6 @@ This checklist will check access to below cloud service that is use for the hand
 - Autonomous Data Warehouse
 - Autonomous Transaction Processing
 - Analytics Cloud
-
 
  **Autonomous Data Warehouse -- Access Check**
 
@@ -118,4 +116,4 @@ How to create a Compartment -
 
 
 ---
-[Go back to the Autonomous Overview Page](../readme.md)
+[Go back to the Autonomous Overview Page](readme.md)
