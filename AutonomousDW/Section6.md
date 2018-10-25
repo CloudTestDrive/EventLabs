@@ -5,25 +5,28 @@
 ### Section 6. Using Oracle Autonomous Analytics ###
 
 
-Creating a Project
+### Creating a Project ###
 
-1.  ![](./media/image59.png)
-    You may now head back to the home page
+1.  You may now head back to the home page
     and click **Create** in the right hand side and select **Project**
 
-2.  ![](./media/image60.png)
-    You can select either from the
+    ![](./media/image59.png)
+
+2.  You can select either from the
     existing data sets or create a new one, given that this is a fresh
     instalation, go ahead and click **Create Data Set**
 
-3.  ![](./media/image61.png)
-    In the **Create Data Set** dialog box there will be displayed all the
+    ![](./media/image60.png)
+
+3.  In the **Create Data Set** dialog box there will be displayed all the
     current connections as well as the option to upload a file (.csv,
     .xlsx)
 
- ![](./media/image62.png)
+    ![](./media/image61.png)
 
 Proceed to **Create Connection** in order to connect to a database.
+
+![](./media/image62.png)
 
  These is the list of possible connections in Oracle Analytics Cloud,
  for this workshop we are going to connect to **Oracle A**utonomous
@@ -37,7 +40,7 @@ Proceed to **Create Connection** in order to connect to a database.
 
     -   **Description (Optional)**: for internal purposes
 
-    -   **Host:** host name from the wallet you have downloaded -- open
+    -   **Host:** host name from the wallet you have downloaded - open
         **tnsnames**
 
     -   **Port:** default for **ADWC** is 1522, also available in the
@@ -51,9 +54,10 @@ Proceed to **Create Connection** in order to connect to a database.
 
     -   **Password:** the password you have set
 
-    -   ![](./media/image63.png)
-        **Service Name:** same procedure as
-        for the **host** -- open **tnsnames**
+    -   **Service Name:** same procedure as
+        for the **host** - open **tnsnames**
+
+![](./media/image63.png)
 
 This should be the end result. Click **Save** and proceed to the next
 step.
@@ -64,38 +68,44 @@ step.
     database.
 
     ![](./media/image64.png)
+
     Select **SH** to proceed.
 
-6.  ![](./media/image65.png)
-    After selecting the schema, the
+6.  After selecting the schema, the
     following **Tables** will be retrieved, we are going to use the
     **Customers** table
 
-7.  ![](./media/image66.png){
-    Now that you have selected the table,
+    ![](./media/image65.png)
+
+7.  Now that you have selected the table,
     select all the columns by clicking **Add All**, afterwards you can
     name your dataset and finally click **Add** to finish the importing
     process.
 
-8.  ![](./media/image67.png)
-    After you click **Add** the data will be available
+    ![](./media/image66.png)
+
+8.  After you click **Add** the data will be available
     for preparation, by default columns that contain numeric values will
     be imported as measures (**\#**), to change that click on the symbol
     and select **Attribute**. Repeat this for all the columns that
     contain **ID** in their header.
 
-![](./media/image68.png)
+    ![](./media/image67.png)
+
+
     Once this is done, click **Apply Script** to save changes and proceed to the **Visualize** tab.
 
-![](./media/image69.png)
+    ![](./media/image68.png)
 
     You will be taken to a blank canvas and on the left hand side you will see the dataset that you have created.
 
-9.  ![](./media/image70.png)
+    ![](./media/image69.png)
 
-    For the purpose of this exercise, we need an
+9.  For the purpose of this exercise, we need an
     additional table, which can be added by clicking on the **+** sign
     next to the magnifier.
+
+    ![](./media/image70.png)
 
     An **Add Data Set** dialog box will pop up, the same one as we have seen in step 2. only this time we already have the connection created
 
@@ -105,27 +115,31 @@ step.
 
     Select the connection you have created:
 
-![](./media/image73.png
-    Choose the same schema -- **SH** -- and
+![](./media/image73.png)
+
+  Choose the same schema -- **SH** -- and
    this time pick the table **SALES**, click **Add All**, name your
    dataset and finish by clicking **Add**
 
  ![](./media/image74.png)
 
- ![](./media/image75.png)
     Make sure you change all the columns
    that contain **ID** to Attributes by clicking the **\#** sign, **Apply Script** and proceed to the next step.
+
+   ![](./media/image75.png)
 
 10. In order to correlate data, we will **Join** columns that can be
     found in the same tables to create relationships between the
     datasets.
 
     ![](./media/image76.png)
+
     This can be done by clicking **Data
     Diagram** on the bottom of the Canvas while you are in the
     **Prepare** section.
 
  ![](./media/image77.png)
+
    Given the fact that we have uploaded the
    tables from the same schema and there are two columns with identical
    names **CUST\_ID**, the service has created the join automatically and
@@ -142,37 +156,43 @@ step.
 
  ![](./media/image78.png)
 
- ![](./media/image80.png)
     The result should look like this,
    although, while the result is readable, due to the high number of
    values in **CUST\_CITY**, some of the labels are not displayed.
 
-12. ![](./media/image81.png)
-    Change the visualization type to
+   ![](./media/image80.png)
+
+12. Change the visualization type to
     **Map** by clicking on the actual type -- **Horizontal Stacked**.
 
- ![](./media/image82.png)
+![](./media/image81.png)
+
 
  Now the values are displayed in an interactive map that you can zoom
  in on, drag around and check different values.
 
- ![](./media/image83.png)
+ ![](./media/image82.png)
+
     The colour of the bubble is based on the value of
  **AMOUNT\_SOLD**, for a better result, click and drag **AMOUNT\_SOLD**
  to **Size**.
+
+ ![](./media/image83.png)
 
  The end result is displayed below.
 
  ![](./media/image84.png)
 
-13. ![](./media/image85.png
-    Create another visualization using
+13. Create another visualization using
     **Create Best Visualization** by expanding **TIME\_ID** in **SALES**
     and selecting **AMOUNT\_SOLD** and **Quarter of Year**.
 
- ![](./media/image86.png)
+    ![](./media/image85.png)
+
     This visualization will automatically be
    positioned on the Canvas next to the previously created Map.
+
+   ![](./media/image86.png)
 
  Given the fact that **Quarter of Year** is a time dimension, we can
  add **Trend Lines**. To do that we hover on the top right corner of
@@ -180,25 +200,31 @@ step.
 
  ![](./media/image87.png)
 
- ![](./media/image88.png)
     This will generate a line on the
    visualization that summarizes the performance for the four years of
    data in our dataset.
 
-14. ![](./media/image89.png)
-    Rename the Canvas by clicking the
+   ![](./media/image88.png)
+
+
+14. Rename the Canvas by clicking the
     drop-down property menu in the bottom left corner and select
     **Rename**.
 
+![](./media/image89.png)
+
  Give it a name and proceed to the next step.
 
-15. ![](./media/image90.png)
-    Clicking on **Narrate** you can add
+15. Clicking on **Narrate** you can add
     Canvases to present them in your meetings.
+
+![](./media/image90.png)
 
  Drag your canvas on the blank page, add a text box in which you can
  explain the depicted information and click
- Present.![](./media/image91.png)
+ Present.
+
+![](./media/image91.png)
 
 **Section 7. Conclusion**
 -----

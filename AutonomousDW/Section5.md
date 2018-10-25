@@ -11,6 +11,7 @@ Analytics Cloud.
 1.  In My Services, open the dashboard.
 
 2.  ![](./media/image51.jpeg)
+
     Navigate to **Autonomous Analytics**,
     click the **Action Menu**, and then select **Open Service Console**.
 
@@ -99,13 +100,15 @@ Activity page to check the current status. 
 
 ![](./media/image56.png)
 
-10. ![](./media/image57.png)
-    You will be redirected to the
+10. You will be redirected to the
     following page, which is the Data Visualization welcome page:
 
+    ![](./media/image57.png)
+
 11. In the left hand side you will find the Analytics Cloud menu with
-    the following
-    options:![](./media/image58.png)
+    the following options:
+
+    ![](./media/image58.png)
 
     -   **Home:** easy access to manage your connections, view existing
         data sets, projects and data flows.
