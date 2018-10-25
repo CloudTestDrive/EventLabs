@@ -28,9 +28,8 @@ Proceed to **Create Connection** in order to connect to a database.
 
 ![](./media/image62.png)
 
- These is the list of possible connections in Oracle Analytics Cloud,
- for this workshop we are going to connect to **Oracle A**utonomous
-> **D**ata **W**arehouse **C**loud (short -- ADWC or ADW).
+This is the list of possible connections in Oracle Analytics Cloud,
+ for this workshop we are going to connect to **Oracle A**utonomous **D**ata **W**arehouse **C**loud (short -- ADWC or ADW).
 
 4.  Fields for creating a connection to **ADWC**:
 
