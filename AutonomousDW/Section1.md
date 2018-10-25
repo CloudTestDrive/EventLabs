@@ -18,7 +18,7 @@ In this section you will be provisioning an Autonomous Data Warehouse Cloud (ADW
     [cloud.oracle.com](http://cloud.oracle.com)
     and click **Sign In** to login to your Oracle Cloud account.
 
-![](./media/image10.png)
+    ![](./media/image10.png)
 
 
 2.  Enter the **Cloud Account Name**. In this example, the Cloud Account Name is *gse00014216*. Click **My Services**.
@@ -46,14 +46,15 @@ In this section you will be provisioning an Autonomous Data Warehouse Cloud (ADW
 
 
 7.  A new Menu appears and select Autonomous Transaction Processing
-    service under the Database Category\
+    service under the Database Category
+
     ![](./media/image16.png)
 
 
 8.  On the right side of the page, you could choose a compartment if you
     have one already.
 
-![](./media/image17.png)
+    ![](./media/image17.png)
 
 
 9.  Click Create Autonomous Data Warehouse button to create a new
@@ -112,6 +113,9 @@ Click **Create Autonomous Data Warehouse** button.
 ![](./media/image24.png)
 
 
+---
+
+[Continue to Section 2](Section2.md)
 
 ---
 [Go back to the Autonomous Overview Page](readme.md)
