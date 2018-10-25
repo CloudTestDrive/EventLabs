@@ -1,829 +1,933 @@
- 
+![](./media/image1.png)
 
+**Autonomous Cloud Lab**
 
+October 2018
 
-Autonomous Data Warehouse Cloud Service Workshop
+![C:\\8bd96521c6a5369e2841d9199dc01703](./media/image2.tmp)
 
+![](./media/image3.tmp)
 
-February 2018
- 
-![](images/image002.png)
+**Table of Contents**
+-----
 
-TABLE OF CONTENTS
-INTRODUCTION	4
-Section 1. Provisioning an ADWC Service	5
-Section 2. Connecting to ADWC	8
-Section 3. Data Loading	12
-Section 4. Querying External Data	30
-Section 5. Scaling an ADWC Service	38
-Section 6. Monitoring ADWC	39
 
 
- 
-INTRODUCTION
-Oracle Autonomous Data Warehouse Cloud provides an easy-to-use, fully autonomous database that scales elastically, delivers fast query performance and requires no database administration.
-It is a fully-managed cloud service that makes it very simple to provision a data warehouse, quickly and easily load data and query that data using built-in web-based tools such as notebooks.
-Oracle’s unique autonomous database framework ensures high availability and automatic security–without requiring any additional tasks.
-Delivers high performance data warehousing straight out-of-the-box with unparalleled scalability and reliability. Built on key Oracle Database capabilities: parallelism, columnar processing and compression. All aspects of performance tuning are automatically managed so the service requires no database tuning.
-Scale as needed-create and expand your data warehouse’s compute and storage capacity on demand and independently of each other with no downtime. Pay only for the resources you consume.
-Integrates directly with the full spectrum of business analytics, data integration and IoT services within Oracle's comprehensive range of integrated cloud solutions.
-This lab walks you through all the steps to get started using the Oracle Autonomous Data Warehouse Cloud. You will provision a new ADWC database, create DW users, load data from the object store and troubleshoot data loads, query external data residing on the object store, and scale up your ADWC database.
-This is an instructor led lab, please follow the instructor’s guidance before doing the exercises. Stop and wait for indications before moving on to the next section.
-This lab shows you only the functional aspects of ADWC. It does not have exercises to test the performance of ADWC.
+[Introduction](#introduction)
 
+[Environment](#environment)
 
+[Lab prerequisites](#lab-prerequisites)
 
+[Section 1. Provisioning an Autonomous Data Warehouse Service](#section-1.-provisioning-an-autonomous-data-warehouse-service)
 
+[Section 2. Connecting to Autonomous Data Warehouse](#section-2.-connecting-to-autonomous-data-warehouse)
 
+[Section 3. Provisioning an Autonomous Transaction Processing Service](#section-3.-provisioning-an-autonomous-transaction-processing-service)
 
+[Section 4. Connecting to Autonomous Transaction Processing Database](#section-4.-connecting-to-autonomous-transaction-processing-database)
 
+[Section 5. Creating an Autonomous Analytics Cloud instance](#section-5.-creating-an-autonomous-analytics-cloud-instance)
 
+[Section 6. Using Oracle Autonomous Analytics](#_Toc525204419)
 
+[Section 7. Conclusion](#section-7.-conclusion)
 
 
 
+**Introduction**
 
+Based on machine learning, Oracle Autonomous Cloud represents a new
+category of software automation. Oracle recently introduced Oracle
+Autonomous Database Cloud---an incredibly important milestone. Oracle
+Autonomous Cloud leverages the power of AI and machine learning to
+deliver self-driving, self-securing, and self-repairing autonomous
+capabilities. This dramatically transforms how companies innovate by
+simplifying processes, reducing inefficiencies, and allowing companies
+to free resources to focus on innovation. With Oracle Autonomous Cloud,
+companies can lower costs, reduce risks, accelerate innovation, and get
+predictive insights.
 
-Section 1. Provisioning an ADWC Service
+ 
 
-In this section you will be provisioning an ADWC instance using the UI capabilities of the service.
+**Self-Driving**
 
-Note: The cloud environment will be provided separately to this lab guide, by the host. It will include:
-•	The URL to the environment
-•	The Username
-•	The Password
-•	The Identity Domain
-•	The Service Type
+-   Auto provision, secure, monitor, back up, recover, and troubleshoot
 
-1.	Go to the URL provided by the host and log in using the credentials shared with you on the day of the workshop. Click Sign in.
- 
+-   Instantly grow and shrink compute or storage without downtime
 
-2.	On the home page, click on Create Instance to create a new database.
- 
+ 
 
-3.	Enter the following information in the Create New Instance screen:
-Database Name: EMEAXXYYY – Prefix your database name with EMEA followed by your country and first name, e.g. EMEANLLUIS. 
-Note: Do not use the dash sign ‘-‘ as the provisioning Wizard will not allow you to continue.
-Region: us-phoenix-1 (this may differ depending on the region the environment is deployed)
-CPU Count: 2	
-Storage Capacity (TB): 1
-Administrator Password: Welcome12345
-Click Next to go to the confirmation screen.
- 
+**Self-Securing**
 
-4.	Review your information and click Create to provision the database. This will take you to the Instances screen.
- 
+-   Adaptive intelligence-enabled cyber threat detection and remediation
 
-5.	Click the refresh arrow button to see the status of your database. Once the service is provisioned click on its name to open the Instance Overview.
- 
- 
-Section 2. Connecting to ADWC
-Once provisioned we can access the Service Console – the place from where we can download all the connection details required for accessing the database.
+-   Automatic data encryption, security patches application
 
-1.	Click on the menu in the upper right corner and click on Service Console.
- 
+ 
 
-2.	Login to the service console with the following credentials:
-Username: admin
-Password: Welcome12345
-Note: this is the password you specified during the provisioning of the service.
- 
-
-3.	Click on Administration.
- 
-
-4.	Click on Download Client Credentials.
- 
-
-5.	Enter a password before downloading the wallet zip file containing the credentials. This password will protect the sensitive data residing in the file. You can use Welcome12345 as the password and then re-type it for confirmation. 
-Click Download and save the file on your local computer.
- 
-
+**Self-Repairing**
 
-6.	Open SQLDeveloper and click to create a new connection.
- 
-
-7.	Fill in the details to connect to the database as follows:
-Connection Name: ADWC Admin
-Username: admin
-Password: Welcome12345
-Connection Type: Cloud PDB
-Role: default
-Configuration File: Browse to the location of the zipped wallet and select it
-Keystore Password: Welcome12345
-Service: EMEAXXYYY_medium 
-
-Note: the Keystore Password is the one you selected for your wallet before downloading it. The Service you need to choose is the name you gave to your service when provisioning it.
-Click on Test to check the connection.
- 
-
-8.	If the test is successful save the connection and click Connect to access the database.
- 
-Section 3. Data Loading
-In this section we will create a new user named SH, where we will load our data. 
-
-1.	Connected as the Admin create a new user named SH and grant him the DWROLE role by using the following command:
-
-create user SH identified by "Welcome12345";
-grant DWROLE to SH;
-
- 
-
-2.	Create a new connection to the newly created user SH.
- 
-
-3.	Create the database tables by running the DDL statements below:
-
-CREATE TABLE sh.sales (
-    prod_id             NUMBER          NOT NULL,
-    cust_id             NUMBER          NOT NULL,
-    time_id             DATE            NOT NULL,
-    channel_id          NUMBER          NOT NULL,
-    promo_id            NUMBER          NOT NULL,
-    quantity_sold       NUMBER(10,2)    NOT NULL,
-    amount_sold         NUMBER(10,2)    NOT NULL);
-    
-CREATE TABLE sh.costs (
-    prod_id     NUMBER          NOT NULL,
-    time_id     DATE                    NOT NULL,
-    promo_id    NUMBER          NOT NULL,
-    channel_id  NUMBER          NOT NULL,
-    unit_cost   NUMBER(10,2)    NOT NULL,
-    unit_price  NUMBER(10,2)    NOT NULL);
-
-CREATE TABLE sh.times (
-    time_id                     DATE            NOT NULL,
-    day_name                    VARCHAR2(9)     NOT NULL,
-    day_number_in_week          NUMBER(1)       NOT NULL,
-    day_number_in_month         NUMBER(2)       NOT NULL,
-    calendar_week_number        NUMBER(2)       NOT NULL,
-    fiscal_week_number          NUMBER(2)       NOT NULL,
-    week_ending_day             DATE            NOT NULL,
-    week_ending_day_id          NUMBER          NOT NULL,
-    calendar_month_number       NUMBER(2)       NOT NULL,
-    fiscal_month_number         NUMBER(2)       NOT NULL,
-    calendar_month_desc         VARCHAR2(8)     NOT NULL,
-    calendar_month_id           NUMBER          NOT NULL,
-    fiscal_month_desc           VARCHAR2(8)     NOT NULL,
-    fiscal_month_id             NUMBER          NOT NULL,
-    days_in_cal_month           NUMBER          NOT NULL,
-    days_in_fis_month           NUMBER          NOT NULL,
-    end_of_cal_month            DATE            NOT NULL,
-    end_of_fis_month            DATE            NOT NULL,
-    calendar_month_name         VARCHAR2(9)     NOT NULL,
-    fiscal_month_name           VARCHAR2(9)     NOT NULL,
-    calendar_quarter_desc       CHAR(7)         NOT NULL,
-    calendar_quarter_id         NUMBER          NOT NULL,
-    fiscal_quarter_desc         CHAR(7)         NOT NULL,
-    fiscal_quarter_id           NUMBER          NOT NULL,
-    days_in_cal_quarter         NUMBER          NOT NULL,
-    days_in_fis_quarter         NUMBER          NOT NULL,
-    end_of_cal_quarter          DATE            NOT NULL,
-    end_of_fis_quarter          DATE            NOT NULL,
-    calendar_quarter_number     NUMBER(1)       NOT NULL,
-    fiscal_quarter_number       NUMBER(1)       NOT NULL,
-    calendar_year               NUMBER(4)       NOT NULL,
-    calendar_year_id            NUMBER          NOT NULL,
-    fiscal_year                 NUMBER(4)       NOT NULL,
-    fiscal_year_id              NUMBER          NOT NULL,
-    days_in_cal_year            NUMBER          NOT NULL,
-    days_in_fis_year            NUMBER          NOT NULL,
-    end_of_cal_year             DATE            NOT NULL,
-    end_of_fis_year             DATE            NOT NULL );
-
-CREATE TABLE sh.products (
-    prod_id                     NUMBER(6)       NOT NULL,
-    prod_name                   VARCHAR2(50)    NOT NULL,
-    prod_desc                   VARCHAR2(4000)  NOT NULL,
-    prod_subcategory            VARCHAR2(50)    NOT NULL,
-    prod_subcategory_id         NUMBER          NOT NULL,
-    prod_subcategory_desc       VARCHAR2(2000)  NOT NULL,
-    prod_category               VARCHAR2(50)    NOT NULL,
-    prod_category_id            NUMBER          NOT NULL,
-    prod_category_desc          VARCHAR2(2000)  NOT NULL,
-    prod_weight_class           NUMBER(3)       NOT NULL,
-    prod_unit_of_measure        VARCHAR2(20)    ,
-    prod_pack_size              VARCHAR2(30)    NOT NULL,
-    supplier_id                 NUMBER(6)       NOT NULL,
-    prod_status                 VARCHAR2(20)    NOT NULL,
-    prod_list_price             NUMBER(8,2)     NOT NULL,
-    prod_min_price              NUMBER(8,2)     NOT NULL,
-    prod_total                  VARCHAR2(13)    NOT NULL,
-    prod_total_id               NUMBER          NOT NULL,
-    prod_src_id                 NUMBER          ,
-    prod_eff_from               DATE            ,
-    prod_eff_to                 DATE            ,
-    prod_valid                  VARCHAR2(1)     );
-
-CREATE TABLE sh.channels (
-    channel_id                  NUMBER          NOT NULL,
-    channel_desc                VARCHAR2(20)    NOT NULL,
-    channel_class               VARCHAR2(20)    NOT NULL,
-    channel_class_id            NUMBER          NOT NULL,
-    channel_total               VARCHAR2(13)    NOT NULL,
-    channel_total_id            NUMBER          NOT NULL);
-
-CREATE TABLE sh.promotions (
-    promo_id                    NUMBER(6)       NOT NULL,
-    promo_name                  VARCHAR2(30)    NOT NULL,
-    promo_subcategory           VARCHAR2(30)    NOT NULL,
-    promo_subcategory_id        NUMBER          NOT NULL,
-    promo_category              VARCHAR2(30)    NOT NULL,
-    promo_category_id           NUMBER          NOT NULL,
-    promo_cost                  NUMBER(10,2)    NOT NULL,
-    promo_begin_date            DATE            NOT NULL,
-    promo_end_date              DATE            NOT NULL,
-    promo_total                 VARCHAR2(15)    NOT NULL,
-    promo_total_id              NUMBER          NOT NULL);
-
-CREATE TABLE sh.customers (
-    cust_id                     NUMBER          NOT NULL,
-    cust_first_name             VARCHAR2(20)    NOT NULL,
-    cust_last_name              VARCHAR2(40)    NOT NULL,
-    cust_gender                 CHAR(1)         NOT NULL,
-    cust_year_of_birth          NUMBER(4)       NOT NULL,
-    cust_marital_status         VARCHAR2(20)    ,
-    cust_street_address         VARCHAR2(40)    NOT NULL,
-    cust_postal_code            VARCHAR2(10)    NOT NULL,
-    cust_city                   VARCHAR2(30)    NOT NULL,
-    cust_city_id                NUMBER          NOT NULL,
-    cust_state_province         VARCHAR2(40)    NOT NULL,
-    cust_state_province_id      NUMBER          NOT NULL,
-    country_id                  NUMBER          NOT NULL,
-    cust_main_phone_number      VARCHAR2(25)    NOT NULL,
-    cust_income_level           VARCHAR2(30)    ,
-    cust_credit_limit           NUMBER          ,
-    cust_email                  VARCHAR2(50)    ,
-    cust_total                  VARCHAR2(14)    NOT NULL,
-    cust_total_id               NUMBER          NOT NULL,
-    cust_src_id                 NUMBER          ,
-    cust_eff_from               DATE            ,
-    cust_eff_to                 DATE            ,
-    cust_valid                  VARCHAR2(1)     );
-
-CREATE TABLE sh.countries (
-    country_id                  NUMBER          NOT NULL,
-    country_iso_code            CHAR(2)         NOT NULL,
-    country_name                VARCHAR2(40)    NOT NULL,
-    country_subregion           VARCHAR2(30)    NOT NULL,
-    country_subregion_id        NUMBER          NOT NULL,
-    country_region              VARCHAR2(20)    NOT NULL,
-    country_region_id           NUMBER          NOT NULL,
-    country_total               VARCHAR2(11)    NOT NULL,
-    country_total_id            NUMBER          NOT NULL,
-    country_name_hist           VARCHAR2(40));
-
-
-CREATE TABLE sh.supplementary_demographics
-  ( CUST_ID          NUMBER not null,
-    EDUCATION        VARCHAR2(21),
-    OCCUPATION       VARCHAR2(21),
-    HOUSEHOLD_SIZE   VARCHAR2(21),
-    YRS_RESIDENCE    NUMBER,
-    AFFINITY_CARD    NUMBER(10),
-    bulk_pack_diskettes NUMBER(10),
-    flat_panel_monitor  NUMBER(10),
-    home_theater_package NUMBER(10),
-    bookkeeping_application NUMBER(10),
-    printer_supplies NUMBER(10),
-    y_box_games NUMBER(10),
-    os_doc_set_kanji NUMBER(10),
-    COMMENTS         VARCHAR2(4000));
-
-ALTER TABLE sh.promotions
-  ADD CONSTRAINT promo_pk
-  PRIMARY KEY (promo_id)
-  RELY DISABLE NOVALIDATE;
-
-ALTER TABLE sh.sales
-  ADD CONSTRAINT sales_promo_fk
-  FOREIGN KEY (promo_id) REFERENCES sh.promotions (promo_id)
-  RELY DISABLE NOVALIDATE;
-
-ALTER TABLE sh.costs
-  ADD CONSTRAINT costs_promo_fk
-  FOREIGN KEY (promo_id) REFERENCES sh.promotions (promo_id)
-  RELY DISABLE NOVALIDATE;
-
-ALTER TABLE sh.customers
-  ADD CONSTRAINT customers_pk
-  PRIMARY KEY (cust_id)
-  RELY DISABLE NOVALIDATE;
-
-ALTER TABLE sh.sales
-  ADD CONSTRAINT sales_customer_fk
-  FOREIGN KEY (cust_id) REFERENCES sh.customers (cust_id)
-  RELY DISABLE NOVALIDATE;
-
-ALTER TABLE sh.products
-  ADD CONSTRAINT products_pk
-  PRIMARY KEY (prod_id)
-  RELY DISABLE NOVALIDATE;
-
-ALTER TABLE sh.sales
-  ADD CONSTRAINT sales_product_fk
-  FOREIGN KEY (prod_id) REFERENCES sh.products (prod_id)
-  RELY DISABLE NOVALIDATE;
-
-ALTER TABLE sh.costs
-  ADD CONSTRAINT costs_product_fk
-  FOREIGN KEY (prod_id) REFERENCES sh.products (prod_id)
-  RELY DISABLE NOVALIDATE;
-
-ALTER TABLE sh.times
-  ADD CONSTRAINT times_pk
-  PRIMARY KEY (time_id)
-  RELY DISABLE NOVALIDATE;
-
-ALTER TABLE sh.sales
-  ADD CONSTRAINT sales_time_fk
-  FOREIGN KEY (time_id) REFERENCES sh.times (time_id)
-  RELY DISABLE NOVALIDATE;
-
-ALTER TABLE sh.costs
-  ADD CONSTRAINT costs_time_fk
-  FOREIGN KEY (time_id) REFERENCES sh.times (time_id)
-  RELY DISABLE NOVALIDATE;
-
-ALTER TABLE sh.channels
-  ADD CONSTRAINT channels_pk
-  PRIMARY KEY (channel_id)
-  RELY DISABLE NOVALIDATE;
-
-ALTER TABLE sh.sales
-  ADD CONSTRAINT sales_channel_fk
-  FOREIGN KEY (channel_id) REFERENCES sh.channels (channel_id)
-  RELY DISABLE NOVALIDATE;
-
-ALTER TABLE sh.costs
-  ADD CONSTRAINT costs_channel_fk
-  FOREIGN KEY (channel_id) REFERENCES sh.channels (channel_id)
-  RELY DISABLE NOVALIDATE;
-
-ALTER TABLE sh.countries
-  ADD CONSTRAINT countries_pk
-  PRIMARY KEY (country_id)
-  RELY DISABLE NOVALIDATE;
-
-ALTER TABLE sh.customers
-  ADD CONSTRAINT customers_country_fk
-  FOREIGN KEY (country_id) REFERENCES sh.countries (country_id)
-  RELY DISABLE NOVALIDATE;
-
-ALTER TABLE sh.supplementary_demographics
-  ADD CONSTRAINT supp_demo_pk
-  PRIMARY KEY (cust_id)
-  RELY DISABLE NOVALIDATE;
-
- 
-
-4.	To load the data, we will use a Storage Container where the data files will reside. The credentials to the storage container will be provided by the host in the day of the workshop. 
-To login use the link provided by the host and in the first step, type the Cloud Tenant name and click Continue.
- 
-
-5.	In the second step, fill in the username and password provided by the host. Click Sign In.
- 
-
-6.	In the upper right corner click the username to expand the menu and click on User Settings.
- 
-
-7.	From the left menu, click on the Swift Password entry to list the available Swift passwords. We will use the Swift password when authenticating in the data loading process.
- 
-
-8.	Expand the Storage tab and select Object Storage.
- 
-
-9.	The list of available containers is displayed, click the DEMO_DATA bucket.
- 
-
-
-10.	In the DEMO_DATA container you should have all the data files available for the next steps.
-If the container is empty, hit the Upload Object button and add the data files provided to you by the host.
- 
-
-11.	Once the data files are available on the object storage, we can start running the loading script which will use the DBMS_CLOUD package. 
-Open a new SQL Worksheet for the SH schema and run the script below.
-Make sure you use the connection details provided to you by the host.
- 
-set define off;
-
-begin
-  DBMS_CLOUD.create_credential(
-    credential_name => 'OBJ_STORE_CRED',
-    username => '<STORAGE_USERNAME>',
-    password => ‘<SWIFT_PASSWORD>’
-  );
-end;
-/
-
-begin
- dbms_cloud.copy_data(
-    table_name =>'CHANNELS',
-    credential_name =>'OBJ_STORE_CRED',
-    file_uri_list =>'https://swiftobjectstorage.<region>.oraclecloud.com/v1/<identity_domain>/DEMO_DATA/chan_v3.dat',
-    format => json_object('ignoremissingcolumns' value 'true', 'removequotes' value 'true')
- );
-end;
-/
-
-begin
- dbms_cloud.copy_data(
-    table_name =>'COUNTRIES',
-    credential_name =>'OBJ_STORE_CRED',
-    file_uri_list =>'https://swiftobjectstorage.<region>.oraclecloud.com/v1/dwcsdemo/DEMO_DATA/coun_v3.dat',
-    format => json_object('ignoremissingcolumns' value 'true', 'removequotes' value 'true')
- );
-end;
-/
-
-begin
- dbms_cloud.copy_data(
-    table_name =>'CUSTOMERS',
-    credential_name =>'OBJ_STORE_CRED',
-    file_uri_list =>'https://swiftobjectstorage.<region>.oraclecloud.com/v1/<identity_domain>/DEMO_DATA/cust1v3.dat',
-    format => json_object('ignoremissingcolumns' value 'true', 'removequotes' value 'true', 'dateformat' value 'YYYY-MM-DD-HH24-MI-SS')
- );
-end;
-/
-
-begin
- dbms_cloud.copy_data(
-    table_name =>'SUPPLEMENTARY_DEMOGRAPHICS',
-    credential_name =>'OBJ_STORE_CRED',
-    file_uri_list =>'https://swiftobjectstorage.<region>.oraclecloud.com/v1/<identity_domain>/DEMO_DATA/dem1v3.dat',
-    format => json_object('ignoremissingcolumns' value 'true', 'removequotes' value 'true')
- );
-end;
-/
-
-begin
- dbms_cloud.copy_data(
-    table_name =>'SALES',
-    credential_name =>'OBJ_STORE_CRED',
-    file_uri_list =>'https://swiftobjectstorage.<region>.oraclecloud.com/v1/<identity_domain>/DEMO_DATA/dmsal_v3.dat',
-    format => json_object('ignoremissingcolumns' value 'true', 'removequotes' value 'true', 'dateformat' value 'YYYY-MM-DD')
- );
-end;
-/
-
-begin
- dbms_cloud.copy_data(
-    table_name =>'PRODUCTS',
-    credential_name =>'OBJ_STORE_CRED',
-    file_uri_list =>'https://swiftobjectstorage.<region>.oraclecloud.com/v1/<identity_domain>/DEMO_DATA/prod1v3.dat',
-    format => json_object('delimiter' value '|', 'quote' value '^', 'ignoremissingcolumns' value 'true', 'dateformat' value 'YYYY-MM-DD-HH24-MI-SS', 'blankasnull' value 'true')
- );
-end;
-/
-
-begin
- dbms_cloud.copy_data(
-    table_name =>'PROMOTIONS',
-    credential_name =>'OBJ_STORE_CRED',
-    file_uri_list =>'https://swiftobjectstorage.<region>.oraclecloud.com/v1/<identity_domain>/DEMO_DATA/prom1v3.dat',
-    format => json_object('ignoremissingcolumns' value 'true', 'removequotes' value 'true', 'dateformat' value 'YYYY-MM-DD-HH24-MI-SS', 'blankasnull' value 'true')
- );
-end;
-/
-
-begin
- dbms_cloud.copy_data(
-    table_name =>'SALES',
-    credential_name =>'OBJ_STORE_CRED',
-    file_uri_list =>'https://swiftobjectstorage.<region>.oraclecloud.com/v1/<identity_domain>/DEMO_DATA/sale1v3.dat',
-    format => json_object('ignoremissingcolumns' value 'true', 'removequotes' value 'true', 'dateformat' value 'YYYY-MM-DD', 'blankasnull' value 'true')
- );
-end;
-/
-
-begin
- dbms_cloud.copy_data(
-    table_name =>'TIMES',
-    credential_name =>'OBJ_STORE_CRED',
-    file_uri_list =>'https://swiftobjectstorage.<region>.oraclecloud.com/v1/<identity_domain>/DEMO_DATA/time_v3.dat',
-    format => json_object('ignoremissingcolumns' value 'true', 'removequotes' value 'true', 'dateformat' value 'YYYY-MM-DD-HH24-MI-SS', 'blankasnull' value 'true')
- );
-end;
-/
-
-	
-begin
- dbms_cloud.copy_data(
-    table_name =>'COSTS',
-    credential_name =>'OBJ_STORE_CRED',
-    file_uri_list =>'https://swiftobjectstorage.<region>.oraclecloud.com/v1/<identity_domain>/DEMO_DATA/costs.dat',
-    format => json_object('ignoremissingcolumns' value 'true', 'dateformat' value 'YYYY-MM-DD', 'blankasnull' value 'true')
- );
-end;
-/
-
- 
-
-12.	After the data has been loaded, we will run a sample query.
-
-SELECT c.cust_id, t.calendar_quarter_desc, TO_CHAR (SUM(amount_sold),
-  '9,999,999,999.99') AS Q_SALES, TO_CHAR(SUM(SUM(amount_sold))
-OVER (PARTITION BY c.cust_id ORDER BY c.cust_id, t.calendar_quarter_desc
-ROWS UNBOUNDED
-PRECEDING), '9,999,999,999.99') AS CUM_SALES
-  FROM sales s, times t, customers c
-  WHERE s.time_id=t.time_id AND s.cust_id=c.cust_id AND t.calendar_year=2000
-    AND c.cust_id IN (2595, 9646, 11111)
-  GROUP BY c.cust_id, t.calendar_quarter_desc
-  ORDER BY c.cust_id, t.calendar_quarter_desc;
-
- 
-
-13.	To see the status of the loading jobs, you can query user_load_operations. Here you will see all load operations along with status and elapsed time. 
-select * from user_load_operations;
- 
-
-14.	The next step will showcase a failed job. The script below will throw an error due to a mismatch in the mapping of the table to the data file. 
-begin
- dbms_cloud.copy_data(
-    table_name =>'CHANNELS',
-    credential_name =>'OBJ_STORE_CRED',
-    file_uri_list =>'https://swiftobjectstorage.<region>.oraclecloud.com/v1/<identity_domain>/DEMO_DATA/chan_v3_error.dat',
-    format => json_object('ignoremissingcolumns' value 'true', 'removequotes' value 'true')
- );
-end;
-/
-
- 
-
-15.	Query again the user_load_operations view for the failed jobs.
-Note: In the example below, I ran the failing script three times.
-select * from user_load_operations
-where status='FAILED';
- 
- 
-Section 4. Querying External Data
-In this section you will be querying files on the OCI Object Storage directly without loading them to your database.
-Connected as the SH user, copy and paste the below script to SQL Developer and run it to create external tables on top of files residing on the OCI Object Storage. Note that we are still using the same credential we created when loading data in the previous section.
-
-1.	Use the DBMS_CLOUD package to create external tables for each of the files in the Object Storage. 
-begin
- dbms_cloud.create_external_table(
-    table_name =>'CHANNELS_EXT',
-    credential_name =>'OBJ_STORE_CRED',
-    file_uri_list =>'https://swiftobjectstorage.<region>.oraclecloud.com/v1/<identity_domain>/DEMO_DATA/chan_v3.dat',
-    format => json_object('ignoremissingcolumns' value 'true', 'removequotes' value 'true'),
-    column_list => 'CHANNEL_ID NUMBER, 
-	CHANNEL_DESC VARCHAR2(20), 
-	CHANNEL_CLASS VARCHAR2(20), 
-	CHANNEL_CLASS_ID NUMBER, 
-	CHANNEL_TOTAL VARCHAR2(13), 
-	CHANNEL_TOTAL_ID NUMBER'
- );
-end;
-/
-
-begin
- dbms_cloud.create_external_table(
-    table_name =>'COUNTRIES_EXT',
-    credential_name =>'OBJ_STORE_CRED',
-    file_uri_list =>'https://swiftobjectstorage.<region>.oraclecloud.com/v1/<identity_domain>/DEMO_DATA/coun_v3.dat',
-    format => json_object('ignoremissingcolumns' value 'true', 'removequotes' value 'true'),
-    column_list => 'COUNTRY_ID NUMBER , 
-	COUNTRY_ISO_CODE CHAR(2) , 
-	COUNTRY_NAME VARCHAR2(40) , 
-	COUNTRY_SUBREGION VARCHAR2(30) , 
-	COUNTRY_SUBREGION_ID NUMBER , 
-	COUNTRY_REGION VARCHAR2(20) , 
-	COUNTRY_REGION_ID NUMBER , 
-	COUNTRY_TOTAL VARCHAR2(11) , 
-	COUNTRY_TOTAL_ID NUMBER , 
-	COUNTRY_NAME_HIST VARCHAR2(40)'
- );
-end;
-/
-
-begin
- dbms_cloud.create_external_table(
-    table_name =>'CUSTOMERS_EXT',
-    credential_name =>'OBJ_STORE_CRED',
-    file_uri_list =>'https://swiftobjectstorage.<region>.oraclecloud.com/v1/<identity_domain>/DEMO_DATA/cust1v3.dat',
-    format => json_object('ignoremissingcolumns' value 'true', 'removequotes' value 'true', 'dateformat' value 'YYYY-MM-DD-HH24-MI-SS'),
-    column_list => 'CUST_ID NUMBER , 
-	CUST_FIRST_NAME VARCHAR2(20) , 
-	CUST_LAST_NAME VARCHAR2(40) , 
-	CUST_GENDER CHAR(1) , 
-	CUST_YEAR_OF_BIRTH NUMBER(4,0) , 
-	CUST_MARITAL_STATUS VARCHAR2(20), 
-	CUST_STREET_ADDRESS VARCHAR2(40) , 
-	CUST_POSTAL_CODE VARCHAR2(10) , 
-	CUST_CITY VARCHAR2(30) , 
-	CUST_CITY_ID NUMBER , 
-	CUST_STATE_PROVINCE VARCHAR2(40) , 
-	CUST_STATE_PROVINCE_ID NUMBER , 
-	COUNTRY_ID NUMBER , 
-	CUST_MAIN_PHONE_NUMBER VARCHAR2(25) , 
-	CUST_INCOME_LEVEL VARCHAR2(30), 
-	CUST_CREDIT_LIMIT NUMBER, 
-	CUST_EMAIL VARCHAR2(50), 
-	CUST_TOTAL VARCHAR2(14) , 
-	CUST_TOTAL_ID NUMBER , 
-	CUST_SRC_ID NUMBER, 
-	CUST_EFF_FROM DATE, 
-	CUST_EFF_TO DATE, 
-	CUST_VALID VARCHAR2(1)'
- );
-end;
-/
-
-begin
- dbms_cloud.create_external_table(
-    table_name =>'SUPPLEMENTARY_DEMOGRAPHICS_EXT',
-    credential_name =>'OBJ_STORE_CRED',
-    file_uri_list =>'https://swiftobjectstorage.<region>.oraclecloud.com/v1/<identity_domain>/DEMO_DATA/dem1v3.dat',
-    format => json_object('ignoremissingcolumns' value 'true', 'removequotes' value 'true'),
-    column_list => 'CUST_ID NUMBER , 
-	EDUCATION VARCHAR2(21), 
-	OCCUPATION VARCHAR2(21), 
-	HOUSEHOLD_SIZE VARCHAR2(21), 
-	YRS_RESIDENCE NUMBER, 
-	AFFINITY_CARD NUMBER(10,0), 
-	BULK_PACK_DISKETTES NUMBER(10,0), 
-	FLAT_PANEL_MONITOR NUMBER(10,0), 
-	HOME_THEATER_PACKAGE NUMBER(10,0), 
-	BOOKKEEPING_APPLICATION NUMBER(10,0), 
-	PRINTER_SUPPLIES NUMBER(10,0), 
-	Y_BOX_GAMES NUMBER(10,0), 
-	OS_DOC_SET_KANJI NUMBER(10,0), 
-	COMMENTS VARCHAR2(4000)'
- );
-end;
-/
-
-begin
- dbms_cloud.create_external_table(
-    table_name =>'PRODUCTS_EXT',
-    credential_name =>'OBJ_STORE_CRED',
-    file_uri_list =>'https://swiftobjectstorage.<region>.oraclecloud.com/v1/<identity_domain>/DEMO_DATA/prod1v3.dat',
-    format => json_object('delimiter' value '|', 'quote' value '^', 'ignoremissingcolumns' value 'true', 'dateformat' value 'YYYY-MM-DD-HH24-MI-SS', 'blankasnull' value 'true'),
-    column_list => 'PROD_ID NUMBER(6,0) , 
-	PROD_NAME VARCHAR2(50) , 
-	PROD_DESC VARCHAR2(4000) , 
-	PROD_SUBCATEGORY VARCHAR2(50) , 
-	PROD_SUBCATEGORY_ID NUMBER , 
-	PROD_SUBCATEGORY_DESC VARCHAR2(2000) , 
-	PROD_CATEGORY VARCHAR2(50) , 
-	PROD_CATEGORY_ID NUMBER , 
-	PROD_CATEGORY_DESC VARCHAR2(2000) , 
-	PROD_WEIGHT_CLASS NUMBER(3,0) , 
-	PROD_UNIT_OF_MEASURE VARCHAR2(20), 
-	PROD_PACK_SIZE VARCHAR2(30) , 
-	SUPPLIER_ID NUMBER(6,0) , 
-	PROD_STATUS VARCHAR2(20) , 
-	PROD_LIST_PRICE NUMBER(8,2) , 
-	PROD_MIN_PRICE NUMBER(8,2) , 
-	PROD_TOTAL VARCHAR2(13) , 
-	PROD_TOTAL_ID NUMBER , 
-	PROD_SRC_ID NUMBER, 
-	PROD_EFF_FROM DATE, 
-	PROD_EFF_TO DATE, 
-	PROD_VALID VARCHAR2(1)'
- );
-end;
-/
-
-begin
- dbms_cloud.create_external_table(
-    table_name =>'PROMOTIONS_EXT',
-    credential_name =>'OBJ_STORE_CRED',
-    file_uri_list =>'https://swiftobjectstorage.<region>.oraclecloud.com/v1/<identity_domain>/DEMO_DATA/prom1v3.dat',
-    format => json_object('ignoremissingcolumns' value 'true', 'removequotes' value 'true', 'dateformat' value 'YYYY-MM-DD-HH24-MI-SS', 'blankasnull' value 'true'),
-    column_list => 'PROMO_ID NUMBER(6,0) , 
-	PROMO_NAME VARCHAR2(30) , 
-	PROMO_SUBCATEGORY VARCHAR2(30) , 
-	PROMO_SUBCATEGORY_ID NUMBER , 
-	PROMO_CATEGORY VARCHAR2(30) , 
-	PROMO_CATEGORY_ID NUMBER , 
-	PROMO_COST NUMBER(10,2) , 
-	PROMO_BEGIN_DATE DATE , 
-	PROMO_END_DATE DATE , 
-	PROMO_TOTAL VARCHAR2(15) , 
-	PROMO_TOTAL_ID NUMBER '
- );
-end;
-/
-
-begin
- dbms_cloud.create_external_table(
-    table_name =>'SALES_EXT',
-    credential_name =>'OBJ_STORE_CRED',
-    file_uri_list =>'https://swiftobjectstorage.<region>.oraclecloud.com/v1/<identity_domain>/DEMO_DATA/sale1v3.dat,https://swiftobjectstorage.<region>.oraclecloud.com/v1/<identity_domain>/DEMO_DATA/dmsal_v3.dat',
-    format => json_object('ignoremissingcolumns' value 'true', 'removequotes' value 'true', 'dateformat' value 'YYYY-MM-DD', 'blankasnull' value 'true'),
-    column_list => 'PROD_ID NUMBER , 
-	CUST_ID NUMBER , 
-	TIME_ID DATE , 
-	CHANNEL_ID NUMBER , 
-	PROMO_ID NUMBER , 
-	QUANTITY_SOLD NUMBER(10,2) , 
-	AMOUNT_SOLD NUMBER(10,2)'
- );
-end;
-/
-
-begin
- dbms_cloud.create_external_table(
-    table_name =>'TIMES_EXT',
-    credential_name =>'OBJ_STORE_CRED',
-    file_uri_list =>'https://swiftobjectstorage.<region>.oraclecloud.com/v1/<identity_domain>/DEMO_DATA/time_v3.dat',
-    format => json_object('ignoremissingcolumns' value 'true', 'removequotes' value 'true', 'dateformat' value 'YYYY-MM-DD-HH24-MI-SS', 'blankasnull' value 'true'),
-    column_list => 'TIME_ID DATE , 
-	DAY_NAME VARCHAR2(9) , 
-	DAY_NUMBER_IN_WEEK NUMBER(1,0) , 
-	DAY_NUMBER_IN_MONTH NUMBER(2,0) , 
-	CALENDAR_WEEK_NUMBER NUMBER(2,0) , 
-	FISCAL_WEEK_NUMBER NUMBER(2,0) , 
-	WEEK_ENDING_DAY DATE , 
-	WEEK_ENDING_DAY_ID NUMBER , 
-	CALENDAR_MONTH_NUMBER NUMBER(2,0) , 
-	FISCAL_MONTH_NUMBER NUMBER(2,0) , 
-	CALENDAR_MONTH_DESC VARCHAR2(8) , 
-	CALENDAR_MONTH_ID NUMBER , 
-	FISCAL_MONTH_DESC VARCHAR2(8) , 
-	FISCAL_MONTH_ID NUMBER , 
-	DAYS_IN_CAL_MONTH NUMBER , 
-	DAYS_IN_FIS_MONTH NUMBER , 
-	END_OF_CAL_MONTH DATE , 
-	END_OF_FIS_MONTH DATE , 
-	CALENDAR_MONTH_NAME VARCHAR2(9) , 
-	FISCAL_MONTH_NAME VARCHAR2(9) , 
-	CALENDAR_QUARTER_DESC CHAR(7) , 
-	CALENDAR_QUARTER_ID NUMBER , 
-	FISCAL_QUARTER_DESC CHAR(7) , 
-	FISCAL_QUARTER_ID NUMBER , 
-	DAYS_IN_CAL_QUARTER NUMBER , 
-	DAYS_IN_FIS_QUARTER NUMBER , 
-	END_OF_CAL_QUARTER DATE , 
-	END_OF_FIS_QUARTER DATE , 
-	CALENDAR_QUARTER_NUMBER NUMBER(1,0) , 
-	FISCAL_QUARTER_NUMBER NUMBER(1,0) , 
-	CALENDAR_YEAR NUMBER(4,0) , 
-	CALENDAR_YEAR_ID NUMBER , 
-	FISCAL_YEAR NUMBER(4,0) , 
-	FISCAL_YEAR_ID NUMBER , 
-	DAYS_IN_CAL_YEAR NUMBER , 
-	DAYS_IN_FIS_YEAR NUMBER , 
-	END_OF_CAL_YEAR DATE , 
-	END_OF_FIS_YEAR DATE '
- );
-end;
-/
-
-	
-begin
- dbms_cloud.create_external_table(
-    table_name =>'COSTS_EXT',
-    credential_name =>'OBJ_STORE_CRED',
-    file_uri_list =>'https://swiftobjectstorage.<region>.oraclecloud.com/v1/<identity_domain>/DEMO_DATA/costs.dat',
-    format => json_object('ignoremissingcolumns' value 'true', 'dateformat' value 'YYYY-MM-DD', 'blankasnull' value 'true'),
-    column_list => 'PROD_ID NUMBER , 
-	TIME_ID DATE , 
-	PROMO_ID NUMBER , 
-	CHANNEL_ID NUMBER , 
-	UNIT_COST NUMBER(10,2) , 
-	UNIT_PRICE NUMBER(10,2) '
- );
-end;
-/
- 
-
-2.	Run the query below on the newly created external tables.
-SELECT c.cust_id, t.calendar_quarter_desc, TO_CHAR (SUM(amount_sold),
-  '9,999,999,999.99') AS Q_SALES, TO_CHAR(SUM(SUM(amount_sold))
-OVER (PARTITION BY c.cust_id ORDER BY c.cust_id, t.calendar_quarter_desc
-ROWS UNBOUNDED
-PRECEDING), '9,999,999,999.99') AS CUM_SALES
-  FROM sales_ext s, times_ext t, customers_ext c
-  WHERE s.time_id=t.time_id AND s.cust_id=c.cust_id AND t.calendar_year=2000
-    AND c.cust_id IN (2595, 9646, 11111)
-  GROUP BY c.cust_id, t.calendar_quarter_desc
-  ORDER BY c.cust_id, t.calendar_quarter_desc;
- 
-Section 5. Scaling an ADWC Service
-In this section we will scale up the ADWC service by adding additional CPUs and Storage. 
-
-1.	Identify your database in the instances tab and click Scale Service in the actions menu.
- 
-
-2.	In the popup window choose the scale operation and fill in the additional number of CPUs / TB of Storage and click the Scale Service button.
- 
-3.	The Scale operation will restart your service. Once the operation is done you can check the new values.
-Section 6. Monitoring ADWC
-In this section you will use the ADWC service console to monitor the database by going through the Overview and Activity tabs in the service console to monitor the performance of your database.
-
-1.	Log in to the Service Console and on the Overview page you will see a summary of your instance’ activity and metrics.
- 
-
-2.	From the upper right corner switch to the Activity tab and by default you will see the Real Time graphics on your database’ activity and resource consumption.
- 
-3.	For a historical view, click on Time period tab, select the time period you wish to analyse and hit Submit. Similar graphics will be displayed. 
- 
-
-4.	Navigate to the Monitor SQL tab where you will see all the queries and loading jobs that were made against the database. 
- 
+-   Automated protection from downtime
 
+-   Up to 99.995 percent availability\*. \< 2.5 minutes downtime per
+    month, including planned maintenance
 
+**Lab prerequisites**
+
+**Access Check List**
+
+To secure the best start for the hands-on we need to check the access
+right.
+
+This checklist will check access to below cloud service that is use for
+the hands-on labs.
+
+> **-** Autonomous Data Warehouse
+>
+> **-** Autonomous Transaction Processing
+>
+> \- Analytics Cloud
+>
+> **Autonomous Data Warehouse -- Access Check**
+>
+> To be able to provisioning the Cloud Service you need to member of
+> 'OCI\_Administrator (Provide administrative access in Oracle Cloud
+> Infrastructure.)'
+>
+> Required Role: **OCI\_Administrator (Provide administrative access in
+> Oracle Cloud Infrastructure.)**
+>
+> **Autonomous Transaction Processing -- Access Check**
+>
+> To be able to provisioning the Cloud Service you need to member of
+> 'OCI\_Administrator (Provide administrative access in Oracle Cloud
+> Infrastructure.)'
+>
+> Required Role: **OCI\_Administrator (Provide administrative access in
+> Oracle Cloud Infrastructure.)**
+>
+> **Analytics Cloud -- Access Check**
+>
+> To be able to provisioning the Cloud Service you need to member of
+> 'AUTONOMOUS\_ANALYTICS\_ServiceAdministrator'
+>
+> **Required Role: AUTONOMOUS\_ANALYTICS\_ServiceAdministrator**
+
+**How to check**
+
+Sign into you Oracle Cloud
+![](./media/image5.png)
+<https://cloud.oracle.com/en_US/sign-in>
+1\.Type you Cloud Account Name and press My Services
+
+2\.Type your use name and password then press Sign In
+
+![](./media/image6.png)
+
+3\.Go to Users, top right corner
+
+![](./media/image7.png)
+
+4\.In User Management, find you self
+
+![](./media/image8.png)
+
+5\.Go to Role
+
+![](./media/image9.png)
+
+Scroll down the list and checkwhat role you have.If you do not have the need role. You need to talk to your Cloud Service Administator.
+
+
+**SQL Developer**
+
+You will need SQL Developer installed on your computer to do the
+exercises in this lab guide. The minimum SQL Developer version that is
+required to connect to an Oracle Autonomous Data Warehouse Cloud
+instance is SQL Developer 17.4.
+
+To exercise all labs, you will need the latest SQL Developer version
+18.1.
+
+> Follow these steps to install SQL Developer depending on your
+> platform.
+>
+> **Windows 64-bit**
+>
+> Install SQL Developer 18.1 using "Windows 64-bit with JDK 8
+> included" from:
+>
+> <http://www.oracle.com/technetwork/developer-tools/sql-developer/downloads/index.html>
+>
+> **Other platforms**
+>
+> 1\. Install JDK 8u161 from:
+>
+> <http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html>
+>
+> 2\. Install SQL Developer 18.1 for your platform:
+>
+> <http://www.oracle.com/technetwork/developer-tools/sql-developer/downloads/index.html>
+
+**Good Practise**
+
+It is recommend to you a **separated Compartment** in Oracle Cloud
+Infrastructure. Therefore, it will not have impact of any other running
+workload.
+
+How to create a Compartment -
+<https://docs.cloud.oracle.com/iaas/Content/Identity/Tasks/managingcompartments.htm>
+
+**Section 1. Provisioning an Autonomous Data Warehouse Service**
+----------------------
+
+In this section you will be provisioning an Autonomous Data Warehouse
+Cloud (ADWC) instance using the UI capabilities of the service.
+
+**Note:** Using your cloud environment you should have access to:
+
+-   The Cloud Account Name
+
+-   The Username
+
+-   The Password
+
+1.  Go to
+    [cloud.oracle.com](file:///D:\Workshops\Autonomous%20DW\Workshop\cloud.oracle.com)
+    and click **Sign In** to login to your Oracle Cloud account.
+
+![](./media/image10.png)
+
+2.  Enter the **Cloud Account Name**. In this example, the Cloud Account
+    Name is *gse00014216*. Click **My Services**.
+
+![](./media/image11.png)
+
+3.  On the login page, fill in the Username and Password for your cloud
+    account. Click **Sign In**.
+
+![](./media/image12.png)
+4.  We will start from the Cloud Dashboard and go to Compute service
+    console (the OCI Console). For this go to the Navigation Menu on the
+    top left part of the Dashboard Home
+    page.![](./media/image13.png)
+
+5.  In the Services list choose Compute.
+
+![](./media/image14.png)
+
+6.  The OCI Console launches and it will take you to the Home page page.
+    Autonomous Data Warehouse, as Autonomous Transaction Processing are
+    both deployed on OCI datacentres and can be created from OCI
+    interface.
+
+    Click on the **Menu** on the top left of the Page.
+
+![](./media/image15.png)
+
+7.  A new Menu appears and select Autonomous Transaction Processing
+    service under the Database Category\
+    ![](./media/image16.png)
+
+8.  On the right side of the page, you could choose a compartment if you
+    have one already.
+
+![](./media/image17.png)
+
+9.  Click Create Autonomous Data Warehouse button to create a new
+    service instance.
+
+![](./media/image18.png)
+
+10. A new window appears. Enter the following information in the
+    **Create New Instance** screen:
+
+    ***Display name*** -- Choose a unique display name. In our case we
+    will use ADWCInstance001
+
+**Database Name --** Choose a unique database name. In our case is
+ADWCdb001
+
+***CPU Count*:** **1**
+
+***Storage Capacity (TB):* 1**
+
+![](./media/image19.png)
+
+In the Administrator Credentials section enter the Administrator
+Password and confirm the password:
+
+***Administrator Password:*** 12 Character password like
+**Welcome12345**
+
+Also tick the **SUBSCRIBE TO NEW DATABASE SOFTWARE LICENSES AND THE
+DATABASE CLOUD SERVICE** radio button.
+
+![](./media/image20.png)
+
+Click **Create Autonomous Data Warehouse** button.
+
+![](./media/image21.png)
+
+11. Notice that the instance is on provisioning state
+
+![](./media/image22.png)
+
+12. Click the **refresh** arrow button to see the status of your
+    database. Once the service is provisioned click on its name to open
+    the *Service Overview* page.
+
+![](./media/image23.png)
+
+13. Check the ***Service Overview*** page for more details on your ADW
+    instance.
+
+![](./media/image24.png)
+
+**Section 2. Connecting to Autonomous Data Warehouse**
+-----------
+
+In this section you will go through the steps of accessing the
+credentials for connecting to your ADW instance with external clients,
+like SQL Developer.
+
+1.  The first step in accessing the credentials is to log in to the
+    *Service Console* associated to your ADW instance. To do that, click
+    on the **Service Console button** in the ADWCInstance001 overview.
+
+![](./media/image25.png)
+
+2.  Login to the *Service Console* with the following credentials:
+
+    ***Username*:** **admin**
+
+    ***Password*:** **Welcome12345**
+
+    **Note:** this is the password you specified during the provisioning
+    of the service.
+
+![](./media/image26.png)
+
+3.  On the home page, click the **Administration** menu on the left side
+    of the page.
+
+![](./media/image27.png)}
+
+4.  Click **Download Client Credentials**.
+
+![](./media/image28.png)
+
+5.  Enter a password before downloading the wallet zip file containing
+    the credentials. This password will protect the sensitive data
+    residing in the file. You can use **Welcome12345** as the password
+    and then re-type it for confirmation.
+
+    Click **Download** and save the file on your local computer.
+
+![](./media/image29.png)
+
+A zip archive with the wallet was downloaded:
+
+![](./media/image30.png)
+
+Next we will open SQL Developer and create a connection there.
+
+6.  Open **SQL Developer** and click to create a new connection.
+
+![](./media/image31.png)
+
+7.  Fill in the details to connect to the database as follows:
+
+    ***Connection Name***: **ADWCdb001**
+
+    ***Username***: **admin**
+
+    ***Password***: **Welcome12345**
+
+    ***Connection Type**:* **Cloud PDB**
+
+    ***Role**:* **default**
+
+    ***Configuration File**:* Browse to the location of the zipped
+    wallet and select it
+
+    ***Keystore Password**:* **Welcome12345**
+
+    **Note**: The Keystore Password is the one you selected for your
+    wallet before downloading it. The Service you need to choose is the
+    name you gave to your service when provisioning it.
+
+    ***Service***: **adwcdb001\_high** - it is the service of the
+    ADWCdb001 instance created which lead to consumer group high.
+
+    Click **Test** to check the connection.
+
+![](./media/image32.png)
+
+8.  If the test is successful **Save** the connection and click
+    **Connect** to access the database.
+
+![](./media/image33.png)
+
+We connected with SQL Developer to the database. The next step would be
+to load date into the ADWC using SQL Developer.
+
+**Section 3. Provisioning an Autonomous Transaction Processing Service**
+---------
+
+In this section you will be provisioning an Autonomous Transaction
+Processing (ATP) instance using the UI capabilities of the service.
+
+We will start from the Cloud Dashboard and go to Compute service console
+(the OCI Console). For this go to the **Navigation Menu** on the top
+left part of the **Dashboard** Home page.
+
+![](./media/image13.png)
+
+The navigation Menu appears and drop down the **Services** list.
+
+![](./media/image34.png)
+
+In the **Services** list choose **Compute**.
+
+![](./media/image14.png)
+
+The OCI Console launches and it will take you to the Home page page.
+Autonomous Data Warehouse, as Autonomous Transaction Processing are both
+deployed on OCI datacentres and can be created from OCI interface.
+
+Click on the **Menu** on the top left of the Page.
+
+![](./media/image15.png)
+
+A new Menu appears and select Autonomous Transaction Processing service
+under the Database Category
+
+![](./media/image35.png)
+
+The Home page for ATP appears.
+
+On the right side of the page, you could choose a compartment if you
+have one already created or use the default **root** compartment. In our
+case we are going to choose the DEMO compartment where the instances
+will be created.
+
+![](./media/image17.png)
+
+Click Create Autonomous Transaction Processing Database button to create
+a new service instance.
+
+![](./media/image36.png)
+
+A new window appears. Enter the following information in the **Create
+New Instance** screen:
+
+***Display name*** -- Choose a unique display name. In our case we will
+use ATPInstance001
+
+**Database Name --** Choose a unique database name. In our case is
+ATPdb001
+
+***CPU Count*:** **1**
+
+***Storage Capacity (TB):* 1**
+
+![](./media/image37.png)
+
+In the Administrator Credentials section enter the Administrator
+Password and confirm the password:
+
+***Administrator Password:*** 12 Character password like
+**Welcome12345**
+
+Also tick the **SUBSCRIBE TO NEW DATABASE SOFTWARE LICENSES AND THE
+DATABASE CLOUD SERVICE** radio button.
+
+![](./media/image38.png)
+
+Click **Create Autonomous Transaction Processing Database** button.
+
+![](./media/image39.png)
+
+Notice that the instance is on provisioning state. It takes less than 2
+minutes for the instance to provision.
+
+![](./media/image40.png)
+
+Click the **refresh** arrow button to see the status of your database.
+Once the service is provisioned click on the Instance name
+(ATPInstance001) to open the *Service Overview* page.
+
+![](./media/image41.png)
+
+Check the ***Service Overview*** page for more details on your ATP
+instance.
+
+![](./media/image42.png)
+
+We created an ATP instance. Next we will download the database
+credentials and connect to this instance using SQL Developer.
+
+**Section 4. Connecting to Autonomous Transaction Processing Database**
+------
+
+In this section you will go through the steps of accessing the
+credentials for connecting to your ADW instance with external clients,
+like SQL Developer.
+
+1.  The first step in accessing the credentials is to log in to the
+    *Service Console* associated to your ATP instance. To do that, click
+    on the **Service Console button** in the ATPInstance001 overview.
+
+![](./media/image43.png)
+
+2.  Login to the *Service Console* with the following credentials:
+
+    ***Username*:** **admin**
+
+    ***Password*:** **Welcome12345**
+
+    **Note:** this is the password you specified during the provisioning
+    of the service.
+
+![](./media/image44.png)
+
+3.  On the home page, click the **Administration** menu on the left side
+    of the page.
+
+![](./media/image45.png)
+
+4.  Click **Download Client Credentials**.
+
+![](./media/image46.png)
+
+5.  Enter a password before downloading the wallet zip file containing
+    the credentials. This password will protect the sensitive data
+    residing in the file. You can use **Welcome12345** as the password
+    and then re-type it for confirmation.
+
+    Click **Download** and save the file on your local computer.
+
+![](./media/image47.png)
+
+A zip archive with the wallet was downloaded:
+
+![](./media/image48.png)
+
+Next we will open SQL Developer and create a connection there.
+
+6.  Open **SQL Developer** and click to create a new connection.
+
+![](./media/image31.png)
+
+7.  Fill in the details to connect to the database as follows:
+
+    ***Connection Name***: **ATPdb001**
+
+    ***Username***: **admin**
+
+    ***Password***: **Welcome12345**
+
+    ***Connection Type**:* **Cloud PDB**
+
+    ***Role**:* **default**
+
+    ***Configuration File**:* Browse to the location of the zipped
+    wallet and select it
+
+    ***Keystore Password**:* **Welcome12345**
+
+    **Note**: The Keystore Password is the one you selected for your
+    wallet before downloading it. The Service you need to choose is the
+    name you gave to your service when provisioning it.
+
+    ***Service***: **atpdb001\_high** - it is the service of the
+    ATPdb001 instance created which lead to consumer group high.
+
+    Click **Test** to check the connection.
+
+![](./media/image49.png)
+
+8.  If the test is successful **Save** the connection and click
+    **Connect** to access the database.
+
+![](./media/image50.png)
+
+The connection to the ATP database using SQL Developer is created. The
+next step would be to load a table using SQL Developer from a local
+file.
+
+**Section 5. Creating an Autonomous Analytics Cloud instance**
+---------
+
+You use Oracle Cloud Stack to set up services with Oracle Autonomous
+Analytics Cloud.
+
+1.  In My Services, open the dashboard.
+
+2.  ![](./media/image51.jpeg)
+    Navigate to **Autonomous Analytics**,
+    click the **Action Menu**, and then select **Open Service Console**.
+
+3.  Click **Create Instance**.
+
+![](./media/image52.jpeg)
+
+4.  In the **Details** area:
+
+    -   **Name**: Enter a name for your service instance. The name must
+        start with a letter and can contain only letters and numbers.
+
+    -   **Description:** (Optional) Enter a description.
+
+    -   **Notification Email**: Enter the email address of the person
+        who should receive status updates about this service. This
+        person is usually you, the Cloud Account Administrator who's
+        setting up the service.
+
+    -   **Region**
+
+    -   **Tags:** (Optional) Add tags and assign tags to this service.
+
+    -   **License Type:** Bring your own license or subscribe to a new
+        Autonomous Analytics Cloud software license and the Autonomous
+        Analytics Cloud.
+
+> For example:
+>
+> ![](./media/image53.png)
+
+5.  In the **Select Region** area:
+
+    -   **Region**: A region is a localized geographic area.
+
+> ![](./media/image54.jpeg)
+    For example:
+
+6.  In the **Choose Service Options** area:
+
+    -   **Edition:** Select the edition of Oracle Analytics Cloud that
+        you want to use. The edition that you select determines the
+        feature set that you can use.
+
+        -   Enterprise Edition --- **EE-Enterprise**
+
+        -   Standard Edition --- **SE-Standard**
+
+        -   Data Lake Edition --- **DATALAKE-Datalake**
+
+    -   **Feature Set:** Select the features that you want to deploy.
+        The options available to you depend on the edition you're
+        subscribed to. If you select **Business Intelligence**, you
+        automatically have access to Data Visualization.
+
+        -   Standard Edition --- **Data Visualization**
+
+        -   Data Lake Edition --- **Data Visualization** or **Essbase**
+
+        -   Enterprise Edition --- **Data
+            Visualization** or **Essbase** or **Business
+            Intelligence** (includes Data Visualization)
+
+    -   **Number of OCPUs:** Select the number of Oracle Compute Units
+        (OCPUs) for your environment.
+
+> **\* You can raise a service request to change the compute shape after
+> creating the service, if the needs of your business change.**
+>
+> For example:
+>
+> ![](./media/image55.png)
+
+7.  Click **Next**.
+
+8.  Verify that the details are correct, and click **Confirm**.
+
+It takes about half an hour to create the service. Oracle sends an email
+to the designated email address when your service is ready. Display the
+Activity page to check the current status. 
+
+9.  After the instance has been created you can go ahead and launch the
+    platform by clicking on the menu drop-down button and selecting
+    **Oracle Analytics Cloud URL**
+
+![](./media/image56.png)
+
+10. ![](./media/image57.png)
+    You will be redirected to the
+    following page, which is the Data Visualization welcome page:
+
+11. In the left hand side you will find the Analytics Cloud menu with
+    the following
+    options:![](./media/image58.png)
+
+    -   **Home:** easy access to manage your connections, view existing
+        data sets, projects and data flows.
+
+    -   **Projects:** you can manage folders and projects from this
+        section.
+
+    -   **Data:** displays all the datasets, connections, dataflows and
+        sequences.
+
+    -   **Machine Learning:** manage and inspect the models that you
+        have created.
+
+    -   **Console:** add/edit map layers, jobs, administer users and
+        roles, manage snapshots, connections and configure mail
+        settings.
+
+    -   **Academy:** useful resources for getting started.
+
+[]{#_Toc525204419 .anchor}
+
+**Section 6. Using Oracle Autonomous Analytics**
+-------
+
+Creating a Project
+
+1.  ![](./media/image59.png)
+    You may now head back to the home page
+    and click **Create** in the right hand side and select **Project**
+
+2.  ![](./media/image60.png)
+    You can select either from the
+    existing data sets or create a new one, given that this is a fresh
+    instalation, go ahead and click **Create Data Set**
+
+3.  ![](./media/image61.png)
+    In the **Create Data Set** dialog box there will be displayed all the
+    current connections as well as the option to upload a file (.csv,
+    .xlsx)
+
+> ![](./media/image62.png)
+    Proceed to **Create Connection** in
+> order to connect to a database.
+>
+> These is the list of possible connections in Oracle Analytics Cloud,
+> for this workshop we are going to connect to **Oracle A**utonomous
+> **D**ata **W**arehouse **C**loud (short -- ADWC or ADW).
+
+4.  Fields for creating a connection to **ADWC**:
+
+    -   **Connection Name:** This name will be used to display the
+        connection for easier access on the screens that we have
+        previously seen
+
+    -   **Description (Optional)**: for internal purposes
+
+    -   **Host:** host name from the wallet you have downloaded -- open
+        **tnsnames**
+
+    -   **Port:** default for **ADWC** is 1522, also available in the
+        **tnsnames** file
+
+    -   **Client Credentials:** browse for the .sso file provided in the
+        wallet
+
+    -   **Username:** the username you have provided when creating the
+        **ADWC** instance
+
+    -   **Password:** the password you have set
+
+    -   ![](./media/image63.png)
+        **Service Name:** same procedure as
+        for the **host** -- open **tnsnames**
+
+This should be the end result. Click **Save** and proceed to the next
+step.
+
+5.  After completing the previous step, all the schemas in the database
+    will be shown, for the purpose of this exercise we are going to use
+    **SH** which is a sample schema provided with the creation of a new
+    database.
+
+    ![](./media/image64.png)
+    Select **SH** to proceed.
+
+6.  ![](./media/image65.png)
+    After selecting the schema, the
+    following **Tables** will be retrieved, we are going to use the
+    **Customers** table
+
+7.  ![](./media/image66.png){
+    Now that you have selected the table,
+    select all the columns by clicking **Add All**, afterwards you can
+    name your dataset and finally click **Add** to finish the importing
+    process.
+
+8.  ![](./media/image67.png)
+    After you click **Add** the data will be available
+    for preparation, by default columns that contain numeric values will
+    be imported as measures (**\#**), to change that click on the symbol
+    and select **Attribute**. Repeat this for all the columns that
+    contain **ID** in their header.
+
+> ![](./media/image68.png)
+    Once this is done, click **Apply
+>   Script** to save changes and proceed to the **Visualize** tab.
+>
+> ![](./media/image69.png)
+    You will be taken to a blank canvas and
+>   on the left hand side you will see the dataset that you have created.
+
+9.  ![](./media/image70.png)
+    For the purpose of this exercise, we need an
+    additional table, which can be added by clicking on the **+** sign
+    next to the magnifier.
+
+>   An **Add Data Set** dialog box will pop up, the same one as we have
+>   seen in step 2. only this time we already have the connection created
+>
+> ![](./media/image71.png)
+>
+> ![](./media/image72.png)
+    Select the connection you have created:
+>
+> ![](./media/image73.png
+    Choose the same schema -- **SH** -- and
+>   this time pick the table **SALES**, click **Add All**, name your
+>   dataset and finish by clicking **Add**
+>
+> ![](./media/image74.png)
+>
+> ![](./media/image75.png)
+    Make sure you change all the columns
+>   that contain **ID** to Attributes by clicking the **\#** sign, **Apply
+>   Script** and proceed to the next step.
+
+10. In order to correlate data, we will **Join** columns that can be
+    found in the same tables to create relationships between the
+    datasets.
+
+    ![](./media/image76.png)
+    This can be done by clicking **Data
+    Diagram** on the bottom of the Canvas while you are in the
+    **Prepare** section.
+
+> ![](./media/image77.png)
+    Given the fact that we have uploaded the
+>   tables from the same schema and there are two columns with identical
+>   names **CUST\_ID**, the service has created the join automatically and
+>   now we can correlate data from two different sets. If the join does
+>   not exist, create one by clicking **Add Match**, select the matching
+>   columns and click **OK**.
+
+11. Now that you have joined the datasets, click on **Visualize** and
+    focus on the left hand side.
+
+> Expand the datasets, hold **CTRL** to select both **CUST\_CITY** from
+> **CUSTOMERS** and **AMOUNT\_SOLD** from **SALES**, right click and
+> select **Create Best Visualization**.
+>
+> ![](./media/image78.png)
+>
+> ![](./media/image80.png)
+    The result should look like this,
+>   although, while the result is readable, due to the high number of
+>   values in **CUST\_CITY**, some of the labels are not displayed.
+
+12. ![](./media/image81.png)
+    Change the visualization type to
+    **Map** by clicking on the actual type -- **Horizontal Stacked**.
+
+> ![](./media/image82.png)
+>
+> Now the values are displayed in an interactive map that you can zoom
+> in on, drag around and check different values.
+>
+> ![](./media/image83.png)
+    The colour of the bubble is based on the value of
+> **AMOUNT\_SOLD**, for a better result, click and drag **AMOUNT\_SOLD**
+> to **Size**.
+>
+> The end result is displayed below.
+>
+> ![](./media/image84.png)
+
+13. ![](./media/image85.png
+    Create another visualization using
+    **Create Best Visualization** by expanding **TIME\_ID** in **SALES**
+    and selecting **AMOUNT\_SOLD** and **Quarter of Year**.
+
+> ![](./media/image86.png)
+    This visualization will automatically be
+>   positioned on the Canvas next to the previously created Map.
+>
+> Given the fact that **Quarter of Year** is a time dimension, we can
+> add **Trend Lines**. To do that we hover on the top right corner of
+> the visualization -- not the canvas, click the menu and **Add Trend
+> Line**
+>
+> ![](./media/image87.png)
+>
+> ![](./media/image88.png)
+    This will generate a line on the
+>   visualization that summarizes the performance for the four years of
+>   data in our dataset.
+
+14. ![](./media/image89.png)
+    Rename the Canvas by clicking the
+    drop-down property menu in the bottom left corner and select
+    **Rename**.
+
+> Give it a name and proceed to the next step.
+
+15. ![](./media/image90.png)
+    Clicking on **Narrate** you can add
+    Canvases to present them in your meetings.
+
+> Drag your canvas on the blank page, add a text box in which you can
+> explain the depicted information and click
+> Present.![](./media/image91.png)
+
+**Section 7. Conclusion**
+-----
+
+Oracle Cloud Platform's built-in autonomous capabilities transform the
+way cloud services are delivered and consumed. Benefits for
+organizations include:
+
+**Lower Cost**
+
+-   Reduce administration costs by up to 80 percent with complete
+    > automation of operations and tuning
+
+-   Reduce runtime costs by up to 70 percent by paying only for
+    > resources needed at any given time
+
+-   Deploy new apps in minutes versus months, save tens of thousands of
+    > dollars in resource costs
+
+**Reduce Risk**
+
+-   Mitigate breach impact by avoiding reputational damage, associated
+    > breach costs, and revenue losses
+
+-   Reduce human error; under 2.5 minutes of downtime per month.
+
+-   Run highest throughput, mission-critical workloads on proven Oracle
+    > and open source technologies
+
+**Accelerate Innovation**
+
+-   Develop new apps within hours with self-generating code, plus
+    > intelligent and secure CI/CD pipelines
+
+-   Deploy new business processes within minutes versus days with
+    > voice-enabled, self-defining integrations
+
+-   Provision a data warehouse in seconds and accelerate time to
+    > innovation
+
+**Predictive Insights**
+
+-   Proactively discover new insights with ML-based continuous data
+    > analysis
+
+-   Analyze data using AI with predictive data visualization, narration,
+    > and intelligent data discovery
+
+-   Get proactive insights with comprehensive, in-database analytics for
+    > SQL, ML, Graph, R, and Times series
