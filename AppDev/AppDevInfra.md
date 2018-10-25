@@ -10,7 +10,7 @@
 ### Prerequisites ###
 To run these labs you will need access to an Oracle Cloud Account.  If you are participating in a live event, your instructor will provide you the required credentials.
 
-If you are running these labs on your own, please check out the instructions on the [Oracle Cloud Adventure page](https://cloudtestdrive.github.io/Trial.html) to learn how to get a Trial account or how to et up your corporate UC subxcription for this lab.
+If you are running these labs on your own, please check out the instructions on the [Oracle Cloud Adventure page](https://cloudtestdrive.github.io/Trial.html) to learn how to get a Trial account or how to set up your corporate UC subscription for this lab.
 
 
 ### Introduction ###
