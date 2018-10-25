@@ -7,6 +7,12 @@
 
 ## Setting up a Cloud Infrastructure to run your applications ##
 
+### Prerequisites ###
+To run these labs you will need access to an Oracle Cloud Account.  If you are participating in a live event, your instructor will provide you the required credentials.
+
+If you are running these labs on your own, please check out the instructions on the [Oracle Cloud Adventure page](https://cloudtestdrive.github.io/Trial.html) to learn how to get a Trial account or how to et up your corporate UC subxcription for this lab.
+
+
 ### Introduction ###
 
 This lab will showcase the various types of infrastructure you can use to run your applications, using either thr traditional Oracle components such as the Oracle Database and the Weblogic application Server, or using common Opensource components such as Tomcat or Glassfish.
