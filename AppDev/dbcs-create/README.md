@@ -12,7 +12,7 @@ Oracle Database Cloud Service provides you the ability to deploy Oracle database
 When you create database deployments, Database Cloud Service creates compute nodes to host the database, using computing and storage resources provided by Oracle Compute Cloud Service. Additionally, it provides access to the compute nodes (and thus to the database) using networking resources provided by Oracle Compute Cloud Service.
 
 ### About this tutorial ###
-This tutorial demonstrates how to create a Database Cloud Service using the PaaS Cloud Console user interface, but running on "OCI", Oracle's second generation Infrastructure.  This ensures we can later use this database to launch a Java Cloud which needs a DB of this type as a prerequisite.
+This tutorial demonstrates how to create a Database Cloud Service using the PaaS Cloud Console user interface, running on "OCI", Oracle's second generation Infrastructure.  This ensures we can later use this database to launch a Java Cloud which needs a DB of this type as a prerequisite.
 
 ### Prerequisites ###
 
@@ -152,7 +152,7 @@ Now please enable the following services in the same way:
 
 + ora_p2_dbexpress
 + ora_p2_httpssl
- 
+
 #### Working with the available Cloud tools ####
 In this part of the hands-on, we will walk-through the various tools available by default. Please make sure you have enabled all required firewall rules as demonstrated in the previous chapter and that you are on the Database Service Console Page:
 
