@@ -5,7 +5,7 @@
 
 ## Introduction
 
-This lab is designed for people with no prior experience with Docker, Node.js, AngularJS and want to learn the core concepts and basics of Container Native DevOps. 
+This lab is designed for people with no prior experience with Docker, Node.js, AngularJS and want to learn the core concepts and basics of Container Native DevOps.
 It combines the (optional) creation of a Kubernetes cluster on OCI infrastructure, and the setup of a CI/CD pipeline for setting up your development environment.
 
 The demo application is a simple Credit Scoring application. It has a Node.js backend microservice which calculates the credit score based on name, date of birth and SSN. The application UI which invokes the backend miscroservice using REST interface is built on AngularJS.
@@ -24,7 +24,11 @@ Oracle services being used during the hands-on are the following:
 
 ## Prerequisites ##
 
-For this lab you will need a Github and Wercker Account.  You can use your existing account, create a new one or use a pre-created instance provided to you by your instructor.  In the case of an instructor-provided environment, all participants will work on a common environment, so we need to use "prefixes" throughout this exercise to distinguish between participants.
+To run these labs you will need access to an Oracle Cloud Account.  If you are participating in a live event, your instructor will provide you the required credentials.
+
+If you are running these labs on your own, please check out the instructions on the [Oracle Cloud Adventure page](https://cloudtestdrive.github.io/Trial.html) to learn how to get a [Trial account](https://myservices.us.oraclecloud.com/mycloud/signup?sourceType=:ex:tb:::RC_EMMK181016P00010:Virtual_WS_DEV&SC=:ex:tb:::RC_EMMK181016P00010:Virtual_WS_DEV&pcode=EMMK181016P00010) or how to set up your corporate UC subscription for this lab.
+
+For this lab you will also need a **Github** and **Wercker** Account.  You can use your existing account, create a new one or use a pre-created instance provided to you by your instructor.  In the case of an instructor-provided environment, all participants will work on a common environment, so we need to use "prefixes" throughout this exercise to distinguish between participants.
 
 **Please be carefull to read the instructions and use your "userxx" label for the appropriate objects.**
 
@@ -36,7 +40,7 @@ For this lab you will need a Github and Wercker Account.  You can use your exist
     - if you are following this lab using an **instructor-provided environment**, you probably already have a cluster set up for you, and you can skip this step.
     - if you want to **manually set up** the whole network configuration for your cluster and the different elements of the cluster itself, you can follow [these detailed instructions](http://www.oracle.com/webfolder/technetwork/tutorials/obe/oci/oke-full/index.html).
     - You can also **use Terraform to spin up the infrastructure**.  A few manual steps are required, then the rest of the process is automated.  Follow [the instructions on this page](https://github.com/janleemans/terraform-oci/tree/master/OKE) and use the back button to return to this location.
-  
+
 2. [Create Oracle Container Pipelines to build, test and package sample application](sample.app.OKE2.md)
 2. [Application Lifecycle Management (Web - Github)](change.application.md)
 3. [Application Lifecycle Management (Desktop - Oracle Container Pipelines CLI)](change.application.desktop.md)

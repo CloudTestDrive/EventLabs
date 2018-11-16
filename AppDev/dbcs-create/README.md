@@ -18,7 +18,7 @@ This tutorial demonstrates how to create a Database Cloud Service using the PaaS
 
 To run these labs you will need access to an Oracle Cloud Account.  If you are participating in a live event, your instructor will provide you the required credentials.
 
-If you are running these labs on your own, please check out the instructions on the [Oracle Cloud Adventure page](https://cloudtestdrive.github.io/Trial.html) to learn how to get a [Trial account]() or how to set up your corporate UC subscription for this lab.
+If you are running these labs on your own, please check out the instructions on the [Oracle Cloud Adventure page](https://cloudtestdrive.github.io/Trial.html) to learn how to get a [Trial account](https://myservices.us.oraclecloud.com/mycloud/signup?sourceType=:ex:tb:::RC_EMMK181016P00010:Virtual_WS_DEV&SC=:ex:tb:::RC_EMMK181016P00010:Virtual_WS_DEV&pcode=EMMK181016P00010) or how to set up your corporate UC subscription for this lab.
 
 In this lab we will use the option to deploy to "OCI" infrastructure (as opposed to the older OCI-C or Classic).  In order to be able to use OCI, you first need to create a few OCI artefacts: a valid Virtual Network Configuration (VCN) and a Storage Bucket.
 

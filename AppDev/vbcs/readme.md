@@ -8,33 +8,40 @@
 
 ### Introduction ###
 
-Oracle Visual Builder Cloud Service is a visual development tool for creating web and mobile applications by simply dragging and dropping user interface (UI) components onto a page. It is aimed at professional developers who want to enhance their productivity by using a low-code tool to help build javascript apps. 
+Oracle Visual Builder Cloud Service is a visual development tool for creating web and mobile applications by simply dragging and dropping user interface (UI) components onto a page. It is aimed at professional developers who want to enhance their productivity by using a low-code tool to help build javascript apps.
 
 You can create custom business objects with the click of a button, and you can add data by importing CSV files or XLS spreadsheets to your application. You can access any data available via a REST API. You can define the processing logic needed for web and mobile pages. Since there are QuickStarts (Wizards) for most common actions you don't need any programming experience to develop an application. However, you can extend the functionality and change the appearance of your apps at any point using standard HTML, CSS and javascript. You can switch between visual and code mode as required.
 
 ![](images/VBCS_Page_Designer.JPG)
 
-This basic lab will showcase the development of a simple HR web or mobile application, based on Department, Employee and Location data objects by going through the following steps; 
+This basic lab will showcase the development of a simple HR web or mobile application, based on Department, Employee and Location data objects by going through the following steps;
 
 Developing a Web App
 
 + Create a visual application
 + Create pages for business objects
-+ Add navigation and importing data 
++ Add navigation and importing data
 + Add pages for data manipulation
 + Stage and publish an application
 + Create business rules
-+ Add bar and area charts 
-+ Add pie charts and queries 
++ Add bar and area charts
++ Add pie charts and queries
 
 Developing a Mobile App
 
-+ Create a mobile application 
++ Create a mobile application
 + Create pages in the mobile application
-+ Import sample data 
++ Import sample data
 + Add pages for data manipulation
 + Package the mobile application for the Android or iOS platform
 + Publish the mobile application
+
+## Prerequisites ##
+
+To run these labs you will need access to an Oracle Cloud Account.  If you are participating in a live event, your instructor will provide you the required credentials.
+
+If you are running these labs on your own, please check out the instructions on the [Oracle Cloud Adventure page](https://cloudtestdrive.github.io/Trial.html) to learn how to get a [Trial account](https://myservices.us.oraclecloud.com/mycloud/signup?sourceType=:ex:tb:::RC_EMMK181016P00010:Virtual_WS_DEV&SC=:ex:tb:::RC_EMMK181016P00010:Virtual_WS_DEV&pcode=EMMK181016P00010) or how to set up your corporate UC subscription for this lab.
+
 
 ### Instructions ###
 

@@ -15,18 +15,18 @@ This exercise assumes you already executed the creation of a Database Cloud Serv
 
 To run these labs you will need access to an Oracle Cloud Account.  If you are participating in a live event, your instructor will provide you the required credentials.
 
-If you are running these labs on your own, please check out the instructions on the [Oracle Cloud Adventure page](https://cloudtestdrive.github.io/Trial.html) to learn how to get a [Trial account]() or how to set up your corporate UC subscription for this lab.
+If you are running these labs on your own, please check out the instructions on the [Oracle Cloud Adventure page](https://cloudtestdrive.github.io/Trial.html) to learn how to get a [Trial account](https://myservices.us.oraclecloud.com/mycloud/signup?sourceType=:ex:tb:::RC_EMMK181016P00010:Virtual_WS_DEV&SC=:ex:tb:::RC_EMMK181016P00010:Virtual_WS_DEV&pcode=EMMK181016P00010) or how to set up your corporate UC subscription for this lab.
 
 In this lab we will use the option to deploy to "OCI" infrastructure (as opposed to the older OCI-C or Classic).  In order to be able to use OCI, you first need to create a few OCI artefacts: a valid Virtual Network Configuration (VCN) and a Storage Bucket.  See [this page](https://docs.cloud.oracle.com/iaas/Content/General/Reference/PaaSprereqs.htm) for all details.
 
 
 ### Steps ###
 
-Go to the Console (see Access information that was delivered to you in the workshop, or login to your [trial environment](https://cloud.oracle.com/sign-in) ). 
+Go to the Console (see Access information that was delivered to you in the workshop, or login to your [trial environment](https://cloud.oracle.com/sign-in) ).
 
 Make sure you have the tile "Java" displayed.  If this is not the case, use the button "Customize Dashboard", scroll down to the "Java" service in the list, and select "Show".
 
-- On the dashboard click the hamburger icon on the Java tile. 
+- On the dashboard click the hamburger icon on the Java tile.
 - Select **Open Service Console**.
 
 ![](images/01.png)
@@ -56,7 +56,7 @@ For more details about subscription types see the [documentation](https://docs.o
 
 Hit the "Next" button to go to the Instance Details screen
 
-+ **Compute Shape**: number of OCPU and size of the RAM. Choose the appropriate size for your project, for example *VM.Standard2.1 - 1 OCPU, 7 GB RAM*.  In case of a shared environment provided by your instructor, please follow the instructions as to which shape to choose.  If you are running this lab on your own instance, make sure to check out the available shapes in your instance, or the creation 
++ **Compute Shape**: number of OCPU and size of the RAM. Choose the appropriate size for your project, for example *VM.Standard2.1 - 1 OCPU, 7 GB RAM*.  In case of a shared environment provided by your instructor, please follow the instructions as to which shape to choose.  If you are running this lab on your own instance, make sure to check out the available shapes in your instance, or the creation
 + **Server Count**:  leave the default 1. Which means one managed server.
 
 + Now edit the **SSH Public key** you will use to access this instance : it allows to connect to the VM through ssh connection using the private key. Select **Create a New Key** option and download the newly generated keypair for later usage.
@@ -66,10 +66,10 @@ Hit the "Next" button to go to the Instance Details screen
 
 
 Now enter the following parameters on the screen:
-​	
+​
 
 + **Local Administrative User Name**: username of WebLogic administrator. For demo purposes keep the default : weblogic
-+ **Password**: WebLogic administrator's password. Don't forget to note the password you selected. 
++ **Password**: WebLogic administrator's password. Don't forget to note the password you selected.
 
 + **Database Configuration / Name**: Database Cloud Service name to store WebLogic repository data. Basically the list populated with database services within the same identity domain.  Select either the database provided by your instructor, or the database you created in the proevious step.
 + **Database Configuration / PDB Name**: pluggable database service identifier of the Database Cloud Service instance -provided above- which will be used to store repository schema. If you have choosen default (PDB1) during Database Cloud Service creation then leave the default here too.
@@ -89,7 +89,7 @@ Now Select the "Advanced" mode on the top of the screen
 
 + **Provision Load Balancer**: to save resources we will not create Load Balancer instance. Leave default: No
 
-- **Backup Destination** : Keep the default "None".  In case you would like to setup a backup service, the format is the following: 
+- **Backup Destination** : Keep the default "None".  In case you would like to setup a backup service, the format is the following:
   - For OCI : https://swiftobjectstorage.REGION.oraclecloud.com/v1/IDENTITYDOMAIN/BUCKETNAME, for example:  https://swiftobjectstorage.us-ashburn-1.oraclecloud.com/v1/gse00014344/PaasBucket.  Replace the REGION and IDENTITYDOMAIN value according to your environment and use the BUCKETNAME you specified when creating the OCI PaaS prerequisite artefacts
   - For OCI-C : Storage-IDENTITYDOMAIN/CONTAINERNAME, for example: Storage-gse00002323/User06.  The credentials for the storage are the same username/password you used to sign in to Oracle Cloud Services.
 
@@ -99,7 +99,7 @@ Now Select the "Advanced" mode on the top of the screen
 
 For more details about parameters see the [documentation](https://docs.oracle.com/cloud/latest/jcs_gs/JSCUG/GUID-31F00F2C-221F-4069-8E8A-EE48BFEC53A2.htm#JSCUG-GUID-88BD737C-8DA9-419A-8DBF-489BDFF9C512). Click **Next**.
 
-The final page is the summary page showing the chosen configuration before you submit the instance creation request. 
+The final page is the summary page showing the chosen configuration before you submit the instance creation request.
 
 So now click the **Create** button to start the creation, or **Cancel** to abort.
 
@@ -108,4 +108,3 @@ So now click the **Create** button to start the creation, or **Cancel** to abort
 
 ---
 [Go back to Overview Page](../AppDevInfra.md)
-
