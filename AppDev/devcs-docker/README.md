@@ -115,7 +115,7 @@ Each team member can now log in to the environment and start collaborating on pr
 
   - Import Existing Repository under **Initial content**
 
-  - <https://github.com/abhinavshroff/NodeJSMicroDocker> in the text box: 
+  - <https://github.com/cloudtestdrive/NodeJSMicroDocker> in the text box: 
 
     ![](images/image010.png)
 
@@ -312,23 +312,23 @@ Let’s start with the NodeJSDockerOCIR build job.
 - Click the **Builders** tab. 
 
 - From the **Add Builder** drop-down, select **Docker Builder->Docker login**. 
-  - Type iad.ocir.io in the **Registry Host** field
+  - For the **Registry Host** field: fill in the URL of your OCI Repository.  Example for an instance based in Ashburn: **iad.ocir.io**  , but replace the "iad" by the correct code : phx for Phenix, fra for Frankfurt, LHR for London, ...
 
-  - Type gse00014089/api.user in the **Username** field 
+  - The **Username** is composed of {instance-name}/{username}, for example **gse00014089/api.user** 
 
-  - Type 1}UHkK2o[L7nAij7nE{R in the **Password** field.
+  - Type your password **token** in the **Password** field - **attention, this is not the password** ! Typically a string looking like : i!co>5426CWaLZ&_Zh!r
 
     ![](images/image038.png)
 
 - From the **Add Builder** drop-down, select **Docker Builder->Docker build**. 
-  - Type iad.ocir.io in the **Registry Host** field
-  - Type gse00014089/oowhol/nodejsmicro**jodu** in the **Image Name** field.  Replace **jodu** with the first two letters of your first and last name, respectively. 
+  - Type iad.ocir.io in the **Registry Host** field (replace iad by the correct code for your region)
+  - Type gse00014089/oowhol/nodejsmicro**jodu** in the **Image Name** field.  Replace **jodu** with the first two letters of your first and last name, respectively, and replace "gse00014089" by your instance name
   - In the **Source** radio buttons, click **Context root in Workspace**.
 
 - From the **Add Builder** drop-down, select **Docker Builder->Docker push**. 
-  - Type iad.ocir.io in the **Registry Host** field
+  - Type iad.ocir.io in the **Registry Host** field (replace iad by the correct code for your region)
 
-  - Type Type gse00014089/oowhol/nodejsmicro**jodu** in the **Image Name** field.  Replace **jodu** with the first two letters of your first and last name, respectively. 
+  - Type Type gse00014089/oowhol/nodejsmicro**jodu** in the **Image Name** field.  Replace **jodu** with the first two letters of your first and last name, respectively, and replace "gse00014089" by your instance name
 
     ![](images/image039.png)
 
