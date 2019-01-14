@@ -22,17 +22,11 @@ During this day you will be able to experience the various cloud services from O
 + [Setting up a Kubernetes cluster on Oracle Cloud and deploy an Angular Node application using Wercker CI/CD pipelines](AppDev/K8S/readme.md)
 + [Run your first serverless Function using FnProject](AppDev/functions/function2_lab.md)
 
-**Simple exercises to get acquainted with Containers, using Oracle Container Cloud Service**
-+ [Deploy a Tomcat Docker image](AppDev/container/tomcat_deploy.md)
-+ [Create a new image based on the Docker GlassFish image](AppDev/container/glassfish_import.md)
-+ [Deploy a Node.js application to Container Cloud, using Worker CI/CD pipelines](AppDev/container/wercker.md)
-
 
 ## BlockChain ##
 + [Set up a Blockchain network, and experiment with some transactions and Smart Contracts](BlockChain/readme.md)
 
 ## Low Code Development ##
-+ [Develop a MAX Application](http://docs.oracle.com/cd/E65774_01/tutorials/tut_mcs_max_short/tut_mcs_max_short_1a.html) - Develop a Mobile application using the Mobile Application Accelerator (MAX) utility from the Mobile Cloud Service
 + [Use visual development to easily build sophisticated Web or Mobile apps](AppDev/vbcs/readme.md)
 + [Building an intelligent Banking Bot](Mobile/IntelligentBots/readme.md) - Define a simple ChatBot, create two intents and a few utterances.  Finally you'll train and test your bot to see how it works.
 
@@ -52,11 +46,6 @@ The objective of this lab is to give you an overview of the Oracle APIARY Cloud 
 
 + [API Platform Cloud Service](Integration/APICS/APIPCS-Manager.md) - 
 The objective of this lab is to give you a comprehensive overview of the Oracle API Platform Cloud Service as an API Manager. 
-
-
-## Infrastructure-as-a-Service ##
-This chapter regroups a subset of the exercises already detailed in the previous topics to create a specific focus on IaaS services only.  This covers Compute CS and Container CS.  [Follow this link for the details](IaaS/readme.md)
-
 
 
 ## Prerequisites ##
