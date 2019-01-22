@@ -9,7 +9,7 @@ Then finally you'll train and test your bot to see how it works.
 	
 #### Step 1. Create a simple Banking ChatBot ####
 
-Log in to your ChatBot Tenant instance, locate the bot called **CloudTestDriveBot** bot, press the hamburger icon and then click the **Clone** button. This will give you an identical version of the empty CloudTestDriveBot
+Log in to your ChatBot Tenant instance, locate the bot called **CloudTestDriveBot** bot using the "Filter", press the hamburger icon and then click the **Clone** button. This will give you an identical version of the empty CloudTestDriveBot
 
 ![](images/1_Clone.png)
 
@@ -17,31 +17,29 @@ In the **Clone Bot** dialog, name the ChatBot **CloudTestDriveBot_xx**, where 'x
 
 ![](images/2_ConfirmClone.png)
 
-You are taken to the home page for your bot. Here on the left you can see a list of icons you use to navigate to your **Intents, Entities, Flow, Components and Settings**. At this time, you have no intents.
+Now click on the title of your newly created bot to go to the home page. Here on the left you can see a list of icons you use to navigate to your **Intents, Entities, Flow, Components and Settings**. At this time, you have no intents.
 
-![](images/3_Menu.png)
+![](images/3_Menu2.png)
 
-Click the second icon down **"Entities"** and notice it is pre-populated system entities. These are standard entities that can be used in your ChatBot without having to explicitly define.
+Click the second icon down **(Entities)** and notice it is pre-populated system entities. These are standard entities that can be used in your ChatBot without having to explicitly define.
 
-![](images/4_Entities.png)
+![](images/4_Entities2.png)
 
 #### Step 2. Add an Intent and an Entity for checking Balances ####
 
-From your ChatBot, click the **Intent** icon and then click the green **Intent** button.
+Go back to the **Intent** icon and then click the green **+ Intent** button.
 
-![](images/5_NewIntent.png)
+![](images/3_Menu2.png)
 
 This intent will be used to find out your bank balance. Enter **Balances** as the intent name, and then provide a description. These values are automatically saved, so you do not need to explicitly save them. As you create artifacts, you may notice a message in the lower right corner that your work has been saved.
 
-![](images/6_Balances.png)
+![](images/6_Balances2.png)
 
 Now that you have an intent, you need some sentence examples to express what a balance is. In the Examples area add the following text: **How much money do I have in my checking account?**, followed by a return.
 
-![](images/7_Utterance.png)
+![](images/7_Utterance2.png)
 
 Add another example utterance: **How much do I owe on all my credit cards?**, followed by a return.
-
-![](images/8_HowMuchDoIOwe.png)
 
 Include the list of example utterances below to your intent, each followed by a return. Notice that the examples do not need to be in the form of a question, they can be a statement.
 -	**How much money did I save last year?**
@@ -54,19 +52,21 @@ Include the list of example utterances below to your intent, each followed by a 
 
 ![](images/9_Examples.png)
 
-Now that the intent is created, add an entity. Click the **Entities** icon on the left.
+Now that the intent is created, add an entity. 
+
+Click the **Entities** icon on the left.
 
 If you want to request the balance of an account, you would probably need to know the account that will return the balance.
 
-Click the green **Entity button and then enter **AccountType** as the entity name and a short description.
+Click the green **+ Entity**  button and then enter **AccountType** as the entity name and a short description.
 
-![](images/10_AccountType.png)
+![](images/10_AccountType2.png)
 
 Now that you have an entity, you need to provide some values that could be used. In our case of the account type, you would want to use values that represent accounts you could query on a balance.
 
-In the **Configuration** area, ensure the **Type** property is set to Value List and then click the green **Value** button.
+In the **Configuration** area, ensure the **Type** property is set to Value List and then click the green **+ Value** button.
 
-![](images/11_NewValue.png)
+![](images/11_NewValue2.png)
 
 In the popup dialog, enter **Checking** as the value and **check** as a synonym (followed by a return).
 
@@ -90,9 +90,9 @@ Click the **Intent** icon, and on the right find the **Intent Entities** area.
 
 Click the green **Entity** button and select **AccountType** from the list.
 
-![](images/14_IntentEntity.png)
+![](images/14_IntentEntity2.png)
 
-The entity is added and a required flag is set. You can remove the entity by clicking the **x** to the right of the entity name. Do not do remove the entity from your intent.
+The entity is added. You can remove the entity by clicking the **x** to the right of the entity name. Do not do remove the entity from your intent.
 
 ### Step 3. Add an Intent, Entity for checking Transferring Money ###
 
@@ -100,7 +100,7 @@ You’ve created one intent for checking balances, now you are going to create a
 
 From your Bot, click the green **Intent** button as you did before. This intent will be used to transfer money. Enter **TransferMoney** as the intent name, and then provide a description. 
 
-![](images/15_TransferMoney.png)
+![](images/15_TransferMoney2.png)
 
 Now that you have an intent, you need some sentence examples to express what transferring money is. In the Examples area add the following 
 
@@ -124,7 +124,7 @@ Create a new List Entity called **ToAccount** with values according to below tab
 | Chase Preferred  | Chase  |
 | the baby sitter |   |
 
-![](images/16_ToAccount.png)
+![](images/16_ToAccount2.png)
 
 As before, you need to associate the TransferMoney intent and ToAccount type entity, so as before:
 
@@ -134,18 +134,24 @@ Click the green **Entity** button and select **ToAccount** from the list.
 
 Furthermore, select **CURRECY**, and **DATE** from the list.  These are built-in entities.
 
-![](images/17_TransferMoneyIntent.png)
+![](images/17_TransferMoneyIntent2.png)
 
 ### Step 5. Train and Test your ChatBot ###
 
 In this part of the tutorial, you run the training tool on the bot. This will train the bot allowing it to understand similar user inputs to the example utterances used when building the bot.
 
-In the upper right, click the **Train** button. This will kick off a process that will run an algorithm to take your example utterances and build the model that will be used to ascertain the intents and entities. Anytime the ChatBot platform recognizes your bot needs to be trained, it will display an exclamation point in the train button. Once the training is complete the exclamation point is replaced by a check mark.
+In the upper right, click the **Train** button. 
 
-![](images/18_Train.png)
+![](images/18_Train2.png)
+
+In the pop-up dialog, select the "Trainer Ht" trainer type.  This will kick off a process that will run an linguistics algorithm to take your example utterances and build the model that will be used to ascertain the intents and entities. 
+
+![](images/18_Train3.png)
+
+Anytime the ChatBot platform recognizes your bot needs to be trained, it will display an exclamation point in the train button. Once the training is complete the exclamation point is replaced by a check mark.
 
 To test the ChatBot, click the **play icon** in the upper right of the page. This takes you into the tester where you can see two tabs: Bot and Intent.
- 
+
 Click the **Bot** tab to test the bot. What you type in at the bottom in the **Message** area, is what will be sent to the bot when you click the **Send** button.
 
 Let's start out simple to test the bot.
