@@ -13,8 +13,7 @@ During this day you will be able to experience the various cloud services from O
 
 ## Application Development ##
 + [AppDev Infrastructure lab](AppDev/AppDevInfra.md) - Set up the infrastructure to run your applications : create a Database and Application Servers, either using DBaaS or JCS, or use Docker Container to spin up any conainer from the Docker repository
-+ [AppDev Development lab](AppDev/devcs-docker/README.md) - In this lab, you’ll learn how to build a Docker image for a Node.js REST service on Oracle Developer Cloud Service (DevCS), and push it to Docker registries such as Oracle Cloud Infrastructure Registry and DockerHub.
-+ [DevStar Lab](https://github.com/CloudTestDrive/devstarCode/blob/master/README.md) - Join a rebel squad, develop Microservices together and defeat the DevStar backend application
++ [AppDev Development lab](AppDev/devcs-docker/Dev2OKE.md) - In this lab, you’ll learn how to build a Docker image for a Node.js REST service on Oracle Developer Cloud Service (DevCS), and push it to a Docker registrie such as Oracle Cloud Infrastructure Registry.  Then you will deploy your application on an OKE Managed Kubernetes cluster.
 
 
 ## Container Native labs ##
