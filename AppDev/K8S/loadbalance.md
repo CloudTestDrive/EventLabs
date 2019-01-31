@@ -42,6 +42,17 @@ but you can simply execute the below script by running the following on your mac
 
 For more details, visit [this page](https://github.com/nagypeter/kubernetes/tree/master/ingress)
 
+To validate the correct execution of this script, you need to access your kubernetes console, and validate both pods are running correctly.  
+
+![](images/k8s_pod_up.png)
+
+- Depending on the setup of your OKE cluster, you might hit a "Authorization failed: Access denied - user not permitted by OCI policy or RBAC rules" error in the log file of your *nginx-ingress-controller* pod.  In that case, execute the following command, replacing the ocid1.user.... with the OCID of your api user.
+
+      kubectl create clusterrolebinding my-cluster-admin-binding --clusterrole=cluster-admin --user=ocid1.user.oc1..aaaaa
+
+Next, in your OCI console, validate you now have a running loadbalancer in the network config.
+
+![](images/k8s_lb_up.png)
 
 ---
 [Go back to the to Container Lab Page](sample.app.OKE2.md)
