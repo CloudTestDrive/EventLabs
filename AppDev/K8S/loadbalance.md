@@ -10,6 +10,16 @@ These instructions are only required in case you created your own K8S cluster, a
 **DO NOT execute this script if you are using a K8S instance provided to you by your instructor**
 ### Setting up your loadbalancer ###
 
+First you need to create a cluster role binding using the api.user you used to create the cluster with: 
+
+- execute the following command, replacing the ocid1.user.... with the OCID of your api user.
+
+  ```
+  kubectl create clusterrolebinding my-cluster-admin-binding --clusterrole=cluster-admin --user=ocid1.user.oc1..aaaaa
+  ```
+
+
+
 The detailed scripts for setting up the loadbalancer can be found a separate github page,
 but you can simply execute the below script by running the following on your machine :
 
@@ -46,9 +56,7 @@ To validate the correct execution of this script, you need to access your kubern
 
 ![](images/k8s_pod_up.png)
 
-- Depending on the setup of your OKE cluster, you might hit a "Authorization failed: Access denied - user not permitted by OCI policy or RBAC rules" error in the log file of your *nginx-ingress-controller* pod.  In that case, execute the following command, replacing the ocid1.user.... with the OCID of your api user.
 
-      kubectl create clusterrolebinding my-cluster-admin-binding --clusterrole=cluster-admin --user=ocid1.user.oc1..aaaaa
 
 Next, in your OCI console, validate you now have a running loadbalancer in the network config.
 
