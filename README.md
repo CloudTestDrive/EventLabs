@@ -25,9 +25,9 @@ During this day you will be able to experience the various cloud services from O
 ## BlockChain ##
 + [Set up a Blockchain network, and experiment with some transactions and Smart Contracts](BlockChain/readme.md)
 
-## Front-end JavaScript Development ##
+## Enterprise JavaScript User Interface Development ##
 
-[Developing Web Component Development with Oracle JET](https://github.com/geertjanw/ojet-training/blob/master/README.md)
++ [Developing Web Component Development with Oracle JET](https://github.com/geertjanw/ojet-training/blob/master/README.md)
 
 ## Low Code Development ##
 + [Use visual development to easily build sophisticated Web or Mobile apps](AppDev/vbcs/readme.md)
