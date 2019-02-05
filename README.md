@@ -27,7 +27,7 @@ During this day you will be able to experience the various cloud services from O
 
 ## Enterprise JavaScript User Interface Development ##
 
-+ [Developing Web Component Development with Oracle JET](https://github.com/geertjanw/ojet-training/blob/master/README.md)
++ [Web Component Development with Oracle JET](https://github.com/geertjanw/ojet-training/blob/master/README.md)
 
 ## Low Code Development ##
 + [Use visual development to easily build sophisticated Web or Mobile apps](AppDev/vbcs/readme.md)
