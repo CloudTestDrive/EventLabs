@@ -45,65 +45,13 @@ To run these labs you will need access to an Oracle Cloud Account.  Follow [this
 
 - After obtaining your free trial, you will receive an email containing the link to the main Cloud Console.  
 
-- Log into your new Cloud Instance with the provided username / password - note you might be prompted to change the password on the initial login
+- Set up an instance of VBCS in your new Cloud environment by [following these detailed steps](Setup_vbcs.md)
 
-   ![](images/vb_init_1.png)
-
-
-
-- Open the left-side menu, and scroll down to open the "Administration", "My Services Dashboard"
-
-![](images/vb_init_2.png)
-
-- You now arrive on the "Dashboard" page representing all the PaaS services.  You mlight already have the tile "Visual Builder" visible.  In that case, you can skip the dashboard customization.
-
-![](images/vb_init_3.png)
-
-
-
-- In case this tile is not visible, click on the "Customize Dashboard" button and scroll down to the "Application Development" section of the list.
-- Select the "Show" option for Visual Builder.
-
-![](images/vb_init_4.png)
-
-
-
-- Once you have the tile for Visual Builder on your dashboard, click the hamburger icon to see the menu, and select "Open Service Console" from the list.
-
-![](images/vb_init_5.png)
-
-- In the Visual Builder Dashboard, you probably will have no instances available yet.  Use the "Create Instance" button to start the creation.
-
-![](images/vb_init_6.png)
-
-- Enter a name for your instance
-- For the region, leave the default "No preference" selection.
-
-![](images/vb_init_7.png)
-
-- Hit the "Next button to see the summary, then "Create" to start the creation.
-
-![](images/vb_init_8.png)
-
-- You will return to the Visual Builder dashboard, with your new instance being created.  Use the "Refresh" button untill the instance is up and running as shown below
-
-![](images/vb_init_9.png)
-
-- Once the instance is running, the hamburger icon will become active, and you can navigate to the "Open Oracle Visual Builder Service Home Page"
-
-![](images/vb_init_10.png)
-
-- You are ready to start the tutorial !
-
-![](images/vb_init_11.png)
-
-
+   
 
 ## Running the tutorial
 
-[Follow this link to the Oracle VBCS Tutorial](https://docs.oracle.com/en/cloud/paas/app-builder-cloud/tutorials.html)
-
-
+Once you have access to a Visual Builder service, you can [follow this link to the Oracle VBCS Tutorial](https://docs.oracle.com/en/cloud/paas/app-builder-cloud/tutorials.html)
 
 
 
@@ -117,8 +65,11 @@ The Universal Permissive License (UPL), Version 1.0
 
 ---
 ## Further Info ##
-
 [Oracle VBCS documentation](https://docs.oracle.com/en/cloud/paas/app-builder-cloud/books.html)
+
+
+
+
 
 ---
 [Go to the Cloud Test Drive Overview](../../README.md)
