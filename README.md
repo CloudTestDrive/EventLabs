@@ -25,6 +25,10 @@ During this day you will be able to experience the various cloud services from O
 ## BlockChain ##
 + [Set up a Blockchain network, and experiment with some transactions and Smart Contracts](BlockChain/readme.md)
 
+## Enterprise JavaScript User Interface Development ##
+
++ [Web Component Development with Oracle JET](https://github.com/geertjanw/ojet-training/blob/master/README.md)
+
 ## Low Code Development ##
 + [Use visual development to easily build sophisticated Web or Mobile apps](AppDev/vbcs/readme.md)
 + [Building an intelligent Banking Bot](Mobile/IntelligentBots/readme.md) - Define a simple ChatBot, create two intents and a few utterances.  Finally you'll train and test your bot to see how it works.
