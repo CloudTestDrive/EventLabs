@@ -14,7 +14,27 @@ You can create custom business objects with the click of a button, and you can a
 
 ![](images/VBCS_Page_Designer.JPG)
 
-This basic lab will showcase the development of a simple HR web or mobile application, based on Department, Employee and Location data objects by going through the following steps;
+## Prerequisites ##
+
+To run these labs you will need access to an Oracle Cloud Account.  Follow [this link to get a free Trial account](https://myservices.us.oraclecloud.com/mycloud/signup?sourceType=:ow:evp:cpo::RC_EMMK190118P00039:VLVB&intcmp=:ow:evp:cpo::RC_EMMK190118P00039:VLVB) from Oracle.
+
+
+### Instructions ###
+
+- After obtaining your free trial, you will receive an email containing the link to the main Cloud Console.  
+
+- Set up an instance of VBCS in your new Cloud environment by [following these detailed steps](Setup_vbcs.md)
+
+   
+## Running the Workshop
+
+Once you have access to a Visual Builder service, you can [follow this link to the Oracle VBCS Tutorial](https://docs.oracle.com/en/cloud/paas/app-builder-cloud/tutorials.html)
+
+This basic lab will showcase the development of a simple HR web or mobile application, based on Department, Employee and Location data objects. 
+
+### Workshop Modules
+
+Please choose either a Web or Mobile app from the following sections and go through the modules in sequence;
 
 Developing a Web App
 
@@ -35,27 +55,6 @@ Developing a Mobile App
 + Add pages for data manipulation
 + Package the mobile application for the Android or iOS platform
 + Publish the mobile application
-
-## Prerequisites ##
-
-To run these labs you will need access to an Oracle Cloud Account.  Follow [this link to get a free Trial account](https://myservices.us.oraclecloud.com/mycloud/signup?sourceType=:ow:evp:cpo::RC_EMMK190118P00039:VLVB&intcmp=:ow:evp:cpo::RC_EMMK190118P00039:VLVB) from Oracle.
-
-
-### Instructions ###
-
-- After obtaining your free trial, you will receive an email containing the link to the main Cloud Console.  
-
-- Set up an instance of VBCS in your new Cloud environment by [following these detailed steps](Setup_vbcs.md)
-
-   
-
-## Running the tutorial
-
-Once you have access to a Visual Builder service, you can [follow this link to the Oracle VBCS Tutorial](https://docs.oracle.com/en/cloud/paas/app-builder-cloud/tutorials.html)
-
-
-
-
 
 ---
 ## License ##
