@@ -30,30 +30,29 @@ To run these labs you will need access to an Oracle Cloud Account.  Follow [this
 
 Once you have access to a Visual Builder service, you can [follow this link to the Oracle VBCS Tutorial](https://docs.oracle.com/en/cloud/paas/app-builder-cloud/tutorials.html)
 
-This basic lab will showcase the development of a simple HR web or mobile application, based on Department, Employee and Location data objects. 
+This basic lab will showcase the development of a simple HR web or mobile application, based on Department, Employee and Location data. 
 
 ### Workshop Modules
 
 Please choose either a Web or Mobile app from the following sections and go through the modules in sequence;
 
-Developing a Web App
+#### Develop a Web App
 
-+ Create a visual application
-+ Create pages for business objects
-+ Add navigation and importing data
++ Create a web application
++ Define the business objects
++ Create pages to display and add business object data
++ Add navigation and import data
 + Add pages for data manipulation
 + Stage and publish an application
-+ Create business rules
-+ Add bar and area charts
-+ Add pie charts and queries
 
-Developing a Mobile App
+#### Develop a Mobile App
 
-+ Create a mobile application
-+ Create pages in the mobile application
++ Create a mobile application and business object
++ Create pages to display and add departments
 + Import sample data
-+ Add pages for data manipulation
-+ Package the mobile application for the Android or iOS platform
++ Add pages for to edit and delete departments
++ Package the mobile application for the Android platform
++ Package the mobile application for the iOS platform
 + Publish the mobile application
 
 ---
