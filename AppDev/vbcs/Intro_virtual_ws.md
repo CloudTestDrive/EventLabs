@@ -24,28 +24,23 @@ To run these labs you will need access to an Oracle Cloud Account.  Follow [this
 - After obtaining your free trial, you will receive an email containing the link to the main Cloud Console.  
 
 - Set up an instance of VBCS in your new Cloud environment by [following these detailed steps](Setup_vbcs.md)
-
-   
+ 
 ## Running the Workshop
-
-Once you have access to a Visual Builder service, you can [follow this link to the Oracle VBCS Tutorial](https://docs.oracle.com/en/cloud/paas/app-builder-cloud/tutorials.html)
 
 This basic lab will showcase the development of a simple HR web or mobile application, based on Department, Employee and Location data. 
 
-### Workshop Modules
-
 Please choose either a Web or Mobile app from the following sections and go through the modules in sequence;
 
-#### Develop a Web App
+### Develop a Web App
 
-+ [Create a web application](https://apexapps.oracle.com/pls/apex/f?p=44785:52:102029913232746:::52:P52_CONTENT_ID,P52_MODULE_ID,P52_ACTIVITY_ID,P52_EVENT_ID:22716,2059,10586,5817)
-+ Define the business objects
++ [Create a web application and first business object](https://apexapps.oracle.com/pls/apex/f?p=44785:52:102029913232746:::52:P52_CONTENT_ID,P52_MODULE_ID,P52_ACTIVITY_ID,P52_EVENT_ID:22716,2059,10586,5817)
++ [Define the other business objects](https://apexapps.oracle.com/pls/apex/f?p=44785:52:102029913232746:::52:P52_CONTENT_ID,P52_MODULE_ID,P52_ACTIVITY_ID,P52_EVENT_ID:22716,2059,10586,5817)
 + Create pages to display and add business object data
 + Add navigation and import data
 + Add pages for data manipulation
 + Stage and publish an application
 
-#### Develop a Mobile App
+### Develop a Mobile App
 
 + Create a mobile application and business object
 + Create pages to display and add departments
@@ -55,9 +50,16 @@ Please choose either a Web or Mobile app from the following sections and go thro
 + Package the mobile application for the iOS platform
 + Publish the mobile application
 
+### Want to do more ?
+
+To see the complete set of tutorial modules, including charting and working with process cloud, please [click here](https://docs.oracle.com/en/cloud/paas/app-builder-cloud/tutorials.html)
+
+For an additionbal set of more specific tutorial modules, including validations, dynamic UI, xxx, please [click here](https://blogs.oracle.com/vbcs/oracle-visual-builder-cloud-service-learning-path)
+
 ---
+
 ## License ##
-Copyright (c) 2014, 2018 Oracle and/or its affiliates
+Copyright (c) 2014, 2018, 2019 Oracle and/or its affiliates
 The Universal Permissive License (UPL), Version 1.0   
 [Details](../../common/license.md)
 
