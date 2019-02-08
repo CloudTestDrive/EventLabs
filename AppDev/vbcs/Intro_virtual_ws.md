@@ -66,9 +66,9 @@ OR
 
 The modules above are a subset of the standard tutorials included in the [VBCS product Documentation](https://docs.oracle.com/en/cloud/paas/app-builder-cloud/books.html). To see the complete set, which includes charting and working with process cloud, please [click here](https://docs.oracle.com/en/cloud/paas/app-builder-cloud/tutorials.html)
 
-For an additionbal set of more specific tutorials, including master-detail pages, validations, dynamic UI, security and external data acces via Fusion apps and other REST APIs (service Connections), please [click here](https://blogs.oracle.com/vbcs/oracle-visual-builder-cloud-service-learning-path)
+For an additionbal set of more specific tutorials, including master-detail pages, validations, dynamic UI, security and external data acces via Fusion apps and other REST APIs (i.e. Service Connections), please [click here](https://blogs.oracle.com/vbcs/oracle-visual-builder-cloud-service-learning-path)
 
-See also the [VBCS BLOG]{https://blogs.oracle.com/vbcs/) and [Shay Schmeltzers Dev Tools BLOG](https://blogs.oracle.com/shay/vbcs-3).
+See also the [VBCS BLOG](https://blogs.oracle.com/vbcs/) and [Shay Schmeltzers Dev Tools BLOG](https://blogs.oracle.com/shay/vbcs-3).
 
 ---
 
