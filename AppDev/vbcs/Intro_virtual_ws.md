@@ -38,7 +38,7 @@ Please choose either a Web or Mobile app from the following sections and go thro
 
 #### Develop a Web App
 
-+ [Create a web application] (https://apexapps.oracle.com/pls/apex/f?p=44785:52:102029913232746:::52:P52_CONTENT_ID,P52_MODULE_ID,P52_ACTIVITY_ID,P52_EVENT_ID:22716,2059,10586,5817)
++ [Create a web application](https://apexapps.oracle.com/pls/apex/f?p=44785:52:102029913232746:::52:P52_CONTENT_ID,P52_MODULE_ID,P52_ACTIVITY_ID,P52_EVENT_ID:22716,2059,10586,5817)
 + Define the business objects
 + Create pages to display and add business object data
 + Add navigation and import data
