@@ -52,7 +52,9 @@ Please choose either a Web or Mobile app from the following sections and go thro
 + [Import sample data](https://apexapps.oracle.com/pls/apex/f?p=44785:52:107024623863498:::52:P52_CONTENT_ID,P52_MODULE_ID,P52_ACTIVITY_ID,P52_EVENT_ID:23220,2068,11238,5819)
 + [Add pages and swipe actions to edit and delete departments](https://apexapps.oracle.com/pls/apex/f?p=44785:52:107024623863498:::52:P52_CONTENT_ID,P52_MODULE_ID,P52_ACTIVITY_ID,P52_EVENT_ID:23221,2068,11239,5819)
 + [Package the mobile application for the Android platform](https://apexapps.oracle.com/pls/apex/f?p=44785:52:107024623863498:::52:P52_CONTENT_ID,P52_MODULE_ID,P52_ACTIVITY_ID,P52_EVENT_ID:22926,2067,10703,5819)
-+ OR
+
+OR
+
 + [Package the mobile application for the iOS platform](https://apexapps.oracle.com/pls/apex/f?p=44785:52:107024623863498:::52:P52_CONTENT_ID,P52_MODULE_ID,P52_ACTIVITY_ID,P52_EVENT_ID:22927,2067,10704,5819)
 + [Publish the mobile application](https://apexapps.oracle.com/pls/apex/f?p=44785:52:107024623863498:::52:P52_CONTENT_ID,P52_MODULE_ID,P52_ACTIVITY_ID,P52_EVENT_ID:23222,2069,10705,5819)
 
