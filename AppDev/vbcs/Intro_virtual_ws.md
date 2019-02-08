@@ -58,6 +58,8 @@ OR
 + [Package the mobile application for the iOS platform](https://apexapps.oracle.com/pls/apex/f?p=44785:52:107024623863498:::52:P52_CONTENT_ID,P52_MODULE_ID,P52_ACTIVITY_ID,P52_EVENT_ID:22927,2067,10704,5819)
 + [Publish the mobile application](https://apexapps.oracle.com/pls/apex/f?p=44785:52:107024623863498:::52:P52_CONTENT_ID,P52_MODULE_ID,P52_ACTIVITY_ID,P52_EVENT_ID:23222,2069,10705,5819)
 
+---
+
 ### Want to do more ?
 
 The modules above are a subset of the standard tutorials included in the [VBCS product Documentation](https://docs.oracle.com/en/cloud/paas/app-builder-cloud/books.html). To see the complete set, which includes charting and working with process cloud, please [click here](https://docs.oracle.com/en/cloud/paas/app-builder-cloud/tutorials.html)
@@ -77,9 +79,4 @@ The Universal Permissive License (UPL), Version 1.0
 ## Further Info ##
 [Oracle VBCS documentation](https://docs.oracle.com/en/cloud/paas/app-builder-cloud/books.html)
 
-
-
-
-
----
-[Go to the VBCS Home Page](https://cloud.oracle.com/en_US/visual-builder)
+[Oracle VBCS Home Page](https://cloud.oracle.com/en_US/visual-builder)
