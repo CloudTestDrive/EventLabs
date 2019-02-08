@@ -16,6 +16,8 @@ You can create custom business objects with the click of a button, and you can a
 
 ## Prerequisites ##
 
+Click on links with the right mouse button to open them in a new tab.
+
 To run these labs you will need access to an Oracle Cloud Account.  Follow [this link to get a free Trial account](https://myservices.us.oraclecloud.com/mycloud/signup?sourceType=:ow:evp:cpo::RC_EMMK190118P00039:VLVB&intcmp=:ow:evp:cpo::RC_EMMK190118P00039:VLVB) from Oracle.
 
 
@@ -45,13 +47,13 @@ Please choose either a Web or Mobile app from the following sections and go thro
 
 ### Develop a Mobile App
 
-+ Create a mobile application and business object
-+ Create pages to display and add departments
-+ Import sample data
-+ Add pages for to edit and delete departments
-+ Package the mobile application for the Android platform
-+ Package the mobile application for the iOS platform
-+ Publish the mobile application
++ [Create a mobile application and business object](https://apexapps.oracle.com/pls/apex/f?p=44785:52:107024623863498:::52:P52_CONTENT_ID,P52_MODULE_ID,P52_ACTIVITY_ID,P52_EVENT_ID:22925,2068,10648,5819)
++ [Create pages to display and add departments](https://apexapps.oracle.com/pls/apex/f?p=44785:52:107024623863498:::52:P52_CONTENT_ID,P52_MODULE_ID,P52_ACTIVITY_ID,P52_EVENT_ID:23219,2068,11237,5819)
++ [Import sample data](https://apexapps.oracle.com/pls/apex/f?p=44785:52:107024623863498:::52:P52_CONTENT_ID,P52_MODULE_ID,P52_ACTIVITY_ID,P52_EVENT_ID:23220,2068,11238,5819)
++ [Add pages and swipe actions to edit and delete departments](https://apexapps.oracle.com/pls/apex/f?p=44785:52:107024623863498:::52:P52_CONTENT_ID,P52_MODULE_ID,P52_ACTIVITY_ID,P52_EVENT_ID:23221,2068,11239,5819)
++ [Package the mobile application for the Android platform](https://apexapps.oracle.com/pls/apex/f?p=44785:52:107024623863498:::52:P52_CONTENT_ID,P52_MODULE_ID,P52_ACTIVITY_ID,P52_EVENT_ID:22926,2067,10703,5819)
++ [Package the mobile application for the iOS platform]?(https://apexapps.oracle.com/pls/apex/f?p=44785:52:107024623863498:::52:P52_CONTENT_ID,P52_MODULE_ID,P52_ACTIVITY_ID,P52_EVENT_ID:22927,2067,10704,5819)
++ [Publish the mobile application](https://apexapps.oracle.com/pls/apex/f?p=44785:52:107024623863498:::52:P52_CONTENT_ID,P52_MODULE_ID,P52_ACTIVITY_ID,P52_EVENT_ID:23222,2069,10705,5819)
 
 ### Want to do more ?
 
