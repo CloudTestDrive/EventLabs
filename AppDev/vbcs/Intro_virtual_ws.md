@@ -2,7 +2,9 @@
 
 ![](../../common/images/customer.logo2.png)
 
-# Visual Builder Cloud Service Lab #
+# Visual Builder Cloud Service Virtual Workshop #
+
+In this short lab you will build and deploy a simple HR web or mobile application, based on Department, Employee and Location data.
 
 ## Use visual development to easily build sophisticated Web or Mobile apps
 
