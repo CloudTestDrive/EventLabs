@@ -29,16 +29,18 @@ To run these labs you will need access to an Oracle Cloud Account.  Follow [this
 
 This basic lab will showcase the development of a simple HR web or mobile application, based on Department, Employee and Location data. 
 
-Please choose either a Web or Mobile app from the following sections and go through the modules in sequence;
+Please choose either a Web or Mobile app from the following sections and go through the modules in sequence. Each one should take between 5 and 15 minutes.
 
 ### Develop a Web App
 
 + [Create a web application and first business object](https://apexapps.oracle.com/pls/apex/f?p=44785:52:102029913232746:::52:P52_CONTENT_ID,P52_MODULE_ID,P52_ACTIVITY_ID,P52_EVENT_ID:22716,2059,10586,5817)
 + [Define the other business objects](https://apexapps.oracle.com/pls/apex/f?p=44785:52:102029913232746:::52:P52_CONTENT_ID,P52_MODULE_ID,P52_ACTIVITY_ID,P52_EVENT_ID:22716,2059,10586,5817)
-+ Create pages to display and add business object data
-+ Add navigation and import data
-+ Add pages for data manipulation
-+ Stage and publish an application
++ [Create pages to display and add departments](https://apexapps.oracle.com/pls/apex/f?p=44785:52:102029913232746:::52:P52_CONTENT_ID,P52_MODULE_ID,P52_ACTIVITY_ID,P52_EVENT_ID:22717,2059,10588,5817)
++ [Create pages to display and add employees](https://apexapps.oracle.com/pls/apex/f?p=44785:52:102029913232746:::52:P52_CONTENT_ID,P52_MODULE_ID,P52_ACTIVITY_ID,P52_EVENT_ID:22717,2059,10588,5817)
++ [Define navigation between pages and import data](https://apexapps.oracle.com/pls/apex/f?p=44785:52:102029913232746:::52:P52_CONTENT_ID,P52_MODULE_ID,P52_ACTIVITY_ID,P52_EVENT_ID:22718,2059,10589,5817}
++ [Add pages to edit and delete departments](https://apexapps.oracle.com/pls/apex/f?p=44785:52:102029913232746:::52:P52_CONTENT_ID,P52_MODULE_ID,P52_ACTIVITY_ID,P52_EVENT_ID:23083,2059,10587,5817)
++ [Add pages to edit and delete employees](https://apexapps.oracle.com/pls/apex/f?p=44785:52:102029913232746:::52:P52_CONTENT_ID,P52_MODULE_ID,P52_ACTIVITY_ID,P52_EVENT_ID:23083,2059,10587,5817)
++ [Stage and publish the application](https://apexapps.oracle.com/pls/apex/f?p=44785:52:102029913232746:::52:P52_CONTENT_ID,P52_MODULE_ID,P52_ACTIVITY_ID,P52_EVENT_ID:23084,2059,10662,5817)
 
 ### Develop a Mobile App
 
@@ -52,9 +54,11 @@ Please choose either a Web or Mobile app from the following sections and go thro
 
 ### Want to do more ?
 
-To see the complete set of tutorial modules, including charting and working with process cloud, please [click here](https://docs.oracle.com/en/cloud/paas/app-builder-cloud/tutorials.html)
+The modules above are a subset of the standard tutorials included in the [VBCS product Documentation](https://docs.oracle.com/en/cloud/paas/app-builder-cloud/books.html). To see the complete set, which includes charting and working with process cloud, please [click here](https://docs.oracle.com/en/cloud/paas/app-builder-cloud/tutorials.html)
 
-For an additionbal set of more specific tutorial modules, including validations, dynamic UI, xxx, please [click here](https://blogs.oracle.com/vbcs/oracle-visual-builder-cloud-service-learning-path)
+For an additionbal set of more specific tutorials, including validations, dynamic UI, xxx, please [click here](https://blogs.oracle.com/vbcs/oracle-visual-builder-cloud-service-learning-path)
+
+See also The VBCS BLOG, John Ceccarelli's BLOG and Shay Schmeltzers BLOG.
 
 ---
 
