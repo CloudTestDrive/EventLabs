@@ -82,4 +82,4 @@ The Universal Permissive License (UPL), Version 1.0
 
 
 ---
-[Go to the Cloud Test Drive Overview](../../README.md)
+[Go to the VBCS Home Page](https://cloud.oracle.com/en_US/visual-builder)
