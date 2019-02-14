@@ -2,19 +2,17 @@
 
 ![](../../common/images/customer.logo2.png)
 
-# Visual Builder Cloud Service Virtual Workshop #
+# Oracle Visual Builder Cloud Service (VBCS) Virtual Workshop #
 
-In this short lab you will build and deploy a simple HR web or mobile application, based on Department, Employee and Location data.
+In this short lab you will build and deploy a simple HR web application, based on Department, Employee and Location data.
 
-## Use visual development to easily build sophisticated Web or Mobile apps
+## Introduction ##
 
-### Introduction ###
-
-Oracle Visual Builder Cloud Service is a visual development tool for creating web and mobile applications by simply dragging and dropping user interface (UI) components onto a page. It is aimed at professional developers who want to enhance their productivity by using a low-code tool to help build javascript apps.
+Oracle Visual Builder Cloud Service is a visual development tool for creating web and mobile applications by simply dragging and dropping user interface (UI) components onto a page with data access via REST APIs. It is aimed at professional developers who want to enhance their productivity by using a low-code tool to help build javascript apps.
 
 Oracle uses VBCS alongside other technologies to develop our SaaS applications and other cloud products 
 
-You can create custom business objects with the click of a button, and you can add data by importing CSV files or XLS spreadsheets to your application. You can access any data available via a REST API. You can define the processing logic needed for web and mobile pages. Since there are QuickStarts (Wizards) for most common actions you don't need any programming experience to develop an application. However, you can extend the functionality and change the appearance of your apps at any point using standard HTML, CSS and javascript. You can switch between visual and code mode as required.
+You can create custom business objects with the click of a button, and you can add data by importing CSV files or XLS spreadsheets to your application. You define the processing logic needed for pages as highly flecible Action Chains and since there are QuickStarts (Wizards) for many of the most common actions you don't need programming experience to develop an application. However, you can extend the functionality and change the appearance of your apps at any point using standard HTML, CSS and javascript and you can switch between visual and code mode as required.
 
 ![](images/VBCS_Page_Designer.JPG)
 
