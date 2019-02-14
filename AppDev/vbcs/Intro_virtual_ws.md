@@ -22,7 +22,6 @@ Click on links with the right mouse button to open them in a new tab.
 
 To run these labs you will need access to an Oracle Cloud Account.  Follow [this link to get a free Trial account](https://myservices.us.oraclecloud.com/mycloud/signup?sourceType=:ow:evp:cpo::RC_EMMK190118P00039:VLVB&intcmp=:ow:evp:cpo::RC_EMMK190118P00039:VLVB) from Oracle.
 
-
 ### Instructions ###
 
 - After obtaining your free trial, you will receive an email containing the link to the main Cloud Console.  
@@ -35,6 +34,8 @@ This basic lab will showcase the development of a simple HR web or mobile applic
 
 Please choose either a Web or Mobile app from the following sections and go through the modules in sequence. Each one should take between 5 and 15 minutes.
 
+Please use Google Chrome when building VBCS apps. End users can run the apps with any browser.
+
 ### Develop a Web App
 
 + [Create a web application and first business object](https://apexapps.oracle.com/pls/apex/f?p=44785:52:102029913232746:::52:P52_CONTENT_ID,P52_MODULE_ID,P52_ACTIVITY_ID,P52_EVENT_ID:22716,2059,10586,5817)
@@ -46,24 +47,11 @@ Please choose either a Web or Mobile app from the following sections and go thro
 + [Add pages to edit and delete employees](https://apexapps.oracle.com/pls/apex/f?p=44785:52:102029913232746:::52:P52_CONTENT_ID,P52_MODULE_ID,P52_ACTIVITY_ID,P52_EVENT_ID:23083,2059,10587,5817)
 + [Stage and publish the application](https://apexapps.oracle.com/pls/apex/f?p=44785:52:102029913232746:::52:P52_CONTENT_ID,P52_MODULE_ID,P52_ACTIVITY_ID,P52_EVENT_ID:23084,2059,10662,5817)
 
-### Develop a Mobile App
-
-+ [Create a mobile application and business object](https://apexapps.oracle.com/pls/apex/f?p=44785:52:107024623863498:::52:P52_CONTENT_ID,P52_MODULE_ID,P52_ACTIVITY_ID,P52_EVENT_ID:22925,2068,10648,5819)
-+ [Create pages to display and add departments](https://apexapps.oracle.com/pls/apex/f?p=44785:52:107024623863498:::52:P52_CONTENT_ID,P52_MODULE_ID,P52_ACTIVITY_ID,P52_EVENT_ID:23219,2068,11237,5819)
-+ [Import sample data](https://apexapps.oracle.com/pls/apex/f?p=44785:52:107024623863498:::52:P52_CONTENT_ID,P52_MODULE_ID,P52_ACTIVITY_ID,P52_EVENT_ID:23220,2068,11238,5819)
-+ [Add pages and swipe actions to edit and delete departments](https://apexapps.oracle.com/pls/apex/f?p=44785:52:107024623863498:::52:P52_CONTENT_ID,P52_MODULE_ID,P52_ACTIVITY_ID,P52_EVENT_ID:23221,2068,11239,5819)
-+ [Package the mobile application for the Android platform](https://apexapps.oracle.com/pls/apex/f?p=44785:52:107024623863498:::52:P52_CONTENT_ID,P52_MODULE_ID,P52_ACTIVITY_ID,P52_EVENT_ID:22926,2067,10703,5819)
-
-OR
-
-+ [Package the mobile application for the iOS platform](https://apexapps.oracle.com/pls/apex/f?p=44785:52:107024623863498:::52:P52_CONTENT_ID,P52_MODULE_ID,P52_ACTIVITY_ID,P52_EVENT_ID:22927,2067,10704,5819)
-+ [Publish the mobile application](https://apexapps.oracle.com/pls/apex/f?p=44785:52:107024623863498:::52:P52_CONTENT_ID,P52_MODULE_ID,P52_ACTIVITY_ID,P52_EVENT_ID:23222,2069,10705,5819)
-
 ---
 
 ### Want to do more ?
 
-The modules above are a subset of the standard tutorials included in the [VBCS product Documentation](https://docs.oracle.com/en/cloud/paas/app-builder-cloud/books.html). To see the complete set, which includes charting and working with process cloud, please [click here](https://docs.oracle.com/en/cloud/paas/app-builder-cloud/tutorials.html)
+The modules above are a subset of the standard tutorials included in the [VBCS product Documentation](https://docs.oracle.com/en/cloud/paas/app-builder-cloud/books.html). To see the complete set, which includes building native mobile apps for Android or iOS, charting and working with process cloud, please [click here](https://docs.oracle.com/en/cloud/paas/app-builder-cloud/tutorials.html)
 
 For an additionbal set of more specific tutorials, including master-detail pages, validations, dynamic UI, security and external data acces via Fusion apps and other REST APIs (i.e. Service Connections), please [click here](https://blogs.oracle.com/vbcs/oracle-visual-builder-cloud-service-learning-path)
 
