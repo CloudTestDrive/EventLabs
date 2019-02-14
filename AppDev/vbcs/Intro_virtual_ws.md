@@ -12,6 +12,8 @@ In this short lab you will build and deploy a simple HR web or mobile applicatio
 
 Oracle Visual Builder Cloud Service is a visual development tool for creating web and mobile applications by simply dragging and dropping user interface (UI) components onto a page. It is aimed at professional developers who want to enhance their productivity by using a low-code tool to help build javascript apps.
 
+Oracle uses VBCS alongside other technologies to develop our SaaS applications and other cloud products 
+
 You can create custom business objects with the click of a button, and you can add data by importing CSV files or XLS spreadsheets to your application. You can access any data available via a REST API. You can define the processing logic needed for web and mobile pages. Since there are QuickStarts (Wizards) for most common actions you don't need any programming experience to develop an application. However, you can extend the functionality and change the appearance of your apps at any point using standard HTML, CSS and javascript. You can switch between visual and code mode as required.
 
 ![](images/VBCS_Page_Designer.JPG)
@@ -34,10 +36,12 @@ You can create custom business objects with the click of a button, and you can a
  
 ## Running the Workshop
 
-This basic lab will guide you through the development of a simple HR application, based on Department, Employee and Location data. Please go through the modules below in sequence. Each one should take between 5 and 15 minutes.
+This basic lab will guide you through the development of a simple HR application, based on Department, Employee and Location data. Please go through the modules below in sequence. There is no need to rush. Anything you do not finish you can complete them later, along with the other materials and further tutorials noted below.
+
+Each module should take between 5 and 15 minutes.
 
 + [Create a web application and first business object](https://apexapps.oracle.com/pls/apex/f?p=44785:52:102029913232746:::52:P52_CONTENT_ID,P52_MODULE_ID,P52_ACTIVITY_ID,P52_EVENT_ID:22716,2059,10586,5817)
-+ [Define the other business objects](https://apexapps.oracle.com/pls/apex/f?p=44785:52:102029913232746:::52:P52_CONTENT_ID,P52_MODULE_ID,P52_ACTIVITY_ID,P52_EVENT_ID:22716,2059,10586,5817)
++ [Define the other business objects] (please stop at Section n - xxx)(https://apexapps.oracle.com/pls/apex/f?p=44785:52:102029913232746:::52:P52_CONTENT_ID,P52_MODULE_ID,P52_ACTIVITY_ID,P52_EVENT_ID:22716,2059,10586,5817)
 + [Create pages to display and add departments](https://apexapps.oracle.com/pls/apex/f?p=44785:52:102029913232746:::52:P52_CONTENT_ID,P52_MODULE_ID,P52_ACTIVITY_ID,P52_EVENT_ID:22717,2059,10588,5817)
 + [Create pages to display and add employees](https://apexapps.oracle.com/pls/apex/f?p=44785:52:102029913232746:::52:P52_CONTENT_ID,P52_MODULE_ID,P52_ACTIVITY_ID,P52_EVENT_ID:22717,2059,10588,5817)
 + [Define navigation between pages and import data](https://apexapps.oracle.com/pls/apex/f?p=44785:52:102029913232746:::52:P52_CONTENT_ID,P52_MODULE_ID,P52_ACTIVITY_ID,P52_EVENT_ID:22718,2059,10589,5817)
