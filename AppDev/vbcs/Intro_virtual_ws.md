@@ -22,6 +22,8 @@ Click on links with the right mouse button to open them in a new tab.
 
 To run these labs you will need access to an Oracle Cloud Account.  Follow [this link to get a free Trial account](https://myservices.us.oraclecloud.com/mycloud/signup?sourceType=:ow:evp:cpo::RC_EMMK190118P00039:VLVB&intcmp=:ow:evp:cpo::RC_EMMK190118P00039:VLVB) from Oracle.
 
+You do not need any prior experience of VBCS.
+
 ### Instructions ###
 
 - After obtaining your free trial, you will receive an email containing the link to the main Cloud Console.  
@@ -30,9 +32,7 @@ To run these labs you will need access to an Oracle Cloud Account.  Follow [this
  
 ## Running the Workshop
 
-This basic lab will showcase the development of a simple HR web or mobile application, based on Department, Employee and Location data. 
-
-Please choose either a Web or Mobile app from the following sections and go through the modules in sequence. Each one should take between 5 and 15 minutes.
+This basic lab will guide you through the development of a simple HR application, based on Department, Employee and Location data. Please go through the modules below in sequence. Each one should take between 5 and 15 minutes.
 
 Please use Google Chrome when building VBCS apps. End users can run the apps with any browser.
 
