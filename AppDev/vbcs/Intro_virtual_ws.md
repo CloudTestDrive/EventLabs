@@ -60,7 +60,11 @@ Each module should take between 5 and 15 minutes.
 
 [6. Add pages to edit and delete departments](https://apexapps.oracle.com/pls/apex/f?p=44785:52:102029913232746:::52:P52_CONTENT_ID,P52_MODULE_ID,P52_ACTIVITY_ID,P52_EVENT_ID:23083,2059,10587,5817)
 
++ Complete Sections 1 - 4 only. Stop after "Test Your New epartment Pages", before Section 5.
+
 [7. Add pages to edit and delete employees](https://apexapps.oracle.com/pls/apex/f?p=44785:52:102029913232746:::52:P52_CONTENT_ID,P52_MODULE_ID,P52_ACTIVITY_ID,P52_EVENT_ID:23083,2059,10587,5817)
+
++ Start at  Section 5 - "Add an Edit Page for Employee Business Object".
 
 [8. Stage and publish the application](https://apexapps.oracle.com/pls/apex/f?p=44785:52:102029913232746:::52:P52_CONTENT_ID,P52_MODULE_ID,P52_ACTIVITY_ID,P52_EVENT_ID:23084,2059,10662,5817)
 
