@@ -24,6 +24,8 @@ You can create custom business objects with the click of a button, and you can a
 
 - You do not need any prior experience of VBCS.
 
+- Please use Google Chrome when building VBCS apps. End users can run the apps with any browser.
+
 ### Instructions ###
 
 - After obtaining your free trial, you will receive an email containing the link to the main Cloud Console.  
@@ -33,10 +35,6 @@ You can create custom business objects with the click of a button, and you can a
 ## Running the Workshop
 
 This basic lab will guide you through the development of a simple HR application, based on Department, Employee and Location data. Please go through the modules below in sequence. Each one should take between 5 and 15 minutes.
-
-- Please use Google Chrome when building VBCS apps. End users can run the apps with any browser.
-
-### Develop a Web App
 
 + [Create a web application and first business object](https://apexapps.oracle.com/pls/apex/f?p=44785:52:102029913232746:::52:P52_CONTENT_ID,P52_MODULE_ID,P52_ACTIVITY_ID,P52_EVENT_ID:22716,2059,10586,5817)
 + [Define the other business objects](https://apexapps.oracle.com/pls/apex/f?p=44785:52:102029913232746:::52:P52_CONTENT_ID,P52_MODULE_ID,P52_ACTIVITY_ID,P52_EVENT_ID:22716,2059,10586,5817)
