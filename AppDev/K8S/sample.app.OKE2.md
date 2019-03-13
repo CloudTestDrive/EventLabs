@@ -265,16 +265,16 @@ The pipelines can have independent variables per pipelines or *global* scope var
 
 + **KUBERNETES\_MASTER** = Use the Kubernetes Server address you copied from the kubeconfig file 
 + **KUBERNETES\_TOKEN** = the user token you copied from the kubeconfig file
-+ **DOCKER_REGISTRY** = https://phx.ocir.io/v2 . 
-   + Replace the "phx" if required by the Region Key of your region
-+ **DOCKER_REPO** = phx.ocir.io/gse00014344/userxx
-   + Replace the "phx" if required by the Region Key of your region
-   + Replace "gse00014344" by the name of your Tenancy Name
-   + where xx at the end is your prefix ID (example 03)
-+ **DOCKER_SERVER** = phx.ocir.io 
-   + Replace the "phx" if required by the Region Key of your region
-+ **DOCKER_USERNAME** = gse00014344/api.user
-   + Replace "gse00014344" by the name of your Tenancy Name
++ **DOCKER_REGISTRY** = https://fra.ocir.io/v2 . 
+   + Replace the "fra" if required by the Region Key of your region
++ **DOCKER_REPO** = fra.ocir.io/oractdemeabdmnative/userxx
+   + Replace the "fra" if required by the Region Key of your region
+   + Replace "oractdemeabdmnative" by the name of your Tenancy
+   + where xx at the end is your prefix ID (example 03) or initials
++ **DOCKER_SERVER** = fra.ocir.io 
+   + Replace the "fra" if required by the Region Key of your region
++ **DOCKER_USERNAME** = oractdemeabdmnative/api.user
+   + Replace "oractdemeabdmnative" by the name of your Tenancy Name
 + **DOCKER_PASSWORD** = this is the Authentication Token of the OCI account you used to create the K8S cluster.  
    + When using an instructor-provided OKE instance, this token will be provided by your instructor in separate file called "docker_password_token".  
    + If you created your own OKE instance, you need to create yourself a token for your user, via the "Identity", "Users" tab of the menu.
@@ -305,7 +305,7 @@ Scroll down to open the *get LoadBalancer public IP address* step and check the 
 
 ![alt text](images/wercker.application.26.png)
 
-Open a new browser window or tab and open your sample application using the following URL: `https://PUBLIC_IP_ADDRESS/USERNAME/userxx/`. Where the USERNAME is your Oracle Container Pipelines (former Wercker) user name. It should be a similar to: `https://129.213.15.72/cn-demo-user20/user08/`
+Open a new browser window or tab and open your sample application using the following URL: `https://PUBLIC_IP_ADDRESS/USERNAME/userxx/`. Where the USERNAME is your Oracle Container Pipelines (Wercker) user name. It should be a similar to: `https://129.213.15.72/ctdwercker/userxx/`
 
 Due to the reason that the proper certification hasn't been configured you get a security warning. Ignore and allow to open the page.
 
@@ -346,7 +346,9 @@ Launch your dashboard as described in the previous session (using the kubectl pr
 
 ​	 [http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/#%21/overview?namespace=default](http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/#%21/overview?namespace=default).  
 
-Now navigate to the namespace where you deployed your application.  If you followed the tutorial so far, this namespace will have the same name as your github and wercker user (for example ctdwercker).
+If you used a different proxy port, replace the port number in the above link as appropriate. 
+
+Now navigate to the namespace where you deployed your application.  If you followed the tutorial so far, this namespace will have the same name as your github and wercker user: **ctdwercker**.
 
 
 
