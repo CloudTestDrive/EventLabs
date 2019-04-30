@@ -12,28 +12,33 @@ During this day you will be able to experience the various cloud services from O
 
 
 ## Application Development ##
-+ [AppDev Infrastructure lab](AppDev/AppDevInfra.md) - Set up the infrastructure to run your applications : create a Database and Application Servers, either using DBaaS or JCS, or use Docker Container to spin up any conainer from the Docker repository
++ [AppDev Infrastructure lab](AppDev/AppDevInfra.md) - Set up the infrastructure to run your applications : create a Database and Application Servers, using DBaaS and JCS
 + [AppDev Development lab](AppDev/devcs-docker/Dev2OKE.md) - In this lab, you’ll learn how to build a Docker image for a Node.js REST service on Oracle Developer Cloud Service (DevCS), and push it to a Docker registrie such as Oracle Cloud Infrastructure Registry.  Then you will deploy your application on an OKE Managed Kubernetes cluster.
-
 + *New* [Microservices using Autonomous ATP and Managed Containers](https://cloudtestdrive.github.io/autonomous-transaction-processing/workshops/autonomous-transaction-processing/?page=README.md)
++ Using **Wercker** CI/CD pipelines to [deploy an Angular Node application](AppDev/K8S/readme.md)
 
++ Run your first **serverless Functions** [using FnProject](AppDev/functions/function2_lab.md)
 
-## Container Native labs ##
-**Using Oracle Managed Kubernetes Engine and Serverless Functions**
-+ [Setting up a Kubernetes cluster on Oracle Cloud and deploy an Angular Node application using Wercker CI/CD pipelines](AppDev/K8S/readme.md)
-+ [Run your first serverless Function using FnProject](AppDev/functions/function2_lab.md)
+  
 
 
 ## BlockChain ##
 + [Set up a Blockchain network, and experiment with some transactions and Smart Contracts](BlockChain/readme.md)
 
+  
+
 ## Enterprise JavaScript User Interface Development ##
 
 + [Web Component Development with Oracle JET](https://github.com/geertjanw/ojet-training/blob/master/README.md)
 
+  
+
 ## Low Code Development ##
-+ [Use visual development to easily build sophisticated Web or Mobile apps](AppDev/vbcs/readme.md)
-+ [Building an intelligent Banking Bot](Mobile/IntelligentBots/readme.md) - Define a simple ChatBot, create two intents and a few utterances.  Finally you'll train and test your bot to see how it works.
++ Visual Builder : [Easily build sophisticated Web or Mobile apps](AppDev/vbcs/readme.md)
+
++ Digital Assistant: [Building an intelligent Banking Bot](Mobile/IntelligentBots/readme.md) - Define a simple ChatBot, create two intents and a few utterances.  Finally you'll train and test your bot to see how it works.
+
+  
 
 
 ## Process Cloud Service ##
