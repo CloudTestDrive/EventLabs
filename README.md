@@ -68,3 +68,10 @@ The workshop is intended to work with the Oracle Cloud account information hande
 
 Alternatively you can request an Oracle PaaS trial account. To get an account look into [here](common/request.for.trial.md).
 
+
+## [Contributing](CONTRIBUTING.md)
+Pull Requests are currently not being accepted. See [CONTRIBUTING](CONTRIBUTING.md) for details.
+
+## [License](LICENSE.md)
+Copyright (c) 2014, 2016 Oracle and/or its affiliates
+The Universal Permissive License (UPL), Version 1.0
