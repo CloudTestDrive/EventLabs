@@ -1,14 +1,14 @@
 ![](common/images/customer.logo2.png)
 ---
-# ORACLE Cloud Test Drive #
+# Cloud Test Drive Overview page #
 
 ## Introduction ##
 
-This Oracle Cloud project contains the lab materials for the Oracle Cloud Test Drive events organized in various locations.  Participants can experiment through these labs with a series of Oracle Cloud Services from the IaaS and PaaS family.  
+This project contains the lab materials for the Cloud Test Drive events organized in various locations.  Participants can experiment through these labs with a series of Oracle Cloud Services.  
 
 ![](common/images/Introslide.PNG)
 
-During this day you will be able to experience the various cloud services from Oracle hands-on.  Below you find the link to all labs already available : 
+During this day you will be able to experience the various cloud services hands-on.  Below you find the link to all labs already available : 
 
 
 ## Application Development ##
@@ -52,10 +52,10 @@ In this lab, you will create a business process using PCS. This Order Approvals 
 This lab will show you how to set up integration between 2 systems simply using the drag & drop features of Integration Cloud Service.  In this exercise we will set up an integration between a RightNow instance and a generic REST service of a mobile Application.
 
 + [APIARY](Integration/APICS/APIPCS-DesignFirst.md) - 
-The objective of this lab is to give you an overview of the Oracle APIARY Cloud Platform as an API Developer. 
+The objective of this lab is to give you an overview of the APIARY Cloud Platform as an API Developer. 
 
 + [API Platform Cloud Service](Integration/APICS/APIPCS-Manager.md) - 
-The objective of this lab is to give you a comprehensive overview of the Oracle API Platform Cloud Service as an API Manager. 
+The objective of this lab is to give you a comprehensive overview of the API Platform Cloud Service as an API Manager. 
 
 
 ## Prerequisites ##
@@ -69,8 +69,6 @@ The workshop is intended to work with the Oracle Cloud account information hande
 Alternatively you can request an Oracle PaaS trial account. To get an account look into [here](common/request.for.trial.md).
 
 
-## [Contributing](CONTRIBUTING.md)
-Pull Requests are currently not being accepted. See [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ## [License](LICENSE.md)
 Copyright (c) 2014, 2016 Oracle and/or its affiliates
