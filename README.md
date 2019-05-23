@@ -44,7 +44,7 @@ During this day you will be able to experience the various cloud services hands-
 
   In this lab, you’ll learn how to build a Docker image for a Node.js REST service on Oracle Developer Cloud Service (DevCS), and push it to a Docker registrie such as Oracle Cloud Infrastructure Registry.  Then you will deploy your application on an OKE Managed Kubernetes cluster.
 
-+ **New** [Microservices using Autonomous ATP and Managed Containers](https://cloudtestdrive.github.io/autonomous-transaction-processing/workshops/autonomous-transaction-processing/?page=README.md) - *Private Lab, Login required*
++ **New** [Microservices using Autonomous ATP and Managed Containers](https://github.com/CloudTestDrive/EventLabs_priv/blob/master/autonomous-transaction-processing/README.md) - *Private Lab, Login required*
 
 + Using **Wercker** CI/CD pipelines to [deploy an Angular Node application](https://github.com/CloudTestDrive/EventLabs_priv/blob/master/AppDev/K8S/readme.md) - *Private Lab, Login required*
 
