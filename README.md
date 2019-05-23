@@ -2,19 +2,47 @@
 ---
 # Cloud Test Drive Overview page #
 
+
+
+------
+
+**ATTENTION**: this repository is migrating to the Oracle organization on Github.  During this migration, only those labs already on official oracle.com websites are directly available.
+
+All other labs are only available on a Private repository, requiring you to obtain access to this repository.
+
+- For Customers and participants to EMEA Cloud Test Drives, Oracle Code Events, Oracle Cloud Days or MIT Workshops, **you will receive the required credentials at the event**.
+
+- For past participants who would like to continue accessing the lab materials, **please [mail us](mailto:cloudadventure_ww@oracle.com) to obtain your credentials**.
+
+- For Oracle employees, you can obtain the credentials in the Access Document on the Internal Cloud Test Drive folder.
+
+------
+
+
+
+
+
 ## Introduction ##
 
 This project contains the lab materials for the Cloud Test Drive events organized in various locations.  Participants can experiment through these labs with a series of Oracle Cloud Services.  
+
+
 
 ![](common/images/Introslide.PNG)
 
 During this day you will be able to experience the various cloud services hands-on.  Below you find the link to all labs already available : 
 
 
+
+
 ## Application Development ##
-+ [AppDev Infrastructure lab](AppDev/AppDevInfra.md) - Set up the infrastructure to run your applications : create a Database and Application Servers, using DBaaS and JCS
++ [AppDev Infrastructure lab](https://github.com/CloudTestDrive/EventLabs_priv/blob/master/AppDev/AppDevInfra.md) - Set up the infrastructure to run your applications : create a Database and Application Servers, using DBaaS and JCS.
+  *Private Lab, Login required*
+
 + [AppDev Development lab](AppDev/devcs-docker/Dev2OKE.md) - In this lab, you’ll learn how to build a Docker image for a Node.js REST service on Oracle Developer Cloud Service (DevCS), and push it to a Docker registrie such as Oracle Cloud Infrastructure Registry.  Then you will deploy your application on an OKE Managed Kubernetes cluster.
+
 + *New* [Microservices using Autonomous ATP and Managed Containers](https://cloudtestdrive.github.io/autonomous-transaction-processing/workshops/autonomous-transaction-processing/?page=README.md)
+
 + Using **Wercker** CI/CD pipelines to [deploy an Angular Node application](AppDev/K8S/readme.md)
 
 + Run your first **serverless Functions** [using FnProject](AppDev/functions/function2_lab.md)
