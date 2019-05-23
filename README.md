@@ -36,22 +36,25 @@ During this day you will be able to experience the various cloud services hands-
 
 
 ## Application Development ##
-+ [AppDev Infrastructure lab](https://github.com/CloudTestDrive/EventLabs_priv/blob/master/AppDev/AppDevInfra.md) - Set up the infrastructure to run your applications : create a Database and Application Servers, using DBaaS and JCS.
-  *Private Lab, Login required*
++ [AppDev Infrastructure lab](https://github.com/CloudTestDrive/EventLabs_priv/blob/master/AppDev/AppDevInfra.md) - *Private Lab, Login required*
+  Set up the infrastructure to run your applications : create a Database and Application Servers, using DBaaS and JCS.
 
-+ [AppDev Development lab](AppDev/devcs-docker/Dev2OKE.md) - In this lab, you’ll learn how to build a Docker image for a Node.js REST service on Oracle Developer Cloud Service (DevCS), and push it to a Docker registrie such as Oracle Cloud Infrastructure Registry.  Then you will deploy your application on an OKE Managed Kubernetes cluster.
++ [AppDev Development lab](https://github.com/CloudTestDrive/EventLabs_priv/blob/master/AppDev/devcs-docker/Dev2OKE.md) - *Private Lab, Login required*
 
-+ *New* [Microservices using Autonomous ATP and Managed Containers](https://cloudtestdrive.github.io/autonomous-transaction-processing/workshops/autonomous-transaction-processing/?page=README.md)
+  In this lab, you’ll learn how to build a Docker image for a Node.js REST service on Oracle Developer Cloud Service (DevCS), and push it to a Docker registrie such as Oracle Cloud Infrastructure Registry.  Then you will deploy your application on an OKE Managed Kubernetes cluster.
 
-+ Using **Wercker** CI/CD pipelines to [deploy an Angular Node application](AppDev/K8S/readme.md)
++ **New** [Microservices using Autonomous ATP and Managed Containers](https://cloudtestdrive.github.io/autonomous-transaction-processing/workshops/autonomous-transaction-processing/?page=README.md) - *Private Lab, Login required*
 
-+ Run your first **serverless Functions** [using FnProject](AppDev/functions/function2_lab.md)
++ Using **Wercker** CI/CD pipelines to [deploy an Angular Node application](https://github.com/CloudTestDrive/EventLabs_priv/blob/master/AppDev/K8S/readme.md) - *Private Lab, Login required*
 
-  
++ Run your first **serverless Functions** [using FnProject](https://github.com/CloudTestDrive/EventLabs_priv/blob/master/AppDev/functions/function2_lab.md) - *Private Lab, Login required*
+
+
+
 
 
 ## BlockChain ##
-+ [Set up a Blockchain network, and experiment with some transactions and Smart Contracts](BlockChain/readme.md)
++ [Set up a Blockchain network, and experiment with some transactions and Smart Contracts](https://github.com/CloudTestDrive/EventLabs_priv/blob/master/BlockChain/readme.md) - *Private Lab, Login required*
 
   
 
@@ -62,27 +65,28 @@ During this day you will be able to experience the various cloud services hands-
   
 
 ## Low Code Development ##
-+ Visual Builder : [Easily build sophisticated Web or Mobile apps](AppDev/vbcs/readme.md)
++ **Visual Builder** : [Easily build sophisticated Web or Mobile apps](https://docs.oracle.com/en/cloud/paas/app-builder-cloud/tutorials.html)
 
-+ Digital Assistant: [Building an intelligent Banking Bot](Mobile/IntelligentBots/readme.md) - Define a simple ChatBot, create two intents and a few utterances.  Finally you'll train and test your bot to see how it works.
-
++ **Digital Assistant** : [Building an intelligent Banking Bot](https://github.com/CloudTestDrive/EventLabs_priv/blob/master/Mobile/IntelligentBots/readme.md) - *Private Lab, Login required*
+Define a simple ChatBot, create two intents and a few utterances.  Finally you'll train and test your bot to see how it works.
+  
   
 
 
 ## Process Cloud Service ##
 In this lab, you will create a business process using PCS. This Order Approvals process will be initiated when a user enters an order.
-[Follow this link for the details](Process/readme.md)
+[Follow this link for the details](https://github.com/CloudTestDrive/EventLabs_priv/blob/master/Process/readme.md) - *Private Lab, Login required*
 
 
 ## Integration ##
 
-+ [Integration Cloud Service](Integration/readme.md) - 
++ [Integration Cloud Service](https://github.com/CloudTestDrive/EventLabs_priv/blob/master/Integration/readme.md) - *Private Lab, Login required*
 This lab will show you how to set up integration between 2 systems simply using the drag & drop features of Integration Cloud Service.  In this exercise we will set up an integration between a RightNow instance and a generic REST service of a mobile Application.
 
-+ [APIARY](Integration/APICS/APIPCS-DesignFirst.md) - 
++ [APIARY](https://github.com/CloudTestDrive/EventLabs_priv/blob/master/Integration/APICS/APIPCS-DesignFirst.md) - *Private Lab, Login required*
 The objective of this lab is to give you an overview of the APIARY Cloud Platform as an API Developer. 
 
-+ [API Platform Cloud Service](Integration/APICS/APIPCS-Manager.md) - 
++ [API Platform Cloud Service](https://github.com/CloudTestDrive/EventLabs_priv/blob/master/Integration/APICS/APIPCS-Manager.md) - *Private Lab, Login required*
 The objective of this lab is to give you a comprehensive overview of the API Platform Cloud Service as an API Manager. 
 
 
@@ -94,7 +98,7 @@ The workshop is intended to work with the Oracle Cloud account information hande
 + Oracle Cloud **identity domain**
 + **Data center/region**
 
-Alternatively you can request an Oracle PaaS trial account. To get an account look into [here](common/request.for.trial.md).
+Alternatively you can request an Oracle trial account. To get an account,  navigate to [this page](https://myservices.us.oraclecloud.com/mycloud/signup).
 
 
 
