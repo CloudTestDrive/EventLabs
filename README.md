@@ -37,6 +37,7 @@ During this day you will be able to experience the various cloud services hands-
 
 ## Application Development ##
 + [AppDev Infrastructure lab](https://github.com/CloudTestDrive/EventLabs_priv/blob/master/AppDev/AppDevInfra.md) - *Private Lab, Login required*
+
   Set up the infrastructure to run your applications : create a Database and Application Servers, using DBaaS and JCS.
 
 + [AppDev Development lab](https://github.com/CloudTestDrive/EventLabs_priv/blob/master/AppDev/devcs-docker/Dev2OKE.md) - *Private Lab, Login required*
@@ -66,8 +67,10 @@ During this day you will be able to experience the various cloud services hands-
 
 ## Low Code Development ##
 + **Visual Builder** : [Easily build sophisticated Web or Mobile apps](https://docs.oracle.com/en/cloud/paas/app-builder-cloud/tutorials.html)
+
 + **Digital Assistant** : [Building an intelligent Banking Bot](https://github.com/CloudTestDrive/EventLabs_priv/blob/master/Mobile/IntelligentBots/readme.md) - *Private Lab, Login required*
-Define a simple ChatBot, create two intents and a few utterances.  Finally you'll train and test your bot to see how it works.
+
+  Define a simple ChatBot, create two intents and a few utterances.  Finally you'll train and test your bot to see how it works.
 
 
 
@@ -86,13 +89,16 @@ In this lab, you will create a business process using PCS. This Order Approvals 
 ## Integration ##
 
 + [Integration Cloud Service](https://github.com/CloudTestDrive/EventLabs_priv/blob/master/Integration/readme.md) - *Private Lab, Login required*
-This lab will show you how to set up integration between 2 systems simply using the drag & drop features of Integration Cloud Service.  In this exercise we will set up an integration between a RightNow instance and a generic REST service of a mobile Application.
+
+  This lab will show you how to set up integration between 2 systems simply using the drag & drop features of Integration Cloud Service.  In this exercise we will set up an integration between a RightNow instance and a generic REST service of a mobile Application.
 
 + [APIARY](https://github.com/CloudTestDrive/EventLabs_priv/blob/master/Integration/APICS/APIPCS-DesignFirst.md) - *Private Lab, Login required*
-The objective of this lab is to give you an overview of the APIARY Cloud Platform as an API Developer. 
+
+  The objective of this lab is to give you an overview of the APIARY Cloud Platform as an API Developer. 
 
 + [API Platform Cloud Service](https://github.com/CloudTestDrive/EventLabs_priv/blob/master/Integration/APICS/APIPCS-Manager.md) - *Private Lab, Login required*
-The objective of this lab is to give you a comprehensive overview of the API Platform Cloud Service as an API Manager. 
+
+  The objective of this lab is to give you a comprehensive overview of the API Platform Cloud Service as an API Manager. 
 
 
 ## Prerequisites ##
