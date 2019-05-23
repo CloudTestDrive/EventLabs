@@ -66,11 +66,16 @@ During this day you will be able to experience the various cloud services hands-
 
 ## Low Code Development ##
 + **Visual Builder** : [Easily build sophisticated Web or Mobile apps](https://docs.oracle.com/en/cloud/paas/app-builder-cloud/tutorials.html)
-
 + **Digital Assistant** : [Building an intelligent Banking Bot](https://github.com/CloudTestDrive/EventLabs_priv/blob/master/Mobile/IntelligentBots/readme.md) - *Private Lab, Login required*
 Define a simple ChatBot, create two intents and a few utterances.  Finally you'll train and test your bot to see how it works.
-  
-  
+
+
+
+## Autonomous Data Warehouse
+
+- **Provision, run and use Autonomous Datawarehouse Cloud and Autonomous Transaction Processing** : [Access the lab page](https://github.com/CloudTestDrive/EventLabs_priv/blob/master/AutonomousDW/readme.md) - *Private Lab, Login required*
+
+
 
 
 ## Process Cloud Service ##
