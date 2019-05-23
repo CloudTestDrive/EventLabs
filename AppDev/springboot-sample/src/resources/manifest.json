@@ -1,7 +1,0 @@
-{
-  "runtime": {
-    "majorVersion": "8"
-  },
-  "command": "java -Dserver.port=$PORT -jar springbootdemo-0.0.1.war",
-  "notes": "SpringBoot demo application"
-}
